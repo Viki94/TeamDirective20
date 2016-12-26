@@ -18,9 +18,15 @@
       "prefix": "app",
       "mobile": false,
       "styles": [
+        "assets/mdb/css/bootstrap.min.css",
+        "assets/mdb/css/mdb.css",
         "styles.css"
       ],
-      "scripts": [],
+      "scripts": [
+        "assets/mdb/js/jquery.min.js",
+        "assets/mdb/js/bootstrap.min.js",
+        "assets/mdb/js/mdb.js"
+      ],
       "environments": {
         "source": "environments/environment.ts",
         "dev": "environments/environment.ts",
