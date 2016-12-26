@@ -6,9 +6,20 @@ import { Component } from '@angular/core';
   styleUrls: ['./adopt-a-pet.component.css']
 })
 export class AdoptAPetComponent {
-    titles: string;
+    animals: any[];
 
     constructor(){
-        this.titles = "Pesho";
+        this.animals = [{name: "Pesho", 
+                        type: "dog", 
+                        breed: "лабрадор", 
+                        sex: "мъжки", 
+                        years: 3, 
+                        weight: 39},
+                        {name: "Merida",
+                         type: "cat",
+                         breed: "тигър",
+                         sex: "женски",
+                         years: 1,
+                         weight: 4}];
     }
 }
