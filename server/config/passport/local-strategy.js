@@ -13,7 +13,7 @@ let strategy = new LocalStrategy(
 
                 return done(null, false, { message: 'Incorrect username or password!' });
             })
-            .catch(err => done(err, null, { message: 'A server exception occured! Please try again!' }));
+            .catch(err => done(err, null, { message: 'A server error occured! Please try again!' }));
     });
 
 module.exports = strategy;
