@@ -51,4 +51,4 @@ userSchema.method({
 mongoose.model('user', userSchema);
 let User = mongoose.model('user');
 
-module.exports.User = user;
+module.exports.User = User;

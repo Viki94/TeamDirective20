@@ -6,12 +6,14 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { MainNavigationComponent } from './navigation/main-navigation/main-navigation.component';
 import { FooterComponent } from './navigation/footer/footer.component';
+import {AdoptAPetComponent} from './adoptapet/adopt-a-pet.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MainNavigationComponent,
-    FooterComponent
+    FooterComponent,
+    AdoptAPetComponent
   ],
   imports: [
     BrowserModule,
