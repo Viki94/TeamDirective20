@@ -6,19 +6,30 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { MainNavigationComponent } from './navigation/main-navigation/main-navigation.component';
 import { FooterComponent } from './navigation/footer/footer.component';
+<<<<<<< HEAD
 import {AdoptAPetComponent} from './adoptapet/adopt-a-pet.component';
+=======
+import { HomeComponent } from './home/home.component';
+
+import { AppRoutingModule } from './app-routing.module';
+>>>>>>> refs/remotes/origin/master
 
 @NgModule({
   declarations: [
     AppComponent,
     MainNavigationComponent,
     FooterComponent,
+<<<<<<< HEAD
     AdoptAPetComponent
+=======
+    HomeComponent
+>>>>>>> refs/remotes/origin/master
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

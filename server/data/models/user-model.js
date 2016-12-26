@@ -29,10 +29,7 @@ let userSchema = new Schema({
         type: String,
         default: 'https://www.kirkleescollege.ac.uk/wp-content/uploads/2015/09/default-avatar.png'
     },
-    role: {
-        type: String,
-        default: 'user'
-    },
+    admin: Boolean,
     facebookId: String,
     facebookToken: String
 });
