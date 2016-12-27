@@ -44,8 +44,8 @@ dlldata.c
 project.lock.json
 artifacts/
 
-src/*.js
-src/*.map
+src/**/*.js
+src/**/*.map
 
 *_i.c
 *_p.c

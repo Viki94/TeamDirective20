@@ -8,6 +8,8 @@ import { AppRoutingModule } from './app-routing.module';
 
 // services
 import { ApiService, AuthService } from './services/index';
+import { FactsService } from './services/facts.service';
+import { DataService } from './services/data.service';
 
 // directives
 import { EqualityValidatorDirective } from './directives/equality-validator.directive';
@@ -15,6 +17,8 @@ import { EqualityValidatorDirective } from './directives/equality-validator.dire
 // components
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
+import { FactsComponent } from './components/facts/facts.component';
+import { FactFormComponent } from './components/fact-form/fact-form.component';
 import { MainNavigationComponent, FooterComponent } from './navigation/index';
 import { RegisterComponent, LoginComponent } from './auth/index';
 
@@ -25,6 +29,8 @@ import { RegisterComponent, LoginComponent } from './auth/index';
 		MainNavigationComponent,
 		FooterComponent,
 		HomeComponent,
+		FactsComponent,
+		FactFormComponent,
 		RegisterComponent,
 		LoginComponent
 	],
@@ -37,7 +43,9 @@ import { RegisterComponent, LoginComponent } from './auth/index';
 	],
 	providers: [
 		ApiService,
-		AuthService
+		AuthService,
+		FactsService,
+		DataService
 	],
 	bootstrap: [AppComponent]
 })
