@@ -7,7 +7,8 @@ import { AppComponent } from './app.component';
 import { MainNavigationComponent } from './navigation/main-navigation/main-navigation.component';
 import { FooterComponent } from './navigation/footer/footer.component';
 
-import {AdoptAPetComponent} from './adoptapet/adopt-a-pet.component';
+import {AdoptAPetComponent} from './pets/adopt-a-pet-component/adopt-a-pet.component';
+import {PetProfileComponent} from './pets/pet-profile-component/pet-profile.component';
 
 import { HomeComponent } from './home/home.component';
 
@@ -19,7 +20,8 @@ import { AppRoutingModule } from './app-routing.module';
     MainNavigationComponent,
     FooterComponent,
     AdoptAPetComponent,
-    HomeComponent
+    HomeComponent,
+    PetProfileComponent
   ],
   imports: [
     BrowserModule,
