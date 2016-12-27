@@ -3,13 +3,12 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
-import { AppComponent } from './app.component';
-import { MainNavigationComponent } from './navigation/main-navigation/main-navigation.component';
-import { FooterComponent } from './navigation/footer/footer.component';
-import { HomeComponent } from './home/home.component';
-
 import { AppRoutingModule } from './app-routing.module';
-import { RegisterComponent } from './auth/register/register.component';
+
+import { AppComponent } from './app.component';
+import { HomeComponent } from './home/home.component';
+import { MainNavigationComponent, FooterComponent } from './navigation/index';
+import { RegisterComponent, LoginComponent } from './auth/index';
 
 @NgModule({
   declarations: [
@@ -17,7 +16,8 @@ import { RegisterComponent } from './auth/register/register.component';
     MainNavigationComponent,
     FooterComponent,
     HomeComponent,
-    RegisterComponent
+    RegisterComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
