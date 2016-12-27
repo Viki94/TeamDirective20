@@ -1,13 +1,16 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 // routing
 import { AppRoutingModule } from './app-routing.module';
 
 // services
-import { ApiService } from './services/index';
+import { ApiService, AuthService } from './services/index';
+
+// directives
+import { EqualityValidatorDirective } from './directives/equality-validator.directive';
 
 // components
 import { AppComponent } from './app.component';
@@ -16,23 +19,26 @@ import { MainNavigationComponent, FooterComponent } from './navigation/index';
 import { RegisterComponent, LoginComponent } from './auth/index';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    MainNavigationComponent,
-    FooterComponent,
-    HomeComponent,
-    RegisterComponent,
-    LoginComponent
-  ],
-  imports: [
-    BrowserModule,
-    FormsModule,
-    HttpModule,
-    AppRoutingModule
-  ],
-  providers: [
-    ApiService
-  ],
-  bootstrap: [AppComponent]
+	declarations: [
+		EqualityValidatorDirective,
+		AppComponent,
+		MainNavigationComponent,
+		FooterComponent,
+		HomeComponent,
+		RegisterComponent,
+		LoginComponent
+	],
+	imports: [
+		BrowserModule,
+		FormsModule,
+		ReactiveFormsModule,
+		HttpModule,
+		AppRoutingModule
+	],
+	providers: [
+		ApiService,
+		AuthService
+	],
+	bootstrap: [AppComponent]
 })
 export class AppModule { }
