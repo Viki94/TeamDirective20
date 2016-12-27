@@ -13,11 +13,13 @@ export class PetProfileComponent implements OnInit {
 
   pets: any[] = [];
   pet: any;
+  url: any[];
 
   constructor(private petService: PetService, private route: ActivatedRoute) { }
 
   ngOnInit() {
     this.pets = this.petService.getAll();
     this.pet = this.petService.getById(this.route.snapshot.params['id']);
+    this.url = this.route.snapshot.url;
   }
 }

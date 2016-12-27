@@ -2,14 +2,18 @@
     <div class="col-md-6 col-md-offset-3 well">
         <img class="img-responsive" src="{{pet.imgSrc}}" alt="{{pet.name}}">
         <ul class="nav nav-tabs">
-            <li><a>За Мен</a></li>
-            <li><a>Родословно Дърво</a></li>
-            <li><a>Снимки</a></li>
-            <li><a>Видеа</a></li>
+            <li><a routerLink="/animals/{{pet.id}}/about">За Мен</a></li>
+            <li><a routerLink="/animals/{{pet.id}}/familytree">Родословно Дърво</a></li>
+            <li><a routerLink="/animals/{{pet.id}}/pictures">Снимки</a></li>
+            <li><a routerLink="/animals/{{pet.id}}/videos">Видеа</a></li>
             <li>
                 <a href="#">Осинови Ме!</a>
             </li>
         </ul>
+        <h1 *ngIf="url[2] == 'about'">About</h1>
+        <h1 *ngIf="url[2] == 'familytree'">Famili Tree</h1>
+        <h1 *ngIf="url[2] == 'pictures'">pictures</h1>
+        <h1 *ngIf="url[2] == 'videos'">Videos</h1>
     </div>
 </div>
 <div class="row" *ngFor='let post of pet.posts'>
@@ -21,5 +25,9 @@
         </ul>
         <img class="img-responsive" src="{{post.imgSrc}}" alt="">
         <p class="well" style="background-color:white">{{post.description}}</p>
+        <hr>
+        <p><small><strong>Snoopy: </strong>eh chiche, kvo malko kutre beshe, sa kuf zul mastiff stana :D</small></p>
+        <p><small><strong>Pesho: </strong>Vzimai primer i si qj Pedigrito !</small></p>
+        <hr>
 </article>
 </div>
