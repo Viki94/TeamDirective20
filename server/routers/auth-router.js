@@ -9,7 +9,7 @@ module.exports = function (app, data) {
         .post('/login', controllers.login)
         .post('/register', controllers.register)
         .post('/logout', controllers.logout)
-        .get('/get-user-info', controllers.getUserInfo);
+        .get('/check-login', controllers.checkLogin);
 
     app.use('/api/auth', router);
 };

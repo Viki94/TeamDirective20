@@ -84,20 +84,23 @@ module.exports = (data) => {
                 message: `User successfully logged out!`
             });
         },
-        getUserInfo(req, res) {
+        checkLogin(req, res) {
             const token = req.headers.authorization;
 
             if (token) {
-                let decoded = jwt.decode(token, 'secret-as-shit');
-
-                console.log(decoded);
-
-                const userObject = decoded._doc;
-                let user = {
-                    username: userObject.username
-                };
-
-                res.status(200).json(user);
+                let decoded = jwt.decode(token.split(' ')[1], 'secret-as-shit');
+                const user = decoded._doc;
+                data.findUserById(user._id)
+                    .then((resUser) => {
+                        let result = {
+                            success: true
+                        };
+                        
+                        res.status(200).json(result);
+                    })
+                    .catch(err => {
+                        res.status(500).json(err);
+                    });
             } else {
                 res.status(401).json({
                     success: false,

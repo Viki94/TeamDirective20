@@ -2,13 +2,14 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
+import { RouterModule } from '@angular/router';
 import { SimpleNotificationsModule } from 'angular2-notifications';
 
 // routing
 import { AppRoutingModule } from './app-routing.module';
 
 // services
-import { ApiService, AuthService } from './services/index';
+import { ApiService, AuthService, RouteGuardService } from './services/index';
 import { FactsService } from './services/facts.service';
 import { DataService } from './services/data.service';
 
@@ -22,6 +23,7 @@ import { FactsComponent } from './components/facts/facts.component';
 import { FactFormComponent } from './components/fact-form/fact-form.component';
 import { MainNavigationComponent, FooterComponent } from './navigation/index';
 import { RegisterComponent, LoginComponent } from './auth/index';
+import { UserProfileComponent } from './users/user-profile/user-profile.component';
 
 @NgModule({
     declarations: [
@@ -33,9 +35,11 @@ import { RegisterComponent, LoginComponent } from './auth/index';
         FactsComponent,
         FactFormComponent,
         RegisterComponent,
-        LoginComponent
+        LoginComponent,
+        UserProfileComponent
     ],
     imports: [
+        RouterModule,
         BrowserModule,
         FormsModule,
         ReactiveFormsModule,
@@ -46,6 +50,7 @@ import { RegisterComponent, LoginComponent } from './auth/index';
     providers: [
         ApiService,
         AuthService,
+        RouteGuardService,
         FactsService,
         DataService
     ],

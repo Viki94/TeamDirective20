@@ -12,10 +12,15 @@ export class ApiService {
     private options = new RequestOptions({
         headers: this.headers
     });
-
     private apiUrl = 'http://localhost:3000';
 
-    constructor(private http: Http) { }
+    constructor(private http: Http) {
+        const token = localStorage.getItem('token');
+
+        if (token) {
+            this.options.headers.append('authorization', token);
+        };
+    }
 
     get(path: string): Observable<any> {
         return this.http.get(`${this.apiUrl}/${path}`, this.options)

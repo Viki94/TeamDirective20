@@ -1,8 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Injectable } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 import { NotificationsService } from 'angular2-notifications';
 import { AuthService } from '../../services/auth.service';
 
+@Injectable()
 @Component({
     selector: 'app-login',
     templateUrl: './login.component.html',
@@ -11,8 +13,10 @@ import { AuthService } from '../../services/auth.service';
 export class LoginComponent implements OnInit {
     form: FormGroup;
     notificationOptions: Object;
+    isDisabled = false;
 
-    constructor(private formBuilder: FormBuilder, private authService: AuthService, private notificationsService: NotificationsService) {
+    constructor(private formBuilder: FormBuilder, private authService: AuthService,
+        private notificationsService: NotificationsService, private router: Router) {
         this.notificationOptions = {
             timeOut: 2000,
             showProgressBar: false,
@@ -30,13 +34,20 @@ export class LoginComponent implements OnInit {
     submit(value: any) {
         this.authService.login(value)
             .subscribe(res => {
-                console.log(res);
+                this.isDisabled = true;
+                localStorage.setItem('token', res.token);
                 localStorage.setItem('currentUser', JSON.stringify(res.user));
                 this.notificationsService.success('Успешен вход!', 'Пренасочване...');
+                setTimeout(() => {
+                    this.router.navigate(['/profile']);
+                }, 2000);
             },
             err => {
-                console.log(err);
+                this.isDisabled = true;
                 this.notificationsService.error('Възникна грешка!', 'Невалидни потребителско име и/или парола.');
+                setTimeout(() => {
+                    this.isDisabled = false;
+                }, 2000);
             });
     }
 }
