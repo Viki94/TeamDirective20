@@ -1,0 +1,27 @@
+<form #factsForm="ngForm" (ngSubmit)="create(); factsForm.reset()">
+    <div class="row">
+        <div class="col-xs-offset-1 col-xs-7">
+            <div class="form-group">
+                <input class="form-control" type="text" name="title" [(ngModel)]="fact.title" #tbTitle="ngModel" required placeholder="Enter fact title"
+                />
+                <div [hidden]="tbTitle.untouched || tbTitle.valid">
+                    Invalid fact title
+                </div>
+            </div>
+            <div class="form-group">
+                <input class="form-control" type="text" name="description" [(ngModel)]="fact.description" placeholder="Enter fact description"
+                    required />
+            </div>
+            <div class="form-group">
+                <input class="form-control" type="url" name="img" [(ngModel)]="fact.img" placeholder="Enter image url">
+            </div>
+            <div class="form-group">
+                <button class="btn btn-success">Create</button>
+                <button (click)="return()" class="btn btn-danger">Return</button>
+            </div>
+        </div>
+        <div class="col-xs-3">
+            <img [src]="fact.img" class="fact-image" [hidden]="!fact.img">
+        </div>
+    </div>
+</form>

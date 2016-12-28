@@ -13,6 +13,14 @@ module.exports = (data) => {
                 return;
             }
 
+            if (req.body.password.length < 6 || req.body.password.length > 15) {
+                return res.status(400).json({ message: 'Password should be between 6 and 15 symbols!' });
+            }
+
+            if (req.body.password !== req.body.confirmPassword) {
+                return res.status(400).json({ message: 'Passwords do not match!' });
+            }
+
             data.findUserByCredentials(req.body.username)
                 .then((user) => {
                     if (user) {
@@ -30,9 +38,14 @@ module.exports = (data) => {
                                 success: true,
                                 message: `User ${req.body.username} succesfully created!`
                             });
+                        })
+                        .catch(err => {
+                            res.status(400).json(err);
                         });
                 })
-                .catch(console.log);
+                .catch(err => {
+                    res.status(500).json(err);
+                });
         },
         login(req, res, next) {
             let username = req.body.username,
@@ -67,7 +80,7 @@ module.exports = (data) => {
         },
         getUserInfo(req, res) {
             const token = req.headers.authorization;
-            
+
             if (token) {
                 let decoded = jwt.decode(token, 'secret-as-shit');
 

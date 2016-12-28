@@ -1,0 +1,23 @@
+<!--<a routerLink="/fact-form">Add fact</a>-->
+<button (click)="addFact()" class="btn btn-success">Add fact</button>
+
+<ul *ngIf="facts" class="list">
+    <li *ngFor="let fact of facts">
+        <div class="row">
+            <div class="col-xs-1 text-right">
+                <img class="fact-image" [src]="fact.img">
+            </div>
+            <div class="col-xs-4 text-left">
+                <strong>{{fact.title}}</strong>
+                <br>
+                <small>{{fact.description}}</small>
+                <br>
+                <br>
+                <br>
+            </div>
+        </div>
+    </li>
+</ul>
+<div *ngIf="!facts.length">
+    No facts yet
+</div>

@@ -1,0 +1,55 @@
+<div class="row zoomInDown">
+  <div class="col-md-6 col-md-offset-3">
+    <div id="reg-panel" class="card">
+      <div class="card-title text-center">
+        <h4>Регистрация</h4>
+        <hr>
+      </div>
+      <div class="card-content">
+        <form [formGroup]="form" (ngSubmit)="submit(form.value);">
+          <span class="text-danger small" *ngIf="!form.controls['username'].valid && form.controls['username'].touched">Потребителското име трябва да е между 6 и 15 символа.</span>
+          <input class="form-control" [class.input-error]="!form.controls['username'].valid && form.controls['username'].touched" type="text"
+            name="username" [formControl]="form.controls['username']" placeholder="Потребителско име" required>
+
+          <span class="text-danger small" *ngIf="!form.controls['password'].valid && form.controls['password'].touched">Паролата трябва да е между 6 и 15 символа.</span>
+          <input class="form-control" type="password" name="password" [formControl]="form.controls['password']" placeholder="Парола"
+            [class.input-error]="!form.controls['password'].valid && form.controls['password'].touched" validateEqual="confirmPassword"
+            reverse="true" required>
+
+          <span class="text-danger small" *ngIf="!form.controls['confirmPassword'].valid && form.controls['confirmPassword'].touched">Паролите не съвпадат.</span>
+          <input class="form-control" type="password" name="confirmPassword" [formControl]="form.controls['confirmPassword']" placeholder="Потвърди паролата"
+            [class.input-error]="!form.controls['confirmPassword'].valid && form.controls['confirmPassword'].touched" validateEqual="password"
+            required>
+
+          <span class="text-danger small" *ngIf="!form.controls['email'].valid && form.controls['email'].touched">Въведеният E-Mail не е валиден.</span>
+          <input class="form-control" type="email" name="email" [formControl]="form.controls['email']"
+            placeholder="E-Mail" [class.input-error]="!form.controls['email'].valid && form.controls['email'].touched" required>
+
+          <span class="text-danger small" *ngIf="!form.controls['firstName'].valid && form.controls['firstName'].touched">Името трябва да е между 3 и 20 символа.</span>
+          <input class="form-control" type="text" name="firstName" [formControl]="form.controls['firstName']" placeholder="Име" [class.input-error]="!form.controls['firstName'].valid && form.controls['firstName'].touched"
+            required>
+
+          <span class="text-danger small" *ngIf="!form.controls['lastName'].valid && form.controls['lastName'].touched">Фамилията трябва да е между 3 и 20 символа.</span>
+          <input class="form-control" type="text" name="lastName" [formControl]="form.controls['lastName']" placeholder="Фамилия" [class.input-error]="!form.controls['lastName'].valid && form.controls['lastName'].touched"
+            required>
+
+          <span class="text-danger small" *ngIf="!form.controls['age'].valid && form.controls['age'].touched">Въведете възраст между 6 и 100 години.<br></span>
+          <input class="form-control" type="number" name="age" [formControl]="form.controls['age']" placeholder="Възраст" [class.input-error]="!form.controls['age'].valid && form.controls['age'].touched"
+            required>
+
+          <span class="text-danger small" *ngIf="!form.controls['gender'].valid && form.controls['gender'].touched">Не сте въвели пол.<br></span>
+          <label id="gender-label" for="gender">Пол:</label>
+          <select id="gender-select" class="form-control" [formControl]="form.controls['gender']" name="gender" [class.input-error]="!form.controls['gender'].valid && form.controls['gender'].touched">
+            <option value="male">Мъж</option>
+            <option value="female">Жена</option>
+            <option value="unspecified">Друг</option>    
+          </select>
+          <hr>
+          <button type="submit" [disabled]="isDisabled" class="btn btn-block orange">Регистрирай се</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<simple-notifications [options]="notificationOptions"></simple-notifications>
