@@ -53,7 +53,7 @@ module.exports = (data) => {
 
             data.findUserByCredentials(username)
                 .then(user => {
-                    if (!user.authenticate(password)) {
+                    if (!user || !user.authenticate(password)) {
                         res.status(401).json({
                             success: false,
                             message: 'Incorrect username or password!'
@@ -64,10 +64,16 @@ module.exports = (data) => {
                     let token = jwt.sign(user, 'secret-as-shit', {
                         expiresIn: 60 * 60 * 24 // 24 hours in seconds
                     });
+
+                    let userToReturn = JSON.parse(JSON.stringify(user));
+                    delete userToReturn.passHash;
+                    delete userToReturn.salt;
+
                     res.status(200).json({
                         success: true,
                         message: `User ${user.username} successfully logged in!`,
-                        token: 'JWT ' + token
+                        token: 'JWT ' + token,
+                        user: userToReturn
                     });
                 });
         },

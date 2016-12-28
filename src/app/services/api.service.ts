@@ -6,57 +6,57 @@ import 'rxjs/add/observable/throw';
 
 @Injectable()
 export class ApiService {
-	private headers = new Headers({
-		'Content-Type': 'application/json'
-	});
-	private options = new RequestOptions({
-		headers: this.headers
-	});
-	
-	private apiUrl = 'http://localhost:3000';
+    private headers = new Headers({
+        'Content-Type': 'application/json'
+    });
+    private options = new RequestOptions({
+        headers: this.headers
+    });
 
-	constructor(private http: Http) { }
+    private apiUrl = 'http://localhost:3000';
 
-	get(path: string): Observable<any> {
-		return this.http.get(`${this.apiUrl}/${path}`, this.options)
-			.map(this.checkForError)
-			.catch(err => Observable.throw(err))
-			.map(this.getJson);
-	}
+    constructor(private http: Http) { }
 
-	post(path: string, body): Observable<any> {
-		return this.http.post(`${this.apiUrl}/${path}`, JSON.stringify(body), this.options)
-			.map(this.checkForError)
-			.catch(err => Observable.throw(err))
-			.map(this.getJson);
-	}
+    get(path: string): Observable<any> {
+        return this.http.get(`${this.apiUrl}/${path}`, this.options)
+            .map(this.checkForError)
+            .catch(err => Observable.throw(err))
+            .map(this.getJson);
+    }
 
-	put(path: string, body): Observable<any> {
-		return this.http.put(`${this.apiUrl}/${path}`, JSON.stringify(body), this.options)
-			.map(this.checkForError)
-			.catch(err => Observable.throw(err))
-			.map(this.getJson);
-	}
+    post(path: string, body): Observable<any> {
+        return this.http.post(`${this.apiUrl}/${path}`, JSON.stringify(body), this.options)
+            .map(this.checkForError)
+            .catch(err => Observable.throw(err))
+            .map(this.getJson);
+    }
 
-	delete(path: string): Observable<any> {
-		return this.http.delete(`${this.apiUrl}/${path}`, this.options)
-			.map(this.checkForError)
-			.catch(err => Observable.throw(err))
-			.map(this.getJson);
-	}
+    put(path: string, body): Observable<any> {
+        return this.http.put(`${this.apiUrl}/${path}`, JSON.stringify(body), this.options)
+            .map(this.checkForError)
+            .catch(err => Observable.throw(err))
+            .map(this.getJson);
+    }
 
-	private getJson(res: Response) {
-		return res.json();
-	}
+    delete(path: string): Observable<any> {
+        return this.http.delete(`${this.apiUrl}/${path}`, this.options)
+            .map(this.checkForError)
+            .catch(err => Observable.throw(err))
+            .map(this.getJson);
+    }
 
-	private checkForError(res: Response): Response {
-		if (res.status >= 200 && res.status < 300) {
-			return res;
-		}
+    private getJson(res: Response) {
+        return res.json();
+    }
 
-		let error = new Error(res.statusText);
-		error['response'] = res;
+    private checkForError(res: Response): Response {
+        if (res.status >= 200 && res.status < 300) {
+            return res;
+        }
 
-		throw error;
-	}
+        let error = new Error(res.statusText);
+        error['response'] = res;
+
+        throw error;
+    }
 }

@@ -6,11 +6,15 @@
         <hr>
       </div>
       <div class="card-content">
-        <form #loginForm="ngForm" (ngSubmit)="loginForm.reset()">
-          <input class="form-control" type="text" name="username" placeholder="Потребителско име" required>
+        <form [formGroup]="form" (ngSubmit)="submit(form.value)">
+          <span class="text-danger small" *ngIf="!form.controls['username'].valid && form.controls['username'].touched">Не сте въвели потребителско име.</span>
+          <input class="form-control" [formControl]="form.controls['username']" [class.input-error]="!form.controls['username'].valid && form.controls['username'].touched"
+            type="text" name="username" placeholder="Потребителско име">
 
-          <input class="form-control" type="password" name="password" placeholder="Парола" required>
-          
+          <span class="text-danger small" *ngIf="!form.controls['password'].valid && form.controls['password'].touched">Не сте въвели парола.</span>
+          <input class="form-control" [formControl]="form.controls['password']" [class.input-error]="!form.controls['username'].valid && form.controls['username'].touched"
+            type="password" name="password" placeholder="Парола">
+
           <hr>
           <button type="submit" class="btn btn-block orange">Вход</button>
         </form>
@@ -18,3 +22,5 @@
     </div>
   </div>
 </div>
+
+<simple-notifications [options]="notificationOptions"></simple-notifications>

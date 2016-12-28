@@ -14,7 +14,7 @@ app.use(expressSession({
     cookie: { maxAge: 60 * 60 * 24 },
     rolling: true,
     resave: true,
-    saveUninitialized: false
+    saveUninitialized: true
 }));
 app.use((req, res, next) => {
     res.header('Access-Control-Allow-Origin', '*');
