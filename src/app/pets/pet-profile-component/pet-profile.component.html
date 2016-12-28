@@ -2,18 +2,18 @@
     <div class="col-md-6 col-md-offset-3 well">
         <img class="img-responsive" src="{{pet.imgSrc}}" alt="{{pet.name}}">
         <ul class="nav nav-tabs">
-            <li><a routerLink="/animals/{{pet.id}}/about">За Мен</a></li>
-            <li><a routerLink="/animals/{{pet.id}}/familytree">Родословно Дърво</a></li>
-            <li><a routerLink="/animals/{{pet.id}}/pictures">Снимки</a></li>
-            <li><a routerLink="/animals/{{pet.id}}/videos">Видеа</a></li>
+            <li><a routerLink="/animals/{{pet.id}}/about" (click)="showAbout()">За Мен</a></li>
+            <li><a routerLink="/animals/{{pet.id}}/familytree" (click)="showFamilyTree()">Родословно Дърво</a></li>
+            <li><a routerLink="/animals/{{pet.id}}/pictures" (click)="showPictures()">Снимки</a></li>
+            <li><a routerLink="/animals/{{pet.id}}/videos" (click)="showVideos()">Видеа</a></li>
             <li>
-                <a href="#">Осинови Ме!</a>
+                <a (click)="consoleLog()">Осинови Ме!</a>
             </li>
         </ul>
-        <h1 *ngIf="url[2] == 'about'">About</h1>
-        <h1 *ngIf="url[2] == 'familytree'">Famili Tree</h1>
-        <h1 *ngIf="url[2] == 'pictures'">pictures</h1>
-        <h1 *ngIf="url[2] == 'videos'">Videos</h1>
+        <h1 *ngIf="url[2] == 'about' && isAboutShowed == true">{{pet.about}}</h1>
+        <h1 *ngIf="url[2] == 'familytree' && isFamilyTreeShowed == true">Famili Tree</h1>
+        <h1 *ngIf="url[2] == 'pictures' && isPicturesShowed == true">pictures</h1>
+        <h1 *ngIf="url[2] == 'videos' && isVideosShowed == true">Videos</h1>
     </div>
 </div>
 <div class="row" *ngFor='let post of pet.posts'>
@@ -23,11 +23,13 @@
             <li *ngIf="post.info.where"><small>Във: <a href="#">{{post.info.where}}</a></small></li>
             <li *ngIf="post.info.with"><small>Със: <a href="#">{{post.info.with}}</a></small></li>
         </ul>
-        <img class="img-responsive" src="{{post.imgSrc}}" alt="">
-        <p class="well" style="background-color:white">{{post.description}}</p>
+        <img class="img img-responsive" src="{{post.imgSrc}}" alt="">
+        <div class="well">
+            <p>{{post.description}}</p>
+        </div>
         <hr>
         <p><small><strong>Snoopy: </strong>eh chiche, kvo malko kutre beshe, sa kuf zul mastiff stana :D</small></p>
         <p><small><strong>Pesho: </strong>Vzimai primer i si qj Pedigrito !</small></p>
         <hr>
-</article>
+    </article>
 </div>
