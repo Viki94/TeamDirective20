@@ -17,6 +17,10 @@ module.exports = (data) => {
                 return res.status(400).json({ message: 'Password should be between 6 and 15 symbols!' });
             }
 
+            if (req.body.password !== req.body.confirmPassword) {
+                return res.status(400).json({ message: 'Passwords do not match!' });
+            }
+
             data.findUserByCredentials(req.body.username)
                 .then((user) => {
                     if (user) {

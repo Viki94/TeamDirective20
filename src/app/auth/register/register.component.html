@@ -45,9 +45,11 @@
             <option value="unspecified">Друг</option>    
           </select>
           <hr>
-          <button type="submit" class="btn btn-block orange">Регистрирай се</button>
+          <button type="submit" [disabled]="isDisabled" class="btn btn-block orange">Регистрирай се</button>
         </form>
       </div>
     </div>
   </div>
 </div>
+
+<simple-notifications [options]="notificationOptions"></simple-notifications>
