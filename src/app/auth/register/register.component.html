@@ -22,8 +22,8 @@
             required>
 
           <span class="text-danger small" *ngIf="!form.controls['email'].valid && form.controls['email'].touched">Въведеният E-Mail не е валиден.</span>
-          <input class="form-control" type="email" name="email" [formControl]="form.controls['email']" placeholder="E-Mail" [class.input-error]="!form.controls['email'].valid && form.controls['email'].touched"
-            required>
+          <input class="form-control" type="email" name="email" [formControl]="form.controls['email']"
+            placeholder="E-Mail" [class.input-error]="!form.controls['email'].valid && form.controls['email'].touched" required>
 
           <span class="text-danger small" *ngIf="!form.controls['firstName'].valid && form.controls['firstName'].touched">Името трябва да е между 3 и 20 символа.</span>
           <input class="form-control" type="text" name="firstName" [formControl]="form.controls['firstName']" placeholder="Име" [class.input-error]="!form.controls['firstName'].valid && form.controls['firstName'].touched"
@@ -33,7 +33,7 @@
           <input class="form-control" type="text" name="lastName" [formControl]="form.controls['lastName']" placeholder="Фамилия" [class.input-error]="!form.controls['lastName'].valid && form.controls['lastName'].touched"
             required>
 
-          <span class="text-danger small" *ngIf="!form.controls['age'].valid && form.controls['age'].touched">Не сте въвели възраст.<br></span>
+          <span class="text-danger small" *ngIf="!form.controls['age'].valid && form.controls['age'].touched">Въведете възраст между 6 и 100 години.<br></span>
           <input class="form-control" type="number" name="age" [formControl]="form.controls['age']" placeholder="Възраст" [class.input-error]="!form.controls['age'].valid && form.controls['age'].touched"
             required>
 

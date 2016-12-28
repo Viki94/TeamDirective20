@@ -6,20 +6,33 @@ const mongoose = require('mongoose'),
 
 let userSchema = new Schema({
     username: {
-        type: String, unique: true,
+        type: String,
+        minlength: 6,
+        maxlength: 15,
+        unique: true,
         required: true
     },
     firstName: {
         type: String,
+        minlength: 3,
+        maxlength: 20,
         required: true
     },
     lastName: {
         type: String,
+        minlength: 3,
+        maxlength: 20,
         required: true
     },
-    age: Number,
+    age: {
+        type: Number,
+        required: true,
+        min: 6,
+        max: 100
+    },
     gender: {
         type: String,
+        required: true,
         enum: ['male', 'female', 'unspecified']
     },
     passHash: String,
