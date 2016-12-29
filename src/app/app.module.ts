@@ -1,11 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-<<<<<<< HEAD
 import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
-=======
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
->>>>>>> refs/remotes/origin/master
+import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { SimpleNotificationsModule } from 'angular2-notifications';
 
@@ -22,41 +18,19 @@ import { EqualityValidatorDirective } from './directives/equality-validator.dire
 
 // components
 import { AppComponent } from './app.component';
-<<<<<<< HEAD
-import { MainNavigationComponent } from './navigation/main-navigation/main-navigation.component';
-import { FooterComponent } from './navigation/footer/footer.component';
 
 import { AdoptAPetComponent } from './pets/adopt-a-pet-component/adopt-a-pet.component';
 import { PetProfileComponent } from './pets/pet-profile-component/pet-profile.component';
 
-=======
->>>>>>> refs/remotes/origin/master
 import { HomeComponent } from './home/home.component';
 import { FactsComponent } from './components/facts/facts.component';
 import { FactFormComponent } from './components/fact-form/fact-form.component';
+import { CommentsComponent } from './components/comments/comments.component';
+import { CommentFormComponent } from './components/comment-form/comment-form.component';
 import { MainNavigationComponent, FooterComponent } from './navigation/index';
 import { RegisterComponent, LoginComponent } from './auth/index';
 
 @NgModule({
-<<<<<<< HEAD
-  declarations: [
-    AppComponent,
-    MainNavigationComponent,
-    FooterComponent,
-    AdoptAPetComponent,
-    HomeComponent,
-    PetProfileComponent
-  ],
-  imports: [
-    BrowserModule,
-    CommonModule,
-    FormsModule,
-    HttpModule,
-    AppRoutingModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
-=======
     declarations: [
         EqualityValidatorDirective,
         AppComponent,
@@ -65,8 +39,12 @@ import { RegisterComponent, LoginComponent } from './auth/index';
         HomeComponent,
         FactsComponent,
         FactFormComponent,
+        CommentsComponent,
+        CommentFormComponent,
         RegisterComponent,
-        LoginComponent
+        LoginComponent,
+        AdoptAPetComponent,
+        PetProfileComponent
     ],
     imports: [
         BrowserModule,
@@ -74,7 +52,8 @@ import { RegisterComponent, LoginComponent } from './auth/index';
         ReactiveFormsModule,
         HttpModule,
         AppRoutingModule,
-        SimpleNotificationsModule
+        SimpleNotificationsModule,
+        CommonModule,
     ],
     providers: [
         ApiService,
@@ -83,6 +62,5 @@ import { RegisterComponent, LoginComponent } from './auth/index';
         DataService
     ],
     bootstrap: [AppComponent]
->>>>>>> refs/remotes/origin/master
 })
 export class AppModule { }

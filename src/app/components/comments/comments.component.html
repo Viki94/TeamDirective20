@@ -1,0 +1,22 @@
+<button (click)="addComment()" class="btn btn-success">Add Comment</button>
+
+<ul *ngIf="comments" class="list">
+    <li *ngFor="let comment of comments">
+        <div class="row">
+            <div class="col-xs-1 text-right">
+                <p class="comment-content">{{comment.content}}</p>
+            </div>
+            <div class="col-xs-4 text-left">
+                <strong>{{comment.creator}}</strong>
+                <br>
+                <small>{{comment.date}}</small>
+                <br>
+                <br>
+                <br>
+            </div>
+        </div>
+    </li>
+</ul>
+<div *ngIf="!comments.length">
+    No Comments yet!
+</div>

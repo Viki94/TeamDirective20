@@ -23,13 +23,24 @@
             <li *ngIf="post.info.where"><small>Във: <a href="#">{{post.info.where}}</a></small></li>
             <li *ngIf="post.info.with"><small>Със: <a href="#">{{post.info.with}}</a></small></li>
         </ul>
-        <img class="img img-responsive" src="{{post.imgSrc}}" alt="">
+        <div class="row">
+            <div class="col-md-6">
+                <img class="img img-responsive" src="{{post.imgSrc}}" alt="">
+            </div>
+            <div class="col-md-6">
+                <button class="btn btn-default">Like</button>
+                <a href="#">{{post.likes.length}}</a>
+            </div>
+        </div>
         <div class="well">
             <p>{{post.description}}</p>
         </div>
         <hr>
-        <p><small><strong>Snoopy: </strong>eh chiche, kvo malko kutre beshe, sa kuf zul mastiff stana :D</small></p>
-        <p><small><strong>Pesho: </strong>Vzimai primer i si qj Pedigrito !</small></p>
+        <div *ngFor="let comment of post.comments">
+        <p><small><strong>{{comment.creator}}: </strong> {{comment.content}}</small></p>
+        </div>
         <hr>
+        <input placeholder="Enter your comment here">
+        <button class="btn btn-default">Add</button>
     </article>
 </div>

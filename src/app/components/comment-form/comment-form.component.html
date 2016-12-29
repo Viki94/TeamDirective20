@@ -1,0 +1,24 @@
+<form #commentsForm="ngForm" (ngSubmit)="create(); commentForm.reset()">
+    <div class="row">
+        <div class="col-xs-offset-1 col-xs-7">
+            <div class="form-group">
+                <input class="form-control" type="text" name="creator" [(ngModel)]="comment.creator" #tbCreator="ngModel" required placeholder="Enter comment creator"
+                />
+                <div [hidden]="tbCreator.untouched || tbCreator.valid">
+                    Invalid fact title
+                </div>
+            </div>
+            <div class="form-group">
+                <input class="form-control" type="text" name="content" [(ngModel)]="comment.content" placeholder="Enter your comment here"
+                    required />
+            </div>
+            <div class="form-group">
+                <input class="form-control" type="text" name="date" [(ngModel)]="comment.date" placeholder="Enter comment date">
+            </div>
+            <div class="form-group">
+                <button class="btn btn-success">Create</button>
+                <button (click)="return()" class="btn btn-danger">Return</button>
+            </div>
+        </div>
+    </div>
+</form>
