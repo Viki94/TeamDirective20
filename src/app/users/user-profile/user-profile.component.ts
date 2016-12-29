@@ -1,18 +1,98 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Injectable } from '@angular/core';
+import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
+import { NotificationsService } from 'angular2-notifications';
+import { EmailValidator, RangeValidator } from '../../auth/custom-validators/index';
+import { UsersService } from '../../services/index';
 
+@Injectable()
 @Component({
     selector: 'app-user-profile',
     templateUrl: './user-profile.component.html',
     styleUrls: ['./user-profile.component.css']
 })
 export class UserProfileComponent implements OnInit {
-    user: Object;
-    adoptedPets: Object;
-    addedAnimals: Object;
-    addedCampaigns: Object;
-    addedFacts: Object;
-    addedGalleryImages: Object;
-    constructor() { }
+    private form: FormGroup;
+    private user: Object;
+    private adoptedPets: Object;
+    private addedAnimals: Object;
+    private addedCampaigns: Object;
+    private addedFacts: Object;
+    private addedGalleryImages: Object;
+    private showEdit = false;
+    private isBtnDisabled = false;
+    private notificationOptions: Object;
+
+    constructor(
+        private formBuilder: FormBuilder,
+        private usersService: UsersService,
+        private notificationsService: NotificationsService,
+        private router: Router
+    ) {
+        this.form = this.formBuilder.group({
+            firstName: ['', Validators.compose([Validators.minLength(3), Validators.maxLength(20)])],
+            lastName: ['', Validators.compose([Validators.minLength(3), Validators.maxLength(20)])],
+            email: [''],
+            age: [null, ([RangeValidator.isInRange])],
+            gender: [''],
+            profilePicture: ['']
+        });
+
+        this.notificationOptions = {
+            timeOut: 2000,
+            showProgressBar: false,
+            animate: 'fromRight'
+        };
+    }
+
+    showEditProfile() {
+        this.showEdit = true;
+    }
+
+    showAddedDetails() {
+        this.showEdit = false;
+    }
+
+    editProfileInfo(user: Object) {
+        let isValid = false,
+            newData = {};
+        Object.keys(user)
+            .forEach(key => {
+                if (user[key] && typeof user[key] === 'string') {
+                    newData[key] = user[key];
+                    isValid = true;
+                } else if (user[key]) {
+                    newData[key] = user[key];
+                    isValid = true;
+                }
+            });
+        console.log(newData);
+        if (!isValid) {
+            this.notificationsService.error('Възникна грешка!', 'Не сте въвели данни!');
+            return;
+        }
+
+        user['username'] = JSON.parse(localStorage.getItem('currentUser'))['username'];
+        this.usersService.editProfile(user)
+            .subscribe(res => {
+                this.showEdit = false;
+                Object.keys(newData)
+                    .forEach(key => {
+                        this.user[key] = newData[key];
+                    });
+                localStorage.setItem('currentUser', JSON.stringify(this.user));
+                this.form.reset();
+                this.router.navigate(['/profile']);
+                this.notificationsService.success('Успешна редакция!', 'Обратно към профила...');
+            },
+            err => {
+                this.notificationsService.error('Възникна грешка!', 'Моля, въведете коректни данни!');
+                this.isBtnDisabled = true;
+                setTimeout(() => {
+                    this.isBtnDisabled = false;
+                }, 2000);
+            });
+    }
 
     ngOnInit() {
         this.user = JSON.parse(localStorage.getItem('currentUser'));

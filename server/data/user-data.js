@@ -98,14 +98,14 @@ module.exports = (models) => {
             });
         },
 
-        updateUserInfo(user, newData) {
+        updateUserInfo(username, newData) {
             return new Promise((resolve, reject) => {
-                User.update({ username: user.username }, newData, (err) => {
+                User.update({ username: username }, newData, (err) => {
                     if (err) {
                         return reject(err);
                     }
 
-                    return resolve(user);
+                    return resolve(username);
                 });
             });
         }
