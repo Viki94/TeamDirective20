@@ -20,7 +20,7 @@ module.exports = (models) => {
             });
         },
 
-        getAll() {
+        getAllFacts() {
             return new Promise((resolve, reject) => {
                 Fact.find({}, (err, facts) => {
                     if (err) {

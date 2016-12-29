@@ -23,7 +23,7 @@ export class FactFormComponent implements OnInit {
         this.fact = new Fact('', '', '');
     }
 
-    create() {
+    createFact() {
         this.fact.img = this.fact.img || DEFAULT_FACT_IMG;
 
         this.factsService.create(this.fact).subscribe(()=> {

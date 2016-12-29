@@ -10,8 +10,8 @@ export class FactsService {
     constructor(private apiService: ApiService) {
     }
 
-    getAll() {
-        return this.apiService.get('api/facts/get-all');
+    getAllFacts() {
+        return this.apiService.get('api/facts/get-all-facts');
     }
 
     create(fact: Fact): Observable<any>{

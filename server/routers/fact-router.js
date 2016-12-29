@@ -9,7 +9,7 @@ module.exports = function (app, factData) {
 
     router
         .post('/create-fact', controllers.createFact)
-        .get('/get-all', controllers.getAll);    
+        .get('/get-all-facts', controllers.getAllFacts);    
 
     app.use('/api/facts', router);
 };

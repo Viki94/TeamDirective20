@@ -22,8 +22,8 @@ module.exports = (factData) => {
                 });
         },
 
-        getAll(req, res) {
-            factData.getAll()
+        getAllFacts(req, res) {
+            factData.getAllFacts()
                 .then((facts) => {
                     res.status(200).json(facts);
                 })
