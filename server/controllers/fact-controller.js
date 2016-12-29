@@ -1,3 +1,5 @@
+/* globals module */
+
 'use strict';
 
 module.exports = (factData) => {
@@ -23,7 +25,7 @@ module.exports = (factData) => {
         getAll(req, res) {
             factData.getAll()
                 .then((facts) => {
-                     res.status(200).json(facts);
+                    res.status(200).json(facts);
                 })
                 .catch((err) => {
                     res.status(500).json({

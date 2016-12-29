@@ -1,3 +1,5 @@
+/* globals module require __dirname */
+
 const express = require('express'),
     expressSession = require('express-session'),
     cookieParser = require('cookie-parser'),

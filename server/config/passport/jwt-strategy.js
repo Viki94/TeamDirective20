@@ -1,11 +1,12 @@
+/* globals module require */
+
 'use strict';
 
 const JwtStrategy = require('passport-jwt').Strategy,
     ExtractJwt = require('passport-jwt').ExtractJwt,
-    data = require('../../data'),
-    User = require('../../data/models/user-model');
+    data = require('../../data');
 
-let options = {}
+let options = {};
 options.jwtFromRequest = ExtractJwt.fromAuthHeader();
 options.secretOrKey = 'secret-as-shit';
 

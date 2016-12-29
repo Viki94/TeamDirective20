@@ -1,3 +1,5 @@
+/* globals module require */
+
 'use strict';
 
 const LocalStrategy = require('passport-local');

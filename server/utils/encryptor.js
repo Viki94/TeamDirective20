@@ -1,3 +1,5 @@
+/* globals module require */
+
 'use strict';
 
 const crypto = require('crypto');

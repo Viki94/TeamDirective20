@@ -1,3 +1,5 @@
+/* globals module require */
+
 'use strict';
 
 const passport = require('passport'),
@@ -81,7 +83,7 @@ module.exports = (data) => {
             req.logout();
             res.status(200).json({
                 success: true,
-                message: `User successfully logged out!`
+                message: 'User successfully logged out!'
             });
         },
         checkLogin(req, res) {

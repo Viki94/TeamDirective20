@@ -1,3 +1,5 @@
+/* globals module require __dirname */
+
 'use strict';
 
 const router = require('express').Router(),
