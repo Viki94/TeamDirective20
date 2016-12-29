@@ -9,7 +9,7 @@ import { SimpleNotificationsModule } from 'angular2-notifications';
 import { AppRoutingModule } from './app-routing.module';
 
 // services
-import { ApiService, AuthService, RouteGuardService } from './services/index';
+import { ApiService, AuthService, RouteGuardService, UsersService } from './services/index';
 import { FactsService } from './services/facts.service';
 import { DataService } from './services/data.service';
 
@@ -54,7 +54,8 @@ import { AddedContentComponent } from './users/added-content/added-content.compo
         AuthService,
         RouteGuardService,
         FactsService,
-        DataService
+        DataService,
+        UsersService
     ],
     bootstrap: [AppComponent]
 })

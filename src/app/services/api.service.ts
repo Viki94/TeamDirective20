@@ -34,15 +34,11 @@ export class ApiService {
 
     put(path: string, body): Observable<any> {
         return this.http.put(`${this.apiUrl}/${path}`, JSON.stringify(body), this.options)
-            .map(this.checkForError)
-            .catch(err => Observable.throw(err))
             .map(this.getJson);
     }
 
     delete(path: string): Observable<any> {
         return this.http.delete(`${this.apiUrl}/${path}`, this.options)
-            .map(this.checkForError)
-            .catch(err => Observable.throw(err))
             .map(this.getJson);
     }
 
