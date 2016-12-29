@@ -20,6 +20,7 @@ export class AuthService {
 
     logout() {
         localStorage.clear();
+        this.api.post('api/auth/logout', null);
     }
 
     verifyLogin() {

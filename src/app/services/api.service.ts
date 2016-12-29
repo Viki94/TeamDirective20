@@ -24,15 +24,11 @@ export class ApiService {
 
     get(path: string): Observable<any> {
         return this.http.get(`${this.apiUrl}/${path}`, this.options)
-            .map(this.checkForError)
-            .catch(err => Observable.throw(err))
             .map(this.getJson);
     }
 
     post(path: string, body): Observable<any> {
         return this.http.post(`${this.apiUrl}/${path}`, JSON.stringify(body), this.options)
-            .map(this.checkForError)
-            .catch(err => Observable.throw(err))
             .map(this.getJson);
     }
 

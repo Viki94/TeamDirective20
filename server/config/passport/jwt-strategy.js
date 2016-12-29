@@ -10,17 +10,15 @@ options.jwtFromRequest = ExtractJwt.fromAuthHeader();
 options.secretOrKey = 'secret-as-shit';
 
 let jwtStrategy = new JwtStrategy(options, (jwt_payload, done) => {
-    User.findOne({ id: jwt_payload.sub }, (err, user) => {
-        if (err) {
-            return done(err, false);
-        }
+    data.findUserById(jwt_payload._doc._id)
+        .then(user => {
+            if (user) {
+                return done(null, user);
+            }
 
-        if (user) {
-            return done(null, user);
-        }
-
-        return done(null, false);
-    });
+            return done(null, false);
+        })
+        .catch(err => done(err, false));
 });
 
 module.exports = jwtStrategy;
