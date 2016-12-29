@@ -24,6 +24,7 @@ import { FactFormComponent } from './components/fact-form/fact-form.component';
 import { MainNavigationComponent, FooterComponent } from './navigation/index';
 import { RegisterComponent, LoginComponent } from './auth/index';
 import { UserProfileComponent } from './users/user-profile/user-profile.component';
+import { AddedContentComponent } from './users/added-content/added-content.component';
 
 @NgModule({
     declarations: [
@@ -36,7 +37,8 @@ import { UserProfileComponent } from './users/user-profile/user-profile.componen
         FactFormComponent,
         RegisterComponent,
         LoginComponent,
-        UserProfileComponent
+        UserProfileComponent,
+        AddedContentComponent
     ],
     imports: [
         RouterModule,

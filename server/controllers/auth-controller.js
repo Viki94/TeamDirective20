@@ -2,8 +2,7 @@
 
 'use strict';
 
-const passport = require('passport'),
-    characterEscaper = require('../utils/character-escaper'),
+const characterEscaper = require('../utils/character-escaper'),
     jwt = require('jsonwebtoken');
 
 
@@ -14,6 +13,13 @@ module.exports = (data) => {
                 res.status(401).json({ success: false, message: 'Empty request received!' });
                 return;
             }
+
+            Object.keys(req.body)
+                .forEach(key => {
+                    if (typeof req.body[key] === 'string') {
+                        req.body[key] = characterEscaper(req.body[key]);
+                    }
+                });
 
             if (req.body.password.length < 6 || req.body.password.length > 15) {
                 return res.status(400).json({ message: 'Password should be between 6 and 15 symbols!' });
@@ -97,7 +103,7 @@ module.exports = (data) => {
                         let result = {
                             success: true
                         };
-                        
+
                         res.status(200).json(result);
                     })
                     .catch(err => {

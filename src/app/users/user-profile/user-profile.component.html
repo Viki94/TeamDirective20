@@ -1,3 +1,32 @@
-<p>
-  user-profile works!
-</p>
+<div class="row text-right">
+  <h4 class="main-title">
+    {{user.username}}
+  </h4>
+</div>
+<div class="row">
+  <div class="col-md-3 text-center">
+    <div class="card-panel">
+      <div>
+        <img class="img-circle img-responsive" [src]="user.profilePicture"
+          [alt]="user.username">
+      </div>
+      <hr>
+      <div class="card-content text-center">
+        <p class="bold">{{user.firstName}} {{user.lastName}}</p>
+        <p>E-Mail: {{user.email}}</p>
+        <p>Възраст: {{user.age}}</p>
+        <p>Пол: {{user.gender}}</p>
+      </div>
+      <div>
+        <button class="btn btn-block orange">Редактирай</button>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-9">
+    <app-added-content [options]="adoptedPets"></app-added-content>
+    <app-added-content [options]="addedAnimals"></app-added-content>
+    <app-added-content [options]="addedCampaigns"></app-added-content>
+    <app-added-content [options]="addedFacts"></app-added-content>
+    <app-added-content [options]="addedGalleryImages"></app-added-content>
+  </div>
+</div>

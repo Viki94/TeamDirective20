@@ -1,0 +1,27 @@
+<div class="row details-container">
+  <div class="card">
+    <div class="link-title card-content text-center panel-heading" data-toggle="collapse" [attr.data-target]="'#' + options.id">
+      <p>{{options.title}}</p>
+    </div>
+    <div id="{{options.id}}" class="card-content collapse">
+      <div *ngIf="!options.list.length" class="text-center">
+        {{options.nothingAddedMessage}}
+      </div>
+      <table *ngIf="options.list.length" class="table table-hover table-responsive table-striped">
+        <thead class="table-header">
+          <th class="text-center col-md-2"><span class="glyphicon glyphicon-heart"></span></th>
+          <th class="text-center col-md-5">{{options.trHeadTitle}}</th>
+          <th class="text-center col-md-5">{{options.trHeadDate}}</th>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of options.list">
+            <td><img class="img-circle img-responsive" [src]="item.imgUrl"
+                [alt]="item.name"></td>
+            <td class="text-center"><a>{{item.name}}</a></td>
+            <td class="text-center">{{item.addedOn}}</td>
+          </tr>          
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

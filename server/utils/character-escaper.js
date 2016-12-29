@@ -2,8 +2,8 @@
 
 'use strict';
 
-module.exports = (string) => {
-    return string
+module.exports = (str) => {
+    return str
         .replace(/&/g, '&amp;')
         .replace(/>/g, '&gt;')
         .replace(/</g, '&lt;')

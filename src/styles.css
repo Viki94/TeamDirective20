@@ -6,3 +6,16 @@ body, html {
 main {
     min-height: 77.5%;
 }
+
+.btn, .btn:hover, .btn:active {
+    color: white;
+}
+
+.link-title, .link-title p {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.table-header {
+    border-bottom: 1px solid orange;
+}
