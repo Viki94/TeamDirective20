@@ -1,12 +1,14 @@
 import { Injectable } from '@angular/core';
 import { Http, RequestOptions, Headers } from '@angular/http';
-import { Observable } from 'rxjs/Observable';
-
 import { ApiService } from './api.service';
 
 @Injectable()
 export class AuthService {
-    constructor(private api: ApiService, private http: Http) { }
+    isLoggedIn: boolean;
+
+    constructor(private api: ApiService, private http: Http) {
+        this.isLoggedIn = !!localStorage.getItem('token');
+    }
 
     register(user: Object) {
         return this.api.post('api/auth/register', user);
