@@ -7,7 +7,7 @@ module.exports = (commentData) => {
                 .then(() => {
                     res.status(201).json({
                         success: true,
-                        message: `Comment ${req.body.title} succesfully created!`
+                        message: `Comment ${req.body.content} succesfully created!`
                     });
                 })
                 .catch((err) => {

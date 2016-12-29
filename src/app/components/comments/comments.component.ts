@@ -27,5 +27,6 @@ export class CommentsComponent implements OnInit {
 
     addComment() {
         this.router.navigate(['comment-form']);
+        console.log(this.comments);
     }
 };

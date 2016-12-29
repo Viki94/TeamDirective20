@@ -4,7 +4,7 @@ module.exports = (models) => {
     var Comment = models.Comment;
 
     return {
-        createComment(factObject) {
+        createComment(commentObject) {
             var comment = new Comment(commentObject);
 
             return new Promise((resolve, reject) => {

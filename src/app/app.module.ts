@@ -12,6 +12,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { ApiService, AuthService } from './services/index';
 import { FactsService } from './services/facts.service';
 import { DataService } from './services/data.service';
+import {CommentsService} from './services/comments.service';
 
 // directives
 import { EqualityValidatorDirective } from './directives/equality-validator.directive';
@@ -59,7 +60,8 @@ import { RegisterComponent, LoginComponent } from './auth/index';
         ApiService,
         AuthService,
         FactsService,
-        DataService
+        DataService,
+        CommentsService
     ],
     bootstrap: [AppComponent]
 })
