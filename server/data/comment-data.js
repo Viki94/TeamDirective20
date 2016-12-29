@@ -18,7 +18,7 @@ module.exports = (models) => {
             });
         },
 
-        getAll() {
+        getAllComments() {
             return new Promise((resolve, reject) => {
                 Comment.find({}, (err, comments) => {
                     if (err) {

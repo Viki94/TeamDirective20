@@ -17,7 +17,7 @@ export class CommentsComponent implements OnInit {
 
     ngOnInit() {
         this.model = new Comment('', '', '');
-        this.commentsService.getAll()
+        this.commentsService.getAllComments()
             .subscribe(comments => {
                 this.comments = comments.map(comment => {
                     return Object.assign({}, comment, { content: comment.content})

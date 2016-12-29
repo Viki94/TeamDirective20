@@ -7,7 +7,7 @@ module.exports = function (app, commentData) {
 
     router
         .post('/create-comment', controllers.createComment)
-        .get('/get-all', controllers.getAll);    
+        .get('/get-all', controllers.getAllComments);    
 
     app.use('/api/comments', router);
 };

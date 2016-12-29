@@ -10,7 +10,7 @@ export class CommentsService {
     constructor(private apiService: ApiService) {
     }
 
-    getAll() {
+    getAllComments() {
         return this.apiService.get('api/comments/get-all');
     }
 

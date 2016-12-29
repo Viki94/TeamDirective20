@@ -20,8 +20,8 @@ module.exports = (commentData) => {
                 });
         },
 
-        getAll(req, res) {
-            commentData.getAll()
+        getAllComments(req, res) {
+            commentData.getAllComments()
                 .then((comments) => {
                      res.status(200).json(comments);
                 })
