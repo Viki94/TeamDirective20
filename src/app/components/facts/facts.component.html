@@ -1,22 +1,24 @@
-<button (click)="addFact()" class="btn btn-success">Добавяне на любопитен факт</button>
+<div class="container">
+    <button (click)="addFact()" class="btn btn-success">Добавяне на любопитен факт</button>
 
-<ul *ngIf="facts" class="list">
-    <li *ngFor="let fact of facts">
-        <div class="row">
-            <div class="col-xs-1 text-right">
-                <img class="fact-image" [src]="fact.img">
+    <ul *ngIf="facts" class="list">
+        <li *ngFor="let fact of facts">
+            <div class="row">
+                <div class="col-xs-1 text-right">
+                    <img class="fact-image" [src]="fact.img">
+                </div>
+                <div class="col-xs-4 text-left">
+                    <strong>Заглавие: {{fact.title}}</strong>
+                    <br>
+                    <small><b>Описание:</b> {{fact.description}}</small>
+                    <br>
+                    <br>
+                    <br>
+                </div>
             </div>
-            <div class="col-xs-4 text-left">
-                <strong>Заглавие: {{fact.title}}</strong>
-                <br>
-                <small><b>Описание:</b> {{fact.description}}</small>
-                <br>
-                <br>
-                <br>
-            </div>
-        </div>
-    </li>
-</ul>
-<div *ngIf="!facts.length">
-    Все още няма добвени факти!
+        </li>
+    </ul>
+    <div *ngIf="!facts.length">
+        Все още няма добвени факти!
+    </div>
 </div>
