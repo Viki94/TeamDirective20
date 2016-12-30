@@ -1,77 +1,79 @@
-<div class="row text-right">
-  <h4 class="main-title">
-    {{user.username}}
-  </h4>
-</div>
-<div class="row">
-  <div class="col-md-3 text-center">
-    <div class="card-panel">
-      <div>
-        <img class="img-circle img-responsive" [src]="user.profilePicture" [alt]="user.username">
-      </div>
-      <hr>
-      <div class="card-content text-center">
-        <p class="bold">{{user.firstName}} {{user.lastName}}</p>
-        <p>E-Mail: {{user.email}}</p>
-        <p>Възраст: {{user.age}}</p>
-        <p>Пол: {{user.gender}}</p>
-      </div>
-      <div>
-        <button class="btn btn-block orange" (click)="showEditProfile()">Редактирай</button>
+<div class="container">
+  <div class="row text-right">
+    <h4 class="main-title">
+      {{user.username}}
+    </h4>
+  </div>
+  <div class="row">
+    <div class="col-md-3 text-center">
+      <div class="card-panel">
+        <div>
+          <img class="img-circle img-responsive" [src]="user.profilePicture" [alt]="user.username">
+        </div>
+        <hr>
+        <div class="card-content text-center">
+          <p class="bold">{{user.firstName}} {{user.lastName}}</p>
+          <p>E-Mail: {{user.email}}</p>
+          <p>Възраст: {{user.age}}</p>
+          <p>Пол: {{user.gender}}</p>
+        </div>
+        <div>
+          <button class="btn btn-block orange" (click)="showEditProfile()">Редактирай</button>
+        </div>
       </div>
     </div>
-  </div>
-  <div [hidden]="showEdit" class="col-md-9">
-    <app-added-content [options]="adoptedPets"></app-added-content>
-    <app-added-content [options]="addedAnimals"></app-added-content>
-    <app-added-content [options]="addedCampaigns"></app-added-content>
-    <app-added-content [options]="addedFacts"></app-added-content>
-    <app-added-content [options]="addedGalleryImages"></app-added-content>
-  </div>
-  <div [hidden]="!showEdit" class="col-md-9">
-    <div class="row">
+    <div [hidden]="showEdit" class="col-md-9">
+      <app-added-content [options]="adoptedPets"></app-added-content>
+      <app-added-content [options]="addedAnimals"></app-added-content>
+      <app-added-content [options]="addedCampaigns"></app-added-content>
+      <app-added-content [options]="addedFacts"></app-added-content>
+      <app-added-content [options]="addedGalleryImages"></app-added-content>
+    </div>
+    <div [hidden]="!showEdit" class="col-md-9">
       <div class="row">
-        <div class="col-md-2">
-          <span (click)="showAddedDetails()" class="back-icon glyphicon glyphicon-circle-arrow-left"></span>
+        <div class="row">
+          <div class="col-md-2">
+            <span (click)="showAddedDetails()" class="back-icon glyphicon glyphicon-circle-arrow-left"></span>
+          </div>
+          <div class="col-md-8 text-center">
+            <h4>Редактиране на профила</h4>
+          </div>
         </div>
-        <div class="col-md-8 text-center">
-          <h4>Редактиране на профила</h4>
-        </div>
-      </div>
-      <hr>
-      <div class="row">
-        <div class="col-md-8 col-md-offset-2">
-          <div>
-            <div class="row text-center">
-              <span class="small text-success">Попълването на всички полета е условно.</span>
-              <hr>
-            </div>
-            <form [formGroup]="form" (ngSubmit)="editProfileInfo(form.value);">
-              <span class="text-danger small" *ngIf="!form.controls['email'].valid && form.controls['email'].touched">Въведеният E-Mail не е валиден.</span>
-              <input class="form-control" type="email" name="email" [formControl]="form.controls['email']" placeholder="E-Mail" [class.input-error]="!form.controls['email'].valid && form.controls['email'].touched">
+        <hr>
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2">
+            <div>
+              <div class="row text-center">
+                <span class="small text-success">Попълването на всички полета е условно.</span>
+                <hr>
+              </div>
+              <form [formGroup]="form" (ngSubmit)="editProfileInfo(form.value);">
+                <span class="text-danger small" *ngIf="!form.controls['email'].valid && form.controls['email'].touched">Въведеният E-Mail не е валиден.</span>
+                <input class="form-control" type="email" name="email" [formControl]="form.controls['email']" placeholder="E-Mail" [class.input-error]="!form.controls['email'].valid && form.controls['email'].touched">
 
-              <input class="form-control" type="text" name="profilePicture" [formControl]="form.controls['profilePicture']" placeholder="Профилна снимка (url)"
-                [class.input-error]="!form.controls['profilePicture'].valid && form.controls['profilePicture'].touched">
+                <input class="form-control" type="text" name="profilePicture" [formControl]="form.controls['profilePicture']" placeholder="Профилна снимка (url)"
+                  [class.input-error]="!form.controls['profilePicture'].valid && form.controls['profilePicture'].touched">
 
-              <span class="text-danger small" *ngIf="!form.controls['firstName'].valid && form.controls['firstName'].touched">Името трябва да е между 3 и 20 символа.</span>
-              <input class="form-control" type="text" name="firstName" [formControl]="form.controls['firstName']" placeholder="Име" [class.input-error]="!form.controls['firstName'].valid && form.controls['firstName'].touched">
+                <span class="text-danger small" *ngIf="!form.controls['firstName'].valid && form.controls['firstName'].touched">Името трябва да е между 3 и 20 символа.</span>
+                <input class="form-control" type="text" name="firstName" [formControl]="form.controls['firstName']" placeholder="Име" [class.input-error]="!form.controls['firstName'].valid && form.controls['firstName'].touched">
 
-              <span class="text-danger small" *ngIf="!form.controls['lastName'].valid && form.controls['lastName'].touched">Фамилията трябва да е между 3 и 20 символа.</span>
-              <input class="form-control" type="text" name="lastName" [formControl]="form.controls['lastName']" placeholder="Фамилия" [class.input-error]="!form.controls['lastName'].valid && form.controls['lastName'].touched">
+                <span class="text-danger small" *ngIf="!form.controls['lastName'].valid && form.controls['lastName'].touched">Фамилията трябва да е между 3 и 20 символа.</span>
+                <input class="form-control" type="text" name="lastName" [formControl]="form.controls['lastName']" placeholder="Фамилия" [class.input-error]="!form.controls['lastName'].valid && form.controls['lastName'].touched">
 
-              <span class="text-danger small" *ngIf="!form.controls['age'].valid && form.controls['age'].touched && form.controls['age'].value">Въведете възраст между 6 и 100 години.<br></span>
-              <input class="form-control" min="6" max="100" type="number" name="age" [formControl]="form.controls['age']" placeholder="Възраст"
-                [class.input-error]="!form.controls['age'].valid && form.controls['age'].touched && form.controls['age'].value">
+                <span class="text-danger small" *ngIf="!form.controls['age'].valid && form.controls['age'].touched && form.controls['age'].value">Въведете възраст между 6 и 100 години.<br></span>
+                <input class="form-control" min="6" max="100" type="number" name="age" [formControl]="form.controls['age']" placeholder="Възраст"
+                  [class.input-error]="!form.controls['age'].valid && form.controls['age'].touched && form.controls['age'].value">
 
-              <label id="gender-label" for="gender">Пол:</label>
-              <select id="gender-select" class="form-control" [formControl]="form.controls['gender']" name="gender" [class.input-error]="!form.controls['gender'].valid && form.controls['gender'].touched">
+                <label id="gender-label" for="gender">Пол:</label>
+                <select id="gender-select" class="form-control" [formControl]="form.controls['gender']" name="gender" [class.input-error]="!form.controls['gender'].valid && form.controls['gender'].touched">
                 <option value="male">Мъж</option>
                 <option value="female">Жена</option>
                 <option value="unspecified">Друг</option>    
               </select>
-              <hr>
-              <button type="submit" [disabled]="isBtnDisabled" class="btn btn-block orange">Потвърди</button>
-            </form>
+                <hr>
+                <button type="submit" [disabled]="isBtnDisabled" class="btn btn-block orange">Потвърди</button>
+              </form>
+            </div>
           </div>
         </div>
       </div>

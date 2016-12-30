@@ -1,0 +1,15 @@
+.container-home {
+    margin-top: -10%;
+    position: relative;
+}
+
+.arrow-home {
+    max-width: 80px;
+    position: absolute;
+    left: 47%;
+    top: 83%;
+} 
+
+.home-title {
+    border-bottom: 2px solid orange;
+}

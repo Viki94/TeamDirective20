@@ -1,26 +1,27 @@
-<div class="row zoomInDown">
-  <div class="col-md-6 col-md-offset-3">
-    <div id="login-panel" class="card">
-      <div class="card-title text-center">
-        <h4>Вход</h4>
-        <hr>
-      </div>
-      <div class="card-content">
-        <form [formGroup]="form" (ngSubmit)="submit(form.value)">
-          <span class="text-danger small" *ngIf="!form.controls['username'].valid && form.controls['username'].touched">Не сте въвели потребителско име.</span>
-          <input class="form-control" [formControl]="form.controls['username']" [class.input-error]="!form.controls['username'].valid && form.controls['username'].touched"
-            type="text" name="username" placeholder="Потребителско име">
-
-          <span class="text-danger small" *ngIf="!form.controls['password'].valid && form.controls['password'].touched">Не сте въвели парола.</span>
-          <input class="form-control" [formControl]="form.controls['password']" [class.input-error]="!form.controls['username'].valid && form.controls['username'].touched"
-            type="password" name="password" placeholder="Парола">
-
+<div class="container">
+  <div class="row zoomInDown">
+    <div class="col-md-6 col-md-offset-3">
+      <div id="login-panel" class="card">
+        <div class="card-title text-center">
+          <h4>Вход</h4>
           <hr>
-          <button type="submit" [disabled]="isDisabled" class="btn btn-block orange">Вход</button>
-        </form>
+        </div>
+        <div class="card-content">
+          <form [formGroup]="form" (ngSubmit)="submit(form.value)">
+            <span class="text-danger small" *ngIf="!form.controls['username'].valid && form.controls['username'].touched">Не сте въвели потребителско име.</span>
+            <input class="form-control" [formControl]="form.controls['username']" [class.input-error]="!form.controls['username'].valid && form.controls['username'].touched"
+              type="text" name="username" placeholder="Потребителско име">
+
+            <span class="text-danger small" *ngIf="!form.controls['password'].valid && form.controls['password'].touched">Не сте въвели парола.</span>
+            <input class="form-control" [formControl]="form.controls['password']" [class.input-error]="!form.controls['username'].valid && form.controls['username'].touched"
+              type="password" name="password" placeholder="Парола">
+
+            <hr>
+            <button type="submit" [disabled]="isDisabled" class="btn btn-block orange">Вход</button>
+          </form>
+        </div>
       </div>
     </div>
   </div>
 </div>
-
 <simple-notifications [options]="notificationOptions"></simple-notifications>
