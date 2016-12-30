@@ -1,4 +1,4 @@
-<nav class="navbar navbar-default navbar-static-top green darken-3">
+<nav id="main-navigation" class="navbar navbar-default navbar-static-top green darken-3">
   <div class="container">
     <div class="navbar-header">
       <a routerLink="/home" id="brand" class="navbar-brand nav-link waves-effect waves-light orange">Adopt a Pet</a>
@@ -26,9 +26,6 @@
           <a class="nav-link waves-effect waves-light">Галерия</a>
         </li>
         <li>
-          <a class="nav-link waves-effect waves-light">Магазин</a>
-        </li>
-        <li>
           <a class="nav-link waves-effect waves-light">Търси</a>
         </li>
         <li class="dropdown">
@@ -41,10 +38,10 @@
       </ul>
 
       <ul class="nav navbar-nav navbar-right">
-        <li *ngIf="isLoggedIn"><a routerLink="/profile" class="nav-link waves-effect waves-light">Профил</a></li>
-        <li *ngIf="isLoggedIn"><a routerLink="/logout" (click)="logout()" class="nav-link waves-effect waves-light">Изход</a></li>
-        <li *ngIf="!isLoggedIn"><a routerLink="/login" class="nav-link waves-effect waves-light">Вход</a></li>
-        <li *ngIf="!isLoggedIn"><a routerLink="/register" class="nav-link waves-effect waves-light">Регистрация</a></li>        
+        <li *ngIf="isLoggedIn"><a routerLink="/profile" class="nav-link waves-effect waves-light orange">Профил</a></li>
+        <li *ngIf="isLoggedIn"><a routerLink="/logout" (click)="logout()" class="nav-link waves-effect waves-light orange">Изход</a></li>
+        <li *ngIf="!isLoggedIn"><a routerLink="/login" class="nav-link waves-effect waves-ligh orange">Вход</a></li>
+        <li *ngIf="!isLoggedIn"><a routerLink="/register" class="nav-link waves-effect waves-light orange">Регистрация</a></li>        
       </ul>
 
     </div>

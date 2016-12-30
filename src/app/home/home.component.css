@@ -1,5 +1,5 @@
 .container-home {
-    margin-top: -10%;
+    top: -100px;
     position: relative;
 }
 
@@ -7,7 +7,7 @@
     max-width: 80px;
     position: absolute;
     left: 47%;
-    top: 83%;
+    top: 80%;
 } 
 
 .home-title {
