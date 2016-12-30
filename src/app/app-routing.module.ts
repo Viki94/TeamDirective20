@@ -15,7 +15,8 @@ const routes: Routes = [
     { path: 'fact-form', component: FactFormComponent },
     { path: 'register', component: RegisterComponent },
     { path: 'login', component: LoginComponent },
-    { path: 'profile', component: UserProfileComponent, canActivate: [RouteGuardService] }
+    { path: 'profile/:id', component: UserProfileComponent },
+    { path: 'my-profile', component: UserProfileComponent, canActivate: [RouteGuardService] }
 ];
 
 @NgModule({

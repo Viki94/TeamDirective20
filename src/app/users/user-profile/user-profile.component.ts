@@ -1,6 +1,6 @@
 import { Component, OnInit, Injectable } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
-import { Router } from '@angular/router';
+import { Router, ActivatedRoute } from '@angular/router';
 import { NotificationsService } from 'angular2-notifications';
 import { EmailValidator, RangeValidator } from '../../auth/custom-validators/index';
 import { UsersService } from '../../services/index';
@@ -20,6 +20,7 @@ export class UserProfileComponent implements OnInit {
     private addedFacts: Object;
     private addedGalleryImages: Object;
     private showEdit = false;
+    private showEditButton = false;
     private isBtnDisabled = false;
     private notificationOptions: Object;
 
@@ -27,7 +28,8 @@ export class UserProfileComponent implements OnInit {
         private formBuilder: FormBuilder,
         private usersService: UsersService,
         private notificationsService: NotificationsService,
-        private router: Router
+        private router: Router,
+        private route: ActivatedRoute
     ) {
         this.form = this.formBuilder.group({
             firstName: ['', Validators.compose([Validators.minLength(3), Validators.maxLength(20)])],
@@ -95,7 +97,15 @@ export class UserProfileComponent implements OnInit {
     }
 
     ngOnInit() {
-        this.user = JSON.parse(localStorage.getItem('currentUser'));
+        this.route.params
+            .switchMap(params => this.user = this.usersService.getUserById(params['id']))
+            .subscribe(user => {
+                this.user = user;
+            },
+            err => {
+                this.user = JSON.parse(localStorage.getItem('currentUser'));
+                this.showEditButton = true;
+            });
 
         this.adoptedPets = {
             id: 'adopted-pets',

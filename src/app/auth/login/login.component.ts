@@ -39,7 +39,7 @@ export class LoginComponent implements OnInit {
                 localStorage.setItem('currentUser', JSON.stringify(res.user));
                 this.notificationsService.success('Успешен вход!', 'Пренасочване...');
                 setTimeout(() => {
-                    this.router.navigate(['/profile']);
+                    this.router.navigate(['/my-profile']);
                 }, 2000);
             },
             err => {

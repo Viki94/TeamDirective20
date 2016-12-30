@@ -6,6 +6,10 @@ import { ApiService } from './api.service';
 export class UsersService {
     constructor(private api: ApiService) { }
 
+    getUserById(userId) {
+        return this.api.put('api/users/get-user', { id: userId });
+    }
+
     editProfile(userData: Object) {
         if ((userData['firstName'] && (userData['firstName'].length < 3 || userData['firstName'].length > 20)) ||
             (userData['lastName'] && (userData['lastName'].length < 3 || userData['lastName'].length > 20)) ||

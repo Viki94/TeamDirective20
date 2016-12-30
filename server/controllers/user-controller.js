@@ -7,6 +7,27 @@ const characterEscaper = require('../utils/character-escaper');
 
 module.exports = (data) => {
     return {
+        getAllUsers(req, res) {
+            data.findUserById(req.body.id)
+                .then(user => {
+                    if (!user) {
+                        return res.status(404).json({
+                            success: false,
+                            message: 'No such user found!'
+                        });
+                    }
+                    
+                    let userData = JSON.parse(JSON.stringify(user));
+                    delete userData.passHash;
+                    delete userData.salt;
+
+                    res.status(200).json(userData);
+                })
+                .catch(err => {
+                    console.log(err);
+                    res.status(500).json(err);
+                });
+        },
         editProfile(req, res) {
             let newData = {};
 

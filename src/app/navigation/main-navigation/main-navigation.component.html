@@ -38,7 +38,7 @@
       </ul>
 
       <ul class="nav navbar-nav navbar-right">
-        <li *ngIf="isLoggedIn"><a routerLink="/profile" class="nav-link waves-effect waves-light orange">Профил</a></li>
+        <li *ngIf="isLoggedIn"><a routerLink="/my-profile" class="nav-link waves-effect waves-light orange">Профил</a></li>
         <li *ngIf="isLoggedIn"><a routerLink="/logout" (click)="logout()" class="nav-link waves-effect waves-light orange">Изход</a></li>
         <li *ngIf="!isLoggedIn"><a routerLink="/login" class="nav-link waves-effect waves-ligh orange">Вход</a></li>
         <li *ngIf="!isLoggedIn"><a routerLink="/register" class="nav-link waves-effect waves-light orange">Регистрация</a></li>        
