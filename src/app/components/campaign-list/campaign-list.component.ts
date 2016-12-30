@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router, ActivatedRoute } from '@angular/router';
+import { Router } from '@angular/router';
 
 import { CampaignsService } from './../../services/campaigns.service';
 import { Campaign } from '../../models/campaign.model';
@@ -8,33 +8,21 @@ const DEFAULT_CAMPAIGN_IMG = 'https://i.ytimg.com/vi/JWY1bpbmyS4/maxresdefault.j
 
 @Component({
     moduleId: 'module.id',
-    selector: 'campaign',
-    templateUrl: './campaign.component.html',
+    selector: 'campaign-list',
+    templateUrl: './campaign-list.component.html',
     styleUrls: [
-        './campaign.component.css'
+        './campaign-list.component.css'
     ]
 })
-export class CampaignComponent implements OnInit {
+export class CampaignListComponent implements OnInit {
     model: Campaign;
     campaigns: Campaign[] = [];
 
-    constructor(
-        private campaignsService: CampaignsService,
-        private router: Router,
-        private activatedRoute: ActivatedRoute) {
-    }
-
-    private id: string;
+    constructor(private campaignsService: CampaignsService, private router: Router) { }
 
     ngOnInit() {
         this.model = new Campaign('', '', '', '', '', 0, 0, '');
-
-        this.activatedRoute.params
-            .subscribe(params => {
-                this.id = params['id'];
-            })
-
-        this.campaignsService.getById(this.id)
+        this.campaignsService.getAllCampaigns()
             .subscribe(campaigns => {
                 this.campaigns = campaigns.map(campaign => {
                     return Object.assign({}, campaign, { image: campaign.image || DEFAULT_CAMPAIGN_IMG })
@@ -42,11 +30,11 @@ export class CampaignComponent implements OnInit {
             });
     };
 
-    viewDetails(campaignId) {
-        this.router.navigate([`campaign/${campaignId}`]);
+    addCampaign() {
+        this.router.navigate(['campaign/create']);
     }
 
-    return() {
-        this.router.navigate([`campaigns`]);
+    viewDetails(campaignId) {
+        this.router.navigate([`campaign/preview/${campaignId}`]);
     }
 };
