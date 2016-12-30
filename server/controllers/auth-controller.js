@@ -115,6 +115,30 @@ module.exports = (data) => {
                     message: 'Token auth failed!'
                 });
             }
+        },
+        checkIfAdmin(req, res) {
+            const token = req.headers.authorization;
+
+            if (token) {
+                let decoded = jwt.decode(token.split(' ')[1], 'secret-as-shit');
+                const user = decoded._doc;
+                data.findUserById(user._id)
+                    .then((resUser) => {
+                        if (resUser.admin) {
+                            return res.status(200).json({ success: true });
+                        }
+
+                        res.status(401).json({ success: true });
+                    })
+                    .catch(err => {
+                        res.status(500).json(err);
+                    });
+            } else {
+                res.status(401).json({
+                    success: false,
+                    message: 'Token auth failed!'
+                });
+            }
         }
     };
 };

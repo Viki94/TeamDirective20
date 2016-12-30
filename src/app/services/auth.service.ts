@@ -23,6 +23,10 @@ export class AuthService {
         this.api.post('api/auth/logout', null);
     }
 
+    isUserAdmin() {
+        return this.api.get('api/auth/admin');
+    }
+
     verifyLogin() {
         let token = localStorage.getItem('token');
         let headers = new Headers({

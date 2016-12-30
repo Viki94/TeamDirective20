@@ -29,6 +29,7 @@ import { MainNavigationComponent, FooterComponent } from './navigation/index';
 import { RegisterComponent, LoginComponent } from './auth/index';
 import { UserProfileComponent } from './users/user-profile/user-profile.component';
 import { AddedContentComponent } from './users/added-content/added-content.component';
+import { AdminComponent } from './users/admin/admin.component';
 
 @NgModule({
     declarations: [
@@ -44,7 +45,8 @@ import { AddedContentComponent } from './users/added-content/added-content.compo
         RegisterComponent,
         LoginComponent,
         UserProfileComponent,
-        AddedContentComponent
+        AddedContentComponent,
+        AdminComponent
     ],
     imports: [
         RouterModule,

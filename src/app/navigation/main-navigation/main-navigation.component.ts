@@ -9,14 +9,25 @@ import { AuthService } from '../../services/auth.service';
     styleUrls: ['./main-navigation.component.css']
 })
 export class MainNavigationComponent implements DoCheck {
-    private isLoggedIn;
+    private isLoggedIn: boolean;
+    private isUserAdmin: boolean;
 
-    constructor(private authService: AuthService, private router: Router) { 
+    constructor(private authService: AuthService, private router: Router) {
         this.isLoggedIn = this.authService.isLoggedIn;
+        if (!this.isLoggedIn) {
+            this.isUserAdmin = false;
+        } else {
+           this.isUserAdmin = !!JSON.parse(localStorage.getItem('currentUser'))['admin'];
+        }
     }
 
     ngDoCheck() {
-       this.isLoggedIn = !!localStorage.getItem('token');
+        this.isLoggedIn = !!localStorage.getItem('token');
+        if (!this.isLoggedIn) {
+            this.isUserAdmin = false;
+        } else {
+           this.isUserAdmin = !!JSON.parse(localStorage.getItem('currentUser'))['admin'];
+        }
     }
 
     logout() {

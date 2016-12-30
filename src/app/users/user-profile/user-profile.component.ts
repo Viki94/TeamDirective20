@@ -68,7 +68,7 @@ export class UserProfileComponent implements OnInit {
                     isValid = true;
                 }
             });
-        console.log(newData);
+
         if (!isValid) {
             this.notificationsService.error('Възникна грешка!', 'Не сте въвели данни!');
             return;

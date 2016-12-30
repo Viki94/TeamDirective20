@@ -11,7 +11,8 @@ module.exports = function (app, data) {
         .post('/login', controllers.login)
         .post('/register', controllers.register)
         .post('/logout', controllers.logout)
-        .get('/check-login', controllers.checkLogin);
+        .get('/check-login', controllers.checkLogin)
+        .get('/admin', controllers.checkIfAdmin);
 
     app.use('/api/auth', router);
 };

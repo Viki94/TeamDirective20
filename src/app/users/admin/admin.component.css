@@ -1,0 +1,14 @@
+.admin-page-title {
+    border-bottom: 2px solid orange;
+}
+
+.back-icon {
+    font-size: 70px;
+    color: orange;
+    cursor: pointer;
+}
+
+input.form-control:focus {
+    border-bottom: 1px solid orange;
+    box-shadow: 0 1px 0 0 orange;
+}

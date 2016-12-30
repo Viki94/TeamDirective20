@@ -44,6 +44,11 @@ let userSchema = new Schema({
         type: String,
         default: 'https://www.kirkleescollege.ac.uk/wp-content/uploads/2015/09/default-avatar.png'
     },
+    registeredOn: {
+        type: Date,
+        default: Date.now
+    },
+    isDeleted: Boolean,
     admin: Boolean,
     facebookId: String,
     facebookToken: String

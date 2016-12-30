@@ -9,6 +9,7 @@ import { FactsComponent } from './components/facts/facts.component';
 import { FactFormComponent } from './components/fact-form/fact-form.component';
 import { RegisterComponent, LoginComponent } from './auth/index';
 import { UserProfileComponent } from './users/user-profile/user-profile.component';
+import { AdminComponent } from './users/admin/admin.component';
 
 const routes: Routes = [
     { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -20,7 +21,8 @@ const routes: Routes = [
     { path: 'register', component: RegisterComponent },
     { path: 'login', component: LoginComponent },
     { path: 'profile/:id', component: UserProfileComponent },
-    { path: 'my-profile', component: UserProfileComponent, canActivate: [RouteGuardService] }
+    { path: 'my-profile', component: UserProfileComponent, canActivate: [RouteGuardService] },
+    { path: 'admin', component: AdminComponent }
 ];
 
 @NgModule({

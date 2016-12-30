@@ -10,6 +10,18 @@ export class UsersService {
         return this.api.put('api/users/get-user', { id: userId });
     }
 
+    getAllUsers() {
+        return this.api.put('api/users/get-all-users', {});
+    }
+
+    makeUserAdmin(user) {
+        return this.api.put('api/users/make-admin', user);
+    }
+
+    toggleBanUser(user) {
+        return this.api.put('api/users/toggle-ban-user', user);
+    }
+
     editProfile(userData: Object) {
         if ((userData['firstName'] && (userData['firstName'].length < 3 || userData['firstName'].length > 20)) ||
             (userData['lastName'] && (userData['lastName'].length < 3 || userData['lastName'].length > 20)) ||

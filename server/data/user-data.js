@@ -49,6 +49,18 @@ module.exports = (models) => {
             });
         },
 
+        findAllUsers() {
+            return new Promise((resolve, reject) => {
+                User.find({}, (err, users) => {
+                    if (err) {
+                        return reject(err);
+                    }
+
+                    return resolve(users);
+                });
+            });
+        },
+
         findUserById(userId) {
             return new Promise((resolve, reject) => {
                 User
