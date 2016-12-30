@@ -11,6 +11,7 @@ import { AppRoutingModule } from './app-routing.module';
 
 // services
 import { ApiService, AuthService, RouteGuardService, UsersService } from './services/index';
+import { CampaignsService } from './services/campaigns.service';
 import { FactsService } from './services/facts.service';
 import { DataService } from './services/data.service';
 
@@ -20,6 +21,8 @@ import { EqualityValidatorDirective } from './directives/equality-validator.dire
 // components
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
+import { CampaignsComponent } from './components/campaigns/campaigns.component';
+import { CampaignFormComponent } from './components/campaign-form/campaign-form.component';
 import { FactsComponent } from './components/facts/facts.component';
 import { FactFormComponent } from './components/fact-form/fact-form.component';
 import { MainNavigationComponent, FooterComponent } from './navigation/index';
@@ -34,6 +37,8 @@ import { AddedContentComponent } from './users/added-content/added-content.compo
         MainNavigationComponent,
         FooterComponent,
         HomeComponent,
+        CampaignsComponent,
+        CampaignFormComponent,
         FactsComponent,
         FactFormComponent,
         RegisterComponent,
@@ -55,6 +60,7 @@ import { AddedContentComponent } from './users/added-content/added-content.compo
         ApiService,
         AuthService,
         RouteGuardService,
+        CampaignsService,
         FactsService,
         DataService,
         UsersService

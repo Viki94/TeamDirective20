@@ -26,7 +26,7 @@ export class FactFormComponent implements OnInit {
     createFact() {
         this.fact.img = this.fact.img || DEFAULT_FACT_IMG;
 
-        this.factsService.create(this.fact).subscribe(()=> {
+        this.factsService.createFact(this.fact).subscribe(()=> {
             this.router.navigate(['facts'])
         });
     }

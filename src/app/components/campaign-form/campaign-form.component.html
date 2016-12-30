@@ -1,0 +1,37 @@
+<form #campaignsForm="ngForm" (ngSubmit)="createCampaign(); campaignsForm.reset()">
+    <div class="row">
+        <div class="col-xs-offset-1 col-xs-7">
+            <div class="form-group">
+                <input class="form-control" type="text" name="name" [(ngModel)]="campaign.name" #tbTitle="ngModel" required placeholder="Въведете име на кампанията"
+                />
+                <div [hidden]="tbTitle.untouched || tbTitle.valid">
+                    Невалидно име на кампанията
+                </div>
+            </div>
+            <div class="form-group">
+                <input class="form-control" type="text" name="description" [(ngModel)]="campaign.description" placeholder="Въведете описание на кампанията"
+                    required />
+            </div>
+            <div class="form-group">
+                <input class="form-control" type="text" name="ownerName" [(ngModel)]="campaign.ownerName" placeholder="Въведете име на собственика">
+            </div>
+            <div class="form-group">
+                <input class="form-control" type="text" name="ownerContact" [(ngModel)]="campaign.ownerContact" placeholder="Въведете контакти на собственика"
+                    required />
+            </div>
+            <div class="form-group">
+                <input class="form-control" type="text" name="requiredAmount" [(ngModel)]="campaign.requiredAmount" placeholder="Въведете нужната сума за кампанията">
+            </div>
+            <div class="form-group">
+                <input class="form-control" type="url" name="image" [(ngModel)]="campaign.image" placeholder="Въведете линк със снимка на любимеца">
+            </div>
+            <div class="form-group">
+                <button class="btn btn-success">Създаване</button>
+                <button (click)="return()" class="btn btn-danger">Назад</button>
+            </div>
+        </div>
+        <div class="col-xs-3">
+            <img [src]="campaign.img" class="campaign-image" [hidden]="!campaign.img">
+        </div>
+    </div>
+</form>

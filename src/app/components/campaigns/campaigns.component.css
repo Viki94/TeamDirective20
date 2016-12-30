@@ -1,0 +1,15 @@
+.campaign-image {
+    max-width: 100%;
+}
+
+.campaign-form-container {
+    position: relative;
+    background: white;
+}
+
+.campaign-form {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    z-index: 1000;
+}
