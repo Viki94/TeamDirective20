@@ -8,10 +8,14 @@ const mongoose = require('mongoose'),
 let campaignSchema = new Schema({
     name: {
         type: String,
+        minlength: 6,
+        maxlength: 30,
         required: true
     },
     description: {
         type: String,
+        minlength: 20,
+        maxlength: 500,
         required: true
     },
     ownerName: {
@@ -19,6 +23,8 @@ let campaignSchema = new Schema({
     },
     ownerContact: {
         type: String,
+        minlength: 6,
+        maxlength: 20,
         required: true
     },
     creatorId: {
@@ -29,6 +35,9 @@ let campaignSchema = new Schema({
     },
     currentAmount: {
         type: Number
+    },
+    iban: {
+        type: String
     },
     image: {
         type: String

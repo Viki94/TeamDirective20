@@ -15,8 +15,7 @@ const DEFAULT_CAMPAIGN_IMG = 'https://i.ytimg.com/vi/JWY1bpbmyS4/maxresdefault.j
     ]
 })
 export class CampaignPreviewComponent implements OnInit {
-    model: Campaign;
-    campaigns: Campaign[] = [];
+    campaign: Campaign = null;
 
     constructor(
         private campaignsService: CampaignsService,
@@ -27,7 +26,7 @@ export class CampaignPreviewComponent implements OnInit {
     private id: string;
 
     ngOnInit() {
-        this.model = new Campaign('', '', '', '', '', 0, 0, '');
+        this.campaign = new Campaign('', '', '', '', '', 0, 0, '', '');
 
         this.activatedRoute.params
             .subscribe(params => {
@@ -35,10 +34,8 @@ export class CampaignPreviewComponent implements OnInit {
             })
 
         this.campaignsService.getById(this.id)
-            .subscribe(campaigns => {
-                this.campaigns = campaigns.map(campaign => {
-                    return Object.assign({}, campaign, { image: campaign.image || DEFAULT_CAMPAIGN_IMG })
-                });
+            .subscribe(campaign => {
+                this.campaign = Object.assign({}, campaign, { image: campaign.image || DEFAULT_CAMPAIGN_IMG });
             });
     };
 

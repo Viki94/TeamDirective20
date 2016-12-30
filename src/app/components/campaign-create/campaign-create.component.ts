@@ -20,7 +20,7 @@ export class CampaignCreateComponent implements OnInit {
     constructor(private campaignsService: CampaignsService, private router: Router) { }
 
     ngOnInit() {
-        this.campaign = new Campaign('', '', '', '', '', 0, 0, '');
+        this.campaign = new Campaign('', '', '', '', '', 0, 0, '', '');
     }
 
     createCampaign() {

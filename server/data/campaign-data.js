@@ -34,7 +34,7 @@ module.exports = (models) => {
 
         getById(id) {
             return new Promise((resolve, reject) => {
-                Campaign.find({ _id: id }, (err, campaign) => {
+                Campaign.findOne({ _id: id }, (err, campaign) => {
                     if (err) {
                         return reject(err);
                     }

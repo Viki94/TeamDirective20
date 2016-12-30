@@ -4,29 +4,16 @@
     <ul *ngIf="facts" class="list">
         <li *ngFor="let fact of facts">
             <div class="sub-nav-home card text-center">
-            <div class="row">
-                <div class="col-md-4">
-                    <img class="img-responsive img-thumbnail" [src]="fact.img">
-                </div>
-                <div class="col-md-8">
-                    <h4>{{fact.title}}</h4>
-                    <div class="thumbnail-content">{{fact.description}}</div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <img class="img-responsive img-thumbnail" [src]="fact.img">
+                    </div>
+                    <div class="col-md-8">
+                        <h4>{{fact.title}}</h4>
+                        <div class="thumbnail-content">{{fact.description}}</div>
+                    </div>
                 </div>
             </div>
-        </div>
-            <!--<div class="row">
-                <div class="col-xs-1 text-right">
-                    <img class="fact-image" [src]="fact.img">
-                </div>
-                <div class="col-xs-4 text-left">
-                    <strong>Заглавие: {{fact.title}}</strong>
-                    <br>
-                    <small><b>Описание:</b> {{fact.description}}</small>
-                    <br>
-                    <br>
-                    <br>
-                </div>
-            </div>-->
         </li>
     </ul>
     <div *ngIf="!facts.length">

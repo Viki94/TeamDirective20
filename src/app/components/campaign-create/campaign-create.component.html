@@ -2,25 +2,34 @@
     <div class="row">
         <div class="col-xs-offset-1 col-xs-7">
             <div class="form-group">
-                <input class="form-control" type="text" name="name" [(ngModel)]="campaign.name" #tbTitle="ngModel" required placeholder="Въведете име на кампанията"
+                <input class="form-control" type="text" name="name" [(ngModel)]="campaign.name" #name="ngModel" minlength="6" required placeholder="Въведете име на кампанията"
                 />
-                <div [hidden]="tbTitle.untouched || tbTitle.valid">
-                    Невалидно име на кампанията
+                <div class="text-danger small" *ngIf="name.touched && name.errors?.minlength">
+                    Най-малко 6 символа
                 </div>
             </div>
             <div class="form-group">
-                <input class="form-control" type="text" name="description" [(ngModel)]="campaign.description" placeholder="Въведете описание на кампанията"
-                    required />
+                <input class="form-control" type="text" name="description" [(ngModel)]="campaign.description" #description="ngModel" minlength="20"
+                    placeholder="Въведете описание на кампанията" required />
+                <div class="text-danger small" *ngIf="description.touched && description.errors?.minlength">
+                    Най-малко 20 символа
+                </div>
             </div>
             <div class="form-group">
                 <input class="form-control" type="text" name="ownerName" [(ngModel)]="campaign.ownerName" placeholder="Въведете име на собственика">
             </div>
             <div class="form-group">
-                <input class="form-control" type="text" name="ownerContact" [(ngModel)]="campaign.ownerContact" placeholder="Въведете контакти на собственика"
+                <input class="form-control" type="text" name="ownerContact" [(ngModel)]="campaign.ownerContact" #ownerContact="ngModel" minlength="6" placeholder="Въведете контакти на собственика"
                     required />
+                <div class="text-danger small" *ngIf="ownerContact.touched && ownerContact.errors?.minlength">
+                    Най-малко 6 символа
+                </div>
             </div>
             <div class="form-group">
                 <input class="form-control" type="text" name="requiredAmount" [(ngModel)]="campaign.requiredAmount" placeholder="Въведете нужната сума за кампанията">
+            </div>
+            <div class="form-group">
+                <input class="form-control" type="text" name="iban" [(ngModel)]="campaign.iban" placeholder="Въведете номер на сметка за дарения">
             </div>
             <div class="form-group">
                 <input class="form-control" type="url" name="image" [(ngModel)]="campaign.image" placeholder="Въведете линк със снимка на любимеца">

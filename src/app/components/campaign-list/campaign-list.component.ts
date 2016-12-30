@@ -21,7 +21,7 @@ export class CampaignListComponent implements OnInit {
     constructor(private campaignsService: CampaignsService, private router: Router) { }
 
     ngOnInit() {
-        this.model = new Campaign('', '', '', '', '', 0, 0, '');
+        this.model = new Campaign('', '', '', '', '', 0, 0, '', '');
         this.campaignsService.getAllCampaigns()
             .subscribe(campaigns => {
                 this.campaigns = campaigns.map(campaign => {

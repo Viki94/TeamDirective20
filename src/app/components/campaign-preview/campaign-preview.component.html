@@ -1,33 +1,27 @@
-<ul *ngIf="campaigns" class="list">
-    <li *ngFor="let campaign of campaigns">
+<ul *ngIf="campaign">
+    <div class="sub-nav-home card text-center">
         <div class="row">
-            <div class="col-xs-1 text-right">
-                <img class="campaign-image" [src]="campaign.image">
+            <div class="col-md-5">
+                <img class="img-responsive img-thumbnail" [src]="campaign.image">
             </div>
-            <div class="col-xs-4 text-right">
-                <strong>Заглавие: {{campaign.name}}</strong>
-                <br>
-                <small><b>Описание:</b> {{campaign.description}}</small>
-                <br>
-                <small><b>Име на собственика:</b> {{campaign.ownerName}}</small>
-                <small *ngIf="!campaign.ownerName.length">
+            <div class="col-md-7">
+                <h1>{{campaign.name}}</h1>
+                <h6>Описание: {{campaign.description}}</h6>
+                <h6>Име на собственика: {{campaign.ownerName}}</h6>
+                <h6 *ngIf="!campaign.ownerName.length">
                     няма информация
-                </small>
-                <br>
-                <small><b>Контакти на собственика:</b> {{campaign.ownerContact}}</small>
-                <br>
-                <small><b>Необходима сума:</b> {{campaign.requiredAmount}}</small>
-                <small *ngIf="!campaign.requiredAmount">
+                </h6>
+                <h6>Контакти на собственика: {{campaign.ownerContact}}</h6>
+                <h6>Необходима сума: {{campaign.requiredAmount}}</h6>
+                <h6 *ngIf="!campaign.requiredAmount">
                     няма информация
-                </small>
-                <br>
-                <br>
-                <br>
+                </h6>
+                <h6>Сметка за дарения: {{campaign.iban}}</h6>
+                <h6 *ngIf="!campaign.iban">
+                    няма информация
+                </h6>
             </div>
         </div>
-    </li>
+    </div>
 </ul>
 <button (click)="return()" class="btn btn-danger">Назад</button>
-<div *ngIf="!campaigns.length">
-    Все още няма добвени капмании!
-</div>

@@ -1,29 +1,32 @@
 <div class="container">
     <form #factsForm="ngForm" (ngSubmit)="createFact(); factsForm.reset()">
-    <div class="row">
-        <div class="col-xs-offset-1 col-xs-7">
-            <div class="form-group">
-                <input class="form-control" type="text" name="title" [(ngModel)]="fact.title" #tbTitle="ngModel" required placeholder="Въведете заглавие на факта"
-                />
-                <div [hidden]="tbTitle.untouched || tbTitle.valid">
-                    Невалидно заглавие на факта
+        <div class="row">
+            <div class="col-xs-offset-1 col-xs-7">
+                <div class="form-group">
+                    <input class="form-control" type="text" name="title" [(ngModel)]="fact.title" #title="ngModel" minlength="5" required placeholder="Въведете заглавие на факта"
+                    />
+                    <div class="text-danger small" *ngIf="title.touched && title.errors?.minlength">
+                        Най-малко 5 символа
+                    </div>
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="text" name="description" [(ngModel)]="fact.description" #description="ngModel" minlength="20" placeholder="Въведете описание на факта"
+                        required />
+                    <div class="text-danger small" *ngIf="description.touched && description.errors?.minlength">
+                        Най-малко 20 символа
+                    </div>
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="url" name="img" [(ngModel)]="fact.img" placeholder="Въведете снимка за факта">
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-success">Създаване</button>
+                    <button (click)="return()" class="btn btn-danger">Назад</button>
                 </div>
             </div>
-            <div class="form-group">
-                <input class="form-control" type="text" name="description" [(ngModel)]="fact.description" placeholder="Въведете описание на факта"
-                    required />
-            </div>
-            <div class="form-group">
-                <input class="form-control" type="url" name="img" [(ngModel)]="fact.img" placeholder="Въведете снимка за факта">
-            </div>
-            <div class="form-group">
-                <button class="btn btn-success">Създаване</button>
-                <button (click)="return()" class="btn btn-danger">Назад</button>
+            <div class="col-xs-3">
+                <img [src]="fact.img" class="fact-image" [hidden]="!fact.img">
             </div>
         </div>
-        <div class="col-xs-3">
-            <img [src]="fact.img" class="fact-image" [hidden]="!fact.img">
-        </div>
-    </div>
     </form>
 </div>
