@@ -1,5 +1,4 @@
-<!--<a routerLink="/fact-form">Add fact</a>-->
-<button (click)="addFact()" class="btn btn-success">Add fact</button>
+<button (click)="addFact()" class="btn btn-success">Добавяне на любопитен факт</button>
 
 <ul *ngIf="facts" class="list">
     <li *ngFor="let fact of facts">
@@ -8,9 +7,9 @@
                 <img class="fact-image" [src]="fact.img">
             </div>
             <div class="col-xs-4 text-left">
-                <strong>{{fact.title}}</strong>
+                <strong>Заглавие: {{fact.title}}</strong>
                 <br>
-                <small>{{fact.description}}</small>
+                <small><b>Описание:</b> {{fact.description}}</small>
                 <br>
                 <br>
                 <br>
@@ -19,5 +18,5 @@
     </li>
 </ul>
 <div *ngIf="!facts.length">
-    No facts yet
+    Все още няма добвени факти!
 </div>

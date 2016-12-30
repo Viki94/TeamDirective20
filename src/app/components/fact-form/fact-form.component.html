@@ -1,23 +1,23 @@
-<form #factsForm="ngForm" (ngSubmit)="create(); factsForm.reset()">
+<form #factsForm="ngForm" (ngSubmit)="createFact(); factsForm.reset()">
     <div class="row">
         <div class="col-xs-offset-1 col-xs-7">
             <div class="form-group">
-                <input class="form-control" type="text" name="title" [(ngModel)]="fact.title" #tbTitle="ngModel" required placeholder="Enter fact title"
+                <input class="form-control" type="text" name="title" [(ngModel)]="fact.title" #tbTitle="ngModel" required placeholder="Въведете заглавие на факта"
                 />
                 <div [hidden]="tbTitle.untouched || tbTitle.valid">
-                    Invalid fact title
+                    Невалидно заглавие на факта
                 </div>
             </div>
             <div class="form-group">
-                <input class="form-control" type="text" name="description" [(ngModel)]="fact.description" placeholder="Enter fact description"
+                <input class="form-control" type="text" name="description" [(ngModel)]="fact.description" placeholder="Въведете описание на факта"
                     required />
             </div>
             <div class="form-group">
-                <input class="form-control" type="url" name="img" [(ngModel)]="fact.img" placeholder="Enter image url">
+                <input class="form-control" type="url" name="img" [(ngModel)]="fact.img" placeholder="Въведете снимка за факта">
             </div>
             <div class="form-group">
-                <button class="btn btn-success">Create</button>
-                <button (click)="return()" class="btn btn-danger">Return</button>
+                <button class="btn btn-success">Създаване</button>
+                <button (click)="return()" class="btn btn-danger">Назад</button>
             </div>
         </div>
         <div class="col-xs-3">

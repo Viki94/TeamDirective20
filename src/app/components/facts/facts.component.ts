@@ -22,7 +22,7 @@ export class FactsComponent implements OnInit {
 
     ngOnInit() {
         this.model = new Fact('', '', '');
-        this.factsService.getAll()
+        this.factsService.getAllFacts()
             .subscribe(facts => {
                 this.facts = facts.map(fact => {
                     return Object.assign({}, fact, { img: fact.img || DEFAULT_FACT_IMG })
