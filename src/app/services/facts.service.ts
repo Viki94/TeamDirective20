@@ -14,7 +14,7 @@ export class FactsService {
         return this.apiService.get('api/facts/get-all-facts');
     }
 
-    create(fact: Fact): Observable<any>{
+    createFact(fact: Fact): Observable<any>{
         return this.apiService.post('api/facts/create-fact', fact);
     }
 };
