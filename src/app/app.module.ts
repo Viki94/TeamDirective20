@@ -21,8 +21,10 @@ import { EqualityValidatorDirective } from './directives/equality-validator.dire
 // components
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
-import { CampaignsComponent } from './components/campaigns/campaigns.component';
-import { CampaignFormComponent } from './components/campaign-form/campaign-form.component';
+import { CampaignComponent } from './components/campaigns/campaign.component';
+import { CampaignListComponent } from './components/campaign-list/campaign-list.component';
+import { CampaignCreateComponent } from './components/campaign-create/campaign-create.component';
+import { CampaignPreviewComponent } from './components/campaign-preview/campaign-preview.component';
 import { FactsComponent } from './components/facts/facts.component';
 import { FactFormComponent } from './components/fact-form/fact-form.component';
 import { MainNavigationComponent, FooterComponent } from './navigation/index';
@@ -38,8 +40,10 @@ import { AdminComponent } from './users/admin/admin.component';
         MainNavigationComponent,
         FooterComponent,
         HomeComponent,
-        CampaignsComponent,
-        CampaignFormComponent,
+        CampaignComponent,
+        CampaignListComponent,
+        CampaignCreateComponent,
+        CampaignPreviewComponent,
         FactsComponent,
         FactFormComponent,
         RegisterComponent,

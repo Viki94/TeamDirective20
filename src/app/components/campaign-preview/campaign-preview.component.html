@@ -1,12 +1,10 @@
-<button (click)="addCampaign()" class="btn btn-success">Добавяне на капмания за любимец</button>
-
 <ul *ngIf="campaigns" class="list">
     <li *ngFor="let campaign of campaigns">
         <div class="row">
             <div class="col-xs-1 text-right">
                 <img class="campaign-image" [src]="campaign.image">
             </div>
-            <div class="col-xs-4 text-left">
+            <div class="col-xs-4 text-right">
                 <strong>Заглавие: {{campaign.name}}</strong>
                 <br>
                 <small><b>Описание:</b> {{campaign.description}}</small>
@@ -29,6 +27,7 @@
         </div>
     </li>
 </ul>
+<button (click)="return()" class="btn btn-danger">Назад</button>
 <div *ngIf="!campaigns.length">
     Все още няма добвени капмании!
 </div>

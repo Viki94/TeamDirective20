@@ -35,6 +35,21 @@ module.exports = (campaignData) => {
 
                     console.log(err);
                 });
+        },
+
+        getById(req, res) {
+            campaignData.getById(req.params.id)
+                .then((campaign) => {
+                    res.status(200).json(campaign);
+                })
+                .catch((err) => {
+                    res.status(500).json({
+                        success: false,
+                        message: err
+                    });
+
+                    console.log(err);
+                });
         }
     };
 };

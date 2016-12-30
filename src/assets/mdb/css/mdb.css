@@ -3420,13 +3420,13 @@ button.btn-floating {
 }
 
 .navbar .navbar-nav > li > a:hover, .navbar .navbar-nav > li > a:focus {
-  color: rgba(255, 255, 255, 0.84);
+  color: rgba(0, 0, 0, 0.84);
   background-color: transparent;
 }
 
 .navbar .navbar-nav > .active > a, .navbar .navbar-nav > .active > a:hover, .navbar .navbar-nav > .active > a:focus {
   color: rgba(255, 255, 255, 0.84);
-  background-color: rgba(0, 0, 0, 0.05);
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 .navbar .navbar-nav > .disabled > a, .navbar .navbar-nav > .disabled > a:hover, .navbar .navbar-nav > .disabled > a:focus {

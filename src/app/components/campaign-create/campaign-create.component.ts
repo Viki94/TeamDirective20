@@ -8,13 +8,13 @@ const DEFAULT_CAMPAIGN_IMG = 'https://i.ytimg.com/vi/JWY1bpbmyS4/maxresdefault.j
 
 @Component({
     moduleId: 'module.id',
-    selector: 'campaign-form',
-    templateUrl: './campaign-form.component.html',
+    selector: 'campaign-create',
+    templateUrl: './campaign-create.component.html',
     styleUrls: [
-        './campaign-form.component.css'
+        './campaign-create.component.css'
     ]
 })
-export class CampaignFormComponent implements OnInit {
+export class CampaignCreateComponent implements OnInit {
     campaign: Campaign;
 
     constructor(private campaignsService: CampaignsService, private router: Router) { }
@@ -27,12 +27,12 @@ export class CampaignFormComponent implements OnInit {
         this.campaign.image = this.campaign.image || DEFAULT_CAMPAIGN_IMG;
 
         this.campaignsService.createCampaign(this.campaign).subscribe(() => {
-            this.router.navigate(['campaigns'])
+            this.return();
         });
     }
 
     return() {
-        this.router.navigate(['campaigns'])
+        this.router.navigate(['campaign/list'])
     }
 
 };

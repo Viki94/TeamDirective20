@@ -1,4 +1,5 @@
-<form #factsForm="ngForm" (ngSubmit)="createFact(); factsForm.reset()">
+<div class="container">
+    <form #factsForm="ngForm" (ngSubmit)="createFact(); factsForm.reset()">
     <div class="row">
         <div class="col-xs-offset-1 col-xs-7">
             <div class="form-group">
@@ -24,4 +25,5 @@
             <img [src]="fact.img" class="fact-image" [hidden]="!fact.img">
         </div>
     </div>
-</form>
+    </form>
+</div>

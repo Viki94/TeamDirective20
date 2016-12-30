@@ -1,0 +1,20 @@
+<button (click)="addCampaign()" class="btn btn-success">Добавяне на кампания за любимец</button>
+<ul *ngIf="campaigns" class="list">
+    <li *ngFor="let campaign of campaigns">
+        <div class="sub-nav-home card text-center">
+            <div class="row">
+                <div class="col-md-4">
+                    <img class="img-responsive img-thumbnail" [src]="campaign.image">
+                </div>
+                <div class="col-md-8">
+                    <h4>{{campaign.name}}</h4>
+                    <div class="thumbnail-content">{{campaign.description}}</div>
+                    <button (click)="viewDetails(campaign._id)" class="btn btn-success">Вижте повече за кампанията</button>
+                </div>
+            </div>
+        </div>
+    </li>
+</ul>
+<div *ngIf="!campaigns.length">
+    Все още няма добвени капмании!
+</div>

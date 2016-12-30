@@ -30,6 +30,18 @@ module.exports = (models) => {
                     return resolve(campaigns);
                 });
             });
+        },
+
+        getById(id) {
+            return new Promise((resolve, reject) => {
+                Campaign.find({ _id: id }, (err, campaign) => {
+                    if (err) {
+                        return reject(err);
+                    }
+
+                    return resolve(campaign);
+                });
+            });
         }
     };
 };
