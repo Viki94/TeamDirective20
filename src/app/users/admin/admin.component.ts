@@ -10,7 +10,7 @@ import { UsersService } from '../../services/users.service';
     templateUrl: './admin.component.html',
     styleUrls: ['./admin.component.css']
 })
-export class AdminComponent implements OnInit, DoCheck {
+export class AdminComponent implements OnInit {
     users: Object;
     form: FormGroup;
     showEditUser: boolean;
