@@ -23,6 +23,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { CampaignsComponent } from './components/campaigns/campaigns.component';
 import { CampaignFormComponent } from './components/campaign-form/campaign-form.component';
+import { CampaignComponent } from './components/campaign/campaign.component';
 import { FactsComponent } from './components/facts/facts.component';
 import { FactFormComponent } from './components/fact-form/fact-form.component';
 import { MainNavigationComponent, FooterComponent } from './navigation/index';
@@ -39,6 +40,7 @@ import { AddedContentComponent } from './users/added-content/added-content.compo
         HomeComponent,
         CampaignsComponent,
         CampaignFormComponent,
+        CampaignComponent,
         FactsComponent,
         FactFormComponent,
         RegisterComponent,

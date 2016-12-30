@@ -5,6 +5,7 @@ import { RouteGuardService } from './services/route-guard.service';
 import { HomeComponent } from './home/home.component';
 import { CampaignsComponent } from './components/campaigns/campaigns.component';
 import { CampaignFormComponent } from './components/campaign-form/campaign-form.component';
+import { CampaignComponent } from './components/campaign/campaign.component';
 import { FactsComponent } from './components/facts/facts.component';
 import { FactFormComponent } from './components/fact-form/fact-form.component';
 import { RegisterComponent, LoginComponent } from './auth/index';
@@ -15,6 +16,7 @@ const routes: Routes = [
     { path: 'home', component: HomeComponent },
     { path: 'campaigns', component: CampaignsComponent },
     { path: 'campaign-form', component: CampaignFormComponent },
+    { path: 'campaign/:id', component: CampaignComponent },
     { path: 'facts', component: FactsComponent },
     { path: 'fact-form', component: FactFormComponent },
     { path: 'register', component: RegisterComponent },

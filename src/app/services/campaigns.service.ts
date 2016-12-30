@@ -17,4 +17,8 @@ export class CampaignsService {
     createCampaign(campaign: Campaign): Observable<any>{
         return this.apiService.post('api/campaigns/create-campaign', campaign);
     }
+
+    getById(id) {
+        return this.apiService.get(`api/campaigns/get-by-id/${id}`);
+    }
 };

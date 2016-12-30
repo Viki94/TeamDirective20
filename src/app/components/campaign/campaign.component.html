@@ -1,0 +1,33 @@
+<ul *ngIf="campaigns" class="list">
+    <li *ngFor="let campaign of campaigns">
+        <div class="row">
+            <div class="col-xs-1 text-right">
+                <img class="campaign-image" [src]="campaign.image">
+            </div>
+            <div class="col-xs-4 text-right">
+                <strong>Заглавие: {{campaign.name}}</strong>
+                <br>
+                <small><b>Описание:</b> {{campaign.description}}</small>
+                <br>
+                <small><b>Име на собственика:</b> {{campaign.ownerName}}</small>
+                <small *ngIf="!campaign.ownerName.length">
+                    няма информация
+                </small>
+                <br>
+                <small><b>Контакти на собственика:</b> {{campaign.ownerContact}}</small>
+                <br>
+                <small><b>Необходима сума:</b> {{campaign.requiredAmount}}</small>
+                <small *ngIf="!campaign.requiredAmount">
+                    няма информация
+                </small>
+                <br>
+                <br>
+                <br>
+            </div>
+        </div>
+    </li>
+</ul>
+<button (click)="return()" class="btn btn-danger">Назад</button>
+<div *ngIf="!campaigns.length">
+    Все още няма добвени капмании!
+</div>
