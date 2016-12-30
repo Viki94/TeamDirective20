@@ -3,13 +3,52 @@
     position: relative;
 }
 
+.container-content {
+    margin-top: -100px;
+}
+
 .arrow-home {
-    max-width: 80px;
+    max-width: 75px;
     position: absolute;
     left: 47%;
-    top: 80%;
-} 
+    top: 77%;
+}
 
 .home-title {
     border-bottom: 2px solid orange;
+}
+
+.thumbnail-content {
+    padding-bottom: 4%;
+}
+
+.sub-nav-home {
+    margin-bottom: 4%;
+}
+
+.news-main-title {
+    border-bottom: 2px solid orange;
+    margin-top: 5%;
+}
+
+.news-entry-title {
+    font-weight: bold;
+}
+
+.news-image {
+    padding-left: 0;
+}
+
+.news-date {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.news-content {
+    line-height: 1.5em;
+    height: 4.5em;
+    /* height is 2x line-height, so two lines will display */
+    overflow: hidden;
+    /* prevents extra lines from being visible */
+    text-align: justify;
 }

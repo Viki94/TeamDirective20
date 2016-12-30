@@ -4,6 +4,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
 import { SimpleNotificationsModule } from 'angular2-notifications';
+import { Ng2PageScrollModule } from 'ng2-page-scroll';
 
 // routing
 import { AppRoutingModule } from './app-routing.module';
@@ -47,7 +48,8 @@ import { AddedContentComponent } from './users/added-content/added-content.compo
         ReactiveFormsModule,
         HttpModule,
         AppRoutingModule,
-        SimpleNotificationsModule
+        SimpleNotificationsModule,
+        Ng2PageScrollModule.forRoot()
     ],
     providers: [
         ApiService,

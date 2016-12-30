@@ -1,30 +1,52 @@
 <div class="container-home row text-center">
   <img class="img-responsive" src="./assets/images/cute-cat-and-dog-sleep-wallpaper-resized.jpg" alt="cat-dog">
-  <a (click)="scrollDown()"><img class="img-responsive arrow-home" src="./assets/images/down-arrow-circle-hi.png" alt="arrow"></a>
+  <a pageScroll [pageScrollDuration]="500" href="#home-scroll-down"><img class="img-responsive arrow-home" src="./assets/images/down-arrow-circle-hi.png" alt="arrow"></a>
 </div>
-<div class="row text-center">
-  <h2 class="home-title">Вземи ме вкъщи!</h2>
-</div>
-<div class="container">
-  <div class="col-md-4">
-    <div class="card text-center">
-        <img class="img-responsive img-thumbnail" src="./assets/images/oldest-cat-living-guinness-world-records-corduroy-52.jpg" alt="cat">
-        <h4>Осинови</h4>
-        <div>Приюти някое от прекрасните малки животинчета, които искат в замяна само любов!</div>
-    </div>
+<div class="container-content">
+  <div id="home-scroll-down" class="row text-center">
+    <h2 class="home-title">Вземи ме вкъщи!</h2>
   </div>
-  <div class="col-md-4">
-    <div class="card text-center">
-        <img class="img-responsive img-thumbnail" src="./assets/images/woman-feeding-dog-snack.jpg" alt="dog">
-        <h4 class="">Кампании</h4>
-        <div>Помогни ни, като се включиш в някоя от нашите кампании в помощ на малките ни приятели!</div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="sub-nav-home card text-center">
+          <img class="img-responsive img-thumbnail" src="./assets/images/oldest-cat-living-guinness-world-records-corduroy-52.jpg"
+            alt="cat">
+          <h4>Осинови</h4>
+          <div class="thumbnail-content">Приюти някое от прекрасните малки животинчета, които искат в замяна само любов!</div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="sub-nav-home card text-center">
+          <img class="img-responsive img-thumbnail" src="./assets/images/woman-feeding-dog-snack.jpg" alt="dog">
+          <h4 class="">Кампании</h4>
+          <div class="thumbnail-content">Помогни ни, като се включиш в някоя от нашите кампании в помощ на малките ни приятели!</div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="sub-nav-home card text-center">
+          <img class="img-responsive img-thumbnail" src="./assets/images/hd-cats-and-dog-images-wallpaper.jpg" alt="cat-dog">
+          <h4>Галерия</h4>
+          <div class="thumbnail-content">Снимки на някои от нашите животинки. Много от тях вече си намериха дом, други чакат може би точно теб!</div>
+        </div>
+      </div>
     </div>
-  </div>
-  <div class="col-md-4">
-    <div class="card text-center">
-        <img class="img-responsive img-thumbnail" src="./assets/images/hd-cats-and-dog-images-wallpaper.jpg" alt="cat-dog">
-        <h4>Галерия</h4>
-        <div>Снимки на някои от нашите животинки. Много от тях вече си намериха дом, други чакат може би точно теб!</div>
+    <div class="row text-left">
+      <h4 class="news-main-title">Последни новини</h4>
+      <div class="row card">
+        <div class="news-image col-md-2">
+          <img class="img-thumbnail img-responsive" src="http://www.vzemime.org/images/stories/galka%20web.jpg" alt="news-article">
+        </div>
+        <div class="col-md-10">
+          <p class="news-entry-title">10 дарителски картички = животоспасяваща профилактика на 1 котка или куче</p>
+          <p class="news-content small">Благотворителните картички от серията "Пощенска порода" пътуват по ваша поръчка по пощата в помощ на бездомните
+            кучета и котки, търсещи дом с "Вземи ме вкъщи". 10 картички, изпратени до вашите приятели или до вашия собствен
+            адрес покриват разходите за профилактичните изследвания на котка или куче, които включват следните изследвания:
+            Профилактичният пакет за котки включва: пълна кръвна картина, изследване за хемобартонела и бърз тест за котешка
+            левкемия и котешки имунодефицитен вирус.</p>
+          <div class="news-date small">17 Май 2015</div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
