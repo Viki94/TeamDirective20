@@ -8,7 +8,7 @@
          <form [formGroup]="form" (ngSubmit)="addArticle(form.value)">            
             <input class="form-control" [formControl]="form.controls['title']" type="text" name="title" placeholder="Заглавие">
            
-            <input class="form-control" [formControl]="form.controls['imageUrl']" type="url" name="iamgeUrl" placeholder="Снимка (url)">
+            <input class="form-control" [formControl]="form.controls['imgUrl']" type="url" name="iamgeUrl" placeholder="Снимка (url)">
             
             <textarea id="textarea-content" class="form-control" [formControl]="form.controls['content']" rows="15" cols="50" name="content" placeholder="Съдържание..."></textarea>
             <hr>
@@ -18,3 +18,5 @@
     </div>
   </div>
 </div>
+
+<simple-notifications [options]="notificationOptions"></simple-notifications>

@@ -10,7 +10,7 @@ import { Ng2PageScrollModule } from 'ng2-page-scroll';
 import { AppRoutingModule } from './app-routing.module';
 
 // services
-import { ApiService, AuthService, RouteGuardService, AdminRouteGuardService, UsersService } from './services/index';
+import { ApiService, AuthService, RouteGuardService, AdminRouteGuardService, UsersService, NewsService } from './services/index';
 import { CampaignsService } from './services/campaigns.service';
 import { FactsService } from './services/facts.service';
 import { DataService } from './services/data.service';
@@ -83,7 +83,8 @@ import { NewsAddArticleComponent } from './news/news-add-article/news-add-articl
         CampaignsService,
         FactsService,
         DataService,
-        UsersService
+        UsersService,
+        NewsService
     ],
     bootstrap: [AppComponent]
 })
