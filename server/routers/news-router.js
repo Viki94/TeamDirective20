@@ -9,6 +9,7 @@ module.exports = function (app, data) {
 
     router
         .put('/articles', controllers.getAllArticles)
+        .put('/get-article', controllers.getArticleById)
         .post('/add-article', controllers.addArticle);
 
     app.use('/api/news', router);

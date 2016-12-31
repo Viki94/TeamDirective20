@@ -1,20 +1,20 @@
 <div class="container">
   <div class="row text-right">
-    <h4 class="news-entry-title">10 дарителски картички = животоспасяваща профилактика на 1 котка или куче</h4>
+    <h4 class="news-entry-title">{{article.title}}</h4>
   </div>
   <div class="row">
     <div class="col-md-3 text-center">
-      <img class="img-thumbnail img-responsive" src="http://www.vzemime.org/images/stories/galka%20web.jpg" alt="news-article">
+      <img class="img-thumbnail img-responsive" [src]="article.imgUrl" [alt]="article.title">
       <p>
-        Автор: Име Фамилия
+        Автор: {{article.author}}
       </p>
-      <p class="small">Създадена на: 31/12/2016</p>
+      <p class="small">Създадена на: {{article.createdOn}}</p>
       <div>
         <button class="btn btn-success btn-xs" type="button">Like! (0)</button>
       </div>
     </div>
     <div class="col-md-9">
-      <p class="news-content small">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe expedita quo magni, eveniet a distinctio laboriosam obcaecati! Dolorum quisquam harum maxime architecto doloribus recusandae provident similique modi quaerat possimus voluptatibus vitae quis facilis quidem amet vero tempora incidunt repudiandae, quos doloremque quae error iste quibusdam! Numquam eos, suscipit consequuntur corrupti facere libero porro, ab ea dignissimos exercitationem totam. Reiciendis eos dolorum consectetur doloremque distinctio, nisi veniam labore ex facere ipsum. Harum nulla repellat doloremque voluptates est consectetur ad culpa reprehenderit dicta sapiente, veritatis laudantium vel. Inventore et porro, nobis, eligendi quaerat nesciunt eos consequuntur nam rerum sit rem. Rerum natus facere, officia impedit unde itaque esse, a tempora illo magni ad nesciunt error neque vero ipsum, aliquid similique temporibus voluptates magnam voluptatibus laboriosam! Assumenda voluptate aspernatur saepe ipsa corporis minima qui excepturi doloribus animi maxime iste cum inventore voluptatem explicabo voluptates, similique ex provident culpa, praesentium fugiat quidem debitis deleniti quod. Unde id vitae, inventore corporis mollitia enim cum. Inventore aut necessitatibus ratione et, laboriosam quod, nemo quas, doloribus facere ex quisquam quis. Quod nostrum molestias aliquam temporibus, quia placeat voluptate architecto voluptates blanditiis consequuntur iste asperiores cupiditate rem quis harum repellendus nam ut molestiae? Necessitatibus laudantium possimus, eum voluptate beatae aut totam id veniam ab rem, modi. Sit natus sed a ab ad, molestias unde quae corporis dolore, cupiditate in modi omnis libero pariatur saepe, consequuntur molestiae ea assumenda sint veritatis. Ipsa, numquam quasi nam animi. Porro tempore ad debitis voluptatibus nostrum officia culpa suscipit quidem qui totam, dolores cupiditate voluptates vitae eligendi fugiat magnam quasi saepe facilis at soluta dolor, quod, nulla repellendus! Tenetur est ducimus inventore ipsa, itaque repellat? Magni id nostrum provident aliquam aliquid labore nulla facilis hic ipsum consectetur fuga fugiat ratione, qui temporibus praesentium numquam impedit ducimus ipsam et consequuntur autem soluta. Eaque, dignissimos sint ad, nemo ratione dolorem, voluptas suscipit dolor amet quod sequi voluptatem iure qui labore provident, saepe quasi voluptates nostrum. Amet debitis, laudantium ex cumque in cum consequatur cupiditate eligendi quaerat deserunt suscipit placeat ipsam quos qui nobis soluta dolore molestiae! Consequuntur ut commodi perferendis ea officiis corporis illo reiciendis, vitae inventore est reprehenderit numquam totam omnis aperiam suscipit quibusdam laudantium tenetur, voluptatem placeat distinctio non hic at alias! Reiciendis vero asperiores, molestiae. Nesciunt reiciendis sit adipisci facere error nihil magni aspernatur recusandae animi similique iste atque fugiat maiores minima saepe fugit unde hic ratione ab, ducimus voluptas id sunt alias voluptatibus? Odit perferendis ullam quos, in, tempore quidem, facilis repellendus vel illum delectus consequuntur molestiae fugiat ad velit veniam! Neque ut et deserunt delectus molestias iusto similique quisquam deleniti quo, perspiciatis quaerat amet nemo magni modi doloribus libero ratione accusantium ab nobis tempora sapiente natus fugit qui consequatur quibusdam. Consectetur ullam tempore voluptates quos eius blanditiis porro sapiente, perspiciatis suscipit repudiandae distinctio soluta obcaecati hic, asperiores. Natus id asperiores facere minima quaerat, laborum blanditiis, ex nam odit, placeat, laudantium debitis quam! Voluptas veniam natus culpa vitae praesentium sint, officiis, deserunt magnam repellendus, autem eius adipisci veritatis voluptate nostrum placeat.
+      <p class="news-content small">{{article.content}}
       </p>
     </div>
   </div>

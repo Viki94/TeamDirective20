@@ -35,7 +35,7 @@ const routes: Routes = [
     { path: 'my-profile', component: UserProfileComponent, canActivate: [RouteGuardService] },
     { path: 'admin', component: AdminComponent, canActivate: [AdminRouteGuardService] },
     { path: 'news', component: NewsPageComponent },
-    { path: 'news/details', component: NewsDetailsComponent },
+    { path: 'news/details/:id', component: NewsDetailsComponent },
     { path: 'news/add-article', component: NewsAddArticleComponent }
 ];
 

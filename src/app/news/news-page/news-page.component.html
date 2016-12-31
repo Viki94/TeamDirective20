@@ -7,5 +7,5 @@
       <button routerLink="/news/add-article" class="btn btn-block green" type="button">Добави статия</button>
     </div>
   </div>
-  <app-news-entry *ngFor="let newsEntry of newsList" (click)="goToDetails()"></app-news-entry>
+  <app-news-entry *ngFor="let newsEntry of newsList" [data]="newsEntry" (click)="goToDetails(newsEntry)"></app-news-entry>
 </div>

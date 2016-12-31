@@ -12,4 +12,8 @@ export class NewsService {
     getAllArticles() {
         return this.api.put('api/news/articles', {});
     }
+
+    getArticleById(articleId) {
+        return this.api.put('api/news/get-article', { _id: articleId });
+    }
 }

@@ -1,14 +1,10 @@
 <div class="news-entry row card">
   <div class="news-image col-md-2">
-    <img class="img-thumbnail img-responsive" src="http://www.vzemime.org/images/stories/galka%20web.jpg" alt="news-article">
+    <img class="img-thumbnail img-responsive" [src]="data.imgUrl" [alt]="data.title">
   </div>
   <div class="col-md-10">
-    <p class="news-entry-title">10 дарителски картички = животоспасяваща профилактика на 1 котка или куче</p>
-    <p class="news-content small">Благотворителните картички от серията "Пощенска порода" пътуват по ваша поръчка по пощата в помощ на бездомните кучета
-      и котки, търсещи дом с "Вземи ме вкъщи". 10 картички, изпратени до вашите приятели или до вашия собствен адрес покриват
-      разходите за профилактичните изследвания на котка или куче, които включват следните изследвания: Профилактичният пакет
-      за котки включва: пълна кръвна картина, изследване за хемобартонела и бърз тест за котешка левкемия и котешки имунодефицитен
-      вирус.</p>
-    <div class="news-date small">17 Май 2015</div>
+    <p class="news-entry-title">{{data.title}}</p>
+    <p class="news-content small">{{data.content}}</p>
+    <div class="news-date small">{{data.createdOn}}</div>
   </div>
 </div>

@@ -22,6 +22,15 @@ module.exports = (data) => {
                 .catch(err => {
                     res.status(500).json(err);
                 });
+        },
+        getArticleById(req, res) {
+            data.getArticleById(req.body._id)
+            .then(article => {
+                    res.status(200).json(article);
+                })
+                .catch(err => {
+                    res.status(500).json(err);
+                });
         }
     };
 };

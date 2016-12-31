@@ -32,6 +32,18 @@ module.exports = (models) => {
                     return resolve(res);
                 });
             });
+        },
+
+        getArticleById(articleId) {
+            return new Promise((resolve, reject) => {
+                Article.find({_id: articleId}, (err, res) => {
+                    if (err) {
+                        return reject(err);
+                    }
+
+                    return resolve(res);
+                });
+            });
         }
     };
 };

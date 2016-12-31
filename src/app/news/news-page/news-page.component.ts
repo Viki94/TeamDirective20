@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { NewsService } from '../../services/index';
 
 @Component({
     selector: 'app-news-page',
@@ -8,14 +9,17 @@ import { Router } from '@angular/router';
 })
 export class NewsPageComponent implements OnInit {
     newsList: any[];
-    constructor(private router: Router) {
-        this.newsList = Array(5);
-    }
+
+    constructor(private router: Router, private newsService: NewsService) { }
 
     ngOnInit() {
+        this.newsService.getAllArticles()
+        .subscribe(articles => {
+             this.newsList = articles;
+        });
     }
 
-    goToDetails() {
-        this.router.navigate(['/news/details']);
+    goToDetails(article) {
+        this.router.navigate(['/news/details', article._id]);
     }
 }
