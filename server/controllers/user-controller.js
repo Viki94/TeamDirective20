@@ -10,7 +10,10 @@ module.exports = (data) => {
         getAllUsers(req, res) {
             data.findAllUsers()
                 .then(users => {
-                    res.status(200).json(users);
+                    let userData = JSON.parse(JSON.stringify(users));
+                    delete userData.passHash;
+                    delete userData.salt;
+                    res.status(200).json(userData);
                 })
                 .catch(err => {
                     res.status(500).json(err);

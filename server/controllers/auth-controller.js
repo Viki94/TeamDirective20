@@ -61,7 +61,7 @@ module.exports = (data) => {
 
             data.findUserByCredentials(username)
                 .then(user => {
-                    if (!user || !user.authenticate(password)) {
+                    if (!user || !user.authenticate(password) || user.isDeleted) {
                         res.status(401).json({
                             success: false,
                             message: 'Incorrect username or password!'

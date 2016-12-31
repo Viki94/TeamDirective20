@@ -16,10 +16,10 @@
             <th class="text-center">Опции</th>
           </thead>
           <tbody>
-            <tr *ngFor="let user of users; let i = index">
+            <tr *ngFor="let user of (users | sortByDate:'registeredOn':'desc'); let i = index">
               <td class="col-md-1 text-center">{{i + 1}}</td>
               <td class="col-md-3 text-center"><a (click)="goToDetails(user)">{{user.username}}</a></td>
-              <td class="col-md-3 text-center">{{user.registeredOn}}</td>
+              <td class="col-md-3 text-center">{{user.registeredOn | date:"medium"}}</td>
               <td class="col-md-5 text-center">
                 <button class="btn btn-success" (click)="showEdit(user)" type="button">Редактирай</button>
                 <button [hidden]="user.isDeleted" (click)="toggleBanUser(user)" class="btn btn-danger" type="button">Деактивирай акаунт</button>

@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, LOCALE_ID } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
@@ -17,6 +17,9 @@ import { DataService } from './services/data.service';
 
 // directives
 import { EqualityValidatorDirective } from './directives/equality-validator.directive';
+
+// pipes
+import { SortByDatePipe } from './pipes/sort-by-date.pipe';
 
 // components
 import { AppComponent } from './app.component';
@@ -36,6 +39,7 @@ import { AdminComponent } from './users/admin/admin.component';
 @NgModule({
     declarations: [
         EqualityValidatorDirective,
+        SortByDatePipe,
         AppComponent,
         MainNavigationComponent,
         FooterComponent,
@@ -63,6 +67,7 @@ import { AdminComponent } from './users/admin/admin.component';
         Ng2PageScrollModule.forRoot()
     ],
     providers: [
+        { provide: LOCALE_ID, useValue: 'bg-BG' },
         ApiService,
         AuthService,
         RouteGuardService,
