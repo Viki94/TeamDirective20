@@ -38,6 +38,7 @@ import { AdminComponent } from './users/admin/admin.component';
 import { NewsPageComponent } from './news/news-page/news-page.component';
 import { NewsEntryComponent } from './news/news-entry/news-entry.component';
 import { NewsDetailsComponent } from './news/news-details/news-details.component';
+import { NewsAddArticleComponent } from './news/news-add-article/news-add-article.component';
 
 @NgModule({
     declarations: [
@@ -60,7 +61,8 @@ import { NewsDetailsComponent } from './news/news-details/news-details.component
         AdminComponent,
         NewsPageComponent,
         NewsEntryComponent,
-        NewsDetailsComponent
+        NewsDetailsComponent,
+        NewsAddArticleComponent
     ],
     imports: [
         RouterModule,

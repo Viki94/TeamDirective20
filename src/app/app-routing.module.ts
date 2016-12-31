@@ -14,6 +14,7 @@ import { UserProfileComponent } from './users/user-profile/user-profile.componen
 import { AdminComponent } from './users/admin/admin.component';
 import { NewsPageComponent } from './news/news-page/news-page.component';
 import { NewsDetailsComponent } from './news/news-details/news-details.component';
+import { NewsAddArticleComponent } from './news/news-add-article/news-add-article.component';
 
 const routes: Routes = [
     { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -34,7 +35,8 @@ const routes: Routes = [
     { path: 'my-profile', component: UserProfileComponent, canActivate: [RouteGuardService] },
     { path: 'admin', component: AdminComponent, canActivate: [AdminRouteGuardService] },
     { path: 'news', component: NewsPageComponent },
-    { path: 'news/details', component: NewsDetailsComponent }
+    { path: 'news/details', component: NewsDetailsComponent },
+    { path: 'news/add-article', component: NewsAddArticleComponent }
 ];
 
 @NgModule({

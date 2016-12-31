@@ -7,6 +7,10 @@ main {
     min-height: 77.5%;
 }
 
+.title-h4 {
+    border-bottom: 2px solid orange;
+}
+
 .btn, .btn:hover, .btn:active {
     color: white;
 }

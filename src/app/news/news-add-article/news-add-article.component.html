@@ -1,0 +1,20 @@
+<div class="container">
+  <div class="row text-right title-h4">
+    <h4>Добави статия</h4>
+  </div>
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2">
+      <div class="card article-form">
+         <form [formGroup]="form" (ngSubmit)="addArticle(form.value)">            
+            <input class="form-control" [formControl]="form.controls['title']" type="text" name="title" placeholder="Заглавие">
+           
+            <input class="form-control" [formControl]="form.controls['imageUrl']" type="url" name="iamgeUrl" placeholder="Снимка (url)">
+            
+            <textarea id="textarea-content" class="form-control" [formControl]="form.controls['content']" rows="15" cols="50" name="content" placeholder="Съдържание..."></textarea>
+            <hr>
+            <button type="submit" [disabled]="isDisabled" class="btn btn-block green">Добави статия</button>
+          </form>
+      </div>
+    </div>
+  </div>
+</div>

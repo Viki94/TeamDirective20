@@ -18,5 +18,4 @@ export class NewsPageComponent implements OnInit {
     goToDetails() {
         this.router.navigate(['/news/details']);
     }
-
 }
