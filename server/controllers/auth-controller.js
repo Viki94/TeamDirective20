@@ -124,7 +124,7 @@ module.exports = (data) => {
                 const user = decoded._doc;
                 data.findUserById(user._id)
                     .then((resUser) => {
-                        if (resUser.admin) {
+                        if (resUser && resUser.admin) {
                             return res.status(200).json({ success: true });
                         }
 

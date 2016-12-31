@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { RouteGuardService } from './services/route-guard.service';
+import { RouteGuardService, AdminRouteGuardService } from './services/index';
 
 import { HomeComponent } from './home/home.component';
 import { CampaignComponent } from './components/campaigns/campaign.component';
@@ -28,7 +28,7 @@ const routes: Routes = [
     { path: 'login', component: LoginComponent },
     { path: 'profile/:id', component: UserProfileComponent },
     { path: 'my-profile', component: UserProfileComponent, canActivate: [RouteGuardService] },
-    { path: 'admin', component: AdminComponent }
+    { path: 'admin', component: AdminComponent, canActivate: [AdminRouteGuardService] }
 ];
 
 @NgModule({
