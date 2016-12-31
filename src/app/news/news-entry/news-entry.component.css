@@ -1,0 +1,24 @@
+.news-entry-title {
+    font-weight: bold;
+}
+
+.news-image {
+    padding-left: 0;
+}
+
+.news-date {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.news-content {
+    line-height: 1.5em;
+    height: 4.5em;
+    overflow: hidden;
+    text-align: justify;
+}
+
+.news-entry {
+    margin: 15px 0;
+    cursor: pointer;
+}

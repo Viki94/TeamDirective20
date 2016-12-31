@@ -24,7 +24,23 @@ export class AuthService {
     }
 
     isUserAdmin() {
-        return this.api.get('api/auth/admin');
+        let token = localStorage.getItem('token');
+        let headers = new Headers({
+            'Content-Type': 'application/json',
+            'authorization': token
+        });
+        let options = new RequestOptions({
+            headers: headers
+        });
+
+        return this.http.get('api/auth/admin', options)
+            .map((res: any) => {
+                if (res.status === 200) {
+                    return true;
+                }
+
+                return false;
+            });
     }
 
     verifyLogin() {

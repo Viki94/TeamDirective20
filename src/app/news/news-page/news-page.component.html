@@ -1,0 +1,6 @@
+<div class="container">
+  <div class="row">
+      <h4 class="news-title">Последни новини</h4>
+  </div>
+  <app-news-entry *ngFor="let newsEntry of newsList" (click)="goToDetails()"></app-news-entry>
+</div>

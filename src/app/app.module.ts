@@ -35,6 +35,9 @@ import { RegisterComponent, LoginComponent } from './auth/index';
 import { UserProfileComponent } from './users/user-profile/user-profile.component';
 import { AddedContentComponent } from './users/added-content/added-content.component';
 import { AdminComponent } from './users/admin/admin.component';
+import { NewsPageComponent } from './news/news-page/news-page.component';
+import { NewsEntryComponent } from './news/news-entry/news-entry.component';
+import { NewsDetailsComponent } from './news/news-details/news-details.component';
 
 @NgModule({
     declarations: [
@@ -54,7 +57,10 @@ import { AdminComponent } from './users/admin/admin.component';
         LoginComponent,
         UserProfileComponent,
         AddedContentComponent,
-        AdminComponent
+        AdminComponent,
+        NewsPageComponent,
+        NewsEntryComponent,
+        NewsDetailsComponent
     ],
     imports: [
         RouterModule,

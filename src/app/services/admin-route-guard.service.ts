@@ -8,8 +8,8 @@ export class AdminRouteGuardService implements CanActivate {
     constructor(private router: Router, private authService: AuthService) { }
 
     canActivate() {
-        if (!localStorage.getItem('token')) {
-            this.router.navigate(['/login']);
+        if (!JSON.parse(localStorage.getItem('currentUser'))['admin']) {
+            this.router.navigate(['/home']);
         }
 
         return this.authService.isUserAdmin();
