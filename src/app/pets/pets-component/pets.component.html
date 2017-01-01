@@ -1,0 +1,12 @@
+<button (click)="addComment()" class="btn btn-success">Add Comment</button>
+
+<ul *ngIf="pets" class="list">
+    <li *ngFor="let pet of pets">
+        <div class="row">
+            <div class="col-xs-1 text-right">
+                <p class="pet-content">{{pet.content}}</p>
+            </div>
+        </div>
+    </li>
+</ul>
+

@@ -13,6 +13,7 @@ import { ApiService, AuthService } from './services/index';
 import { FactsService } from './services/facts.service';
 import { DataService } from './services/data.service';
 import {CommentsService} from './services/comments.service';
+import {PetsService} from './services/pets.service';
 
 // directives
 import { EqualityValidatorDirective } from './directives/equality-validator.directive';
@@ -22,6 +23,7 @@ import { AppComponent } from './app.component';
 
 import { AdoptAPetComponent } from './pets/adopt-a-pet-component/adopt-a-pet.component';
 import { PetProfileComponent } from './pets/pet-profile-component/pet-profile.component';
+import {PetsComponent} from './pets/pets-component/pets.component';
 
 import { HomeComponent } from './home/home.component';
 import { FactsComponent } from './components/facts/facts.component';
@@ -45,7 +47,8 @@ import { RegisterComponent, LoginComponent } from './auth/index';
         RegisterComponent,
         LoginComponent,
         AdoptAPetComponent,
-        PetProfileComponent
+        PetProfileComponent,
+        PetsComponent
     ],
     imports: [
         BrowserModule,
@@ -61,7 +64,8 @@ import { RegisterComponent, LoginComponent } from './auth/index';
         AuthService,
         FactsService,
         DataService,
-        CommentsService
+        CommentsService,
+        PetsService
     ],
     bootstrap: [AppComponent]
 })
