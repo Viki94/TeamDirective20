@@ -3,7 +3,7 @@ import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { Router, ActivatedRoute } from '@angular/router';
 import { NotificationsService } from 'angular2-notifications';
 import { EmailValidator, RangeValidator } from '../../auth/custom-validators/index';
-import { UsersService } from '../../services/index';
+import { UsersService, NewsService } from '../../services/index';
 
 @Injectable()
 @Component({
@@ -14,6 +14,7 @@ import { UsersService } from '../../services/index';
 export class UserProfileComponent implements OnInit {
     private form: FormGroup;
     private user: Object;
+    private addedArticles: Object;
     private adoptedPets: Object;
     private addedAnimals: Object;
     private addedCampaigns: Object;
@@ -30,7 +31,8 @@ export class UserProfileComponent implements OnInit {
         private usersService: UsersService,
         private notificationsService: NotificationsService,
         private router: Router,
-        private route: ActivatedRoute
+        private route: ActivatedRoute,
+        private newsService: NewsService
     ) {
         this.form = this.formBuilder.group({
             firstName: ['', Validators.compose([Validators.minLength(3), Validators.maxLength(20)])],
@@ -45,6 +47,66 @@ export class UserProfileComponent implements OnInit {
             timeOut: 2000,
             showProgressBar: false,
             animate: 'fromRight'
+        };
+
+        this.addedArticles = {
+            id: 'added-articles',
+            title: 'Добавени статии',
+            nothingAddedMessage: 'Този потребител все още не е добавял статии.',
+            trHeadTitle: 'Заглавие:',
+            trHeadDate: 'Създадена на:',
+            list: []
+        };
+
+        this.adoptedPets = {
+            id: 'adopted-pets',
+            title: 'Осиновени животни',
+            nothingAddedMessage: 'Този потребител все още не е осиновил никое животно.',
+            trHeadTitle: 'Име:',
+            trHeadDate: 'Осиновен на:',
+            rootLink: '/news/details/',
+            list: [{
+                name: 'Силвестър',
+                imgUrl: 'http://d39kbiy71leyho.cloudfront.net/wp-content/uploads/2016/05/09170020/cats-politics-TN.jpg',
+                addedOn: '22/12/2016',
+                id: 'a10901293039039'
+            }]
+        };
+
+        this.addedAnimals = {
+            id: 'added-animals',
+            title: 'Добавени обяви',
+            nothingAddedMessage: 'Този потребител все още не е добавял обяви.',
+            trHeadTitle: 'Име:',
+            trHeadDate: 'Добавена на:',
+            list: []
+        };
+
+        this.addedCampaigns = {
+            id: 'added-campaigns',
+            title: 'Добавени кампании',
+            nothingAddedMessage: 'Този потребител все още не е добавял кампании.',
+            trHeadTitle: 'Заглавие:',
+            trHeadDate: 'Добавена на:',
+            list: []
+        };
+
+        this.addedFacts = {
+            id: 'added-facts',
+            title: 'Добавени любопитни факти',
+            nothingAddedMessage: 'Този потребител все още не е добавял факти.',
+            trHeadTitle: 'Заглавие:',
+            trHeadDate: 'Добавен на:',
+            list: []
+        };
+
+        this.addedGalleryImages = {
+            id: 'added-images',
+            title: 'Добавени снимки',
+            nothingAddedMessage: 'Този потребител все още не е добавял снимки.',
+            trHeadTitle: 'Заглавие:',
+            trHeadDate: 'Добавена на:',
+            list: []
         };
     }
 
@@ -103,11 +165,17 @@ export class UserProfileComponent implements OnInit {
             .switchMap(params => this.user = this.usersService.getUserById(params['id']))
             .subscribe(user => {
                 this.user = user;
+
                 this.image = {
                     imgUrl: this.user['profilePicture'],
                     title: this.user['username'],
                     _id: this.user['_id']
                 };
+
+                this.user['addedArticles']
+                    .forEach(article => {
+                        this.addedArticles['list'].push(article);
+                    });
             },
             err => {
                 this.user = JSON.parse(localStorage.getItem('currentUser'));
@@ -117,55 +185,11 @@ export class UserProfileComponent implements OnInit {
                     _id: this.user['_id']
                 };
                 this.showEditButton = true;
+                console.log(this.user)
+                this.user['addedArticles']
+                    .forEach(article => {
+                        this.addedArticles['list'].push(article);
+                    });
             });
-
-        this.adoptedPets = {
-            id: 'adopted-pets',
-            title: 'Осиновени животни',
-            nothingAddedMessage: 'Този потребител все още не е осиновил никое животно.',
-            trHeadTitle: 'Име:',
-            trHeadDate: 'Осиновен на:',
-            list: [{
-                name: 'Силвестър',
-                imgUrl: 'http://d39kbiy71leyho.cloudfront.net/wp-content/uploads/2016/05/09170020/cats-politics-TN.jpg',
-                addedOn: '22/12/2016'
-            }]
-        };
-
-        this.addedAnimals = {
-            id: 'added-animals',
-            title: 'Добавени обяви',
-            nothingAddedMessage: 'Този потребител все още не е добавял обяви.',
-            trHeadTitle: 'Име:',
-            trHeadDate: 'Добавена на:',
-            list: []
-        };
-
-        this.addedCampaigns = {
-            id: 'added-campaigns',
-            title: 'Добавени кампании',
-            nothingAddedMessage: 'Този потребител все още не е добавял кампании.',
-            trHeadTitle: 'Заглавие:',
-            trHeadDate: 'Добавена на:',
-            list: []
-        };
-
-        this.addedFacts = {
-            id: 'added-facts',
-            title: 'Добавени любопитни факти',
-            nothingAddedMessage: 'Този потребител все още не е добавял факти.',
-            trHeadTitle: 'Заглавие:',
-            trHeadDate: 'Добавен на:',
-            list: []
-        };
-
-        this.addedGalleryImages = {
-            id: 'added-images',
-            title: 'Добавени снимки',
-            nothingAddedMessage: 'Този потребител все още не е добавял снимки.',
-            trHeadTitle: 'Заглавие:',
-            trHeadDate: 'Добавена на:',
-            list: []
-        };
     }
 }

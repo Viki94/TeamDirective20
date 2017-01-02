@@ -3,7 +3,8 @@
 'use strict';
 
 module.exports = (models) => {
-    var Article = models.Article;
+    let Article = models.Article,
+        User = models.User;
 
     return {
         addArticle(article) {
@@ -16,6 +17,25 @@ module.exports = (models) => {
                     if (err) {
                         return reject(err);
                     }
+
+                    User.findOne({ username: dbArticle.author }, (err, user) => {
+                        if (err) {
+                            return reject(err);
+                        }
+
+                        user.addedArticles.push({
+                            name: dbArticle.title,
+                            imgUrl: dbArticle.imgUrl,
+                            addedOn: dbArticle.createdOn,
+                            id: dbArticle._id,
+                            isDeleted: dbArticle.isDeleted
+                        });
+                        console.log(user);
+                        user.save((err, res) => {
+                            console.log(res);
+                            return reject(err);
+                        });
+                    });
 
                     return resolve(dbArticle);
                 });

@@ -23,6 +23,7 @@
       </div>
     </div>
     <div [hidden]="showEdit" class="col-md-9">
+      <app-added-content *ngIf="user.admin" [options]="addedArticles"></app-added-content>
       <app-added-content [options]="adoptedPets"></app-added-content>
       <app-added-content [options]="addedAnimals"></app-added-content>
       <app-added-content [options]="addedCampaigns"></app-added-content>

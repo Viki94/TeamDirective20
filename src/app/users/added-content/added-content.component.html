@@ -17,7 +17,7 @@
           <tr *ngFor="let item of options.list">
             <td><img class="img-circle img-responsive" [src]="item.imgUrl"
                 [alt]="item.name"></td>
-            <td class="text-center"><a>{{item.name}}</a></td>
+            <td class="text-center"><a [routerLink]="options.rootLink + item.id">{{item.name}}</a></td>
             <td class="text-center">{{item.addedOn}}</td>
           </tr>          
         </tbody>
