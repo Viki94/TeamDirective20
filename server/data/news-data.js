@@ -69,6 +69,30 @@ module.exports = (models) => {
                     });
                 });
             });
+        },
+
+        commentArticle(articleId, username, content) {
+            return new Promise((resolve, reject) => {
+                Article.findOne({ _id: articleId }, (err, article) => {
+                    if (!article) {
+                        return reject(err);
+                    }
+
+                    let comment = {
+                        author: username,
+                        content
+                    };
+                    article.comments.push(comment);
+
+                    article.save((err, res) => {
+                        if (err) {
+                            return reject(err);
+                        }
+
+                        return resolve(res);
+                    });
+                });
+            });
         }
     };
 };

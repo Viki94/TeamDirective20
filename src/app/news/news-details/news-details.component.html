@@ -10,9 +10,10 @@
       </p>
       <p class="small">Създадена на: {{article.createdOn}}</p>
       <div>
+        <button *ngIf="isLoggedIn" (click)="focusInput()" pageScroll [pageScrollDuration]="500" href="#comment-box" class="btn btn-success btn-xs" type="button">Коментрай</button>
         <button [hidden]="isLiked || !isLoggedIn" (click)="toggleLike()" class="btn btn-success btn-xs" type="button">Like! ({{article.likes.length}})</button>
         <button [hidden]="!isLiked || !isLoggedIn" (click)="toggleLike()" class="btn btn-success btn-xs" type="button">Liked! ({{article.likes.length}})</button>
-        <button [hidden]="isLoggedIn" class="btn btn-success btn-xs" type="button">Likes ({{article.likes.length}})</button>
+        <button *ngIf="!isLoggedIn" class="btn btn-success btn-xs" type="button">Likes ({{article.likes.length}})</button>
       </div>
     </div>
     <div class="col-md-9">
@@ -23,31 +24,26 @@
           <div class="title-h4 text-center">
             <h4>Коментари</h4>
           </div>
-          <div class="comment card">
+          <div *ngFor="let comment of article.comments" class="comment card">
             <div class="card-content text-center">
-              some random comment
+              {{comment.content}}
             </div>
             <div class="card-content small text-right">
-              <div>author: <a class="comment-profile-link">Dimitar Pechev</a></div>
-              <div>createdOn: 02/01/2017</div>
+              <div>Автор: <a class="comment-profile-link">{{comment.author}}</a></div>
+              <div>Написан на: {{comment.createdOn}}</div>
             </div>
           </div>
-          <div class="comment card">
-            <div class="card-content text-center">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium officiis enim hic repellat facilis! Odit modi rem aut
-              id laboriosam rerum quaerat totam ex velit assumenda impedit, cumque ad non magnam nihil iure suscipit omnis
-              corrupti, sunt dolore unde reprehenderit. Deserunt explicabo officiis necessitatibus, possimus perferendis
-              aliquid quidem laudantium fugit! Illo voluptatem, ut corporis accusantium ducimus, ea dignissimos aliquam quidem.
-              Mollitia nostrum modi eos porro, dolore vitae consectetur molestias adipisci nobis, rerum accusamus. Nobis,
-              vel, obcaecati. Quos excepturi, modi dicta.
+          <div id="comment-box" *ngIf="isLoggedIn">
+            <div class="card comment">
+              <div class="card-content">
+                <form [formGroup]="form" (ngSubmit)="submit(form.value)">
+                  <textarea #commentInput id="commentInput" rows="10" cols="40" [formControl]="form.controls['content']" name="content" placeholder="Въведете вашия коментар тук..."></textarea>
+                  <div class="col-md-4 col-md-offset-8">
+                    <button type="submit" class="btn btn-block btn-success">Добави коментар</button>
+                  </div>
+                </form>
+              </div>
             </div>
-            <div class="card-content small text-right">
-              <div>author: <a class="comment-profile-link">Dimitar Pechev</a></div>
-              <div>createdOn: 02/01/2017</div>
-            </div>
-          </div>
-          <div class="col-md-4 col-md-offset-8">
-            <button type="button" class="btn btn-block btn-success">Добави коментар</button>
           </div>
         </div>
       </div>

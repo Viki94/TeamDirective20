@@ -1,5 +1,6 @@
-import { Component, OnInit, Injectable } from '@angular/core';
+import { Component, OnInit, Injectable, ViewChild, ElementRef } from '@angular/core';
 import { ActivatedRoute, Resolve } from '@angular/router';
+import { FormBuilder, FormGroup } from '@angular/forms';
 import { NotificationsService } from 'angular2-notifications';
 import { NewsService } from '../../services/index';
 
@@ -15,17 +16,24 @@ export class NewsDetailsComponent implements OnInit {
     isLoggedIn: boolean;
     currentUser: Object;
     notificationOptions: Object;
+    form: FormGroup;
+    @ViewChild('commentInput') commentInput;
 
     constructor(
         private newsService: NewsService,
         private route: ActivatedRoute,
-        private notificationsService: NotificationsService
+        private notificationsService: NotificationsService,
+        private formBuilder: FormBuilder
     ) {
         this.notificationOptions = {
             timeOut: 2000,
             showProgressBar: false,
             animate: 'fromRight'
         };
+
+        this.form = this.formBuilder.group({
+            content: ['']
+        });
     }
 
     ngOnInit() {
@@ -67,6 +75,31 @@ export class NewsDetailsComponent implements OnInit {
             err => {
                 this.notificationsService.error('Възникна грешка!', 'Моля, опитайте по-късно.');
                 console.log(err);
+            });
+    }
+
+    focusInput() {
+        this.commentInput.nativeElement.focus();
+    }
+
+    submit(contentObj) {
+        if (!contentObj['content'] || contentObj['content'].length < 3 || contentObj['content'].length > 200) {
+            this.notificationsService.error('Възникна грешка!', 'Коментарът може да е между 3 и 200 символа.');
+            return;
+        }
+
+        let author = JSON.parse(localStorage.getItem('currentUser'))['username'];
+
+        this.newsService.postComment(this.article['_id'], author, contentObj['content'])
+            .subscribe(res => {
+                let comment = res.comments[res.comments.length - 1];
+                this.article['comments'].push(comment);
+                this.form.reset();
+                this.notificationsService.success('Коментарът е записан!', 'Продължете напред...');
+            },
+            err => {
+                console.log(err);
+                this.notificationsService.error('Възникна грешка!', 'Моля, опитайте по-късно.');
             });
     }
 }

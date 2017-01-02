@@ -20,4 +20,8 @@ export class NewsService {
     toggleLike(articleId, username) {
         return this.api.put('api/news/toggle-like', { articleId, username });
     }
+
+    postComment(articleId, username, content) {
+        return this.api.post('api/news/post-comment', { articleId, username, content });
+    }
 }

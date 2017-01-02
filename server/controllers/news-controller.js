@@ -43,6 +43,19 @@ module.exports = (data) => {
                 .catch(err => {
                     res.status(500).json(err);
                 });
+        },
+        postComment(req, res) {
+            let articleId = req.body.articleId,
+                username = req.body.username,
+                content = req.body.content;
+
+            data.commentArticle(articleId, username, content)
+                .then(result => {
+                    res.status(201).json(result);
+                })
+                .catch(err => {
+                    res.status(500).json(err);
+                });
         }
     };
 };
