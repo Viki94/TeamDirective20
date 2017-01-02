@@ -36,7 +36,7 @@ const routes: Routes = [
     { path: 'admin', component: AdminComponent, canActivate: [AdminRouteGuardService] },
     { path: 'news', component: NewsPageComponent },
     { path: 'news/details/:id', component: NewsDetailsComponent },
-    { path: 'news/add-article', component: NewsAddArticleComponent }
+    { path: 'news/add-article', component: NewsAddArticleComponent, canActivate: [AdminRouteGuardService] }
 ];
 
 @NgModule({
