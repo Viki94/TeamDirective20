@@ -5,7 +5,7 @@
 const encryptor = require('../utils/encryptor');
 
 module.exports = (models) => {
-    var User = models.User;
+    let User = models.User;
 
     return {
         createUser(username, password, firstName, lastName, email, age, gender, profilePicture) {

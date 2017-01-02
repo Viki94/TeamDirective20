@@ -49,6 +49,7 @@ let userSchema = new Schema({
         default: Date.now
     },
     addedArticles: [{}],
+    addedAnimals: [{}],
     isDeleted: Boolean,
     admin: Boolean,
     facebookId: String,
