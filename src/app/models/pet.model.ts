@@ -3,6 +3,7 @@ export class Pet {
     content: string;
     date: string;
     img: string;
+    posts: any[]
 
     constructor(creator: string, content: string, date: string, img: string) {
         this.creator = creator;

@@ -34,7 +34,7 @@ module.exports = (petData) => {
                 });
         },
         getPetById(req, res) {
-            petData.getPetById(0)
+            petData.getPetById(req.params.id)
                 .then((pet) => {
                     res.status(200).json(pet);
                 })

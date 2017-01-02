@@ -11,14 +11,14 @@ export class PetsService {
     }
 
     getAllPets() {
-        return this.apiService.put('api/pets/get-all',{});
+        return this.apiService.put('api/pets/get-all', {});
     }
 
-    getPetById(id: number){
-        return this.apiService.put(`api/pets/:${id}`,{});
+    getPetById(id: number) {
+        return this.apiService.put(`api/pets/${id}`, {});
     }
 
-    create(pet: Comment): Observable<any>{
+    create(pet: Comment): Observable<any> {
         return this.apiService.post('api/pets/create-pet', pet);
     }
 };
