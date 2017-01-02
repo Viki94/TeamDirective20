@@ -9,10 +9,12 @@ import { NewsService } from '../../services/index';
 })
 export class NewsPageComponent implements OnInit {
     newsList: any[];
+    isUserAdmin: boolean;
 
     constructor(private router: Router, private newsService: NewsService) { }
 
     ngOnInit() {
+        this.isUserAdmin = !!localStorage.getItem('currentUser') && JSON.parse(localStorage.getItem('currentUser'))['admin'];
         this.newsService.getAllArticles()
         .subscribe(articles => {
              this.newsList = articles;

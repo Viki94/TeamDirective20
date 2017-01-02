@@ -10,16 +10,14 @@ import { NewsService } from '../../services/index';
 })
 export class NewsDetailsComponent implements OnInit {
     article: Object;
-    constructor(private newsService: NewsService, private route: ActivatedRoute) {
-        this.article = {};
-    }
+    constructor(private newsService: NewsService, private route: ActivatedRoute) { }
 
     ngOnInit() {
+        this.article = {};
         this.route.params
             .switchMap(params => this.newsService.getArticleById(params['id']))
             .subscribe(article => {
-                console.log(article);
-                this.article = article;
+                this.article = article[0];
             });
     }
 }
