@@ -1,0 +1,12 @@
+<!--Button trigger modal - required properties:
+ data-toggle="modal" data-target="#myModal"-->
+
+<div class="modal fade" [id]="picture._id" tabindex="-1" role="dialog" [attr.aria-labelledby]="picture.title">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <img [src]="picture.imgUrl" alt="picture.title">
+      </div>
+    </div>
+  </div>
+</div>

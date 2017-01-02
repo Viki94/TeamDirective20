@@ -29,3 +29,11 @@
     font-style: italic;
     font-size: 15px;
 }
+
+.news-pic {
+    cursor: pointer;
+}
+
+.news-pic:hover {
+    box-shadow: 0 0 15px orange;
+}

@@ -39,6 +39,7 @@ import { NewsPageComponent } from './news/news-page/news-page.component';
 import { NewsEntryComponent } from './news/news-entry/news-entry.component';
 import { NewsDetailsComponent } from './news/news-details/news-details.component';
 import { NewsAddArticleComponent } from './news/news-add-article/news-add-article.component';
+import { PictureModalComponent } from './shared/picture-modal/picture-modal.component';
 
 @NgModule({
     declarations: [
@@ -62,7 +63,8 @@ import { NewsAddArticleComponent } from './news/news-add-article/news-add-articl
         NewsPageComponent,
         NewsEntryComponent,
         NewsDetailsComponent,
-        NewsAddArticleComponent
+        NewsAddArticleComponent,
+        PictureModalComponent
     ],
     imports: [
         RouterModule,

@@ -4,7 +4,7 @@
   </div>
   <div class="row news-content">
     <div class="col-md-3 text-center">
-      <img class="img-thumbnail img-responsive" [src]="article.imgUrl" [alt]="article.title">
+      <img class="news-pic img-thumbnail img-responsive" data-toggle="modal" [attr.data-target]="'#' + article._id" [src]="article.imgUrl" [alt]="article.title">
       <p>
         Автор: <a (click)="goToProfile(article.author)">{{article.author}}</a>
       </p>
@@ -55,3 +55,4 @@
 </div>
 
 <simple-notifications [options]="notificationOptions"></simple-notifications>
+<app-picture-modal [picture]="article"></app-picture-modal>
