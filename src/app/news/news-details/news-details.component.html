@@ -6,9 +6,9 @@
     <div class="col-md-3 text-center">
       <img class="img-thumbnail img-responsive" [src]="article.imgUrl" [alt]="article.title">
       <p>
-        Автор: {{article.author}}
+        Автор: <a (click)="goToProfile(article.author)">{{article.author}}</a>
       </p>
-      <p class="small">Създадена на: {{article.createdOn}}</p>
+      <p class="small">Създадена на: {{article.createdOn | date:"medium"}}</p>
       <div>
         <button *ngIf="isLoggedIn" (click)="focusInput()" pageScroll [pageScrollDuration]="500" href="#comment-box" class="btn btn-success btn-xs" type="button">Коментрай</button>
         <button [hidden]="isLiked || !isLoggedIn" (click)="toggleLike()" class="btn btn-success btn-xs" type="button">Like! ({{article.likes.length}})</button>
@@ -22,24 +22,27 @@
       <div class="row">
         <div>
           <div class="title-h4 text-center">
-            <h4>Коментари</h4>
+            <p class="bold">Коментари</p>
           </div>
+          <div [hidden]="article.comments.length" class="text-center no-comments">
+            Все още няма коментари!
+          </div>          
           <div *ngFor="let comment of article.comments" class="comment card">
             <div class="card-content text-center">
               {{comment.content}}
             </div>
             <div class="card-content small text-right">
-              <div>Автор: <a class="comment-profile-link">{{comment.author}}</a></div>
-              <div>Написан на: {{comment.createdOn}}</div>
+              <div>Автор: <a (click)="goToProfile(comment.author)" class="comment-profile-link" style="color:cornflowerblue">{{comment.author}}</a></div>
+              <div>Написан на: {{comment.createdOn | date:"medium"}}</div>
             </div>
           </div>
           <div id="comment-box" *ngIf="isLoggedIn">
             <div class="card comment">
               <div class="card-content">
                 <form [formGroup]="form" (ngSubmit)="submit(form.value)">
-                  <textarea #commentInput id="commentInput" rows="10" cols="40" [formControl]="form.controls['content']" name="content" placeholder="Въведете вашия коментар тук..."></textarea>
+                  <textarea #commentInput id="commentInput" class="form-control" rows="4" cols="40" [formControl]="form.controls['content']" name="content" placeholder="Въведете вашия коментар тук..."></textarea>
                   <div class="col-md-4 col-md-offset-8">
-                    <button type="submit" class="btn btn-block btn-success">Добави коментар</button>
+                    <button type="submit" id="btn-comment" class="btn btn-block btn-success">Добави коментар</button>
                   </div>
                 </form>
               </div>

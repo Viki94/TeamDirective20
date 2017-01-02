@@ -40,6 +40,18 @@ module.exports = (data) => {
                     res.status(500).json(err);
                 });
         },
+        getUserByUsername(req, res) {
+            let username = req.body.username;
+
+            data.findUserByCredentials(username)
+            .then(result => {
+                res.status(200).json(result);
+            })
+            .catch(err => {
+                console.log(err);
+                res.status(500).json(err);
+            });
+        },
         makeAdmin(req, res) {
             let user = req.body;
             user.admin = true;

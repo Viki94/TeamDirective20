@@ -14,6 +14,10 @@ export class UsersService {
         return this.api.put('api/users/get-all-users', {});
     }
 
+    getUserByUsername(username) {
+        return this.api.put('api/users/get-user-by-username', { username });
+    }
+
     makeUserAdmin(user) {
         return this.api.put('api/users/make-admin', user);
     }

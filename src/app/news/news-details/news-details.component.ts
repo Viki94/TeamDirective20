@@ -1,8 +1,8 @@
 import { Component, OnInit, Injectable, ViewChild, ElementRef } from '@angular/core';
-import { ActivatedRoute, Resolve } from '@angular/router';
+import { ActivatedRoute, Resolve, Router } from '@angular/router';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { NotificationsService } from 'angular2-notifications';
-import { NewsService } from '../../services/index';
+import { NewsService, UsersService } from '../../services/index';
 
 @Injectable()
 @Component({
@@ -21,7 +21,9 @@ export class NewsDetailsComponent implements OnInit {
 
     constructor(
         private newsService: NewsService,
+        private usersService: UsersService,
         private route: ActivatedRoute,
+        private router: Router,
         private notificationsService: NotificationsService,
         private formBuilder: FormBuilder
     ) {
@@ -38,7 +40,8 @@ export class NewsDetailsComponent implements OnInit {
 
     ngOnInit() {
         this.article = {
-            likes: []
+            likes: [],
+            comments: []
         };
         this.route.params
             .switchMap(params => this.newsService.getArticleById(params['id']))
@@ -80,6 +83,16 @@ export class NewsDetailsComponent implements OnInit {
 
     focusInput() {
         this.commentInput.nativeElement.focus();
+    }
+
+    goToProfile(username) {
+        this.usersService.getUserByUsername(username)
+            .subscribe(res => {
+                this.router.navigate(['profile', res._id]);
+            },
+            err => {
+                console.log(err);
+            });
     }
 
     submit(contentObj) {

@@ -32,20 +32,14 @@
       </div>
     </div>
     <div class="row text-left">
-      <h4 class="news-main-title">Последни новини</h4>
-      <div class="row card">
-        <div class="news-image col-md-2">
-          <img class="img-thumbnail img-responsive" src="http://www.vzemime.org/images/stories/galka%20web.jpg" alt="news-article">
-        </div>
-        <div class="col-md-10">
-          <p class="news-entry-title">10 дарителски картички = животоспасяваща профилактика на 1 котка или куче</p>
-          <p class="news-content small">Благотворителните картички от серията "Пощенска порода" пътуват по ваша поръчка по пощата в помощ на бездомните
-            кучета и котки, търсещи дом с "Вземи ме вкъщи". 10 картички, изпратени до вашите приятели или до вашия собствен
-            адрес покриват разходите за профилактичните изследвания на котка или куче, които включват следните изследвания:
-            Профилактичният пакет за котки включва: пълна кръвна картина, изследване за хемобартонела и бърз тест за котешка
-            левкемия и котешки имунодефицитен вирус.</p>
-          <div class="news-date small">17 Май 2015</div>
-        </div>
+      <div class="row">
+        <h4 class="news-main-title">Последни новини</h4>
+        <app-news-entry *ngFor="let newsEntry of newsData" [data]="newsEntry" (click)="goToDetails(newsEntry)"></app-news-entry>
+      </div>
+      <div class="row">
+          <div class="col-md-2 col-md-offset-10">
+            <button class="btn btn-block btn-success" routerLink="/news" type="button">Виж още...</button>
+          </div>
       </div>
     </div>
   </div>

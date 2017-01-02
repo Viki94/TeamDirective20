@@ -16,9 +16,9 @@ export class NewsPageComponent implements OnInit {
     ngOnInit() {
         this.isUserAdmin = !!localStorage.getItem('currentUser') && JSON.parse(localStorage.getItem('currentUser'))['admin'];
         this.newsService.getAllArticles()
-        .subscribe(articles => {
-             this.newsList = articles;
-        });
+            .subscribe(articles => {
+                this.newsList = articles;
+            });
     }
 
     goToDetails(article) {

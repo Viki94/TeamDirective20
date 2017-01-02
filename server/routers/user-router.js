@@ -12,6 +12,7 @@ module.exports = function (app, data) {
         .put('/toggle-ban-user', controllers.toggleBanUser)
         .put('/get-all-users', controllers.getAllUsers)
         .put('/get-user', controllers.getUserById)
+        .put('/get-user-by-username', controllers.getUserByUsername)
         .put('/edit-profile', controllers.editProfile);
 
     app.use('/api/users', router);
