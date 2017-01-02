@@ -10,7 +10,9 @@
       </p>
       <p class="small">Създадена на: {{article.createdOn}}</p>
       <div>
-        <button class="btn btn-success btn-xs" type="button">Like! (0)</button>
+        <button [hidden]="isLiked || !isLoggedIn" (click)="toggleLike()" class="btn btn-success btn-xs" type="button">Like! ({{article.likes.length}})</button>
+        <button [hidden]="!isLiked || !isLoggedIn" (click)="toggleLike()" class="btn btn-success btn-xs" type="button">Liked! ({{article.likes.length}})</button>
+        <button [hidden]="isLoggedIn" class="btn btn-success btn-xs" type="button">Likes ({{article.likes.length}})</button>
       </div>
     </div>
     <div class="col-md-9">
@@ -32,7 +34,12 @@
           </div>
           <div class="comment card">
             <div class="card-content text-center">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium officiis enim hic repellat facilis! Odit modi rem aut id laboriosam rerum quaerat totam ex velit assumenda impedit, cumque ad non magnam nihil iure suscipit omnis corrupti, sunt dolore unde reprehenderit. Deserunt explicabo officiis necessitatibus, possimus perferendis aliquid quidem laudantium fugit! Illo voluptatem, ut corporis accusantium ducimus, ea dignissimos aliquam quidem. Mollitia nostrum modi eos porro, dolore vitae consectetur molestias adipisci nobis, rerum accusamus. Nobis, vel, obcaecati. Quos excepturi, modi dicta.
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium officiis enim hic repellat facilis! Odit modi rem aut
+              id laboriosam rerum quaerat totam ex velit assumenda impedit, cumque ad non magnam nihil iure suscipit omnis
+              corrupti, sunt dolore unde reprehenderit. Deserunt explicabo officiis necessitatibus, possimus perferendis
+              aliquid quidem laudantium fugit! Illo voluptatem, ut corporis accusantium ducimus, ea dignissimos aliquam quidem.
+              Mollitia nostrum modi eos porro, dolore vitae consectetur molestias adipisci nobis, rerum accusamus. Nobis,
+              vel, obcaecati. Quos excepturi, modi dicta.
             </div>
             <div class="card-content small text-right">
               <div>author: <a class="comment-profile-link">Dimitar Pechev</a></div>
@@ -47,3 +54,5 @@
     </div>
   </div>
 </div>
+
+<simple-notifications [options]="notificationOptions"></simple-notifications>

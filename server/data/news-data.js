@@ -47,7 +47,7 @@ module.exports = (models) => {
         },
 
         toggleLikeArticle(articleId, username) {
-            return new Promise((reject, resolve) => {
+            return new Promise((resolve, reject) => {
                 Article.findOne({ _id: articleId }, (err, article) => {
                     if (err) {
                         return reject(err);
@@ -55,7 +55,7 @@ module.exports = (models) => {
 
                     if (article.likes.includes(username)) {
                         let index = article.likes.indexOf(username);
-                        article.splice(index, 1);
+                        article.likes.splice(index, 1);
                     } else {
                         article.likes.push(username);
                     }

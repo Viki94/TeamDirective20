@@ -16,4 +16,8 @@ export class NewsService {
     getArticleById(articleId) {
         return this.api.put('api/news/get-article', { _id: articleId });
     }
+
+    toggleLike(articleId, username) {
+        return this.api.put('api/news/toggle-like', { articleId, username });
+    }
 }

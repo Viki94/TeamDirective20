@@ -34,7 +34,7 @@ module.exports = (data) => {
         },
         toggleLike(req, res) {
             let username = req.body.username,
-                articleId = req.body.id;
+                articleId = req.body.articleId;
 
             data.toggleLikeArticle(articleId, username)
                 .then(result => {
