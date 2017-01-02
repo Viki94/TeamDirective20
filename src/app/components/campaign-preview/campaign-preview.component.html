@@ -1,27 +1,51 @@
-<ul *ngIf="campaign">
-    <div class="sub-nav-home card text-center">
-        <div class="row">
-            <div class="col-md-5">
-                <img class="img-responsive img-thumbnail" [src]="campaign.image">
-            </div>
-            <div class="col-md-7">
-                <h1>{{campaign.name}}</h1>
-                <h6>Описание: {{campaign.description}}</h6>
-                <h6>Име на собственика: {{campaign.ownerName}}</h6>
-                <h6 *ngIf="!campaign.ownerName.length">
-                    няма информация
-                </h6>
-                <h6>Контакти на собственика: {{campaign.ownerContact}}</h6>
-                <h6>Необходима сума: {{campaign.requiredAmount}}</h6>
-                <h6 *ngIf="!campaign.requiredAmount">
-                    няма информация
-                </h6>
-                <h6>Сметка за дарения: {{campaign.iban}}</h6>
-                <h6 *ngIf="!campaign.iban">
-                    няма информация
-                </h6>
+<div *ngIf="!showEditButton && !showEdit">
+    <ul *ngIf="campaign">
+        <div class="sub-nav-home card text-center">
+            <div class="row">
+                <div class="col-md-5">
+                    <img class="img-responsive img-thumbnail" [src]="campaign.image">
+                </div>
+                <div class="col-md-7">
+                    <h1>{{campaign.name}}</h1>
+                    <h6>Описание: {{campaign.description}}</h6>
+                    <h6>Име на собственика: {{campaign.ownerName}}</h6>
+                    <h6 *ngIf="!campaign.ownerName.length">
+                        няма информация
+                    </h6>
+                    <h6>Контакти на собственика: {{campaign.ownerContact}}</h6>
+                    <h6>Необходима сума: {{campaign.neededAmount}}</h6>
+                    <h6 *ngIf="!campaign.neededAmount">
+                        няма информация
+                    </h6>
+                    <h6>Сметка за дарения: {{campaign.iban}}</h6>
+                    <h6 *ngIf="!campaign.iban">
+                        няма информация
+                    </h6>
+                </div>
             </div>
         </div>
-    </div>
-</ul>
-<button (click)="return()" class="btn btn-danger">Назад</button>
+    </ul>
+    <button (click)="showEditCampaign()" class="btn btn-warning">Редактиране</button>
+    <button (click)="return()" class="btn btn-danger">Назад</button>
+</div>
+<div *ngIf="showEdit">
+    <form #editCampaignForm="ngForm" (ngSubmit)="editCampaign(); editCampaignForm.reset()">
+        <input class="form-control" type="text" name="name" [(ngModel)]="campaign.name" #name="ngModel" minlength="6" placeholder="Въведете име на кампанията" required />
+        <div class="text-danger small" *ngIf="name.touched && name.errors?.minlength">
+            Най-малко 6 символа
+        </div>
+        <input class="form-control" type="text" name="description" [(ngModel)]="campaign.description" #description="ngModel" minlength="20" placeholder="Въведете описание" required />
+        <div class="text-danger small" *ngIf="description.touched && description.errors?.minlength">
+            Най-малко 20 символа
+        </div>
+        <input class="form-control" type="text" name="ownerName" [(ngModel)]="campaign.ownerName" #ownerName="ngModel" placeholder="Въведете име на собственика">
+        <input class="form-control" type="text" name="ownerContact" [(ngModel)]="campaign.ownerContact" #ownerContact="ngModel" minlength="6" placeholder="Въведете контакти на собственика">
+        <div class="text-danger small" *ngIf="ownerContact.touched && ownerContact.errors?.minlength">
+            Най-малко 6 символа
+        </div>
+        <input class="form-control" type="text" name="neededAmount" [(ngModel)]="campaign.neededAmount" #neededAmount="ngModel" placeholder="Въведете необходимата сума" required />
+        <input class="form-control" type="text" name="iban" [(ngModel)]="campaign.iban" #iban="ngModel" placeholder="Въведете номер на сметката">
+        <hr>
+        <button type="submit" class="btn btn-block orange">Потвърди</button>
+    </form>
+</div>

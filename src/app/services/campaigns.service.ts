@@ -14,11 +14,15 @@ export class CampaignsService {
         return this.apiService.get('api/campaigns/get-all-campaigns');
     }
 
-    createCampaign(campaign: Campaign): Observable<any>{
+    createCampaign(campaign: Campaign): Observable<any> {
         return this.apiService.post('api/campaigns/create-campaign', campaign);
     }
 
     getById(id) {
         return this.apiService.get(`api/campaigns/get-by-id/${id}`);
+    }
+
+    editCampaign(campaignData: Campaign) {
+        return this.apiService.put('api/campaigns/edit-campaign', campaignData);
     }
 };

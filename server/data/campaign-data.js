@@ -42,6 +42,18 @@ module.exports = (models) => {
                     return resolve(campaign);
                 });
             });
+        },
+
+        editCampaign(campaign) {
+            return new Promise((resolve, reject) => {
+                Campaign.update({ _id: campaign._id }, campaign, (err) => {
+                    if (err) {
+                        return reject(err);
+                    }
+
+                    return resolve(campaign);
+                });
+            });
         }
     };
 };
