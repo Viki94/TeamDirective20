@@ -1,4 +1,5 @@
 export class Campaign {
+    _id: string;
     name: string;
     description: string;
     ownerName: string;

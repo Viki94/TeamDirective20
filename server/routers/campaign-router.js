@@ -10,7 +10,8 @@ module.exports = function (app, campaignData) {
     router
         .post('/create-campaign', controllers.createCampaign)
         .get('/get-all-campaigns', controllers.getAllCampaigns)
-        .get('/get-by-id/:id', controllers.getById);    
+        .get('/get-by-id/:id', controllers.getById)
+        .put('/edit-campaign', controllers.editCampaign);
 
     app.use('/api/campaigns', router);
 };

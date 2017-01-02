@@ -16,6 +16,7 @@ const DEFAULT_CAMPAIGN_IMG = 'https://i.ytimg.com/vi/JWY1bpbmyS4/maxresdefault.j
 })
 export class CampaignPreviewComponent implements OnInit {
     campaign: Campaign = null;
+    private showEdit = false;
 
     constructor(
         private campaignsService: CampaignsService,
@@ -44,6 +45,22 @@ export class CampaignPreviewComponent implements OnInit {
     }
 
     return() {
+        this.router.navigate([`campaign/list`]);
+    }
+
+    showEditCampaign() {
+        this.showEdit = true;
+    }
+
+    showAddedDetails() {
+        this.showEdit = false;
+    }
+
+    editCampaign() {
+        this.campaignsService.editCampaign(this.campaign)
+            .subscribe(res => {
+                this.showEdit = true;
+            });
         this.router.navigate([`campaign/list`]);
     }
 };
