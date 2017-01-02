@@ -8,7 +8,7 @@
     <div class="col-md-3 text-center">
       <div class="card-panel">
         <div class="text-center">
-          <img style="margin: auto;" class="img-circle img-responsive" [src]="user.profilePicture" [alt]="user.username">
+          <img id="profile-picture" data-toggle="modal" [attr.data-target]="'#' + image._id" class="img-circle img-responsive" [src]="user.profilePicture" [alt]="user.username">
         </div>
         <hr>
         <div class="card-content text-center">
@@ -82,3 +82,4 @@
 </div>
 
 <simple-notifications [options]="notificationOptions"></simple-notifications>
+<app-picture-modal [picture]="image"></app-picture-modal>

@@ -4,5 +4,6 @@ img {
 
 .modal-dialog {
     width: auto;
-    max-width: 80%;
+    max-width: 70%;
+    max-height: 70%;
 }

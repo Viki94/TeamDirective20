@@ -23,6 +23,7 @@ export class UserProfileComponent implements OnInit {
     private showEditButton = false;
     private isBtnDisabled = false;
     private notificationOptions: Object;
+    private image: Object;
 
     constructor(
         private formBuilder: FormBuilder,
@@ -97,13 +98,24 @@ export class UserProfileComponent implements OnInit {
     }
 
     ngOnInit() {
+        this.image = {};
         this.route.params
             .switchMap(params => this.user = this.usersService.getUserById(params['id']))
             .subscribe(user => {
                 this.user = user;
+                this.image = {
+                    imgUrl: this.user['profilePicture'],
+                    title: this.user['username'],
+                    _id: this.user['_id']
+                };
             },
             err => {
                 this.user = JSON.parse(localStorage.getItem('currentUser'));
+                this.image = {
+                    imgUrl: this.user['profilePicture'],
+                    title: this.user['username'],
+                    _id: this.user['_id']
+                };
                 this.showEditButton = true;
             });
 
