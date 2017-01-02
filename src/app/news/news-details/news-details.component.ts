@@ -96,8 +96,8 @@ export class NewsDetailsComponent implements OnInit {
     }
 
     submit(contentObj) {
-        if (!contentObj['content'] || contentObj['content'].length < 3 || contentObj['content'].length > 200) {
-            this.notificationsService.error('Възникна грешка!', 'Коментарът може да е между 3 и 200 символа.');
+        if (!contentObj['content'] || contentObj['content'].length < 3 || contentObj['content'].length > 500) {
+            this.notificationsService.error('Възникна грешка!', 'Коментарът може да е между 3 и 500 символа.');
             return;
         }
 

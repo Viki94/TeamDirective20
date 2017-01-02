@@ -6,19 +6,43 @@ const mongoose = require('mongoose'),
     Schema = mongoose.Schema;
 
 let articleSchema = new Schema({
-    title: String,
-    author: String,
-    content: String,
-    imgUrl: String,
+    title: {
+        type: String,
+        required: true,
+        minlength: 5,
+        maxlength: 100
+    },
+    author: {
+        type: String,
+        required: true
+    },
+    content: {
+        type: String,
+        required: true,
+        minlength: 50,
+        maxlength: 20000
+    },
+    imgUrl: {
+        type: String,
+        required: true
+    },
     likes: [String],
     comments: [{
-        author: String,
+        author: {
+            type: String,
+            required: true
+        },
         createdOn: {
             type: Date,
             default: Date.now
         },
         isDeleted: Boolean,
-        content: String
+        content: {
+            type: String,
+            required: true,
+            minlength: 3,
+            maxlength: 500
+        }
     }],
     createdOn: {
         type: Date,

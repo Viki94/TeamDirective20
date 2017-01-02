@@ -37,6 +37,23 @@ export class NewsAddArticleComponent implements OnInit {
     }
 
     addArticle(article) {
+        if (!article.title || article.title.length < 5 || article.title.length > 100) {
+            this.notificationsService.error('Възникна грешка!', 'Заглавието трябва да е между 5 е 100 символа.');
+            return;
+        }
+
+        if (!article.imgUrl) {
+            this.notificationsService.error('Възникна грешка!', 'Моля, въведете линк към снимка.');
+            return;
+        }
+
+        if (!article.content || article.content.length < 5 || article.content.length > 20000) {
+            console.log(article.content);
+            console.log(article.content.length);
+            this.notificationsService.error('Възникна грешка!', 'Съдържанието трябва да е между 50 е 20000 символа.');
+            return;
+        }
+
         let user = JSON.parse(localStorage.getItem('currentUser'));
         article['author'] = user.username;
         this.newsService.addArticle(article)
