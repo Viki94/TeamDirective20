@@ -48,19 +48,19 @@ export class NewsAddArticleComponent implements OnInit {
         }
 
         if (!article.content || article.content.length < 5 || article.content.length > 20000) {
-            console.log(article.content);
-            console.log(article.content.length);
             this.notificationsService.error('Възникна грешка!', 'Съдържанието трябва да е между 50 е 20000 символа.');
             return;
         }
 
         let user = JSON.parse(localStorage.getItem('currentUser'));
         article['author'] = user.username;
+        article['isDeleted'] = false;
         this.newsService.addArticle(article)
             .subscribe(res => {
                 this.isDisabled = true;
                 this.router.navigate(['/news/page/1']);
                 this.notificationsService.success('Статията създадена!', 'Обратно към всички статии...');
+                console.log(res);
             },
             err => {
                 console.log(err);

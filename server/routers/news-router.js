@@ -13,7 +13,9 @@ module.exports = function (app, data) {
         .put('/toggle-like', controllers.toggleLike)
         .post('/post-comment', controllers.postComment)
         .put('/get-by-page/:page', controllers.getArticlesByPage)
-        .post('/add-article', controllers.addArticle);
+        .post('/add-article', controllers.addArticle)
+        .put('/remove-article', controllers.removeArticle)
+        .put('/restore-article', controllers.restoreArticle);
 
     app.use('/api/news', router);
 };

@@ -39,7 +39,7 @@ module.exports = (models) => {
             const pageSize = 8;
 
             return new Promise((resolve, reject) => {
-                Article.find()
+                Article.find({ isDeleted: false })
                     .skip((page - 1) * pageSize)
                     .sort({ 'createdOn': -1 })
                     .limit(pageSize)
@@ -48,7 +48,7 @@ module.exports = (models) => {
                             return reject(err);
                         }
 
-                        Article.count((err, count) => {
+                        Article.count({ isDeleted: false }, (err, count) => {
                             if (err) {
                                 return reject(err);
                             }
@@ -64,6 +64,43 @@ module.exports = (models) => {
             });
         },
 
+        removeArticle(articleId) {
+            return new Promise((resolve, reject) => {
+                Article.findOne({ _id: articleId }, (err, article) => {
+                    if (err) {
+                        return reject(err);
+                    }
+
+                    article.isDeleted = true;
+                    article.save((err, res) => {
+                        if (err) {
+                            return reject(err);
+                        }
+
+                        return resolve(res);
+                    });
+                });
+            });
+        },
+
+        restoreArticle(articleId) {
+            return new Promise((resolve, reject) => {
+                Article.findOne({ _id: articleId }, (err, article) => {
+                    if (err) {
+                        return reject(err);
+                    }
+
+                    article.isDeleted = false;
+                    article.save((err, res) => {
+                        if (err) {
+                            return reject(err);
+                        }
+
+                        return resolve(res);
+                    });
+                });
+            });
+        },
 
         getArticleById(articleId) {
             return new Promise((resolve, reject) => {

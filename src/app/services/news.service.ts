@@ -28,4 +28,12 @@ export class NewsService {
     postComment(articleId, username, content) {
         return this.api.post('api/news/post-comment', { articleId, username, content });
     }
+
+    deleteArticle(articleId) {
+        return this.api.put('api/news/remove-article', { id: articleId });
+    }
+
+    restoreArticle(articleId) {
+        return this.api.put('api/news/restore-article', { id: articleId });
+    }
 }

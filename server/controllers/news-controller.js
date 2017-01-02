@@ -73,6 +73,26 @@ module.exports = (data) => {
                 .catch((err) => {
                     res.status(500).send(err);
                 });
+        },
+        removeArticle(req, res) {
+            let articleId = req.body.id;
+            data.removeArticle(articleId)
+                .then(article => {
+                    res.status(200).json(article);
+                })
+                .catch((err) => {
+                    res.status(500).send(err);
+                });
+        },
+        restoreArticle(req, res) {
+            let articleId = req.body.id;
+            data.restoreArticle(articleId)
+                .then(article => {
+                    res.status(200).json(article);
+                })
+                .catch((err) => {
+                    res.status(500).send(err);
+                });
         }
     };
 };

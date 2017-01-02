@@ -13,8 +13,10 @@ export class HomeComponent implements OnInit {
 
     ngOnInit() {
         this.newsData = [];
-        this.newsService.getAllArticles()
-            .subscribe(articles => {
+        this.newsService.getArticlesByPage(1)
+            .subscribe(articlesObj => {
+                let articles = articlesObj.articles;
+
                 articles.sort((a, b) => {
                     if (a.createdOn > b.createdOn) {
                         return -1;

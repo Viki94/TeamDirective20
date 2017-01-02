@@ -15,6 +15,7 @@ export class NewsDetailsComponent implements OnInit {
     isLiked: boolean;
     isLoggedIn: boolean;
     currentUser: Object;
+    canDelete: boolean;
     notificationOptions: Object;
     form: FormGroup;
     @ViewChild('commentInput') commentInput;
@@ -44,6 +45,10 @@ export class NewsDetailsComponent implements OnInit {
             comments: []
         };
 
+        if (localStorage.getItem('currentUser')) {
+            this.currentUser = JSON.parse(localStorage.getItem('currentUser'));
+        }
+
         let id = this.route.snapshot.params['id'];
         this.newsService.getArticleById(id)
             .subscribe(article => {
@@ -51,11 +56,13 @@ export class NewsDetailsComponent implements OnInit {
                 if (this.article['likes'].includes(this.currentUser['username'])) {
                     this.isLiked = true;
                 }
-            });
 
-        if (localStorage.getItem('currentUser')) {
-            this.currentUser = JSON.parse(localStorage.getItem('currentUser'));
-        }
+                if (this.currentUser) {
+                    this.canDelete = !!this.currentUser['admin'] || !!this.currentUser['username'] === this.article['author'];
+                } else {
+                    this.canDelete = false;
+                }
+            });
 
         this.isLoggedIn = !!this.currentUser;
     }
@@ -94,6 +101,31 @@ export class NewsDetailsComponent implements OnInit {
             err => {
                 console.log(err);
             });
+    }
+
+    deleteArticle(articleId) {
+        this.newsService.deleteArticle(articleId)
+            .subscribe(res => {
+                this.router.navigate(['news/page', 1]);
+                this.notificationsService.success('Статията бе изтрита!', 'Обратно към всички новини...');
+            },
+            err => {
+                this.notificationsService.error('Възникна грешка!', 'Моля, опитайте по-късно.');
+            });
+    }
+
+    restoreArticle(articleId) {
+        this.newsService.restoreArticle(articleId)
+            .subscribe(res => {
+                console.log(res);
+            },
+            err => {
+                console.log(err);
+            });
+    }
+
+    editArticle(articleId) {
+        console.log(articleId);
     }
 
     submit(contentObj) {

@@ -20,22 +20,26 @@
     </div>
     <div class="col-md-9">
       <p class="news-content" style="font-size: 1rem;">{{article.content}}
-      </p>
-      <div class="row">
-        <div>
-          <div class="title-h4 text-center">
-            <p class="bold">Коментари</p>
-          </div>
-          <div [hidden]="article.comments.length" class="text-center no-comments">
-            Все още няма коментари!
-          </div>
-          <div *ngFor="let comment of article.comments" class="comment card">
-            <div class="card-content text-center">
-              {{comment.content}}
-            </div>
-            <div class="card-content small text-right">
-              <div>Автор:
-                <a (click)="goToProfile(comment.author)" class="comment-profile-link" style="color:cornflowerblue">{{comment.author}}</a>
+
+</p>
+<div *ngIf="canDelete" class="text-right">
+  <button class="btn btn-danger btn-xs" (click)="deleteArticle(article._id)" type="button">Изтрий</button>
+</div>
+<div class="row">
+  <div>
+    <div class="title-h4 text-center">
+      <p class="bold">Коментари</p>
+    </div>
+    <div [hidden]="article.comments.length" class="text-center no-comments">
+      Все още няма коментари!
+    </div>
+    <div *ngFor="let comment of article.comments" class="comment card">
+      <div class="card-content text-center">
+        {{comment.content}}
+      </div>
+      <div class="card-content small text-right">
+        <div>Автор:
+          <a (click)="goToProfile(comment.author)" class="comment-profile-link" style="color:cornflowerblue">{{comment.author}}</a>
 </div>
 <div>Написан на: {{comment.createdOn | date:"medium"}}</div>
 </div>
