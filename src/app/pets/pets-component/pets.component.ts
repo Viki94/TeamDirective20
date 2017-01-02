@@ -16,7 +16,7 @@ export class PetsComponent implements OnInit {
     constructor(private petsService: PetsService, private router: Router) { }
 
     ngOnInit() {
-        this.model = new Pet('', '', '');
+        this.model = new Pet('', '', '','');
         this.petsService.getAllPets()
             .subscribe(pets => {
                 console.log(pets);

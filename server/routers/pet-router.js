@@ -7,7 +7,8 @@ module.exports = function (app, petData) {
 
     router
         .post('/create-comment', controllers.createPet)
-        .get('/get-all', controllers.getAllPets);    
+        .put('/get-all',controllers.getAllPets)
+        .put('/:id', controllers.getPetById)    
 
-    app.use('/api/comments', router);
+    app.use('/api/pets', router);
 };

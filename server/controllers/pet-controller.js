@@ -22,7 +22,21 @@ module.exports = (petData) => {
         getAllPets(req, res) {
             petData.getAllPets()
                 .then((pets) => {
-                     res.status(200).json(pets);
+                    res.status(200).json(pets);
+                })
+                .catch((err) => {
+                    res.status(500).json({
+                        success: false,
+                        message: err
+                    });
+
+                    console.log(err);
+                });
+        },
+        getPetById(req, res) {
+            petData.getPetById(0)
+                .then((pet) => {
+                    res.status(200).json(pet);
                 })
                 .catch((err) => {
                     res.status(500).json({

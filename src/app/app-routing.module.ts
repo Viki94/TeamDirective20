@@ -5,7 +5,7 @@ import { HomeComponent } from './home/home.component';
 
 import { AdoptAPetComponent } from './pets/adopt-a-pet-component/adopt-a-pet.component';
 import { PetProfileComponent } from './pets/pet-profile-component/pet-profile.component';
-import {PetsComponent} from './pets/pets-component/pets.component';
+import { PetsComponent } from './pets/pets-component/pets.component';
 
 import { FactsComponent } from './components/facts/facts.component';
 import { FactFormComponent } from './components/fact-form/fact-form.component';
@@ -20,7 +20,7 @@ const routes: Routes = [
     { path: 'home', component: HomeComponent },
     { path: 'comments', component: CommentsComponent },
     { path: 'comment-form', component: CommentFormComponent },
-    {path : 'pets', component:PetsComponent},
+    { path: 'pets', component: PetsComponent },
     { path: 'animals/adopt', component: AdoptAPetComponent },
     { path: 'animals/:id', component: PetProfileComponent },
     { path: 'animals/:id/about', component: PetProfileComponent },

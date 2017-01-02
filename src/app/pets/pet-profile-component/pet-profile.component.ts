@@ -2,17 +2,17 @@ import { Component, OnInit } from '@angular/core';
 import { CommonModule }     from '@angular/common';
 import {ActivatedRoute} from '@angular/router';
 
-import { PetService } from '../../core/services/pets.service';
+import { PetsService } from '../../services/pets.service';
+import { Pet } from '../../models/pet.model';
 
 @Component({
   selector: 'pet-profile',
   templateUrl: './pet-profile.component.html',
-  providers:[PetService]
+  providers:[PetsService]
 })
 export class PetProfileComponent implements OnInit {
 
-  pets: any[] = [];
-  pet: any;
+  pet: Pet;
   url: any[];
   isAboutShowed: boolean = true;
   isFamilyTreeShowed: boolean = true;
@@ -20,11 +20,15 @@ export class PetProfileComponent implements OnInit {
   isVideosShowed: boolean = true;
   
 
-  constructor(private petService: PetService, private route: ActivatedRoute) { }
+  constructor(private petService: PetsService, private route: ActivatedRoute) { }
 
   ngOnInit() {
-    this.pets = this.petService.getAll();
-    this.pet = this.petService.getById(this.route.snapshot.params['id']);
+            this.petService.getPetById(this.route.snapshot.params['id'])
+            .subscribe(pet => {
+                this.pet =  Object.assign({}, pet, { name: pet.name})
+                console.log(this.pet)
+            });
+
     this.url = this.route.snapshot.url;
   }
 

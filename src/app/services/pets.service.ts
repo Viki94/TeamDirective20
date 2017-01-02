@@ -11,7 +11,11 @@ export class PetsService {
     }
 
     getAllPets() {
-        return this.apiService.get('api/pets/get-all');
+        return this.apiService.put('api/pets/get-all',{});
+    }
+
+    getPetById(id: number){
+        return this.apiService.put(`api/pets/:${id}`,{});
     }
 
     create(pet: Comment): Observable<any>{
