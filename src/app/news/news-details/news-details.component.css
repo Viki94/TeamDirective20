@@ -1,7 +1,20 @@
-.news-entry-title {
-    border-bottom: 2px solid orange;
+.news-content {
+    text-align: justify;
 }
 
 .news-content {
-    text-align: justify;
+    margin-top: 20px;
+}
+
+.comment {
+    margin-top: 20px;
+    color: black;
+}
+
+.comment * {
+    color: black;
+}
+
+.comment-profile-link {
+    color: red;
 }

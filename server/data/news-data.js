@@ -36,12 +36,37 @@ module.exports = (models) => {
 
         getArticleById(articleId) {
             return new Promise((resolve, reject) => {
-                Article.find({_id: articleId}, (err, res) => {
+                Article.find({ _id: articleId }, (err, res) => {
                     if (err) {
                         return reject(err);
                     }
 
                     return resolve(res);
+                });
+            });
+        },
+
+        toggleLikeArticle(articleId, username) {
+            return new Promise((reject, resolve) => {
+                Article.findOne({ _id: articleId }, (err, article) => {
+                    if (err) {
+                        return reject(err);
+                    }
+
+                    if (article.likes.includes(username)) {
+                        let index = article.likes.indexOf(username);
+                        article.splice(index, 1);
+                    } else {
+                        article.likes.push(username);
+                    }
+
+                    article.save((error, result) => {
+                        if (error) {
+                            return reject(error);
+                        }
+
+                        return resolve(result);
+                    });
                 });
             });
         }

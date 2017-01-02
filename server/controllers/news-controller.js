@@ -25,8 +25,20 @@ module.exports = (data) => {
         },
         getArticleById(req, res) {
             data.getArticleById(req.body._id)
-            .then(article => {
+                .then(article => {
                     res.status(200).json(article);
+                })
+                .catch(err => {
+                    res.status(500).json(err);
+                });
+        },
+        toggleLike(req, res) {
+            let username = req.body.username,
+                articleId = req.body.id;
+
+            data.toggleLikeArticle(articleId, username)
+                .then(result => {
+                    res.status(201).json(result);
                 })
                 .catch(err => {
                     res.status(500).json(err);
