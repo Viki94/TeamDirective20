@@ -19,7 +19,7 @@ import { DataService } from './services/data.service';
 import { EqualityValidatorDirective } from './directives/equality-validator.directive';
 
 // pipes
-import { SortByDatePipe } from './pipes/sort-by-date.pipe';
+import { SortByDatePipe, TextTransformPipe } from './pipes/index';
 
 // components
 import { AppComponent } from './app.component';
@@ -45,6 +45,7 @@ import { PictureModalComponent } from './shared/picture-modal/picture-modal.comp
     declarations: [
         EqualityValidatorDirective,
         SortByDatePipe,
+        TextTransformPipe,
         AppComponent,
         MainNavigationComponent,
         FooterComponent,

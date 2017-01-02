@@ -15,7 +15,7 @@
           <p class="bold">{{user.firstName}} {{user.lastName}}</p>
           <p>E-Mail: {{user.email}}</p>
           <p>Възраст: {{user.age}}</p>
-          <p>Пол: {{user.gender}}</p>
+          <p>Пол: {{user.gender | textTransform }}</p>
         </div>
         <div *ngIf="showEditButton">
           <button class="btn btn-block orange" (click)="showEditProfile()">Редактирай</button>
