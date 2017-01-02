@@ -36,7 +36,10 @@ let articleSchema = new Schema({
             type: Date,
             default: Date.now
         },
-        isDeleted: Boolean,
+        isDeleted: {
+            type: Boolean,
+            default: false
+        },
         content: {
             type: String,
             required: true,

@@ -56,6 +56,23 @@ module.exports = (data) => {
                 .catch(err => {
                     res.status(500).json(err);
                 });
+        },
+        getArticlesByPage(req, res) {
+            const page = +req.params.page || 1;
+            let totalPagesCount;
+            let pageSize = 8;
+
+            data.getArticlesByPage(page)
+                .then(articleObj => {
+                    totalPagesCount = Math.ceil(articleObj.count / pageSize);
+                    res.status(200).json({
+                        totalPagesCount,
+                        articles: articleObj.articles
+                    });
+                })
+                .catch((err) => {
+                    res.status(500).send(err);
+                });
         }
     };
 };

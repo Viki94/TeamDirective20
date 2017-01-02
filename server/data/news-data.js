@@ -34,6 +34,37 @@ module.exports = (models) => {
             });
         },
 
+        getArticlesByPage(page) {
+            page = page || 1;
+            const pageSize = 8;
+
+            return new Promise((resolve, reject) => {
+                Article.find()
+                    .skip((page - 1) * pageSize)
+                    .sort({ 'createdOn': -1 })
+                    .limit(pageSize)
+                    .exec((err, res) => {
+                        if (err) {
+                            return reject(err);
+                        }
+
+                        Article.count((err, count) => {
+                            if (err) {
+                                return reject(err);
+                            }
+
+                            let result = {
+                                articles: res,
+                                count
+                            };
+
+                            return resolve(result);
+                        });
+                    });
+            });
+        },
+
+
         getArticleById(articleId) {
             return new Promise((resolve, reject) => {
                 Article.find({ _id: articleId }, (err, res) => {

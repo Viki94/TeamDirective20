@@ -59,7 +59,7 @@ export class NewsAddArticleComponent implements OnInit {
         this.newsService.addArticle(article)
             .subscribe(res => {
                 this.isDisabled = true;
-                this.router.navigate(['/news']);
+                this.router.navigate(['/news/page/1']);
                 this.notificationsService.success('Статията създадена!', 'Обратно към всички статии...');
             },
             err => {

@@ -13,6 +13,10 @@ export class NewsService {
         return this.api.put('api/news/articles', {});
     }
 
+    getArticlesByPage(page) {
+        return this.api.put(`api/news/get-by-page/${page}`, {});
+    }
+
     getArticleById(articleId) {
         return this.api.put('api/news/get-article', { _id: articleId });
     }

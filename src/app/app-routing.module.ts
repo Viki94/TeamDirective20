@@ -34,9 +34,9 @@ const routes: Routes = [
     { path: 'profile/:id', component: UserProfileComponent },
     { path: 'my-profile', component: UserProfileComponent, canActivate: [RouteGuardService] },
     { path: 'admin', component: AdminComponent, canActivate: [AdminRouteGuardService] },
-    { path: 'news', component: NewsPageComponent },
+    { path: 'news/add-article', component: NewsAddArticleComponent, canActivate: [AdminRouteGuardService] },
     { path: 'news/details/:id', component: NewsDetailsComponent },
-    { path: 'news/add-article', component: NewsAddArticleComponent, canActivate: [AdminRouteGuardService] }
+    { path: 'news/page/:page', component: NewsPageComponent }
 ];
 
 @NgModule({

@@ -43,8 +43,9 @@ export class NewsDetailsComponent implements OnInit {
             likes: [],
             comments: []
         };
-        this.route.params
-            .switchMap(params => this.newsService.getArticleById(params['id']))
+
+        let id = this.route.snapshot.params['id'];
+        this.newsService.getArticleById(id)
             .subscribe(article => {
                 this.article = article[0];
                 if (this.article['likes'].includes(this.currentUser['username'])) {
