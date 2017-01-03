@@ -94,4 +94,7 @@ export class PetProfileComponent implements OnInit {
     this.pet.posts[id].likes.push({});
   }
 
+  addComment(comment,id){
+    this.pet.posts[id].comments.push({content:comment});
+  }
 }
