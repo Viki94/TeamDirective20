@@ -12,7 +12,7 @@ export class ApiService {
     private options = new RequestOptions({
         headers: this.headers
     });
-    private apiUrl = 'adopt-me.herokuapp.com';
+    private apiUrl = '';
 
     constructor(private http: Http) {
         const token = localStorage.getItem('token');
