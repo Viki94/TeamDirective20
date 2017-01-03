@@ -25,12 +25,12 @@ const routes: Routes = [
         path: 'campaign', component: CampaignComponent, children: [
             { path: '', redirectTo: '/campaign/list', pathMatch: 'full' },
             { path: 'list', component: CampaignListComponent },
-            { path: 'create', component: CampaignCreateComponent },
+            { path: 'create', component: CampaignCreateComponent, canActivate: [AdminRouteGuardService] },
             { path: 'preview/:id', component: CampaignPreviewComponent }
         ]
     },
     { path: 'facts', component: FactsComponent },
-    { path: 'fact-form', component: FactFormComponent },
+    { path: 'fact-form', component: FactFormComponent, canActivate: [AdminRouteGuardService] },
     { path: 'register', component: RegisterComponent },
     { path: 'login', component: LoginComponent },
     { path: 'profile/:id', component: UserProfileComponent },
