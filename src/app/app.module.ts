@@ -49,6 +49,7 @@ import { NewsDetailsComponent } from './news/news-details/news-details.component
 import { NewsAddArticleComponent } from './news/news-add-article/news-add-article.component';
 import { PictureModalComponent } from './shared/picture-modal/picture-modal.component';
 import { PetsMainPageComponent } from './pets/pets-main-page/pets-main-page.component';
+import { AddPetComponent } from './pets/add-pet/add-pet.component';
 
 @NgModule({
     declarations: [
@@ -75,7 +76,8 @@ import { PetsMainPageComponent } from './pets/pets-main-page/pets-main-page.comp
         NewsDetailsComponent,
         NewsAddArticleComponent,
         PictureModalComponent,
-        PetsMainPageComponent
+        PetsMainPageComponent,
+        AddPetComponent
     ],
     imports: [
         RouterModule,

@@ -11,6 +11,7 @@ import { PetService } from '../../services/index';
 export class PetsMainPageComponent implements OnInit {
     pets: any[];
     pagesCount: number;
+    isLoggedIn: boolean;
 
     constructor(
         private petService: PetService,
@@ -19,6 +20,7 @@ export class PetsMainPageComponent implements OnInit {
     ) { }
 
     ngOnInit() {
+        this.isLoggedIn = !!localStorage.getItem('currentUser');
         this.route.params
             .switchMap(params => this.petService.getPetsByPage(+params['page']))
             .subscribe(petsObj => {

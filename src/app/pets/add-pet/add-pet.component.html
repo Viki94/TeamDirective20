@@ -1,0 +1,32 @@
+<div class="container">
+  <div class="row text-right title-h4">
+    <h4>Добави обява</h4>
+  </div>
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2">
+      <div class="card pet-form">
+        <form [formGroup]="form" (ngSubmit)="addPet(form.value)">
+          <input class="form-control" [formControl]="form.controls['name']" type="text" name="name" placeholder="Име">
+
+          <input class="form-control" [formControl]="form.controls['age']" type="number" min="0" max="25" name="age" placeholder="Възраст">
+
+          <input class="form-control" [formControl]="form.controls['breed']" type="text" name="breed" placeholder="Порода">
+
+          <input class="form-control" [formControl]="form.controls['pictures']" type="url" name="pictures" placeholder="Снимка (url)">
+
+          <select id="gender-select" class="form-control" [formControl]="form.controls['gender']" name="gender">
+            <option class="form-control" value="male">Мъжки</option>
+            <option class="form-control" value="female">Женски</option>
+          </select>
+
+          <textarea id="textarea-content" class="form-control" [formControl]="form.controls['about']" rows="15" cols="50" name="about"
+            placeholder="Описание..."></textarea>
+          <hr>
+          <button type="submit" [disabled]="isDisabled" class="btn btn-block green">Добави обява</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<simple-notifications [options]="notificationOptions"></simple-notifications>

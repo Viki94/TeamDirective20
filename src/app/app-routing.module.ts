@@ -16,6 +16,7 @@ import { NewsPageComponent } from './news/news-page/news-page.component';
 import { NewsDetailsComponent } from './news/news-details/news-details.component';
 import { NewsAddArticleComponent } from './news/news-add-article/news-add-article.component';
 import { PetsMainPageComponent } from './pets/pets-main-page/pets-main-page.component';
+import { AddPetComponent } from './pets/add-pet/add-pet.component';
 
 const routes: Routes = [
     { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -38,7 +39,8 @@ const routes: Routes = [
     { path: 'news/add-article', component: NewsAddArticleComponent, canActivate: [AdminRouteGuardService] },
     { path: 'news/details/:id', component: NewsDetailsComponent },
     { path: 'news/page/:page', component: NewsPageComponent },
-    { path: 'pets/page/:page', component: PetsMainPageComponent }
+    { path: 'pets/page/:page', component: PetsMainPageComponent },
+    { path: 'pets/add', component: AddPetComponent }
 ];
 
 @NgModule({

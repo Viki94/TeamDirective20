@@ -5,7 +5,7 @@
 module.exports = (data) => {
     return {
         addPet(req, res) {
-            data.createNewPetProfile(req.body)
+            data.createNewPetProfile(req.body.pet)
                 .then(pet => {
                     res.status(201).json(pet);
                 })

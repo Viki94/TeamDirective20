@@ -7,6 +7,10 @@ export class PetService {
     constructor(private api: ApiService) { }
 
     getPetsByPage(page) {
-         return this.api.put(`api/pets/get-by-page/${page}`, {});
+        return this.api.put(`api/pets/get-by-page/${page}`, {});
+    }
+
+    addPet(pet) {
+        return this.api.post('api/pets/add-pet', { pet });
     }
 }

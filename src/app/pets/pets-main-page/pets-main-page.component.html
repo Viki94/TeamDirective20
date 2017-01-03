@@ -1,6 +1,11 @@
 <div class="container">
-  <div class="row title-h4 text-center">
-    <h4>Осинови!</h4>
+  <div class="row title-h4 text-left">
+    <div class="col-md-10">
+      <h4>Осинови!</h4>
+    </div>
+    <div class="col-md-2">
+      <button *ngIf="isLoggedIn" routerLink="/pets/add" type="button" class="btn btn-block green">Добави обява</button>
+    </div>
   </div>
   <div class="row">
 
@@ -13,12 +18,12 @@
 <hr>
 <app-picture-modal [picture]="{title: pet.name, imgUrl: pet.pictures[0], _id: pet._id}"></app-picture-modal>
 <div class="card-content text-center">
-  <p>Съни</p>
+  <p>{{pet.name}}</p>
   <p class="less-imp">Порода: {{pet.breed}}</p>
   <p class="less-imp">Възраст: {{pet.age}} г.</p>
   <p class="less-imp">Пол: {{pet.gender}}</p>
-  <p class="less-imp">Добавил: {{pet.addedBy}}</p>
-  <button type="button" class="btn btn-success">Научи повече...</button>
+  <p class="less-imp">Добавил: <a (click)="goToProfile(pet.addedBy)">{{pet.addedBy}}</a></p>
+  <button type="button" (class)="goToDetails(pet._id)" class="btn btn-success">Научи повече...</button>
 </div>
 </div>
 </div>

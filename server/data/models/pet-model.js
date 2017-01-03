@@ -40,9 +40,19 @@ let petSchema = new Schema({
         isDeleted: Boolean,
         content: String
     }],
-    about: String,
+    about: {
+        type: String,
+        required: true,
+        minlength: 50,
+        maxlength: 5000
+    },
     isAdopted: Boolean,
-    breed: String,
+    breed: {
+        type: String,
+        required: true,
+        minlength: 3,
+        maxlength: 20
+    },
     addedBy: String,
     isDeleted: Boolean
 });

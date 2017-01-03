@@ -34,7 +34,7 @@ module.exports = (models) => {
         createNewPetProfile(pet) {
             let newPet = new Pet(pet);
 
-            return new Promise((reject, resolve) => {
+            return new Promise((resolve, reject) => {
                 newPet.save((err, pet) => {
                     if (err) {
                         return reject(err);
