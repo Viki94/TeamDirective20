@@ -20,7 +20,8 @@ let factSchema = new Schema({
     },
     img: {
         type: String
-    }
+    },
+    addedBy: String
 });
 
 mongoose.model('fact', factSchema);

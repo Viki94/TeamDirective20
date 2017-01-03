@@ -4,18 +4,23 @@
 
 module.exports = (models) => {
     var Campaign = models.Campaign;
+    var User = models.User;
 
     return {
         createCampaign(campaignObject) {
             var campaign = new Campaign(campaignObject);
-
             return new Promise((resolve, reject) => {
                 campaign.save((err, dbCampaign) => {
                     if (err) {
                         return reject(err);
                     }
+                    User.findOne({ username: campaign.addedBy }, (err) => {
+                        if (err) {
+                            return reject(err);
+                        }
 
-                    return resolve(dbCampaign);
+                        return resolve(dbCampaign);
+                    });
                 });
             });
         },

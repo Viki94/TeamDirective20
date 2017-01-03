@@ -27,9 +27,7 @@ let campaignSchema = new Schema({
         maxlength: 20,
         required: true
     },
-    creatorId: {
-        type: String
-    },
+    addedBy: String,
     neededAmount: {
         type: Number
     },

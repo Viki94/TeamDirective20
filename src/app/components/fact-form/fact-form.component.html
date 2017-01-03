@@ -10,8 +10,8 @@
                     </div>
                 </div>
                 <div class="form-group">
-                    <input class="form-control" type="text" name="description" [(ngModel)]="fact.description" #description="ngModel" minlength="20" placeholder="Въведете описание на факта"
-                        required />
+                    <input class="form-control" type="text" name="description" [(ngModel)]="fact.description" #description="ngModel" minlength="20"
+                        placeholder="Въведете описание на факта" required />
                     <div class="text-danger small" *ngIf="description.touched && description.errors?.minlength">
                         Най-малко 20 символа
                     </div>
