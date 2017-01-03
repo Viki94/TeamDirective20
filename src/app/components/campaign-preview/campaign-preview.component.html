@@ -31,21 +31,26 @@
 </div>
 <div *ngIf="showEdit">
     <form #editCampaignForm="ngForm" (ngSubmit)="editCampaign(); editCampaignForm.reset()">
-        <input class="form-control" type="text" name="name" [(ngModel)]="campaign.name" #name="ngModel" minlength="6" placeholder="Въведете име на кампанията" required />
+        <input class="form-control" type="text" name="name" [(ngModel)]="campaign.name" #name="ngModel" minlength="6" placeholder="Въведете име на кампанията"
+            required />
         <div class="text-danger small" *ngIf="name.touched && name.errors?.minlength">
             Най-малко 6 символа
         </div>
-        <input class="form-control" type="text" name="description" [(ngModel)]="campaign.description" #description="ngModel" minlength="20" placeholder="Въведете описание" required />
+        <input class="form-control" type="text" name="description" [(ngModel)]="campaign.description" #description="ngModel" minlength="20"
+            placeholder="Въведете описание" required />
         <div class="text-danger small" *ngIf="description.touched && description.errors?.minlength">
             Най-малко 20 символа
         </div>
         <input class="form-control" type="text" name="ownerName" [(ngModel)]="campaign.ownerName" #ownerName="ngModel" placeholder="Въведете име на собственика">
-        <input class="form-control" type="text" name="ownerContact" [(ngModel)]="campaign.ownerContact" #ownerContact="ngModel" minlength="6" placeholder="Въведете контакти на собственика">
+        <input class="form-control" type="text" name="ownerContact" [(ngModel)]="campaign.ownerContact" #ownerContact="ngModel" minlength="6"
+            placeholder="Въведете контакти на собственика">
         <div class="text-danger small" *ngIf="ownerContact.touched && ownerContact.errors?.minlength">
             Най-малко 6 символа
         </div>
-        <input class="form-control" type="text" name="neededAmount" [(ngModel)]="campaign.neededAmount" #neededAmount="ngModel" placeholder="Въведете необходимата сума" required />
+        <input class="form-control" type="text" name="neededAmount" [(ngModel)]="campaign.neededAmount" #neededAmount="ngModel" placeholder="Въведете необходимата сума"
+            required />
         <input class="form-control" type="text" name="iban" [(ngModel)]="campaign.iban" #iban="ngModel" placeholder="Въведете номер на сметката">
+        <input class="form-control" type="text" name="image" [(ngModel)]="campaign.image" #image="ngModel" placeholder="Въведете линк към снимка">
         <hr>
         <button type="submit" class="btn btn-block orange">Потвърди</button>
     </form>
