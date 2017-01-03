@@ -248,7 +248,7 @@ ModelManifest.xml
 .fake/
 
 # compiled output
-/dist
+#/dist
 /tmp
 
 # dependencies
