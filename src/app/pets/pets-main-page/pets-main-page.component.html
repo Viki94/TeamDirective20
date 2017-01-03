@@ -8,21 +8,41 @@
       <div class="card-panel">
         <div class="image-container text-center">
           <img style="margin: auto;" id="profile-picture" data-toggle="modal" [attr.data-target]="'#' + pet._id" class="img-circle img-responsive" [src]="pet.pictures[0]"
-            [alt]="pet.name">
-        </div>
-        <hr>
-        <app-picture-modal [picture]="{title: pet.name, imgUrl: pet.pictures[0], _id: pet._id}"></app-picture-modal>
-        <div class="card-content text-center">
-          <p>Съни</p>
-          <p class="less-imp">Порода: {{pet.breed}}</p>
-          <p class="less-imp">Възраст: {{pet.age}} г.</p>
-          <p class="less-imp">Пол: {{pet.gender}}</p>
-          <p class="less-imp">Добавил: {{pet.addedBy}}</p>
-          <button type="button" class="btn btn-success">Научи повече...</button>
-        </div>
-      </div>
-    </div>
-
-  </div>
+[alt]="pet.name">
+</div>
+<hr>
+<app-picture-modal [picture]="{title: pet.name, imgUrl: pet.pictures[0], _id: pet._id}"></app-picture-modal>
+<div class="card-content text-center">
+  <p>Съни</p>
+  <p class="less-imp">Порода: {{pet.breed}}</p>
+  <p class="less-imp">Възраст: {{pet.age}} г.</p>
+  <p class="less-imp">Пол: {{pet.gender}}</p>
+  <p class="less-imp">Добавил: {{pet.addedBy}}</p>
+  <button type="button" class="btn btn-success">Научи повече...</button>
+</div>
+</div>
 </div>
 
+</div>
+
+<div class="row text-center">
+  <nav>
+    <ul class="pagination">
+      <li class="page-item">
+        <a class="page-link" (click)="goToPrev()" aria-label="Previous">
+          <span aria-hidden="true">&laquo;</span>
+          <span class="sr-only">Previous</span>
+        </a>
+      </li>
+      <li *ngFor="let item of generateRange(pagesCount); let i = index" class="page-item"><a (click)="goToPage(i + 1)" class="page-link">{{i + 1}}</a></li>
+      <li class="page-item">
+        <a class="page-link" (click)="goToNext()" aria-label="Next">
+          <span aria-hidden="true">&raquo;</span>
+          <span class="sr-only">Next</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</div>
+
+</div>
