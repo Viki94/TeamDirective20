@@ -60,7 +60,7 @@ module.exports = (campaignData) => {
                     .then(() => {
                         res.status(201).json({
                             success: true,
-                            message: `Campaign ${req.body} succesfully edited!`
+                            message: `Campaign ${req.body.name} succesfully edited!`
                         });
                     })
                     .catch((err) => {

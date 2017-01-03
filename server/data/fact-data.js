@@ -4,6 +4,7 @@
 
 module.exports = (models) => {
     var Fact = models.Fact;
+    var User = models.User;
 
     return {
         createFact(factObject) {
@@ -15,7 +16,13 @@ module.exports = (models) => {
                         return reject(err);
                     }
 
-                    return resolve(dbFact);
+                    User.findOne({ username: fact.addedBy }, (err) => {
+                        if (err) {
+                            return reject(err);
+                        }
+
+                        return resolve(dbFact);
+                    });
                 });
             });
         },

@@ -26,6 +26,9 @@ export class CampaignCreateComponent implements OnInit {
     createCampaign() {
         this.campaign.image = this.campaign.image || DEFAULT_CAMPAIGN_IMG;
 
+        let user = JSON.parse(localStorage.getItem('currentUser'));
+
+        this.campaign['addedBy'] = user['username'];
         this.campaignsService.createCampaign(this.campaign).subscribe(() => {
             this.return();
         });
@@ -34,5 +37,4 @@ export class CampaignCreateComponent implements OnInit {
     return() {
         this.router.navigate(['campaign/list'])
     }
-
 };

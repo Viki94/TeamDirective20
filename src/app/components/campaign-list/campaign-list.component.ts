@@ -17,10 +17,12 @@ const DEFAULT_CAMPAIGN_IMG = 'https://i.ytimg.com/vi/JWY1bpbmyS4/maxresdefault.j
 export class CampaignListComponent implements OnInit {
     model: Campaign;
     campaigns: Campaign[] = [];
+    isUserAdmin: boolean;
 
     constructor(private campaignsService: CampaignsService, private router: Router) { }
 
     ngOnInit() {
+        this.isUserAdmin = !!localStorage.getItem('currentUser') && JSON.parse(localStorage.getItem('currentUser'))['admin'];
         this.model = new Campaign('', '', '', '', '', 0, 0, '', '');
         this.campaignsService.getAllCampaigns()
             .subscribe(campaigns => {

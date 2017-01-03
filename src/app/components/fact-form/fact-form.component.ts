@@ -26,7 +26,10 @@ export class FactFormComponent implements OnInit {
     createFact() {
         this.fact.img = this.fact.img || DEFAULT_FACT_IMG;
 
-        this.factsService.createFact(this.fact).subscribe(()=> {
+        let user = JSON.parse(localStorage.getItem('currentUser'));
+
+        this.fact['addedBy'] = user['username'];
+        this.factsService.createFact(this.fact).subscribe(() => {
             this.router.navigate(['facts'])
         });
     }
