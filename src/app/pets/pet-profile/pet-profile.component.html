@@ -20,7 +20,7 @@
           <p>Добавен на: {{pet.addedOn | date:"medium"}}</p>
         </div>
         <div>
-          <button *ngIf="isLoggedIn" data-toggle="modal" data-target="#adoptPet" class="btn btn-block green" type="button">Осинови!</button>
+          <button *ngIf="isLoggedIn" [disabled]="isRequested" data-toggle="modal" data-target="#adoptPet" class="btn btn-block green" type="button">Осинови!</button>
           <button *ngIf="canEdit" data-toggle="modal" data-target="#addPhotos" class="btn btn-block green" type="button">Добави снимки</button>
         </div>
       </div>

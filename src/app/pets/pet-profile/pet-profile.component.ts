@@ -15,6 +15,7 @@ export class PetProfileComponent implements OnInit {
     canEdit: boolean;
     isLoggedIn: boolean;
     @ViewChild('addPhotoInput') addPhotoInput;
+    isRequested: boolean;
 
     constructor(
         private petService: PetService,
@@ -49,6 +50,14 @@ export class PetProfileComponent implements OnInit {
                     this.canEdit = (JSON.parse(localStorage.getItem('currentUser'))['username'] === this.pet['addedBy']) ||
                         JSON.parse(localStorage.getItem('currentUser'))['admin'];
                     this.isLoggedIn = true;
+                    this.requestsService.getAllRequests()
+                        .subscribe(requests => {
+                            requests.forEach(req => {
+                                if (req.username === JSON.parse(localStorage.getItem('currentUser'))['username']) {
+                                    this.isRequested = true;
+                                }
+                            });
+                        });
                 }
             },
             err => {
@@ -64,10 +73,11 @@ export class PetProfileComponent implements OnInit {
 
         this.requestsService.makeRequest(username, petId, petName)
             .subscribe(res => {
-                console.log(res);
+                this.notificationsService.success('Успешна заявка', 'Администраторите ще се свържат с Вас.');
+                this.isRequested = true;
             },
             err => {
-                console.log(err);
+                this.notificationsService.error('Възникна грешка!', 'Моля, опитайте по-късно.');
             });
     }
 
