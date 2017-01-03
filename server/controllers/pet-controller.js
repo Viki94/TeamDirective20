@@ -40,6 +40,18 @@ module.exports = (data) => {
                 .catch(err => {
                     res.status(500).json(err);
                 });
+        },
+
+        addPhotoToPet(req, res) {
+            let id = req.body.petId,
+                photoUrl = req.body.photoUrl;
+            data.addPhotoToPet(id, photoUrl)
+                .then(pet => {
+                    res.status(200).json(pet);
+                })
+                .catch(err => {
+                    res.status(500).json(err);
+                });
         }
     };
 };

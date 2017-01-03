@@ -17,4 +17,8 @@ export class PetService {
     getPetById(petId) {
         return this.api.put('api/pets/get-pet', { id: petId });
     }
+
+    addPhotoToPetProfile(petId, photoUrl) {
+        return this.api.put('api/pets/add-photo', { petId, photoUrl });
+    }
 }

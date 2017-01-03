@@ -17,7 +17,8 @@ import {
     AdminRouteGuardService,
     UsersService,
     NewsService,
-    PetService
+    PetService,
+    RequestsService
 } from './services/index';
 import { CampaignsService } from './services/campaigns.service';
 import { FactsService } from './services/facts.service';
@@ -102,7 +103,8 @@ import { PetProfileComponent } from './pets/pet-profile/pet-profile.component';
         DataService,
         UsersService,
         NewsService,
-        PetService
+        PetService,
+        RequestsService
     ],
     bootstrap: [AppComponent]
 })

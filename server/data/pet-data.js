@@ -106,6 +106,25 @@ module.exports = (models) => {
                         });
                     });
             });
+        },
+
+        addPhotoToPet(petId, photoUrl) {
+            return new Promise((resolve, reject) => {
+                Pet.findOne({ _id: petId }, (err, pet) => {
+                    if (err) {
+                        return reject(err);
+                    }
+
+                    pet.pictures.push(photoUrl);
+                    pet.save((err, res) => {
+                        if (err) {
+                            return reject(err);
+                        }
+
+                        return resolve(res);
+                    });
+                });
+            });
         }
     };
 };

@@ -1,6 +1,7 @@
-import { Component, OnInit, Injectable } from '@angular/core';
+import { Component, OnInit, Injectable, ViewChild } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
-import { PetService } from '../../services/index';
+import { PetService, UsersService, RequestsService } from '../../services/index';
+import { NotificationsService } from 'angular2-notifications';
 
 @Component({
     selector: 'app-pet-profile',
@@ -11,9 +12,19 @@ export class PetProfileComponent implements OnInit {
     pet: Object;
     image: Object;
     notificationOptions: Object;
+    canEdit: boolean;
+    isLoggedIn: boolean;
+    @ViewChild('addPhotoInput') addPhotoInput;
 
-    constructor(private petService: PetService, private route: ActivatedRoute) { 
-         this.notificationOptions = {
+    constructor(
+        private petService: PetService,
+        private route: ActivatedRoute,
+        private router: Router,
+        private usersService: UsersService,
+        private notificationsService: NotificationsService,
+        private requestsService: RequestsService
+    ) {
+        this.notificationOptions = {
             timeOut: 2000,
             showProgressBar: false,
             animate: 'fromRight'
@@ -27,21 +38,57 @@ export class PetProfileComponent implements OnInit {
         let petId = this.route.snapshot.params['id'];
         this.petService.getPetById(petId)
             .subscribe(res => {
-                console.log(res);
                 this.pet = res;
                 this.image = {
                     title: res.name,
                     _id: petId,
                     imgUrl: res.pictures[0]
                 };
+
+                if (localStorage.getItem('currentUser')) {
+                    this.canEdit = (JSON.parse(localStorage.getItem('currentUser'))['username'] === this.pet['addedBy']) ||
+                        JSON.parse(localStorage.getItem('currentUser'))['admin'];
+                    this.isLoggedIn = true;
+                }
+            },
+            err => {
+                console.log(err);
+                this.router.navigate(['home']);
+            });
+    }
+
+    adoptPet(pet) {
+        let username = JSON.parse(localStorage.getItem('currentUser'))['username'],
+            petId = this.pet['_id'],
+            petName = this.pet['name'];
+
+        this.requestsService.makeRequest(username, petId, petName)
+            .subscribe(res => {
+                console.log(res);
             },
             err => {
                 console.log(err);
             });
     }
 
-    goToProfile(username) {
-        console.log(username)
+    addPhoto() {
+        let petId = this.pet['_id'];
+        let photoUrl = this.addPhotoInput.nativeElement.value;
+        this.petService.addPhotoToPetProfile(petId, photoUrl)
+            .subscribe(res => {
+                this.notificationsService.success('Успешно добавена снимка!', 'Обратно към профила...');
+                this.pet = res;
+            },
+            err => {
+                this.notificationsService.error('Възникна грешка!', 'Моля, опитайте по-късно.');
+            });
+        this.addPhotoInput.nativeElement.value = '';
     }
 
+    goToProfile(username) {
+        this.usersService.getUserByUsername(username)
+            .subscribe(res => {
+                this.router.navigate(['profile', res._id]);
+            });
+    }
 }

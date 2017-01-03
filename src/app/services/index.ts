@@ -5,5 +5,6 @@ import { UsersService } from './users.service';
 import { AdminRouteGuardService } from './admin-route-guard.service';
 import { NewsService } from './news.service';
 import { PetService } from './pet.service';
+import { RequestsService } from './requests.service';
 
-export { ApiService, AuthService, RouteGuardService, AdminRouteGuardService, UsersService, NewsService, PetService }
+export { ApiService, AuthService, RouteGuardService, AdminRouteGuardService, UsersService, NewsService, PetService, RequestsService }

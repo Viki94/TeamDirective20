@@ -19,26 +19,71 @@
           <p class="less-imp">Добавил: <a (click)="goToProfile(pet.addedBy)">{{pet.addedBy}}</a></p>
           <p>Добавен на: {{pet.addedOn | date:"medium"}}</p>
         </div>
+        <div>
+          <button *ngIf="isLoggedIn" data-toggle="modal" data-target="#adoptPet" class="btn btn-block green" type="button">Осинови!</button>
+          <button *ngIf="canEdit" data-toggle="modal" data-target="#addPhotos" class="btn btn-block green" type="button">Добави снимки</button>
+        </div>
       </div>
     </div>
     <div class="col-md-9">
       <div class="tabs" data-example-id="togglable-tabs">
         <ul class="nav nav-tabs" id="myTabs" role="tablist">
-          <li role="presentation" class=""><a href="#home" id="about-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="false">За мен</a></li>
-          <li role="presentation" class="active"><a href="#pictures" role="tab" id="pictures-tab" data-toggle="tab" aria-controls="pictures" aria-expanded="true">Снимки</a></li>
+          <li role="presentation" class="active"><a href="#about" id="about-tab" role="tab" data-toggle="tab" aria-controls="about" aria-expanded="true">За мен</a></li>
+          <li role="presentation" class=""><a href="#pictures" role="tab" id="pictures-tab" data-toggle="tab" aria-controls="pictures" aria-expanded="false">Снимки</a></li>
         </ul>
         <div class="tab-content" id="myTabContent">
-          <div class="tab-pane fade active in" role="tabpanel" id="home" aria-labelledby="about-tab">
-
+          <div class="tab-pane fade active in" role="tabpanel" id="about" aria-labelledby="about-tab">
+            <p class="text-justify">{{pet.about}}</p>
           </div>
           <div class="tab-pane fade" role="tabpanel" id="pictures" aria-labelledby="profile-tab">
-
+            <div *ngFor="let picture of pet.pictures; let i = index" class="col-md-4 img-container">
+              <img class="img-responsive img-thumbnail" data-toggle="modal" [attr.data-target]="'#' + i + pet._id" [src]="picture" alt="pic">
+              <app-picture-modal [picture]="{imgUrl: picture, title: pet._id + i, _id: i + pet._id}"></app-picture-modal>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
 </div>
-
 <simple-notifications [options]="notificationOptions"></simple-notifications>
 <app-picture-modal [picture]="image"></app-picture-modal>
+<div class="modal fade" id="addPhotos" tabindex="-1" role="dialog" aria-labelledby="addPhotosLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <div class="text-center">
+          <h4 class="modal-title" id="addPhotosLabel">Добави снимка</h4>
+        </div>
+      </div>
+      <div class="modal-body text-center">
+        <input #addPhotoInput type="text" class="form-control" name="photo" placeholder="Снимка (url)">
+        <button type="button" (click)="addPhoto()" data-dismiss="modal" class="btn btn-success">Потвърди</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="adoptPet" tabindex="-1" role="dialog" aria-labelledby="adoptPetLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <div class="text-center">
+          <h4 class="modal-title" id="adoptPetLabel">Осиновяване на {{pet.name}}</h4>
+        </div>
+      </div>
+      <div class="modal-body text-center">
+       <p>
+         Заявката Ви ще бъде изпратена до администратор.
+       </p>
+        <button type="button" (click)="adoptPet(pet)" data-dismiss="modal" class="btn btn-success">Потвърди</button>
+        <button type="button" data-dismiss="modal" class="btn btn-danger">Откажи</button>
+      </div>
+    </div>
+  </div>
+</div>

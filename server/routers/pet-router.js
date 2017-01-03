@@ -10,7 +10,8 @@ module.exports = function (app, data) {
     router
         .post('/add-pet', controllers.addPet)
         .put('/get-by-page/:page', controllers.getPetsByPage)
-        .put('/get-pet', controllers.getPetById);
+        .put('/get-pet', controllers.getPetById)
+        .put('/add-photo', controllers.addPhotoToPet);
 
     app.use('/api/pets', router);
 };
