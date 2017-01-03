@@ -13,4 +13,8 @@ export class PetService {
     addPet(pet) {
         return this.api.post('api/pets/add-pet', { pet });
     }
+
+    getPetById(petId) {
+        return this.api.put('api/pets/get-pet', { id: petId });
+    }
 }

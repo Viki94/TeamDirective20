@@ -1,0 +1,16 @@
+#profile-picture {
+    cursor: pointer;
+    margin: auto;
+}
+
+#profile-picture:hover {
+    box-shadow: 0 0 25px orange;
+}
+
+#about-tab, #pictures-tab {
+    color: black;
+}
+
+.tabs {
+    margin-top: 7px;
+}

@@ -1,6 +1,6 @@
 import { Component, OnInit, Injectable } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
-import { PetService } from '../../services/index';
+import { PetService, UsersService } from '../../services/index';
 
 @Injectable()
 @Component({
@@ -16,7 +16,8 @@ export class PetsMainPageComponent implements OnInit {
     constructor(
         private petService: PetService,
         private router: Router,
-        private route: ActivatedRoute
+        private route: ActivatedRoute,
+        private usersService: UsersService
     ) { }
 
     ngOnInit() {
@@ -27,6 +28,18 @@ export class PetsMainPageComponent implements OnInit {
                 this.pets = petsObj['pets'];
                 this.pagesCount = petsObj['totalPagesCount'];
             });
+    }
+
+    goToProfile(username) {
+        this.usersService.getUserByUsername(username)
+            .subscribe(res => {
+                this.router.navigate(['profile', res._id]);
+            });
+    }
+
+
+    goToDetails(petId) {
+        this.router.navigate(['pets/profile', petId]);
     }
 
     goToPage(page) {

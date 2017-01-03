@@ -1,0 +1,44 @@
+<div class="container">
+  <div class="row text-right title-h4">
+    <h4 class="main-title">
+      {{pet.name}}
+    </h4>
+  </div>
+  <div class="row">
+    <div class="col-md-3 text-center">
+      <div class="card-panel">
+        <div class="text-center">
+          <img id="profile-picture" data-toggle="modal" [attr.data-target]="'#' + image._id" class="img-circle img-responsive" [src]="image.imgUrl"
+            [alt]="pet.name">
+        </div>
+        <hr>
+        <div class="card-content text-center">
+          <p class="bold">{{pet.name}}</p>
+          <p>Пол: {{pet.gender}}</p>
+          <p>Възраст: {{pet.age}}</p>
+          <p class="less-imp">Добавил: <a (click)="goToProfile(pet.addedBy)">{{pet.addedBy}}</a></p>
+          <p>Добавен на: {{pet.addedOn | date:"medium"}}</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-9">
+      <div class="tabs" data-example-id="togglable-tabs">
+        <ul class="nav nav-tabs" id="myTabs" role="tablist">
+          <li role="presentation" class=""><a href="#home" id="about-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="false">За мен</a></li>
+          <li role="presentation" class="active"><a href="#pictures" role="tab" id="pictures-tab" data-toggle="tab" aria-controls="pictures" aria-expanded="true">Снимки</a></li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade active in" role="tabpanel" id="home" aria-labelledby="about-tab">
+
+          </div>
+          <div class="tab-pane fade" role="tabpanel" id="pictures" aria-labelledby="profile-tab">
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<simple-notifications [options]="notificationOptions"></simple-notifications>
+<app-picture-modal [picture]="image"></app-picture-modal>

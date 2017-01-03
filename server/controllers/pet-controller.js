@@ -30,6 +30,16 @@ module.exports = (data) => {
                 .catch((err) => {
                     res.status(500).send(err);
                 });
+        },
+
+        getPetById(req, res) {
+            data.getPetById(req.body.id)
+                .then(pet => {
+                    res.status(200).json(pet);
+                })
+                .catch(err => {
+                    res.status(500).json(err);
+                });
         }
     };
 };

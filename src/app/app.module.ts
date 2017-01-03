@@ -50,6 +50,7 @@ import { NewsAddArticleComponent } from './news/news-add-article/news-add-articl
 import { PictureModalComponent } from './shared/picture-modal/picture-modal.component';
 import { PetsMainPageComponent } from './pets/pets-main-page/pets-main-page.component';
 import { AddPetComponent } from './pets/add-pet/add-pet.component';
+import { PetProfileComponent } from './pets/pet-profile/pet-profile.component';
 
 @NgModule({
     declarations: [
@@ -77,7 +78,8 @@ import { AddPetComponent } from './pets/add-pet/add-pet.component';
         NewsAddArticleComponent,
         PictureModalComponent,
         PetsMainPageComponent,
-        AddPetComponent
+        AddPetComponent,
+        PetProfileComponent
     ],
     imports: [
         RouterModule,
