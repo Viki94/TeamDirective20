@@ -1,4 +1,6 @@
-<button (click)="addCampaign()" class="btn btn-success">Добавяне на кампания за любимец</button>
+<div *ngIf="isUserAdmin">
+    <button (click)="addCampaign()" class="btn btn-success">Добавяне на кампания за любимец</button>
+</div>
 <ul *ngIf="campaigns" class="list">
     <li *ngFor="let campaign of campaigns">
         <div class="sub-nav-home card text-center">
