@@ -33,6 +33,7 @@ module.exports = (models) => {
 
         createNewPetProfile(pet) {
             let newPet = new Pet(pet);
+
             return new Promise((reject, resolve) => {
                 newPet.save((err, pet) => {
                     if (err) {
@@ -47,24 +48,19 @@ module.exports = (models) => {
                         let animal = {
                             name: pet.name,
                             imgUrl: pet.pictures[0],
-                            addedOn: {
-                                type: Date,
-                                default: Date.now
-                            },
+                            addedOn: Date.now,
                             id: pet._id
                         };
 
                         user.addedAnimals.push(animal);
-                        user.save((err, res) => {
+                        user.save((err) => {
                             if (err) {
                                 return reject(err);
                             }
 
-                            console.log(res);
                         });
                     });
 
-                    console.log(pet);
                     return resolve(pet);
                 });
             });
@@ -79,6 +75,36 @@ module.exports = (models) => {
 
                     return resolve(pet);
                 });
+            });
+        },
+
+        getPetsByPage(page) {
+            page = page || 1;
+            const pageSize = 3;
+
+            return new Promise((resolve, reject) => {
+                Pet.find()
+                    .skip((page - 1) * pageSize)
+                    .sort({ 'addedOn': -1 })
+                    .limit(pageSize)
+                    .exec((err, pets) => {
+                        if (err) {
+                            return reject(err);
+                        }
+
+                        Pet.count((err, count) => {
+                            if (err) {
+                                return reject(err);
+                            }
+
+                            let result = {
+                                pets,
+                                count
+                            };
+
+                            return resolve(result);
+                        });
+                    });
             });
         }
     };

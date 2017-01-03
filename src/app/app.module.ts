@@ -10,7 +10,15 @@ import { Ng2PageScrollModule } from 'ng2-page-scroll';
 import { AppRoutingModule } from './app-routing.module';
 
 // services
-import { ApiService, AuthService, RouteGuardService, AdminRouteGuardService, UsersService, NewsService } from './services/index';
+import {
+    ApiService,
+    AuthService,
+    RouteGuardService,
+    AdminRouteGuardService,
+    UsersService,
+    NewsService,
+    PetService
+} from './services/index';
 import { CampaignsService } from './services/campaigns.service';
 import { FactsService } from './services/facts.service';
 import { DataService } from './services/data.service';
@@ -40,6 +48,7 @@ import { NewsEntryComponent } from './news/news-entry/news-entry.component';
 import { NewsDetailsComponent } from './news/news-details/news-details.component';
 import { NewsAddArticleComponent } from './news/news-add-article/news-add-article.component';
 import { PictureModalComponent } from './shared/picture-modal/picture-modal.component';
+import { PetsMainPageComponent } from './pets/pets-main-page/pets-main-page.component';
 
 @NgModule({
     declarations: [
@@ -65,7 +74,8 @@ import { PictureModalComponent } from './shared/picture-modal/picture-modal.comp
         NewsEntryComponent,
         NewsDetailsComponent,
         NewsAddArticleComponent,
-        PictureModalComponent
+        PictureModalComponent,
+        PetsMainPageComponent
     ],
     imports: [
         RouterModule,
@@ -87,7 +97,8 @@ import { PictureModalComponent } from './shared/picture-modal/picture-modal.comp
         FactsService,
         DataService,
         UsersService,
-        NewsService
+        NewsService,
+        PetService
     ],
     bootstrap: [AppComponent]
 })

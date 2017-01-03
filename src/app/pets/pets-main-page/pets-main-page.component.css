@@ -1,0 +1,16 @@
+.less-imp {
+    font-size: 1rem;
+}
+
+.image-container {
+    height: 300px;
+}
+
+#profile-picture {
+    cursor: pointer;
+    margin: auto;
+}
+
+#profile-picture:hover {
+    box-shadow: 0 0 25px orange;
+}

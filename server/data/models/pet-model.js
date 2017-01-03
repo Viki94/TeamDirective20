@@ -40,11 +40,6 @@ let petSchema = new Schema({
         isDeleted: Boolean,
         content: String
     }],
-    species: {
-        type: String,
-        required: true,
-        enum: ['cat', 'dog']
-    },
     about: String,
     isAdopted: Boolean,
     breed: String,
