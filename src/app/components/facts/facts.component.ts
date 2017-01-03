@@ -17,10 +17,12 @@ const DEFAULT_FACT_IMG = 'https://2.bp.blogspot.com/-g4uaWVsUD5A/V35HXQ2Gu8I/AAA
 export class FactsComponent implements OnInit {
     model: Fact;
     facts: Fact[] = [];
+    isUserAdmin: boolean;
 
     constructor(private factsService: FactsService, private router: Router) { }
 
     ngOnInit() {
+        this.isUserAdmin = !!localStorage.getItem('currentUser') && JSON.parse(localStorage.getItem('currentUser'))['admin'];
         this.model = new Fact('', '', '');
         this.factsService.getAllFacts()
             .subscribe(facts => {
