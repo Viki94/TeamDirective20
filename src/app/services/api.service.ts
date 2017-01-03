@@ -12,7 +12,7 @@ export class ApiService {
     private options = new RequestOptions({
         headers: this.headers
     });
-    private apiUrl = 'http://localhost:3000';
+    private apiUrl = 'adopt-me.herokuapp.com';
 
     constructor(private http: Http) {
         const token = localStorage.getItem('token');

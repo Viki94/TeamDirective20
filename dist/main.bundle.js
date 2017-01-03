@@ -2949,7 +2949,7 @@ var ApiService = (function () {
         this.options = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* RequestOptions */]({
             headers: this.headers
         });
-        this.apiUrl = 'http://localhost:3000';
+        this.apiUrl = 'adopt-me.herokuapp.com';
         var token = localStorage.getItem('token');
         if (token) {
             this.options.headers.append('authorization', token);
