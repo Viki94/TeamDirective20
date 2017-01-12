@@ -34039,7 +34039,7 @@ var NotificationsService = (function () {
     ], NotificationsService);
     return NotificationsService;
 }());
-//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/TeamDirective20/src/notifications.service.js.map
+//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/teamwork-test/src/notifications.service.js.map
 
 /***/ },
 /* 175 */,
@@ -66488,7 +66488,7 @@ var MaxPipe = (function () {
     ], MaxPipe);
     return MaxPipe;
 }());
-//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/TeamDirective20/src/max.pipe.js.map
+//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/teamwork-test/src/max.pipe.js.map
 
 /***/ },
 /* 372 */
@@ -66702,7 +66702,7 @@ var NotificationComponent = (function () {
     return NotificationComponent;
     var _a, _b, _c, _d;
 }());
-//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/TeamDirective20/src/notification.component.js.map
+//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/teamwork-test/src/notification.component.js.map
 
 /***/ },
 /* 373 */
@@ -66760,7 +66760,7 @@ var PushNotificationsService = (function () {
     ], PushNotificationsService);
     return PushNotificationsService;
 }());
-//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/TeamDirective20/src/push-notifications.service.js.map
+//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/teamwork-test/src/push-notifications.service.js.map
 
 /***/ },
 /* 374 */
@@ -66970,7 +66970,7 @@ var SimpleNotificationsComponent = (function () {
     return SimpleNotificationsComponent;
     var _a, _b, _c;
 }());
-//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/TeamDirective20/src/simple-notifications.component.js.map
+//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/teamwork-test/src/simple-notifications.component.js.map
 
 /***/ },
 /* 375 */,
@@ -69250,7 +69250,12 @@ var AjaxSubscriber = (function (_super) {
         }
         else {
             this.xhr = xhr;
-            // open XHR first
+            // set up the events before open XHR
+            // https://developer.mozilla.org/en/docs/Web/API/XMLHttpRequest/Using_XMLHttpRequest
+            // You need to add the event listeners before calling open() on the request.
+            // Otherwise the progress events will not fire.
+            this.setupEvents(xhr, request);
+            // open XHR
             var result = void 0;
             if (user) {
                 result = tryCatch_1.tryCatch(xhr.open).call(xhr, method, url, async, user, password);
@@ -69267,8 +69272,6 @@ var AjaxSubscriber = (function (_super) {
             xhr.responseType = request.responseType;
             // set headers
             this.setHeaders(xhr, headers);
-            // now set up the events
-            this.setupEvents(xhr, request);
             // finally send the request
             result = body ? tryCatch_1.tryCatch(xhr.send).call(xhr, body) : tryCatch_1.tryCatch(xhr.send).call(xhr);
             if (result === errorObject_1.errorObject) {
@@ -69321,14 +69324,19 @@ var AjaxSubscriber = (function (_super) {
         xhrTimeout.request = request;
         xhrTimeout.subscriber = this;
         xhrTimeout.progressSubscriber = progressSubscriber;
-        if (xhr.upload && 'withCredentials' in xhr && root_1.root.XDomainRequest) {
+        if (xhr.upload && 'withCredentials' in xhr) {
             if (progressSubscriber) {
                 var xhrProgress_1;
                 xhrProgress_1 = function (e) {
                     var progressSubscriber = xhrProgress_1.progressSubscriber;
                     progressSubscriber.next(e);
                 };
-                xhr.onprogress = xhrProgress_1;
+                if (root_1.root.XDomainRequest) {
+                    xhr.onprogress = xhrProgress_1;
+                }
+                else {
+                    xhr.upload.onprogress = xhrProgress_1;
+                }
                 xhrProgress_1.progressSubscriber = progressSubscriber;
             }
             var xhrError_1;
@@ -87674,19 +87682,19 @@ var defaultIcons = {
     info: "\n        <svg class=\"simple-notification-svg\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"#000000\" height=\"24\" viewBox=\"0 0 24 24\" width=\"24\">\n            <path d=\"M0 0h24v24H0z\" fill=\"none\"/>\n            <path d=\"M11 17h2v-6h-2v6zm1-15C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zM11 9h2V7h-2v2z\"/>\n        </svg>\n    ",
     success: "\n        <svg class=\"simple-notification-svg\" xmlns=\"http://www.w3.org/2000/svg\" fill=\"#000000\" height=\"24\" viewBox=\"0 0 24 24\" width=\"24\">\n            <path d=\"M0 0h24v24H0z\" fill=\"none\"/>\n            <path d=\"M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z\"/>\n        </svg>\n    "
 };
-//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/TeamDirective20/src/icons.js.map
+//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/teamwork-test/src/icons.js.map
 
 /***/ },
 /* 584 */
 /***/ function(module, exports) {
 
-//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/TeamDirective20/src/notification.type.js.map
+//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/teamwork-test/src/notification.type.js.map
 
 /***/ },
 /* 585 */
 /***/ function(module, exports) {
 
-//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/TeamDirective20/src/options.type.js.map
+//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/teamwork-test/src/options.type.js.map
 
 /***/ },
 /* 586 */
@@ -87718,7 +87726,7 @@ var PushNotificationsModule = (function () {
     ], PushNotificationsModule);
     return PushNotificationsModule;
 }());
-//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/TeamDirective20/src/push-notifications.module.js.map
+//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/teamwork-test/src/push-notifications.module.js.map
 
 /***/ },
 /* 587 */
@@ -87761,7 +87769,7 @@ var SimpleNotificationsModule = (function () {
     ], SimpleNotificationsModule);
     return SimpleNotificationsModule;
 }());
-//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/TeamDirective20/src/simple-notifications.module.js.map
+//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/teamwork-test/src/simple-notifications.module.js.map
 
 /***/ },
 /* 588 */,
@@ -97990,7 +97998,7 @@ var GroupBySubscriber = (function (_super) {
         this.groups.delete(key);
     };
     GroupBySubscriber.prototype.unsubscribe = function () {
-        if (!this.closed && !this.attemptedToUnsubscribe) {
+        if (!this.closed) {
             this.attemptedToUnsubscribe = true;
             if (this.count === 0) {
                 _super.prototype.unsubscribe.call(this);
