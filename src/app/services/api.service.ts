@@ -12,6 +12,7 @@ export class ApiService {
     private options = new RequestOptions({
         headers: this.headers
     });
+    private apiUrl = '';
 
     constructor(private http: Http) {
         const token = localStorage.getItem('token');
@@ -22,22 +23,22 @@ export class ApiService {
     }
 
     get(path: string): Observable<any> {
-        return this.http.get(`/${path}`, this.options)
+        return this.http.get(`${this.apiUrl}/${path}`, this.options)
             .map(this.getJson);
     }
 
     post(path: string, body): Observable<any> {
-        return this.http.post(`/${path}`, JSON.stringify(body), this.options)
+        return this.http.post(`${this.apiUrl}/${path}`, JSON.stringify(body), this.options)
             .map(this.getJson);
     }
 
     put(path: string, body): Observable<any> {
-        return this.http.put(`$/${path}`, JSON.stringify(body), this.options)
+        return this.http.put(`${this.apiUrl}/${path}`, JSON.stringify(body), this.options)
             .map(this.getJson);
     }
 
     delete(path: string): Observable<any> {
-        return this.http.delete(`/${path}`, this.options)
+        return this.http.delete(`${this.apiUrl}/${path}`, this.options)
             .map(this.getJson);
     }
 

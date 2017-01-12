@@ -50,7 +50,7 @@ var CampaignsService = (function () {
     var _a;
 }());
 ;
-//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/teamwork-test/src/campaigns.service.js.map
+//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/TeamDirective20/src/campaigns.service.js.map
 
 /***/ },
 
@@ -74,7 +74,7 @@ var Campaign = (function () {
     return Campaign;
 }());
 ;
-//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/teamwork-test/src/campaign.model.js.map
+//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/TeamDirective20/src/campaign.model.js.map
 
 /***/ },
 
@@ -114,7 +114,7 @@ var FactsService = (function () {
     var _a;
 }());
 ;
-//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/teamwork-test/src/facts.service.js.map
+//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/TeamDirective20/src/facts.service.js.map
 
 /***/ },
 
@@ -129,7 +129,7 @@ var FactsService = (function () {
 /* harmony reexport (binding) */ __webpack_require__.d(exports, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__EmailValidator__["a"]; });
 /* harmony reexport (binding) */ __webpack_require__.d(exports, "b", function() { return __WEBPACK_IMPORTED_MODULE_1__RangeValidator__["a"]; });
 
-//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/teamwork-test/src/index.js.map
+//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/TeamDirective20/src/index.js.map
 
 /***/ },
 
@@ -144,7 +144,7 @@ var FactsService = (function () {
 /* harmony reexport (binding) */ __webpack_require__.d(exports, "b", function() { return __WEBPACK_IMPORTED_MODULE_0__login_login_component__["a"]; });
 /* harmony reexport (binding) */ __webpack_require__.d(exports, "a", function() { return __WEBPACK_IMPORTED_MODULE_1__register_register_component__["a"]; });
 
-//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/teamwork-test/src/index.js.map
+//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/TeamDirective20/src/index.js.map
 
 /***/ },
 
@@ -204,7 +204,7 @@ var CampaignCreateComponent = (function () {
     var _a, _b;
 }());
 ;
-//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/teamwork-test/src/campaign-create.component.js.map
+//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/TeamDirective20/src/campaign-create.component.js.map
 
 /***/ },
 
@@ -268,7 +268,7 @@ var CampaignListComponent = (function () {
     var _a, _b;
 }());
 ;
-//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/teamwork-test/src/campaign-list.component.js.map
+//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/TeamDirective20/src/campaign-list.component.js.map
 
 /***/ },
 
@@ -349,7 +349,7 @@ var CampaignPreviewComponent = (function () {
     var _a, _b, _c;
 }());
 ;
-//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/teamwork-test/src/campaign-preview.component.js.map
+//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/TeamDirective20/src/campaign-preview.component.js.map
 
 /***/ },
 
@@ -383,7 +383,7 @@ var CampaignComponent = (function () {
     return CampaignComponent;
 }());
 ;
-//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/teamwork-test/src/campaign.component.js.map
+//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/TeamDirective20/src/campaign.component.js.map
 
 /***/ },
 
@@ -443,7 +443,7 @@ var FactFormComponent = (function () {
     var _a, _b;
 }());
 ;
-//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/teamwork-test/src/fact-form.component.js.map
+//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/TeamDirective20/src/fact-form.component.js.map
 
 /***/ },
 
@@ -504,7 +504,7 @@ var FactsComponent = (function () {
     var _a, _b;
 }());
 ;
-//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/teamwork-test/src/facts.component.js.map
+//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/TeamDirective20/src/facts.component.js.map
 
 /***/ },
 
@@ -567,7 +567,7 @@ var HomeComponent = (function () {
     return HomeComponent;
     var _a, _b;
 }());
-//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/teamwork-test/src/home.component.js.map
+//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/TeamDirective20/src/home.component.js.map
 
 /***/ },
 
@@ -585,7 +585,7 @@ var Fact = (function () {
     return Fact;
 }());
 ;
-//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/teamwork-test/src/fact.model.js.map
+//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/TeamDirective20/src/fact.model.js.map
 
 /***/ },
 
@@ -677,7 +677,7 @@ var NewsAddArticleComponent = (function () {
     return NewsAddArticleComponent;
     var _a, _b, _c, _d;
 }());
-//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/teamwork-test/src/news-add-article.component.js.map
+//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/TeamDirective20/src/news-add-article.component.js.map
 
 /***/ },
 
@@ -836,7 +836,7 @@ var NewsDetailsComponent = (function () {
     return NewsDetailsComponent;
     var _a, _b, _c, _d, _e, _f;
 }());
-//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/teamwork-test/src/news-details.component.js.map
+//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/TeamDirective20/src/news-details.component.js.map
 
 /***/ },
 
@@ -908,7 +908,7 @@ var NewsPageComponent = (function () {
     return NewsPageComponent;
     var _a, _b, _c;
 }());
-//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/teamwork-test/src/news-page.component.js.map
+//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/TeamDirective20/src/news-page.component.js.map
 
 /***/ },
 
@@ -1004,7 +1004,7 @@ var AddPetComponent = (function () {
     return AddPetComponent;
     var _a, _b, _c, _d;
 }());
-//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/teamwork-test/src/add-pet.component.js.map
+//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/TeamDirective20/src/add-pet.component.js.map
 
 /***/ },
 
@@ -1122,7 +1122,7 @@ var PetProfileComponent = (function () {
     return PetProfileComponent;
     var _a, _b, _c, _d, _e, _f;
 }());
-//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/teamwork-test/src/pet-profile.component.js.map
+//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/TeamDirective20/src/pet-profile.component.js.map
 
 /***/ },
 
@@ -1203,7 +1203,7 @@ var PetsMainPageComponent = (function () {
     return PetsMainPageComponent;
     var _a, _b, _c, _d;
 }());
-//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/teamwork-test/src/pets-main-page.component.js.map
+//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/TeamDirective20/src/pets-main-page.component.js.map
 
 /***/ },
 
@@ -1262,7 +1262,7 @@ var UsersService = (function () {
     return UsersService;
     var _a;
 }());
-//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/teamwork-test/src/users.service.js.map
+//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/TeamDirective20/src/users.service.js.map
 
 /***/ },
 
@@ -1397,7 +1397,7 @@ var AdminComponent = (function () {
     return AdminComponent;
     var _a, _b, _c, _d;
 }());
-//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/teamwork-test/src/admin.component.js.map
+//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/TeamDirective20/src/admin.component.js.map
 
 /***/ },
 
@@ -1594,7 +1594,7 @@ var UserProfileComponent = (function () {
     return UserProfileComponent;
     var _a, _b, _c, _d, _e, _f;
 }());
-//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/teamwork-test/src/user-profile.component.js.map
+//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/TeamDirective20/src/user-profile.component.js.map
 
 /***/ },
 
@@ -1631,7 +1631,7 @@ if (__WEBPACK_IMPORTED_MODULE_3__environments_environment__["a" /* environment *
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__angular_core__["_40" /* enableProdMode */])();
 }
 __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_4__app_app_module__["a" /* AppModule */]);
-//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/teamwork-test/src/main.js.map
+//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/TeamDirective20/src/main.js.map
 
 /***/ },
 
@@ -1664,7 +1664,7 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dyna
 /* harmony reexport (binding) */ __webpack_require__.d(exports, "a", function() { return __WEBPACK_IMPORTED_MODULE_5__news_service__["a"]; });
 /* harmony reexport (binding) */ __webpack_require__.d(exports, "c", function() { return __WEBPACK_IMPORTED_MODULE_6__pet_service__["a"]; });
 
-//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/teamwork-test/src/index.js.map
+//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/TeamDirective20/src/index.js.map
 
 /***/ },
 
@@ -1757,7 +1757,7 @@ var AppRoutingModule = (function () {
     ], AppRoutingModule);
     return AppRoutingModule;
 }());
-//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/teamwork-test/src/app-routing.module.js.map
+//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/TeamDirective20/src/app-routing.module.js.map
 
 /***/ },
 
@@ -1790,7 +1790,7 @@ var AppComponent = (function () {
     ], AppComponent);
     return AppComponent;
 }());
-//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/teamwork-test/src/app.component.js.map
+//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/TeamDirective20/src/app.component.js.map
 
 /***/ },
 
@@ -1942,7 +1942,7 @@ var AppModule = (function () {
     ], AppModule);
     return AppModule;
 }());
-//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/teamwork-test/src/app.module.js.map
+//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/TeamDirective20/src/app.module.js.map
 
 /***/ },
 
@@ -1963,7 +1963,7 @@ var EmailValidator = (function () {
     };
     return EmailValidator;
 }());
-//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/teamwork-test/src/EmailValidator.js.map
+//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/TeamDirective20/src/EmailValidator.js.map
 
 /***/ },
 
@@ -1983,7 +1983,7 @@ var RangeValidator = (function () {
     };
     return RangeValidator;
 }());
-//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/teamwork-test/src/RangeValidator.js.map
+//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/TeamDirective20/src/RangeValidator.js.map
 
 /***/ },
 
@@ -2065,7 +2065,7 @@ var LoginComponent = (function () {
     return LoginComponent;
     var _a, _b, _c, _d;
 }());
-//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/teamwork-test/src/login.component.js.map
+//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/TeamDirective20/src/login.component.js.map
 
 /***/ },
 
@@ -2157,7 +2157,7 @@ var RegisterComponent = (function () {
     return RegisterComponent;
     var _a, _b, _c, _d;
 }());
-//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/teamwork-test/src/register.component.js.map
+//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/TeamDirective20/src/register.component.js.map
 
 /***/ },
 
@@ -2231,7 +2231,7 @@ var EqualityValidatorDirective = (function () {
     ], EqualityValidatorDirective);
     return EqualityValidatorDirective;
 }());
-//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/teamwork-test/src/equality-validator.directive.js.map
+//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/TeamDirective20/src/equality-validator.directive.js.map
 
 /***/ },
 
@@ -2266,7 +2266,7 @@ var FooterComponent = (function () {
     ], FooterComponent);
     return FooterComponent;
 }());
-//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/teamwork-test/src/footer.component.js.map
+//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/TeamDirective20/src/footer.component.js.map
 
 /***/ },
 
@@ -2281,7 +2281,7 @@ var FooterComponent = (function () {
 /* harmony reexport (binding) */ __webpack_require__.d(exports, "b", function() { return __WEBPACK_IMPORTED_MODULE_0__footer_footer_component__["a"]; });
 /* harmony reexport (binding) */ __webpack_require__.d(exports, "a", function() { return __WEBPACK_IMPORTED_MODULE_1__main_navigation_main_navigation_component__["a"]; });
 
-//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/teamwork-test/src/index.js.map
+//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/TeamDirective20/src/index.js.map
 
 /***/ },
 
@@ -2352,7 +2352,7 @@ var MainNavigationComponent = (function () {
     return MainNavigationComponent;
     var _a, _b, _c;
 }());
-//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/teamwork-test/src/main-navigation.component.js.map
+//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/TeamDirective20/src/main-navigation.component.js.map
 
 /***/ },
 
@@ -2391,7 +2391,7 @@ var NewsEntryComponent = (function () {
     ], NewsEntryComponent);
     return NewsEntryComponent;
 }());
-//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/teamwork-test/src/news-entry.component.js.map
+//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/TeamDirective20/src/news-entry.component.js.map
 
 /***/ },
 
@@ -2406,7 +2406,7 @@ var NewsEntryComponent = (function () {
 /* harmony reexport (binding) */ __webpack_require__.d(exports, "b", function() { return __WEBPACK_IMPORTED_MODULE_0__text_transformer_pipe__["a"]; });
 /* harmony reexport (binding) */ __webpack_require__.d(exports, "a", function() { return __WEBPACK_IMPORTED_MODULE_1__sort_by_date_pipe__["a"]; });
 
-//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/teamwork-test/src/index.js.map
+//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/TeamDirective20/src/index.js.map
 
 /***/ },
 
@@ -2451,7 +2451,7 @@ var SortByDatePipe = (function () {
     ], SortByDatePipe);
     return SortByDatePipe;
 }());
-//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/teamwork-test/src/sort-by-date.pipe.js.map
+//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/TeamDirective20/src/sort-by-date.pipe.js.map
 
 /***/ },
 
@@ -2493,7 +2493,7 @@ var TextTransformPipe = (function () {
     ], TextTransformPipe);
     return TextTransformPipe;
 }());
-//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/teamwork-test/src/text-transformer.pipe.js.map
+//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/TeamDirective20/src/text-transformer.pipe.js.map
 
 /***/ },
 
@@ -2535,7 +2535,7 @@ var AdminRouteGuardService = (function () {
     return AdminRouteGuardService;
     var _a, _b;
 }());
-//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/teamwork-test/src/admin-route-guard.service.js.map
+//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/TeamDirective20/src/admin-route-guard.service.js.map
 
 /***/ },
 
@@ -2580,7 +2580,7 @@ var DataService = (function () {
     ], DataService);
     return DataService;
 }());
-//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/teamwork-test/src/data.service.js.map
+//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/TeamDirective20/src/data.service.js.map
 
 /***/ },
 
@@ -2637,7 +2637,7 @@ var NewsService = (function () {
     return NewsService;
     var _a;
 }());
-//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/teamwork-test/src/news.service.js.map
+//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/TeamDirective20/src/news.service.js.map
 
 /***/ },
 
@@ -2682,7 +2682,7 @@ var PetService = (function () {
     return PetService;
     var _a;
 }());
-//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/teamwork-test/src/pet.service.js.map
+//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/TeamDirective20/src/pet.service.js.map
 
 /***/ },
 
@@ -2721,7 +2721,7 @@ var RequestsService = (function () {
     return RequestsService;
     var _a;
 }());
-//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/teamwork-test/src/requests.service.js.map
+//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/TeamDirective20/src/requests.service.js.map
 
 /***/ },
 
@@ -2763,7 +2763,7 @@ var RouteGuardService = (function () {
     return RouteGuardService;
     var _a, _b;
 }());
-//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/teamwork-test/src/route-guard.service.js.map
+//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/TeamDirective20/src/route-guard.service.js.map
 
 /***/ },
 
@@ -2801,7 +2801,7 @@ var PictureModalComponent = (function () {
     ], PictureModalComponent);
     return PictureModalComponent;
 }());
-//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/teamwork-test/src/picture-modal.component.js.map
+//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/TeamDirective20/src/picture-modal.component.js.map
 
 /***/ },
 
@@ -2840,7 +2840,7 @@ var AddedContentComponent = (function () {
     ], AddedContentComponent);
     return AddedContentComponent;
 }());
-//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/teamwork-test/src/added-content.component.js.map
+//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/TeamDirective20/src/added-content.component.js.map
 
 /***/ },
 
@@ -2849,10 +2849,14 @@ var AddedContentComponent = (function () {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return environment; });
+// The file contents for the current environment will overwrite these during build.
+// The build system defaults to the dev environment which uses `environment.ts`, but if you do
+// `ng build --env=prod` then `environment.prod.ts` will be used instead.
+// The list of which env maps to which file can be found in `angular-cli.json`.
 var environment = {
-    production: true
+    production: false
 };
-//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/teamwork-test/src/environment.prod.js.map
+//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/TeamDirective20/src/environment.js.map
 
 /***/ },
 
@@ -2908,7 +2912,7 @@ var environment = {
 
 
 
-//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/teamwork-test/src/polyfills.js.map
+//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/TeamDirective20/src/polyfills.js.map
 
 /***/ },
 
@@ -2945,6 +2949,7 @@ var ApiService = (function () {
         this.options = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* RequestOptions */]({
             headers: this.headers
         });
+        this.apiUrl = '';
         var token = localStorage.getItem('token');
         if (token) {
             this.options.headers.append('authorization', token);
@@ -2952,19 +2957,19 @@ var ApiService = (function () {
         ;
     }
     ApiService.prototype.get = function (path) {
-        return this.http.get("/" + path, this.options)
+        return this.http.get(this.apiUrl + "/" + path, this.options)
             .map(this.getJson);
     };
     ApiService.prototype.post = function (path, body) {
-        return this.http.post("/" + path, JSON.stringify(body), this.options)
+        return this.http.post(this.apiUrl + "/" + path, JSON.stringify(body), this.options)
             .map(this.getJson);
     };
     ApiService.prototype.put = function (path, body) {
-        return this.http.put("$/" + path, JSON.stringify(body), this.options)
+        return this.http.put(this.apiUrl + "/" + path, JSON.stringify(body), this.options)
             .map(this.getJson);
     };
     ApiService.prototype.delete = function (path) {
-        return this.http.delete("/" + path, this.options)
+        return this.http.delete(this.apiUrl + "/" + path, this.options)
             .map(this.getJson);
     };
     ApiService.prototype.getJson = function (res) {
@@ -2985,7 +2990,7 @@ var ApiService = (function () {
     return ApiService;
     var _a;
 }());
-//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/teamwork-test/src/api.service.js.map
+//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/TeamDirective20/src/api.service.js.map
 
 /***/ },
 
@@ -3381,7 +3386,7 @@ var AuthService = (function () {
     return AuthService;
     var _a, _b;
 }());
-//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/teamwork-test/src/auth.service.js.map
+//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/TeamDirective20/src/auth.service.js.map
 
 /***/ }
 
