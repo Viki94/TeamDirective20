@@ -1,6 +1,6 @@
 webpackJsonp([0,4],{
 
-/***/ 1098:
+/***/ 1099:
 /***/ function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__(463);
@@ -50,7 +50,7 @@ var CampaignsService = (function () {
     var _a;
 }());
 ;
-//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/TeamDirective20/src/campaigns.service.js.map
+//# sourceMappingURL=C:/Users/Dimitar Pechev/Documents/GitHub/TeamDirective20/src/campaigns.service.js.map
 
 /***/ },
 
@@ -74,7 +74,7 @@ var Campaign = (function () {
     return Campaign;
 }());
 ;
-//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/TeamDirective20/src/campaign.model.js.map
+//# sourceMappingURL=C:/Users/Dimitar Pechev/Documents/GitHub/TeamDirective20/src/campaign.model.js.map
 
 /***/ },
 
@@ -114,7 +114,7 @@ var FactsService = (function () {
     var _a;
 }());
 ;
-//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/TeamDirective20/src/facts.service.js.map
+//# sourceMappingURL=C:/Users/Dimitar Pechev/Documents/GitHub/TeamDirective20/src/facts.service.js.map
 
 /***/ },
 
@@ -122,14 +122,14 @@ var FactsService = (function () {
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__EmailValidator__ = __webpack_require__(591);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__RangeValidator__ = __webpack_require__(592);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__EmailValidator__ = __webpack_require__(592);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__RangeValidator__ = __webpack_require__(593);
 
 
 /* harmony reexport (binding) */ __webpack_require__.d(exports, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__EmailValidator__["a"]; });
 /* harmony reexport (binding) */ __webpack_require__.d(exports, "b", function() { return __WEBPACK_IMPORTED_MODULE_1__RangeValidator__["a"]; });
 
-//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/TeamDirective20/src/index.js.map
+//# sourceMappingURL=C:/Users/Dimitar Pechev/Documents/GitHub/TeamDirective20/src/index.js.map
 
 /***/ },
 
@@ -137,14 +137,14 @@ var FactsService = (function () {
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__login_login_component__ = __webpack_require__(593);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__register_register_component__ = __webpack_require__(594);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__login_login_component__ = __webpack_require__(594);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__register_register_component__ = __webpack_require__(595);
 
 
 /* harmony reexport (binding) */ __webpack_require__.d(exports, "b", function() { return __WEBPACK_IMPORTED_MODULE_0__login_login_component__["a"]; });
 /* harmony reexport (binding) */ __webpack_require__.d(exports, "a", function() { return __WEBPACK_IMPORTED_MODULE_1__register_register_component__["a"]; });
 
-//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/TeamDirective20/src/index.js.map
+//# sourceMappingURL=C:/Users/Dimitar Pechev/Documents/GitHub/TeamDirective20/src/index.js.map
 
 /***/ },
 
@@ -153,7 +153,7 @@ var FactsService = (function () {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_campaigns_service__ = __webpack_require__(175);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__models_campaign_model__ = __webpack_require__(250);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return CampaignCreateComponent; });
@@ -195,8 +195,8 @@ var CampaignCreateComponent = (function () {
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["G" /* Component */])({
             moduleId: 'module.id',
             selector: 'campaign-create',
-            template: __webpack_require__(795),
-            styles: [__webpack_require__(770)]
+            template: __webpack_require__(796),
+            styles: [__webpack_require__(771)]
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__services_campaigns_service__["a" /* CampaignsService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__services_campaigns_service__["a" /* CampaignsService */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["d" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_router__["d" /* Router */]) === 'function' && _b) || Object])
     ], CampaignCreateComponent);
@@ -204,7 +204,7 @@ var CampaignCreateComponent = (function () {
     var _a, _b;
 }());
 ;
-//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/TeamDirective20/src/campaign-create.component.js.map
+//# sourceMappingURL=C:/Users/Dimitar Pechev/Documents/GitHub/TeamDirective20/src/campaign-create.component.js.map
 
 /***/ },
 
@@ -213,7 +213,7 @@ var CampaignCreateComponent = (function () {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_campaigns_service__ = __webpack_require__(175);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__models_campaign_model__ = __webpack_require__(250);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return CampaignListComponent; });
@@ -259,8 +259,8 @@ var CampaignListComponent = (function () {
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["G" /* Component */])({
             moduleId: 'module.id',
             selector: 'campaign-list',
-            template: __webpack_require__(796),
-            styles: [__webpack_require__(771)]
+            template: __webpack_require__(797),
+            styles: [__webpack_require__(772)]
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__services_campaigns_service__["a" /* CampaignsService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__services_campaigns_service__["a" /* CampaignsService */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["d" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_router__["d" /* Router */]) === 'function' && _b) || Object])
     ], CampaignListComponent);
@@ -268,7 +268,7 @@ var CampaignListComponent = (function () {
     var _a, _b;
 }());
 ;
-//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/TeamDirective20/src/campaign-list.component.js.map
+//# sourceMappingURL=C:/Users/Dimitar Pechev/Documents/GitHub/TeamDirective20/src/campaign-list.component.js.map
 
 /***/ },
 
@@ -277,7 +277,7 @@ var CampaignListComponent = (function () {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_campaigns_service__ = __webpack_require__(175);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__models_campaign_model__ = __webpack_require__(250);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return CampaignPreviewComponent; });
@@ -340,8 +340,8 @@ var CampaignPreviewComponent = (function () {
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["G" /* Component */])({
             moduleId: 'module.id',
             selector: 'campaign-preview',
-            template: __webpack_require__(797),
-            styles: [__webpack_require__(772)]
+            template: __webpack_require__(798),
+            styles: [__webpack_require__(773)]
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__services_campaigns_service__["a" /* CampaignsService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__services_campaigns_service__["a" /* CampaignsService */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["d" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_router__["d" /* Router */]) === 'function' && _b) || Object, (typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["e" /* ActivatedRoute */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_router__["e" /* ActivatedRoute */]) === 'function' && _c) || Object])
     ], CampaignPreviewComponent);
@@ -349,7 +349,7 @@ var CampaignPreviewComponent = (function () {
     var _a, _b, _c;
 }());
 ;
-//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/TeamDirective20/src/campaign-preview.component.js.map
+//# sourceMappingURL=C:/Users/Dimitar Pechev/Documents/GitHub/TeamDirective20/src/campaign-preview.component.js.map
 
 /***/ },
 
@@ -376,14 +376,14 @@ var CampaignComponent = (function () {
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["G" /* Component */])({
             moduleId: 'module.id',
             selector: 'campaigns',
-            template: __webpack_require__(798)
+            template: __webpack_require__(799)
         }), 
         __metadata('design:paramtypes', [])
     ], CampaignComponent);
     return CampaignComponent;
 }());
 ;
-//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/TeamDirective20/src/campaign.component.js.map
+//# sourceMappingURL=C:/Users/Dimitar Pechev/Documents/GitHub/TeamDirective20/src/campaign.component.js.map
 
 /***/ },
 
@@ -392,7 +392,7 @@ var CampaignComponent = (function () {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_facts_service__ = __webpack_require__(251);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__models_fact_model__ = __webpack_require__(384);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return FactFormComponent; });
@@ -434,8 +434,8 @@ var FactFormComponent = (function () {
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["G" /* Component */])({
             moduleId: 'module.id',
             selector: 'fact-form',
-            template: __webpack_require__(799),
-            styles: [__webpack_require__(773)]
+            template: __webpack_require__(800),
+            styles: [__webpack_require__(774)]
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__services_facts_service__["a" /* FactsService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__services_facts_service__["a" /* FactsService */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["d" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_router__["d" /* Router */]) === 'function' && _b) || Object])
     ], FactFormComponent);
@@ -443,7 +443,7 @@ var FactFormComponent = (function () {
     var _a, _b;
 }());
 ;
-//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/TeamDirective20/src/fact-form.component.js.map
+//# sourceMappingURL=C:/Users/Dimitar Pechev/Documents/GitHub/TeamDirective20/src/fact-form.component.js.map
 
 /***/ },
 
@@ -452,7 +452,7 @@ var FactFormComponent = (function () {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_facts_service__ = __webpack_require__(251);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__models_fact_model__ = __webpack_require__(384);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return FactsComponent; });
@@ -495,8 +495,8 @@ var FactsComponent = (function () {
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["G" /* Component */])({
             moduleId: 'module.id',
             selector: 'facts',
-            template: __webpack_require__(800),
-            styles: [__webpack_require__(774)]
+            template: __webpack_require__(801),
+            styles: [__webpack_require__(775)]
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__services_facts_service__["a" /* FactsService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__services_facts_service__["a" /* FactsService */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["d" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_router__["d" /* Router */]) === 'function' && _b) || Object])
     ], FactsComponent);
@@ -504,7 +504,7 @@ var FactsComponent = (function () {
     var _a, _b;
 }());
 ;
-//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/TeamDirective20/src/facts.component.js.map
+//# sourceMappingURL=C:/Users/Dimitar Pechev/Documents/GitHub/TeamDirective20/src/facts.component.js.map
 
 /***/ },
 
@@ -514,7 +514,7 @@ var FactsComponent = (function () {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__services_index__ = __webpack_require__(48);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__(14);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return HomeComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -559,15 +559,15 @@ var HomeComponent = (function () {
     HomeComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["G" /* Component */])({
             selector: 'app-home',
-            template: __webpack_require__(801),
-            styles: [__webpack_require__(775)]
+            template: __webpack_require__(802),
+            styles: [__webpack_require__(776)]
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__services_index__["a" /* NewsService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__services_index__["a" /* NewsService */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["d" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__angular_router__["d" /* Router */]) === 'function' && _b) || Object])
     ], HomeComponent);
     return HomeComponent;
     var _a, _b;
 }());
-//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/TeamDirective20/src/home.component.js.map
+//# sourceMappingURL=C:/Users/Dimitar Pechev/Documents/GitHub/TeamDirective20/src/home.component.js.map
 
 /***/ },
 
@@ -585,7 +585,7 @@ var Fact = (function () {
     return Fact;
 }());
 ;
-//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/TeamDirective20/src/fact.model.js.map
+//# sourceMappingURL=C:/Users/Dimitar Pechev/Documents/GitHub/TeamDirective20/src/fact.model.js.map
 
 /***/ },
 
@@ -595,7 +595,7 @@ var Fact = (function () {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__(52);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_angular2_notifications__ = __webpack_require__(49);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_angular2_notifications___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_angular2_notifications__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_index__ = __webpack_require__(48);
@@ -669,15 +669,15 @@ var NewsAddArticleComponent = (function () {
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["R" /* Injectable */])(),
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["G" /* Component */])({
             selector: 'app-news-add-article',
-            template: __webpack_require__(804),
-            styles: [__webpack_require__(778)]
+            template: __webpack_require__(805),
+            styles: [__webpack_require__(779)]
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_4__services_index__["a" /* NewsService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_4__services_index__["a" /* NewsService */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__angular_forms__["b" /* FormBuilder */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_forms__["b" /* FormBuilder */]) === 'function' && _b) || Object, (typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["d" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__angular_router__["d" /* Router */]) === 'function' && _c) || Object, (typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_3_angular2_notifications__["NotificationsService"] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3_angular2_notifications__["NotificationsService"]) === 'function' && _d) || Object])
     ], NewsAddArticleComponent);
     return NewsAddArticleComponent;
     var _a, _b, _c, _d;
 }());
-//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/TeamDirective20/src/news-add-article.component.js.map
+//# sourceMappingURL=C:/Users/Dimitar Pechev/Documents/GitHub/TeamDirective20/src/news-add-article.component.js.map
 
 /***/ },
 
@@ -686,7 +686,7 @@ var NewsAddArticleComponent = (function () {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(52);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_angular2_notifications__ = __webpack_require__(49);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_angular2_notifications___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_angular2_notifications__);
@@ -828,15 +828,15 @@ var NewsDetailsComponent = (function () {
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["R" /* Injectable */])(),
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["G" /* Component */])({
             selector: 'app-news-details',
-            template: __webpack_require__(805),
-            styles: [__webpack_require__(779)]
+            template: __webpack_require__(806),
+            styles: [__webpack_require__(780)]
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_4__services_index__["a" /* NewsService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_4__services_index__["a" /* NewsService */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_4__services_index__["b" /* UsersService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_4__services_index__["b" /* UsersService */]) === 'function' && _b) || Object, (typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["e" /* ActivatedRoute */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_router__["e" /* ActivatedRoute */]) === 'function' && _c) || Object, (typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["d" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_router__["d" /* Router */]) === 'function' && _d) || Object, (typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_3_angular2_notifications__["NotificationsService"] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3_angular2_notifications__["NotificationsService"]) === 'function' && _e) || Object, (typeof (_f = typeof __WEBPACK_IMPORTED_MODULE_2__angular_forms__["b" /* FormBuilder */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__angular_forms__["b" /* FormBuilder */]) === 'function' && _f) || Object])
     ], NewsDetailsComponent);
     return NewsDetailsComponent;
     var _a, _b, _c, _d, _e, _f;
 }());
-//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/TeamDirective20/src/news-details.component.js.map
+//# sourceMappingURL=C:/Users/Dimitar Pechev/Documents/GitHub/TeamDirective20/src/news-details.component.js.map
 
 /***/ },
 
@@ -845,7 +845,7 @@ var NewsDetailsComponent = (function () {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_index__ = __webpack_require__(48);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return NewsPageComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -900,15 +900,15 @@ var NewsPageComponent = (function () {
     NewsPageComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["G" /* Component */])({
             selector: 'app-news-page',
-            template: __webpack_require__(807),
-            styles: [__webpack_require__(781)]
+            template: __webpack_require__(808),
+            styles: [__webpack_require__(782)]
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["d" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_router__["d" /* Router */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["e" /* ActivatedRoute */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_router__["e" /* ActivatedRoute */]) === 'function' && _b) || Object, (typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__services_index__["a" /* NewsService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__services_index__["a" /* NewsService */]) === 'function' && _c) || Object])
     ], NewsPageComponent);
     return NewsPageComponent;
     var _a, _b, _c;
 }());
-//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/TeamDirective20/src/news-page.component.js.map
+//# sourceMappingURL=C:/Users/Dimitar Pechev/Documents/GitHub/TeamDirective20/src/news-page.component.js.map
 
 /***/ },
 
@@ -918,7 +918,7 @@ var NewsPageComponent = (function () {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__(52);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_angular2_notifications__ = __webpack_require__(49);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_angular2_notifications___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_angular2_notifications__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_index__ = __webpack_require__(48);
@@ -996,15 +996,15 @@ var AddPetComponent = (function () {
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["R" /* Injectable */])(),
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["G" /* Component */])({
             selector: 'app-add-pet',
-            template: __webpack_require__(808),
-            styles: [__webpack_require__(782)]
+            template: __webpack_require__(809),
+            styles: [__webpack_require__(783)]
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_forms__["b" /* FormBuilder */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_forms__["b" /* FormBuilder */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_3_angular2_notifications__["NotificationsService"] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3_angular2_notifications__["NotificationsService"]) === 'function' && _b) || Object, (typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_4__services_index__["c" /* PetService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_4__services_index__["c" /* PetService */]) === 'function' && _c) || Object, (typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["d" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__angular_router__["d" /* Router */]) === 'function' && _d) || Object])
     ], AddPetComponent);
     return AddPetComponent;
     var _a, _b, _c, _d;
 }());
-//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/TeamDirective20/src/add-pet.component.js.map
+//# sourceMappingURL=C:/Users/Dimitar Pechev/Documents/GitHub/TeamDirective20/src/add-pet.component.js.map
 
 /***/ },
 
@@ -1013,7 +1013,7 @@ var AddPetComponent = (function () {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_index__ = __webpack_require__(48);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_angular2_notifications__ = __webpack_require__(49);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_angular2_notifications___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_angular2_notifications__);
@@ -1114,15 +1114,15 @@ var PetProfileComponent = (function () {
     PetProfileComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["G" /* Component */])({
             selector: 'app-pet-profile',
-            template: __webpack_require__(809),
-            styles: [__webpack_require__(783)]
+            template: __webpack_require__(810),
+            styles: [__webpack_require__(784)]
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__services_index__["c" /* PetService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__services_index__["c" /* PetService */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["e" /* ActivatedRoute */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_router__["e" /* ActivatedRoute */]) === 'function' && _b) || Object, (typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["d" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_router__["d" /* Router */]) === 'function' && _c) || Object, (typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_2__services_index__["b" /* UsersService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__services_index__["b" /* UsersService */]) === 'function' && _d) || Object, (typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_3_angular2_notifications__["NotificationsService"] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3_angular2_notifications__["NotificationsService"]) === 'function' && _e) || Object, (typeof (_f = typeof __WEBPACK_IMPORTED_MODULE_2__services_index__["d" /* RequestsService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__services_index__["d" /* RequestsService */]) === 'function' && _f) || Object])
     ], PetProfileComponent);
     return PetProfileComponent;
     var _a, _b, _c, _d, _e, _f;
 }());
-//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/TeamDirective20/src/pet-profile.component.js.map
+//# sourceMappingURL=C:/Users/Dimitar Pechev/Documents/GitHub/TeamDirective20/src/pet-profile.component.js.map
 
 /***/ },
 
@@ -1131,7 +1131,7 @@ var PetProfileComponent = (function () {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_index__ = __webpack_require__(48);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return PetsMainPageComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -1195,15 +1195,15 @@ var PetsMainPageComponent = (function () {
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["R" /* Injectable */])(),
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["G" /* Component */])({
             selector: 'app-pets-main-page',
-            template: __webpack_require__(810),
-            styles: [__webpack_require__(784)]
+            template: __webpack_require__(811),
+            styles: [__webpack_require__(785)]
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__services_index__["c" /* PetService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__services_index__["c" /* PetService */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["d" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_router__["d" /* Router */]) === 'function' && _b) || Object, (typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["e" /* ActivatedRoute */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_router__["e" /* ActivatedRoute */]) === 'function' && _c) || Object, (typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_2__services_index__["b" /* UsersService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__services_index__["b" /* UsersService */]) === 'function' && _d) || Object])
     ], PetsMainPageComponent);
     return PetsMainPageComponent;
     var _a, _b, _c, _d;
 }());
-//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/TeamDirective20/src/pets-main-page.component.js.map
+//# sourceMappingURL=C:/Users/Dimitar Pechev/Documents/GitHub/TeamDirective20/src/pets-main-page.component.js.map
 
 /***/ },
 
@@ -1262,7 +1262,7 @@ var UsersService = (function () {
     return UsersService;
     var _a;
 }());
-//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/TeamDirective20/src/users.service.js.map
+//# sourceMappingURL=C:/Users/Dimitar Pechev/Documents/GitHub/TeamDirective20/src/users.service.js.map
 
 /***/ },
 
@@ -1272,7 +1272,7 @@ var UsersService = (function () {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__(52);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_angular2_notifications__ = __webpack_require__(49);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_angular2_notifications___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_angular2_notifications__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_users_service__ = __webpack_require__(391);
@@ -1389,15 +1389,15 @@ var AdminComponent = (function () {
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["R" /* Injectable */])(),
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["G" /* Component */])({
             selector: 'app-admin',
-            template: __webpack_require__(813),
-            styles: [__webpack_require__(787)]
+            template: __webpack_require__(814),
+            styles: [__webpack_require__(788)]
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_4__services_users_service__["a" /* UsersService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_4__services_users_service__["a" /* UsersService */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["d" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__angular_router__["d" /* Router */]) === 'function' && _b) || Object, (typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1__angular_forms__["b" /* FormBuilder */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_forms__["b" /* FormBuilder */]) === 'function' && _c) || Object, (typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_3_angular2_notifications__["NotificationsService"] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3_angular2_notifications__["NotificationsService"]) === 'function' && _d) || Object])
     ], AdminComponent);
     return AdminComponent;
     var _a, _b, _c, _d;
 }());
-//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/TeamDirective20/src/admin.component.js.map
+//# sourceMappingURL=C:/Users/Dimitar Pechev/Documents/GitHub/TeamDirective20/src/admin.component.js.map
 
 /***/ },
 
@@ -1407,7 +1407,7 @@ var AdminComponent = (function () {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__(52);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_angular2_notifications__ = __webpack_require__(49);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_angular2_notifications___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_angular2_notifications__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__auth_custom_validators_index__ = __webpack_require__(375);
@@ -1586,15 +1586,15 @@ var UserProfileComponent = (function () {
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["R" /* Injectable */])(),
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["G" /* Component */])({
             selector: 'app-user-profile',
-            template: __webpack_require__(814),
-            styles: [__webpack_require__(788)]
+            template: __webpack_require__(815),
+            styles: [__webpack_require__(789)]
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_forms__["b" /* FormBuilder */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_forms__["b" /* FormBuilder */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_5__services_index__["b" /* UsersService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_5__services_index__["b" /* UsersService */]) === 'function' && _b) || Object, (typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3_angular2_notifications__["NotificationsService"] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3_angular2_notifications__["NotificationsService"]) === 'function' && _c) || Object, (typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["d" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__angular_router__["d" /* Router */]) === 'function' && _d) || Object, (typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["e" /* ActivatedRoute */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__angular_router__["e" /* ActivatedRoute */]) === 'function' && _e) || Object, (typeof (_f = typeof __WEBPACK_IMPORTED_MODULE_5__services_index__["a" /* NewsService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_5__services_index__["a" /* NewsService */]) === 'function' && _f) || Object])
     ], UserProfileComponent);
     return UserProfileComponent;
     var _a, _b, _c, _d, _e, _f;
 }());
-//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/TeamDirective20/src/user-profile.component.js.map
+//# sourceMappingURL=C:/Users/Dimitar Pechev/Documents/GitHub/TeamDirective20/src/user-profile.component.js.map
 
 /***/ },
 
@@ -1616,12 +1616,12 @@ webpackEmptyContext.id = 462;
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__polyfills_ts__ = __webpack_require__(612);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__polyfills_ts__ = __webpack_require__(613);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__polyfills_ts___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__polyfills_ts__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__ = __webpack_require__(554);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__ = __webpack_require__(555);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__environments_environment__ = __webpack_require__(611);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_app_module__ = __webpack_require__(590);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__environments_environment__ = __webpack_require__(612);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_app_module__ = __webpack_require__(591);
 
 
 
@@ -1631,7 +1631,7 @@ if (__WEBPACK_IMPORTED_MODULE_3__environments_environment__["a" /* environment *
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__angular_core__["_40" /* enableProdMode */])();
 }
 __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_4__app_app_module__["a" /* AppModule */]);
-//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/TeamDirective20/src/main.js.map
+//# sourceMappingURL=C:/Users/Dimitar Pechev/Documents/GitHub/TeamDirective20/src/main.js.map
 
 /***/ },
 
@@ -1640,13 +1640,13 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dyna
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__api_service__ = __webpack_require__(69);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__auth_service__ = __webpack_require__(97);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__route_guard_service__ = __webpack_require__(608);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__auth_service__ = __webpack_require__(98);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__route_guard_service__ = __webpack_require__(609);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__users_service__ = __webpack_require__(391);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__admin_route_guard_service__ = __webpack_require__(603);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__news_service__ = __webpack_require__(605);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pet_service__ = __webpack_require__(606);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__requests_service__ = __webpack_require__(607);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__admin_route_guard_service__ = __webpack_require__(604);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__news_service__ = __webpack_require__(606);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pet_service__ = __webpack_require__(607);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__requests_service__ = __webpack_require__(608);
 
 
 
@@ -1664,16 +1664,16 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dyna
 /* harmony reexport (binding) */ __webpack_require__.d(exports, "a", function() { return __WEBPACK_IMPORTED_MODULE_5__news_service__["a"]; });
 /* harmony reexport (binding) */ __webpack_require__.d(exports, "c", function() { return __WEBPACK_IMPORTED_MODULE_6__pet_service__["a"]; });
 
-//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/TeamDirective20/src/index.js.map
+//# sourceMappingURL=C:/Users/Dimitar Pechev/Documents/GitHub/TeamDirective20/src/index.js.map
 
 /***/ },
 
-/***/ 588:
+/***/ 589:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_index__ = __webpack_require__(48);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__home_home_component__ = __webpack_require__(383);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_campaigns_campaign_component__ = __webpack_require__(380);
@@ -1757,11 +1757,11 @@ var AppRoutingModule = (function () {
     ], AppRoutingModule);
     return AppRoutingModule;
 }());
-//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/TeamDirective20/src/app-routing.module.js.map
+//# sourceMappingURL=C:/Users/Dimitar Pechev/Documents/GitHub/TeamDirective20/src/app-routing.module.js.map
 
 /***/ },
 
-/***/ 589:
+/***/ 590:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1783,37 +1783,37 @@ var AppComponent = (function () {
     AppComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["G" /* Component */])({
             selector: 'app-root',
-            template: __webpack_require__(792),
-            styles: [__webpack_require__(767)]
+            template: __webpack_require__(793),
+            styles: [__webpack_require__(768)]
         }), 
         __metadata('design:paramtypes', [])
     ], AppComponent);
     return AppComponent;
 }());
-//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/TeamDirective20/src/app.component.js.map
+//# sourceMappingURL=C:/Users/Dimitar Pechev/Documents/GitHub/TeamDirective20/src/app.component.js.map
 
 /***/ },
 
-/***/ 590:
+/***/ 591:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(94);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(95);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(52);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(236);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_router__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_router__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_angular2_notifications__ = __webpack_require__(49);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_angular2_notifications___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_angular2_notifications__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_ng2_page_scroll__ = __webpack_require__(764);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__app_routing_module__ = __webpack_require__(588);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_ng2_page_scroll__ = __webpack_require__(765);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__app_routing_module__ = __webpack_require__(589);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__services_index__ = __webpack_require__(48);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__services_campaigns_service__ = __webpack_require__(175);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__services_facts_service__ = __webpack_require__(251);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__services_data_service__ = __webpack_require__(604);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__directives_equality_validator_directive__ = __webpack_require__(595);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pipes_index__ = __webpack_require__(600);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__app_component__ = __webpack_require__(589);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__services_data_service__ = __webpack_require__(605);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__directives_equality_validator_directive__ = __webpack_require__(596);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pipes_index__ = __webpack_require__(601);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__app_component__ = __webpack_require__(590);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__home_home_component__ = __webpack_require__(383);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__components_campaigns_campaign_component__ = __webpack_require__(380);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__components_campaign_list_campaign_list_component__ = __webpack_require__(378);
@@ -1821,16 +1821,16 @@ var AppComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__components_campaign_preview_campaign_preview_component__ = __webpack_require__(379);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__components_facts_facts_component__ = __webpack_require__(382);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__components_fact_form_fact_form_component__ = __webpack_require__(381);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__navigation_index__ = __webpack_require__(597);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__navigation_index__ = __webpack_require__(598);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__auth_index__ = __webpack_require__(376);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__users_user_profile_user_profile_component__ = __webpack_require__(393);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__users_added_content_added_content_component__ = __webpack_require__(610);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__users_added_content_added_content_component__ = __webpack_require__(611);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__users_admin_admin_component__ = __webpack_require__(392);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__news_news_page_news_page_component__ = __webpack_require__(387);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__news_news_entry_news_entry_component__ = __webpack_require__(599);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__news_news_entry_news_entry_component__ = __webpack_require__(600);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__news_news_details_news_details_component__ = __webpack_require__(386);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_30__news_news_add_article_news_add_article_component__ = __webpack_require__(385);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_31__shared_picture_modal_picture_modal_component__ = __webpack_require__(609);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_31__shared_picture_modal_picture_modal_component__ = __webpack_require__(610);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_32__pets_pets_main_page_pets_main_page_component__ = __webpack_require__(390);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_33__pets_add_pet_add_pet_component__ = __webpack_require__(388);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_34__pets_pet_profile_pet_profile_component__ = __webpack_require__(389);
@@ -1942,11 +1942,11 @@ var AppModule = (function () {
     ], AppModule);
     return AppModule;
 }());
-//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/TeamDirective20/src/app.module.js.map
+//# sourceMappingURL=C:/Users/Dimitar Pechev/Documents/GitHub/TeamDirective20/src/app.module.js.map
 
 /***/ },
 
-/***/ 591:
+/***/ 592:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1963,11 +1963,11 @@ var EmailValidator = (function () {
     };
     return EmailValidator;
 }());
-//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/TeamDirective20/src/EmailValidator.js.map
+//# sourceMappingURL=C:/Users/Dimitar Pechev/Documents/GitHub/TeamDirective20/src/EmailValidator.js.map
 
 /***/ },
 
-/***/ 592:
+/***/ 593:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1983,20 +1983,20 @@ var RangeValidator = (function () {
     };
     return RangeValidator;
 }());
-//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/TeamDirective20/src/RangeValidator.js.map
+//# sourceMappingURL=C:/Users/Dimitar Pechev/Documents/GitHub/TeamDirective20/src/RangeValidator.js.map
 
 /***/ },
 
-/***/ 593:
+/***/ 594:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__(52);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_angular2_notifications__ = __webpack_require__(49);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_angular2_notifications___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_angular2_notifications__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_auth_service__ = __webpack_require__(97);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_auth_service__ = __webpack_require__(98);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return LoginComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -2057,28 +2057,28 @@ var LoginComponent = (function () {
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["R" /* Injectable */])(),
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["G" /* Component */])({
             selector: 'app-login',
-            template: __webpack_require__(793),
-            styles: [__webpack_require__(768)]
+            template: __webpack_require__(794),
+            styles: [__webpack_require__(769)]
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_forms__["b" /* FormBuilder */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_forms__["b" /* FormBuilder */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_4__services_auth_service__["a" /* AuthService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_4__services_auth_service__["a" /* AuthService */]) === 'function' && _b) || Object, (typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3_angular2_notifications__["NotificationsService"] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3_angular2_notifications__["NotificationsService"]) === 'function' && _c) || Object, (typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["d" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__angular_router__["d" /* Router */]) === 'function' && _d) || Object])
     ], LoginComponent);
     return LoginComponent;
     var _a, _b, _c, _d;
 }());
-//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/TeamDirective20/src/login.component.js.map
+//# sourceMappingURL=C:/Users/Dimitar Pechev/Documents/GitHub/TeamDirective20/src/login.component.js.map
 
 /***/ },
 
-/***/ 594:
+/***/ 595:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__(52);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_angular2_notifications__ = __webpack_require__(49);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_angular2_notifications___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_angular2_notifications__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_auth_service__ = __webpack_require__(97);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__services_auth_service__ = __webpack_require__(98);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__custom_validators_index__ = __webpack_require__(375);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return RegisterComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -2149,19 +2149,19 @@ var RegisterComponent = (function () {
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["R" /* Injectable */])(),
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["G" /* Component */])({
             selector: 'app-register',
-            template: __webpack_require__(794),
-            styles: [__webpack_require__(769)]
+            template: __webpack_require__(795),
+            styles: [__webpack_require__(770)]
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_4__services_auth_service__["a" /* AuthService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_4__services_auth_service__["a" /* AuthService */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__angular_forms__["b" /* FormBuilder */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_forms__["b" /* FormBuilder */]) === 'function' && _b) || Object, (typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3_angular2_notifications__["NotificationsService"] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3_angular2_notifications__["NotificationsService"]) === 'function' && _c) || Object, (typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["d" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__angular_router__["d" /* Router */]) === 'function' && _d) || Object])
     ], RegisterComponent);
     return RegisterComponent;
     var _a, _b, _c, _d;
 }());
-//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/TeamDirective20/src/register.component.js.map
+//# sourceMappingURL=C:/Users/Dimitar Pechev/Documents/GitHub/TeamDirective20/src/register.component.js.map
 
 /***/ },
 
-/***/ 595:
+/***/ 596:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2231,11 +2231,11 @@ var EqualityValidatorDirective = (function () {
     ], EqualityValidatorDirective);
     return EqualityValidatorDirective;
 }());
-//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/TeamDirective20/src/equality-validator.directive.js.map
+//# sourceMappingURL=C:/Users/Dimitar Pechev/Documents/GitHub/TeamDirective20/src/equality-validator.directive.js.map
 
 /***/ },
 
-/***/ 596:
+/***/ 597:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2259,29 +2259,14 @@ var FooterComponent = (function () {
     FooterComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["G" /* Component */])({
             selector: 'app-footer',
-            template: __webpack_require__(802),
-            styles: [__webpack_require__(776)]
+            template: __webpack_require__(803),
+            styles: [__webpack_require__(777)]
         }), 
         __metadata('design:paramtypes', [])
     ], FooterComponent);
     return FooterComponent;
 }());
-//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/TeamDirective20/src/footer.component.js.map
-
-/***/ },
-
-/***/ 597:
-/***/ function(module, exports, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__footer_footer_component__ = __webpack_require__(596);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__main_navigation_main_navigation_component__ = __webpack_require__(598);
-
-
-/* harmony reexport (binding) */ __webpack_require__.d(exports, "b", function() { return __WEBPACK_IMPORTED_MODULE_0__footer_footer_component__["a"]; });
-/* harmony reexport (binding) */ __webpack_require__.d(exports, "a", function() { return __WEBPACK_IMPORTED_MODULE_1__main_navigation_main_navigation_component__["a"]; });
-
-//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/TeamDirective20/src/index.js.map
+//# sourceMappingURL=C:/Users/Dimitar Pechev/Documents/GitHub/TeamDirective20/src/footer.component.js.map
 
 /***/ },
 
@@ -2289,9 +2274,24 @@ var FooterComponent = (function () {
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__footer_footer_component__ = __webpack_require__(597);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__main_navigation_main_navigation_component__ = __webpack_require__(599);
+
+
+/* harmony reexport (binding) */ __webpack_require__.d(exports, "b", function() { return __WEBPACK_IMPORTED_MODULE_0__footer_footer_component__["a"]; });
+/* harmony reexport (binding) */ __webpack_require__.d(exports, "a", function() { return __WEBPACK_IMPORTED_MODULE_1__main_navigation_main_navigation_component__["a"]; });
+
+//# sourceMappingURL=C:/Users/Dimitar Pechev/Documents/GitHub/TeamDirective20/src/index.js.map
+
+/***/ },
+
+/***/ 599:
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(13);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_auth_service__ = __webpack_require__(97);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_auth_service__ = __webpack_require__(98);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_angular2_notifications__ = __webpack_require__(49);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_angular2_notifications___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_angular2_notifications__);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return MainNavigationComponent; });
@@ -2344,19 +2344,19 @@ var MainNavigationComponent = (function () {
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["R" /* Injectable */])(),
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["G" /* Component */])({
             selector: 'app-main-navigation',
-            template: __webpack_require__(803),
-            styles: [__webpack_require__(777)]
+            template: __webpack_require__(804),
+            styles: [__webpack_require__(778)]
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__services_auth_service__["a" /* AuthService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__services_auth_service__["a" /* AuthService */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["d" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_router__["d" /* Router */]) === 'function' && _b) || Object, (typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3_angular2_notifications__["NotificationsService"] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3_angular2_notifications__["NotificationsService"]) === 'function' && _c) || Object])
     ], MainNavigationComponent);
     return MainNavigationComponent;
     var _a, _b, _c;
 }());
-//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/TeamDirective20/src/main-navigation.component.js.map
+//# sourceMappingURL=C:/Users/Dimitar Pechev/Documents/GitHub/TeamDirective20/src/main-navigation.component.js.map
 
 /***/ },
 
-/***/ 599:
+/***/ 600:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2384,33 +2384,33 @@ var NewsEntryComponent = (function () {
     NewsEntryComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["G" /* Component */])({
             selector: 'app-news-entry',
-            template: __webpack_require__(806),
-            styles: [__webpack_require__(780)]
+            template: __webpack_require__(807),
+            styles: [__webpack_require__(781)]
         }), 
         __metadata('design:paramtypes', [])
     ], NewsEntryComponent);
     return NewsEntryComponent;
 }());
-//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/TeamDirective20/src/news-entry.component.js.map
+//# sourceMappingURL=C:/Users/Dimitar Pechev/Documents/GitHub/TeamDirective20/src/news-entry.component.js.map
 
 /***/ },
 
-/***/ 600:
+/***/ 601:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__text_transformer_pipe__ = __webpack_require__(602);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__sort_by_date_pipe__ = __webpack_require__(601);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__text_transformer_pipe__ = __webpack_require__(603);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__sort_by_date_pipe__ = __webpack_require__(602);
 
 
 /* harmony reexport (binding) */ __webpack_require__.d(exports, "b", function() { return __WEBPACK_IMPORTED_MODULE_0__text_transformer_pipe__["a"]; });
 /* harmony reexport (binding) */ __webpack_require__.d(exports, "a", function() { return __WEBPACK_IMPORTED_MODULE_1__sort_by_date_pipe__["a"]; });
 
-//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/TeamDirective20/src/index.js.map
+//# sourceMappingURL=C:/Users/Dimitar Pechev/Documents/GitHub/TeamDirective20/src/index.js.map
 
 /***/ },
 
-/***/ 601:
+/***/ 602:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2451,11 +2451,11 @@ var SortByDatePipe = (function () {
     ], SortByDatePipe);
     return SortByDatePipe;
 }());
-//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/TeamDirective20/src/sort-by-date.pipe.js.map
+//# sourceMappingURL=C:/Users/Dimitar Pechev/Documents/GitHub/TeamDirective20/src/sort-by-date.pipe.js.map
 
 /***/ },
 
-/***/ 602:
+/***/ 603:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2493,17 +2493,17 @@ var TextTransformPipe = (function () {
     ], TextTransformPipe);
     return TextTransformPipe;
 }());
-//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/TeamDirective20/src/text-transformer.pipe.js.map
+//# sourceMappingURL=C:/Users/Dimitar Pechev/Documents/GitHub/TeamDirective20/src/text-transformer.pipe.js.map
 
 /***/ },
 
-/***/ 603:
+/***/ 604:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(13);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__auth_service__ = __webpack_require__(97);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__auth_service__ = __webpack_require__(98);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return AdminRouteGuardService; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -2535,11 +2535,11 @@ var AdminRouteGuardService = (function () {
     return AdminRouteGuardService;
     var _a, _b;
 }());
-//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/TeamDirective20/src/admin-route-guard.service.js.map
+//# sourceMappingURL=C:/Users/Dimitar Pechev/Documents/GitHub/TeamDirective20/src/admin-route-guard.service.js.map
 
 /***/ },
 
-/***/ 604:
+/***/ 605:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2580,11 +2580,11 @@ var DataService = (function () {
     ], DataService);
     return DataService;
 }());
-//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/TeamDirective20/src/data.service.js.map
+//# sourceMappingURL=C:/Users/Dimitar Pechev/Documents/GitHub/TeamDirective20/src/data.service.js.map
 
 /***/ },
 
-/***/ 605:
+/***/ 606:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2637,11 +2637,11 @@ var NewsService = (function () {
     return NewsService;
     var _a;
 }());
-//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/TeamDirective20/src/news.service.js.map
+//# sourceMappingURL=C:/Users/Dimitar Pechev/Documents/GitHub/TeamDirective20/src/news.service.js.map
 
 /***/ },
 
-/***/ 606:
+/***/ 607:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2682,11 +2682,11 @@ var PetService = (function () {
     return PetService;
     var _a;
 }());
-//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/TeamDirective20/src/pet.service.js.map
+//# sourceMappingURL=C:/Users/Dimitar Pechev/Documents/GitHub/TeamDirective20/src/pet.service.js.map
 
 /***/ },
 
-/***/ 607:
+/***/ 608:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2721,17 +2721,17 @@ var RequestsService = (function () {
     return RequestsService;
     var _a;
 }());
-//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/TeamDirective20/src/requests.service.js.map
+//# sourceMappingURL=C:/Users/Dimitar Pechev/Documents/GitHub/TeamDirective20/src/requests.service.js.map
 
 /***/ },
 
-/***/ 608:
+/***/ 609:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(13);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__auth_service__ = __webpack_require__(97);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__auth_service__ = __webpack_require__(98);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return RouteGuardService; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -2763,11 +2763,11 @@ var RouteGuardService = (function () {
     return RouteGuardService;
     var _a, _b;
 }());
-//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/TeamDirective20/src/route-guard.service.js.map
+//# sourceMappingURL=C:/Users/Dimitar Pechev/Documents/GitHub/TeamDirective20/src/route-guard.service.js.map
 
 /***/ },
 
-/***/ 609:
+/***/ 610:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2794,18 +2794,18 @@ var PictureModalComponent = (function () {
     PictureModalComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["G" /* Component */])({
             selector: 'app-picture-modal',
-            template: __webpack_require__(811),
-            styles: [__webpack_require__(785)]
+            template: __webpack_require__(812),
+            styles: [__webpack_require__(786)]
         }), 
         __metadata('design:paramtypes', [])
     ], PictureModalComponent);
     return PictureModalComponent;
 }());
-//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/TeamDirective20/src/picture-modal.component.js.map
+//# sourceMappingURL=C:/Users/Dimitar Pechev/Documents/GitHub/TeamDirective20/src/picture-modal.component.js.map
 
 /***/ },
 
-/***/ 610:
+/***/ 611:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2833,30 +2833,14 @@ var AddedContentComponent = (function () {
     AddedContentComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["G" /* Component */])({
             selector: 'app-added-content',
-            template: __webpack_require__(812),
-            styles: [__webpack_require__(786)]
+            template: __webpack_require__(813),
+            styles: [__webpack_require__(787)]
         }), 
         __metadata('design:paramtypes', [])
     ], AddedContentComponent);
     return AddedContentComponent;
 }());
-//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/TeamDirective20/src/added-content.component.js.map
-
-/***/ },
-
-/***/ 611:
-/***/ function(module, exports, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return environment; });
-// The file contents for the current environment will overwrite these during build.
-// The build system defaults to the dev environment which uses `environment.ts`, but if you do
-// `ng build --env=prod` then `environment.prod.ts` will be used instead.
-// The list of which env maps to which file can be found in `angular-cli.json`.
-var environment = {
-    production: false
-};
-//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/TeamDirective20/src/environment.js.map
+//# sourceMappingURL=C:/Users/Dimitar Pechev/Documents/GitHub/TeamDirective20/src/added-content.component.js.map
 
 /***/ },
 
@@ -2864,37 +2848,49 @@ var environment = {
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_core_js_es6_symbol__ = __webpack_require__(626);
+/* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return environment; });
+var environment = {
+    production: true
+};
+//# sourceMappingURL=C:/Users/Dimitar Pechev/Documents/GitHub/TeamDirective20/src/environment.prod.js.map
+
+/***/ },
+
+/***/ 613:
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_core_js_es6_symbol__ = __webpack_require__(627);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_core_js_es6_symbol___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_core_js_es6_symbol__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_core_js_es6_object__ = __webpack_require__(619);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_core_js_es6_object__ = __webpack_require__(620);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_core_js_es6_object___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_core_js_es6_object__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_core_js_es6_function__ = __webpack_require__(615);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_core_js_es6_function__ = __webpack_require__(616);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_core_js_es6_function___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_core_js_es6_function__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_core_js_es6_parse_int__ = __webpack_require__(621);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_core_js_es6_parse_int__ = __webpack_require__(622);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_core_js_es6_parse_int___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_core_js_es6_parse_int__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_core_js_es6_parse_float__ = __webpack_require__(620);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_core_js_es6_parse_float__ = __webpack_require__(621);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_core_js_es6_parse_float___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_core_js_es6_parse_float__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_core_js_es6_number__ = __webpack_require__(618);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_core_js_es6_number__ = __webpack_require__(619);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_core_js_es6_number___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_core_js_es6_number__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_core_js_es6_math__ = __webpack_require__(617);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_core_js_es6_math__ = __webpack_require__(618);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_core_js_es6_math___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_core_js_es6_math__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_core_js_es6_string__ = __webpack_require__(625);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_core_js_es6_string__ = __webpack_require__(626);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_core_js_es6_string___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7_core_js_es6_string__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_core_js_es6_date__ = __webpack_require__(614);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_core_js_es6_date__ = __webpack_require__(615);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_core_js_es6_date___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8_core_js_es6_date__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_core_js_es6_array__ = __webpack_require__(613);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_core_js_es6_array__ = __webpack_require__(614);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_core_js_es6_array___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9_core_js_es6_array__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10_core_js_es6_regexp__ = __webpack_require__(623);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10_core_js_es6_regexp__ = __webpack_require__(624);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10_core_js_es6_regexp___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_10_core_js_es6_regexp__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11_core_js_es6_map__ = __webpack_require__(616);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11_core_js_es6_map__ = __webpack_require__(617);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11_core_js_es6_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_11_core_js_es6_map__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12_core_js_es6_set__ = __webpack_require__(624);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12_core_js_es6_set__ = __webpack_require__(625);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12_core_js_es6_set___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_12_core_js_es6_set__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13_core_js_es6_reflect__ = __webpack_require__(622);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13_core_js_es6_reflect__ = __webpack_require__(623);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13_core_js_es6_reflect___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_13_core_js_es6_reflect__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14_core_js_es7_reflect__ = __webpack_require__(627);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14_core_js_es7_reflect__ = __webpack_require__(628);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14_core_js_es7_reflect___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_14_core_js_es7_reflect__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15_zone_js_dist_zone__ = __webpack_require__(1097);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15_zone_js_dist_zone__ = __webpack_require__(1098);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15_zone_js_dist_zone___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_15_zone_js_dist_zone__);
 
 
@@ -2912,7 +2908,7 @@ var environment = {
 
 
 
-//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/TeamDirective20/src/polyfills.js.map
+//# sourceMappingURL=C:/Users/Dimitar Pechev/Documents/GitHub/TeamDirective20/src/polyfills.js.map
 
 /***/ },
 
@@ -2922,7 +2918,7 @@ var environment = {
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(236);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Rx__ = __webpack_require__(816);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Rx__ = __webpack_require__(817);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Rx___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_Rx__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_observable_throw__ = __webpack_require__(436);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_observable_throw___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_add_observable_throw__);
@@ -2949,7 +2945,6 @@ var ApiService = (function () {
         this.options = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* RequestOptions */]({
             headers: this.headers
         });
-        this.apiUrl = '';
         var token = localStorage.getItem('token');
         if (token) {
             this.options.headers.append('authorization', token);
@@ -2957,19 +2952,19 @@ var ApiService = (function () {
         ;
     }
     ApiService.prototype.get = function (path) {
-        return this.http.get(this.apiUrl + "/" + path, this.options)
+        return this.http.get("/" + path, this.options)
             .map(this.getJson);
     };
     ApiService.prototype.post = function (path, body) {
-        return this.http.post(this.apiUrl + "/" + path, JSON.stringify(body), this.options)
+        return this.http.post("/" + path, JSON.stringify(body), this.options)
             .map(this.getJson);
     };
     ApiService.prototype.put = function (path, body) {
-        return this.http.put(this.apiUrl + "/" + path, JSON.stringify(body), this.options)
+        return this.http.put("/" + path, JSON.stringify(body), this.options)
             .map(this.getJson);
     };
     ApiService.prototype.delete = function (path) {
-        return this.http.delete(this.apiUrl + "/" + path, this.options)
+        return this.http.delete("/" + path, this.options)
             .map(this.getJson);
     };
     ApiService.prototype.getJson = function (res) {
@@ -2990,326 +2985,326 @@ var ApiService = (function () {
     return ApiService;
     var _a;
 }());
-//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/TeamDirective20/src/api.service.js.map
-
-/***/ },
-
-/***/ 767:
-/***/ function(module, exports) {
-
-module.exports = ""
+//# sourceMappingURL=C:/Users/Dimitar Pechev/Documents/GitHub/TeamDirective20/src/api.service.js.map
 
 /***/ },
 
 /***/ 768:
 /***/ function(module, exports) {
 
-module.exports = "button, button:hover, button:active {\r\n    color: white;\r\n}\r\n\r\n#login-panel {\r\n    padding: 0 20px;\r\n}\r\n\r\n#login-panel h4 {\r\n    color: black;\r\n}\r\n\r\ninput.form-control:focus {\r\n    border-bottom: 1px solid orange;\r\n    box-shadow: 0 1px 0 0 orange;\r\n}\r\n\r\n.input-error {\r\n    box-shadow: 0 0 5px red;\r\n}"
+module.exports = ""
 
 /***/ },
 
 /***/ 769:
 /***/ function(module, exports) {
 
-module.exports = "button, button:hover, button:active {\r\n    color: white;\r\n}\r\n\r\n#reg-panel {\r\n    padding: 0 20px;\r\n}\r\n\r\n#reg-panel h4 {\r\n    color: black;\r\n}\r\n\r\ninput.form-control:focus {\r\n    border-bottom: 1px solid orange;\r\n    box-shadow: 0 1px 0 0 orange;\r\n}\r\n\r\n#gender-label {\r\n    color: #9e9e9e;\r\n}\r\n\r\n#gender-select:focus {\r\n    border-color: orange;\r\n    outline: 0;\r\n    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(255, 152, 0, .6);\r\n}\r\n\r\n.input-error {\r\n    box-shadow: 0 0 5px red;\r\n}"
+module.exports = "button, button:hover, button:active {\r\n    color: white;\r\n}\r\n\r\n#login-panel {\r\n    padding: 0 20px;\r\n}\r\n\r\n#login-panel h4 {\r\n    color: black;\r\n}\r\n\r\ninput.form-control:focus {\r\n    border-bottom: 1px solid orange;\r\n    box-shadow: 0 1px 0 0 orange;\r\n}\r\n\r\n.input-error {\r\n    box-shadow: 0 0 5px red;\r\n}"
 
 /***/ },
 
 /***/ 770:
 /***/ function(module, exports) {
 
-module.exports = ".campaign-image {\r\n    max-width: 100%;\r\n}\r\n\r\nform {\r\n    background-color: white;\r\n}"
+module.exports = "button, button:hover, button:active {\r\n    color: white;\r\n}\r\n\r\n#reg-panel {\r\n    padding: 0 20px;\r\n}\r\n\r\n#reg-panel h4 {\r\n    color: black;\r\n}\r\n\r\ninput.form-control:focus {\r\n    border-bottom: 1px solid orange;\r\n    box-shadow: 0 1px 0 0 orange;\r\n}\r\n\r\n#gender-label {\r\n    color: #9e9e9e;\r\n}\r\n\r\n#gender-select:focus {\r\n    border-color: orange;\r\n    outline: 0;\r\n    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(255, 152, 0, .6);\r\n}\r\n\r\n.input-error {\r\n    box-shadow: 0 0 5px red;\r\n}"
 
 /***/ },
 
 /***/ 771:
 /***/ function(module, exports) {
 
-module.exports = ""
+module.exports = ".campaign-image {\r\n    max-width: 100%;\r\n}\r\n\r\nform {\r\n    background-color: white;\r\n}"
 
 /***/ },
 
 /***/ 772:
 /***/ function(module, exports) {
 
-module.exports = ".campaign-image {\r\n    /*width: 300px;\r\n    height: 300px;*/\r\n    max-width: 100%;\r\n    max-height: 100%;\r\n}"
+module.exports = ""
 
 /***/ },
 
 /***/ 773:
 /***/ function(module, exports) {
 
-module.exports = ".fact-image {\r\n    max-width: 100%;\r\n}\r\n\r\nform {\r\n    background-color: white;\r\n}"
+module.exports = ".campaign-image {\r\n    /*width: 300px;\r\n    height: 300px;*/\r\n    max-width: 100%;\r\n    max-height: 100%;\r\n}"
 
 /***/ },
 
 /***/ 774:
 /***/ function(module, exports) {
 
-module.exports = ".fact-description {\r\n    display: none;\r\n}\r\n\r\n.btn-uncover:hover~.fact-description {\r\n    display: block;\r\n}\r\n\r\n.fact-image {\r\n    max-width: 100%;\r\n}\r\n\r\n.fact-form-container {\r\n    position: relative;\r\n    background: white;\r\n}\r\n\r\n.fact-form {\r\n    position: absolute;\r\n    width: 100%;\r\n    left: 0;\r\n    z-index: 1000;\r\n}"
+module.exports = ".fact-image {\r\n    max-width: 100%;\r\n}\r\n\r\nform {\r\n    background-color: white;\r\n}"
 
 /***/ },
 
 /***/ 775:
 /***/ function(module, exports) {
 
-module.exports = ".container-home {\r\n    top: -100px;\r\n    position: relative;\r\n}\r\n\r\n.container-content {\r\n    margin-top: -100px;\r\n}\r\n\r\n.arrow-home {\r\n    max-width: 75px;\r\n    position: absolute;\r\n    left: 47%;\r\n    top: 77%;\r\n}\r\n\r\n.home-title {\r\n    border-bottom: 2px solid orange;\r\n}\r\n\r\n.thumbnail-content {\r\n    padding-bottom: 4%;\r\n}\r\n\r\n.sub-nav-home {\r\n    margin-bottom: 4%;\r\n    cursor: pointer;\r\n}\r\n\r\n.news-main-title {\r\n    border-bottom: 2px solid orange;\r\n    margin-top: 5%;\r\n}\r\n\r\n.news-entry-title {\r\n    font-weight: bold;\r\n}\r\n\r\n.news-image {\r\n    padding-left: 0;\r\n}\r\n\r\n.news-date {\r\n    font-weight: bold;\r\n    font-style: italic;\r\n}\r\n\r\n.news-content {\r\n    line-height: 1.5em;\r\n    height: 4.5em;\r\n    overflow: hidden;\r\n    text-align: justify;\r\n}"
+module.exports = ".fact-description {\r\n    display: none;\r\n}\r\n\r\n.btn-uncover:hover~.fact-description {\r\n    display: block;\r\n}\r\n\r\n.fact-image {\r\n    max-width: 100%;\r\n}\r\n\r\n.fact-form-container {\r\n    position: relative;\r\n    background: white;\r\n}\r\n\r\n.fact-form {\r\n    position: absolute;\r\n    width: 100%;\r\n    left: 0;\r\n    z-index: 1000;\r\n}"
 
 /***/ },
 
 /***/ 776:
 /***/ function(module, exports) {
 
-module.exports = ""
+module.exports = ".container-home {\r\n    top: -100px;\r\n    position: relative;\r\n}\r\n\r\n.container-content {\r\n    margin-top: -100px;\r\n}\r\n\r\n.arrow-home {\r\n    max-width: 75px;\r\n    position: absolute;\r\n    left: 47%;\r\n    top: 77%;\r\n}\r\n\r\n.home-title {\r\n    border-bottom: 2px solid orange;\r\n}\r\n\r\n.thumbnail-content {\r\n    padding-bottom: 4%;\r\n}\r\n\r\n.sub-nav-home {\r\n    margin-bottom: 4%;\r\n    cursor: pointer;\r\n}\r\n\r\n.news-main-title {\r\n    border-bottom: 2px solid orange;\r\n    margin-top: 5%;\r\n}\r\n\r\n.news-entry-title {\r\n    font-weight: bold;\r\n}\r\n\r\n.news-image {\r\n    padding-left: 0;\r\n}\r\n\r\n.news-date {\r\n    font-weight: bold;\r\n    font-style: italic;\r\n}\r\n\r\n.news-content {\r\n    line-height: 1.5em;\r\n    height: 4.5em;\r\n    overflow: hidden;\r\n    text-align: justify;\r\n}"
 
 /***/ },
 
 /***/ 777:
 /***/ function(module, exports) {
 
-module.exports = ".main-nav-link {\r\n    color: black;\r\n}\r\n\r\n#brand {\r\n    font-weight: bold;\r\n    font-size: 1.3rem;\r\n}"
+module.exports = ""
 
 /***/ },
 
 /***/ 778:
 /***/ function(module, exports) {
 
-module.exports = "input.form-control:focus {\r\n    border-bottom: 1px solid orange;\r\n    box-shadow: 0 1px 0 0 orange;\r\n}\r\n\r\n#textarea-content:focus {\r\n    border-color: orange;\r\n    outline: 0;\r\n    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(255, 152, 0, .6);\r\n}\r\n\r\n.article-form {\r\n    padding: 20px;\r\n    margin-top: 20px;\r\n}"
+module.exports = ".main-nav-link {\r\n    color: black;\r\n}\r\n\r\n#brand {\r\n    font-weight: bold;\r\n    font-size: 1.3rem;\r\n}"
 
 /***/ },
 
 /***/ 779:
 /***/ function(module, exports) {
 
-module.exports = ".news-content {\r\n    text-align: justify;\r\n}\r\n\r\n.news-content {\r\n    margin-top: 20px;\r\n}\r\n\r\n.comment {\r\n    margin-top: 20px;\r\n    color: black;\r\n}\r\n\r\n.comment * {\r\n    color: black;\r\n}\r\n\r\n#commentInput:focus {\r\n    border: orange;\r\n    box-shadow: 0 0 15px orange;\r\n}\r\n\r\n#btn-comment, #btn-comment:hover, #btn-comment:active, #btn-comment:visited {\r\n    color: white;\r\n}\r\n\r\n.no-comments {\r\n    margin-top: 25px;\r\n    font-style: italic;\r\n    font-size: 15px;\r\n}\r\n\r\n.news-pic {\r\n    cursor: pointer;\r\n}\r\n\r\n.news-pic:hover {\r\n    box-shadow: 0 0 15px orange;\r\n}"
+module.exports = "input.form-control:focus {\r\n    border-bottom: 1px solid orange;\r\n    box-shadow: 0 1px 0 0 orange;\r\n}\r\n\r\n#textarea-content:focus {\r\n    border-color: orange;\r\n    outline: 0;\r\n    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(255, 152, 0, .6);\r\n}\r\n\r\n.article-form {\r\n    padding: 20px;\r\n    margin-top: 20px;\r\n}"
 
 /***/ },
 
 /***/ 780:
 /***/ function(module, exports) {
 
-module.exports = ".news-entry-title {\r\n    font-weight: bold;\r\n    margin-bottom: 0;\r\n}\r\n\r\n.news-image {\r\n    padding-left: 0;\r\n}\r\n\r\n.news-date {\r\n    font-weight: bold;\r\n    font-style: italic;\r\n}\r\n\r\n.news-content {\r\n    line-height: 1.5em;\r\n    height: 4.5em;\r\n    overflow: hidden;\r\n    text-align: justify;\r\n}\r\n\r\n.news-entry {\r\n    margin: 15px 0;\r\n    cursor: pointer;\r\n}"
+module.exports = ".news-content {\r\n    text-align: justify;\r\n}\r\n\r\n.news-content {\r\n    margin-top: 20px;\r\n}\r\n\r\n.comment {\r\n    margin-top: 20px;\r\n    color: black;\r\n}\r\n\r\n.comment * {\r\n    color: black;\r\n}\r\n\r\n#commentInput:focus {\r\n    border: orange;\r\n    box-shadow: 0 0 15px orange;\r\n}\r\n\r\n#btn-comment, #btn-comment:hover, #btn-comment:active, #btn-comment:visited {\r\n    color: white;\r\n}\r\n\r\n.no-comments {\r\n    margin-top: 25px;\r\n    font-style: italic;\r\n    font-size: 15px;\r\n}\r\n\r\n.news-pic {\r\n    cursor: pointer;\r\n}\r\n\r\n.news-pic:hover {\r\n    box-shadow: 0 0 15px orange;\r\n}"
 
 /***/ },
 
 /***/ 781:
 /***/ function(module, exports) {
 
-module.exports = ".news-title {\r\n    border-bottom: 2px solid orange;\r\n}"
+module.exports = ".news-entry-title {\r\n    font-weight: bold;\r\n    margin-bottom: 0;\r\n}\r\n\r\n.news-image {\r\n    padding-left: 0;\r\n}\r\n\r\n.news-date {\r\n    font-weight: bold;\r\n    font-style: italic;\r\n}\r\n\r\n.news-content {\r\n    line-height: 1.5em;\r\n    height: 4.5em;\r\n    overflow: hidden;\r\n    text-align: justify;\r\n}\r\n\r\n.news-entry {\r\n    margin: 15px 0;\r\n    cursor: pointer;\r\n}"
 
 /***/ },
 
 /***/ 782:
 /***/ function(module, exports) {
 
-module.exports = "input.form-control:focus {\r\n    border-bottom: 1px solid orange;\r\n    box-shadow: 0 1px 0 0 orange;\r\n}\r\n\r\n#textarea-content:focus {\r\n    border-color: orange;\r\n    outline: 0;\r\n    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(255, 152, 0, .6);\r\n}\r\n\r\n.pet-form {\r\n    padding: 20px;\r\n    margin-top: 20px;\r\n}\r\n\r\n#gender-select {\r\n    margin-bottom: 15px;\r\n} \r\n\r\n#gender-select:focus {\r\n    border-color: orange;\r\n    outline: 0;\r\n    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(255, 152, 0, .6);\r\n}\r\n\r\n.input-error {\r\n    box-shadow: 0 0 5px red;\r\n}"
+module.exports = ".news-title {\r\n    border-bottom: 2px solid orange;\r\n}"
 
 /***/ },
 
 /***/ 783:
 /***/ function(module, exports) {
 
-module.exports = "#profile-picture {\r\n    cursor: pointer;\r\n    margin: auto;\r\n}\r\n\r\n#profile-picture:hover {\r\n    box-shadow: 0 0 25px orange;\r\n}\r\n\r\n#about-tab, #pictures-tab {\r\n    color: black;\r\n}\r\n\r\n.tabs {\r\n    margin-top: 7px;\r\n}\r\n\r\n#pictures {\r\n    margin-top: 15px;\r\n}\r\n\r\ninput.form-control:focus {\r\n    border-bottom: 1px solid orange;\r\n    box-shadow: 0 1px 0 0 orange;\r\n}\r\n\r\n.img-container {    \r\n    height: 150px;\r\n}"
+module.exports = "input.form-control:focus {\r\n    border-bottom: 1px solid orange;\r\n    box-shadow: 0 1px 0 0 orange;\r\n}\r\n\r\n#textarea-content:focus {\r\n    border-color: orange;\r\n    outline: 0;\r\n    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(255, 152, 0, .6);\r\n}\r\n\r\n.pet-form {\r\n    padding: 20px;\r\n    margin-top: 20px;\r\n}\r\n\r\n#gender-select {\r\n    margin-bottom: 15px;\r\n} \r\n\r\n#gender-select:focus {\r\n    border-color: orange;\r\n    outline: 0;\r\n    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(255, 152, 0, .6);\r\n}\r\n\r\n.input-error {\r\n    box-shadow: 0 0 5px red;\r\n}"
 
 /***/ },
 
 /***/ 784:
 /***/ function(module, exports) {
 
-module.exports = ".less-imp {\r\n    font-size: 1rem;\r\n}\r\n\r\n.image-container {\r\n    height: 300px;\r\n}\r\n\r\n#profile-picture {\r\n    cursor: pointer;\r\n    margin: auto;\r\n}\r\n\r\n#profile-picture:hover {\r\n    box-shadow: 0 0 25px orange;\r\n}"
+module.exports = "#profile-picture {\r\n    cursor: pointer;\r\n    margin: auto;\r\n}\r\n\r\n#profile-picture:hover {\r\n    box-shadow: 0 0 25px orange;\r\n}\r\n\r\n#about-tab, #pictures-tab {\r\n    color: black;\r\n}\r\n\r\n.tabs {\r\n    margin-top: 7px;\r\n}\r\n\r\n#pictures {\r\n    margin-top: 15px;\r\n}\r\n\r\ninput.form-control:focus {\r\n    border-bottom: 1px solid orange;\r\n    box-shadow: 0 1px 0 0 orange;\r\n}\r\n\r\n.img-container {    \r\n    height: 150px;\r\n}"
 
 /***/ },
 
 /***/ 785:
 /***/ function(module, exports) {
 
-module.exports = "img {\r\n    width: 100%;\r\n}\r\n\r\n.modal-dialog {\r\n    width: auto;\r\n    max-width: 70%;\r\n} "
+module.exports = ".less-imp {\r\n    font-size: 1rem;\r\n}\r\n\r\n.image-container {\r\n    height: 300px;\r\n}\r\n\r\n#profile-picture {\r\n    cursor: pointer;\r\n    margin: auto;\r\n}\r\n\r\n#profile-picture:hover {\r\n    box-shadow: 0 0 25px orange;\r\n}"
 
 /***/ },
 
 /***/ 786:
 /***/ function(module, exports) {
 
-module.exports = ".details-container {\r\n    margin-bottom: 10px;\r\n}"
+module.exports = "img {\r\n    width: 100%;\r\n}\r\n\r\n.modal-dialog {\r\n    width: auto;\r\n    max-width: 70%;\r\n} "
 
 /***/ },
 
 /***/ 787:
 /***/ function(module, exports) {
 
-module.exports = ".admin-page-title {\r\n    border-bottom: 2px solid orange;\r\n}\r\n\r\n.back-icon {\r\n    font-size: 70px;\r\n    color: orange;\r\n    cursor: pointer;\r\n}\r\n\r\ninput.form-control:focus {\r\n    border-bottom: 1px solid orange;\r\n    box-shadow: 0 1px 0 0 orange;\r\n}\r\n"
+module.exports = ".details-container {\r\n    margin-bottom: 10px;\r\n}"
 
 /***/ },
 
 /***/ 788:
 /***/ function(module, exports) {
 
-module.exports = ".main-title {\r\n    border-bottom: 2px solid orange;\r\n}\r\n\r\n.back-icon {\r\n    font-size: 70px;\r\n    color: orange;\r\n    cursor: pointer;\r\n}\r\n\r\ninput.form-control:focus {\r\n    border-bottom: 1px solid orange;\r\n    box-shadow: 0 1px 0 0 orange;\r\n}\r\n\r\n.input-error {\r\n    box-shadow: 0 0 5px red;\r\n}\r\n\r\n#profile-picture {\r\n    cursor: pointer;\r\n    margin: auto;\r\n}\r\n\r\n#profile-picture:hover {\r\n    box-shadow: 0 0 25px orange;\r\n}"
+module.exports = ".admin-page-title {\r\n    border-bottom: 2px solid orange;\r\n}\r\n\r\n.back-icon {\r\n    font-size: 70px;\r\n    color: orange;\r\n    cursor: pointer;\r\n}\r\n\r\ninput.form-control:focus {\r\n    border-bottom: 1px solid orange;\r\n    box-shadow: 0 1px 0 0 orange;\r\n}\r\n"
 
 /***/ },
 
-/***/ 792:
+/***/ 789:
 /***/ function(module, exports) {
 
-module.exports = "<app-main-navigation></app-main-navigation>\r\n\r\n<main class=\"container-fluid\">\r\n    <router-outlet></router-outlet>\r\n</main>\r\n\r\n<app-footer></app-footer>"
+module.exports = ".main-title {\r\n    border-bottom: 2px solid orange;\r\n}\r\n\r\n.back-icon {\r\n    font-size: 70px;\r\n    color: orange;\r\n    cursor: pointer;\r\n}\r\n\r\ninput.form-control:focus {\r\n    border-bottom: 1px solid orange;\r\n    box-shadow: 0 1px 0 0 orange;\r\n}\r\n\r\n.input-error {\r\n    box-shadow: 0 0 5px red;\r\n}\r\n\r\n#profile-picture {\r\n    cursor: pointer;\r\n    margin: auto;\r\n}\r\n\r\n#profile-picture:hover {\r\n    box-shadow: 0 0 25px orange;\r\n}"
 
 /***/ },
 
 /***/ 793:
 /***/ function(module, exports) {
 
-module.exports = "<div class=\"container\">\n  <div class=\"row zoomInDown\">\n    <div class=\"col-md-6 col-md-offset-3\">\n      <div id=\"login-panel\" class=\"card\">\n        <div class=\"card-title text-center\">\n          <h4>Вход</h4>\n          <hr>\n        </div>\n        <div class=\"card-content\">\n          <form [formGroup]=\"form\" (ngSubmit)=\"submit(form.value)\">\n            <span class=\"text-danger small\" *ngIf=\"!form.controls['username'].valid && form.controls['username'].touched\">Не сте въвели потребителско име.</span>\n            <input class=\"form-control\" [formControl]=\"form.controls['username']\" [class.input-error]=\"!form.controls['username'].valid && form.controls['username'].touched\"\n              type=\"text\" name=\"username\" placeholder=\"Потребителско име\">\n\n            <span class=\"text-danger small\" *ngIf=\"!form.controls['password'].valid && form.controls['password'].touched\">Не сте въвели парола.</span>\n            <input class=\"form-control\" [formControl]=\"form.controls['password']\" [class.input-error]=\"!form.controls['username'].valid && form.controls['username'].touched\"\n              type=\"password\" name=\"password\" placeholder=\"Парола\">\n\n            <hr>\n            <button type=\"submit\" [disabled]=\"isDisabled\" class=\"btn btn-block orange\">Вход</button>\n          </form>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n<simple-notifications [options]=\"notificationOptions\"></simple-notifications>"
+module.exports = "<app-main-navigation></app-main-navigation>\r\n\r\n<main class=\"container-fluid\">\r\n    <router-outlet></router-outlet>\r\n</main>\r\n\r\n<app-footer></app-footer>"
 
 /***/ },
 
 /***/ 794:
 /***/ function(module, exports) {
 
-module.exports = "<div class=\"container\">\n  <div class=\"row\">\n    <div class=\"col-md-6 col-md-offset-3\">\n      <div id=\"reg-panel\" class=\"card\">\n        <div class=\"card-title text-center\">\n          <h4>Регистрация</h4>\n          <hr>\n        </div>\n        <div class=\"card-content\">\n          <form [formGroup]=\"form\" (ngSubmit)=\"submit(form.value);\">\n            <span class=\"text-danger small\" *ngIf=\"!form.controls['username'].valid && form.controls['username'].touched\">Потребителското име трябва да е между 6 и 15 символа.</span>\n            <input class=\"form-control\" [class.input-error]=\"!form.controls['username'].valid && form.controls['username'].touched\" type=\"text\"\n              name=\"username\" [formControl]=\"form.controls['username']\" placeholder=\"Потребителско име\" required>\n\n            <span class=\"text-danger small\" *ngIf=\"!form.controls['password'].valid && form.controls['password'].touched\">Паролата трябва да е между 6 и 15 символа.</span>\n            <input class=\"form-control\" type=\"password\" name=\"password\" [formControl]=\"form.controls['password']\" placeholder=\"Парола\"\n              [class.input-error]=\"!form.controls['password'].valid && form.controls['password'].touched\" validateEqual=\"confirmPassword\"\n              reverse=\"true\" required>\n\n            <span class=\"text-danger small\" *ngIf=\"!form.controls['confirmPassword'].valid && form.controls['confirmPassword'].touched\">Паролите не съвпадат.</span>\n            <input class=\"form-control\" type=\"password\" name=\"confirmPassword\" [formControl]=\"form.controls['confirmPassword']\" placeholder=\"Потвърди паролата\"\n              [class.input-error]=\"!form.controls['confirmPassword'].valid && form.controls['confirmPassword'].touched\" validateEqual=\"password\"\n              required>\n\n            <span class=\"text-danger small\" *ngIf=\"!form.controls['email'].valid && form.controls['email'].touched\">Въведеният E-Mail не е валиден.</span>\n            <input class=\"form-control\" type=\"email\" name=\"email\" [formControl]=\"form.controls['email']\" placeholder=\"E-Mail\" [class.input-error]=\"!form.controls['email'].valid && form.controls['email'].touched\"\n              required>\n\n            <span class=\"text-danger small\" *ngIf=\"!form.controls['firstName'].valid && form.controls['firstName'].touched\">Името трябва да е между 3 и 20 символа.</span>\n            <input class=\"form-control\" type=\"text\" name=\"firstName\" [formControl]=\"form.controls['firstName']\" placeholder=\"Име\" [class.input-error]=\"!form.controls['firstName'].valid && form.controls['firstName'].touched\"\n              required>\n\n            <span class=\"text-danger small\" *ngIf=\"!form.controls['lastName'].valid && form.controls['lastName'].touched\">Фамилията трябва да е между 3 и 20 символа.</span>\n            <input class=\"form-control\" type=\"text\" name=\"lastName\" [formControl]=\"form.controls['lastName']\" placeholder=\"Фамилия\" [class.input-error]=\"!form.controls['lastName'].valid && form.controls['lastName'].touched\"\n              required>\n\n            <span class=\"text-danger small\" *ngIf=\"!form.controls['age'].valid && form.controls['age'].touched\">Въведете възраст между 6 и 100 години.<br></span>\n            <input class=\"form-control\" type=\"number\" name=\"age\" [formControl]=\"form.controls['age']\" placeholder=\"Възраст\" [class.input-error]=\"!form.controls['age'].valid && form.controls['age'].touched\"\n              required>\n\n            <span class=\"text-danger small\" *ngIf=\"!form.controls['gender'].valid && form.controls['gender'].touched\">Не сте въвели пол.<br></span>\n            <label id=\"gender-label\" for=\"gender\">Пол:</label>\n            <select id=\"gender-select\" class=\"form-control\" [formControl]=\"form.controls['gender']\" name=\"gender\" [class.input-error]=\"!form.controls['gender'].valid && form.controls['gender'].touched\">\n            <option value=\"male\">Мъж</option>\n            <option value=\"female\">Жена</option>\n            <option value=\"unspecified\">Друг</option>    \n          </select>\n            <hr>\n            <button type=\"submit\" [disabled]=\"isDisabled\" class=\"btn btn-block orange\">Регистрирай се</button>\n          </form>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n<simple-notifications [options]=\"notificationOptions\"></simple-notifications>"
+module.exports = "<div class=\"container\">\r\n  <div class=\"row zoomInDown\">\r\n    <div class=\"col-md-6 col-md-offset-3\">\r\n      <div id=\"login-panel\" class=\"card\">\r\n        <div class=\"card-title text-center\">\r\n          <h4>Вход</h4>\r\n          <hr>\r\n        </div>\r\n        <div class=\"card-content\">\r\n          <form [formGroup]=\"form\" (ngSubmit)=\"submit(form.value)\">\r\n            <span class=\"text-danger small\" *ngIf=\"!form.controls['username'].valid && form.controls['username'].touched\">Не сте въвели потребителско име.</span>\r\n            <input class=\"form-control\" [formControl]=\"form.controls['username']\" [class.input-error]=\"!form.controls['username'].valid && form.controls['username'].touched\"\r\n              type=\"text\" name=\"username\" placeholder=\"Потребителско име\">\r\n\r\n            <span class=\"text-danger small\" *ngIf=\"!form.controls['password'].valid && form.controls['password'].touched\">Не сте въвели парола.</span>\r\n            <input class=\"form-control\" [formControl]=\"form.controls['password']\" [class.input-error]=\"!form.controls['username'].valid && form.controls['username'].touched\"\r\n              type=\"password\" name=\"password\" placeholder=\"Парола\">\r\n\r\n            <hr>\r\n            <button type=\"submit\" [disabled]=\"isDisabled\" class=\"btn btn-block orange\">Вход</button>\r\n          </form>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</div>\r\n<simple-notifications [options]=\"notificationOptions\"></simple-notifications>"
 
 /***/ },
 
 /***/ 795:
 /***/ function(module, exports) {
 
-module.exports = "<form #campaignsForm=\"ngForm\" (ngSubmit)=\"createCampaign(); campaignsForm.reset()\">\r\n    <div class=\"row\">\r\n        <div class=\"col-xs-offset-1 col-xs-7\">\r\n            <div class=\"form-group\">\r\n                <input class=\"form-control\" type=\"text\" name=\"name\" [(ngModel)]=\"campaign.name\" #name=\"ngModel\" minlength=\"6\" required placeholder=\"Въведете име на кампанията\"\r\n                />\r\n                <div class=\"text-danger small\" *ngIf=\"name.touched && name.errors?.minlength\">\r\n                    Най-малко 6 символа\r\n                </div>\r\n            </div>\r\n            <div class=\"form-group\">\r\n                <input class=\"form-control\" type=\"text\" name=\"description\" [(ngModel)]=\"campaign.description\" #description=\"ngModel\" minlength=\"20\"\r\n                    placeholder=\"Въведете описание на кампанията\" required />\r\n                <div class=\"text-danger small\" *ngIf=\"description.touched && description.errors?.minlength\">\r\n                    Най-малко 20 символа\r\n                </div>\r\n            </div>\r\n            <div class=\"form-group\">\r\n                <input class=\"form-control\" type=\"text\" name=\"ownerName\" [(ngModel)]=\"campaign.ownerName\" placeholder=\"Въведете име на собственика\">\r\n            </div>\r\n            <div class=\"form-group\">\r\n                <input class=\"form-control\" type=\"text\" name=\"ownerContact\" [(ngModel)]=\"campaign.ownerContact\" #ownerContact=\"ngModel\" minlength=\"6\" placeholder=\"Въведете контакти на собственика\"\r\n                    required />\r\n                <div class=\"text-danger small\" *ngIf=\"ownerContact.touched && ownerContact.errors?.minlength\">\r\n                    Най-малко 6 символа\r\n                </div>\r\n            </div>\r\n            <div class=\"form-group\">\r\n                <input class=\"form-control\" type=\"text\" name=\"neededAmount\" [(ngModel)]=\"campaign.neededAmount\" placeholder=\"Въведете нужната сума за кампанията\">\r\n            </div>\r\n            <div class=\"form-group\">\r\n                <input class=\"form-control\" type=\"text\" name=\"iban\" [(ngModel)]=\"campaign.iban\" placeholder=\"Въведете номер на сметка за дарения\">\r\n            </div>\r\n            <div class=\"form-group\">\r\n                <input class=\"form-control\" type=\"url\" name=\"image\" [(ngModel)]=\"campaign.image\" placeholder=\"Въведете линк със снимка на любимеца\">\r\n            </div>\r\n            <div class=\"form-group\">\r\n                <button class=\"btn btn-success\">Създаване</button>\r\n                <button (click)=\"return()\" class=\"btn btn-danger\">Назад</button>\r\n            </div>\r\n        </div>\r\n        <div class=\"col-xs-3\">\r\n            <img [src]=\"campaign.image\" class=\"campaign-image\" [hidden]=\"!campaign.image\">\r\n        </div>\r\n    </div>\r\n</form>"
+module.exports = "<div class=\"container\">\r\n  <div class=\"row\">\r\n    <div class=\"col-md-6 col-md-offset-3\">\r\n      <div id=\"reg-panel\" class=\"card\">\r\n        <div class=\"card-title text-center\">\r\n          <h4>Регистрация</h4>\r\n          <hr>\r\n        </div>\r\n        <div class=\"card-content\">\r\n          <form [formGroup]=\"form\" (ngSubmit)=\"submit(form.value);\">\r\n            <span class=\"text-danger small\" *ngIf=\"!form.controls['username'].valid && form.controls['username'].touched\">Потребителското име трябва да е между 6 и 15 символа.</span>\r\n            <input class=\"form-control\" [class.input-error]=\"!form.controls['username'].valid && form.controls['username'].touched\" type=\"text\"\r\n              name=\"username\" [formControl]=\"form.controls['username']\" placeholder=\"Потребителско име\" required>\r\n\r\n            <span class=\"text-danger small\" *ngIf=\"!form.controls['password'].valid && form.controls['password'].touched\">Паролата трябва да е между 6 и 15 символа.</span>\r\n            <input class=\"form-control\" type=\"password\" name=\"password\" [formControl]=\"form.controls['password']\" placeholder=\"Парола\"\r\n              [class.input-error]=\"!form.controls['password'].valid && form.controls['password'].touched\" validateEqual=\"confirmPassword\"\r\n              reverse=\"true\" required>\r\n\r\n            <span class=\"text-danger small\" *ngIf=\"!form.controls['confirmPassword'].valid && form.controls['confirmPassword'].touched\">Паролите не съвпадат.</span>\r\n            <input class=\"form-control\" type=\"password\" name=\"confirmPassword\" [formControl]=\"form.controls['confirmPassword']\" placeholder=\"Потвърди паролата\"\r\n              [class.input-error]=\"!form.controls['confirmPassword'].valid && form.controls['confirmPassword'].touched\" validateEqual=\"password\"\r\n              required>\r\n\r\n            <span class=\"text-danger small\" *ngIf=\"!form.controls['email'].valid && form.controls['email'].touched\">Въведеният E-Mail не е валиден.</span>\r\n            <input class=\"form-control\" type=\"email\" name=\"email\" [formControl]=\"form.controls['email']\" placeholder=\"E-Mail\" [class.input-error]=\"!form.controls['email'].valid && form.controls['email'].touched\"\r\n              required>\r\n\r\n            <span class=\"text-danger small\" *ngIf=\"!form.controls['firstName'].valid && form.controls['firstName'].touched\">Името трябва да е между 3 и 20 символа.</span>\r\n            <input class=\"form-control\" type=\"text\" name=\"firstName\" [formControl]=\"form.controls['firstName']\" placeholder=\"Име\" [class.input-error]=\"!form.controls['firstName'].valid && form.controls['firstName'].touched\"\r\n              required>\r\n\r\n            <span class=\"text-danger small\" *ngIf=\"!form.controls['lastName'].valid && form.controls['lastName'].touched\">Фамилията трябва да е между 3 и 20 символа.</span>\r\n            <input class=\"form-control\" type=\"text\" name=\"lastName\" [formControl]=\"form.controls['lastName']\" placeholder=\"Фамилия\" [class.input-error]=\"!form.controls['lastName'].valid && form.controls['lastName'].touched\"\r\n              required>\r\n\r\n            <span class=\"text-danger small\" *ngIf=\"!form.controls['age'].valid && form.controls['age'].touched\">Въведете възраст между 6 и 100 години.<br></span>\r\n            <input class=\"form-control\" type=\"number\" name=\"age\" [formControl]=\"form.controls['age']\" placeholder=\"Възраст\" [class.input-error]=\"!form.controls['age'].valid && form.controls['age'].touched\"\r\n              required>\r\n\r\n            <span class=\"text-danger small\" *ngIf=\"!form.controls['gender'].valid && form.controls['gender'].touched\">Не сте въвели пол.<br></span>\r\n            <label id=\"gender-label\" for=\"gender\">Пол:</label>\r\n            <select id=\"gender-select\" class=\"form-control\" [formControl]=\"form.controls['gender']\" name=\"gender\" [class.input-error]=\"!form.controls['gender'].valid && form.controls['gender'].touched\">\r\n            <option value=\"male\">Мъж</option>\r\n            <option value=\"female\">Жена</option>\r\n            <option value=\"unspecified\">Друг</option>    \r\n          </select>\r\n            <hr>\r\n            <button type=\"submit\" [disabled]=\"isDisabled\" class=\"btn btn-block orange\">Регистрирай се</button>\r\n          </form>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</div>\r\n<simple-notifications [options]=\"notificationOptions\"></simple-notifications>"
 
 /***/ },
 
 /***/ 796:
 /***/ function(module, exports) {
 
-module.exports = "<div *ngIf=\"isUserAdmin\">\r\n    <button (click)=\"addCampaign()\" class=\"btn btn-success\">Добавяне на кампания за любимец</button>\r\n</div>\r\n<ul *ngIf=\"campaigns\" class=\"list\">\r\n    <li *ngFor=\"let campaign of campaigns\">\r\n        <div class=\"sub-nav-home card text-center\">\r\n            <div class=\"row\">\r\n                <div class=\"col-md-4\">\r\n                    <img class=\"img-responsive img-thumbnail\" [src]=\"campaign.image\">\r\n                </div>\r\n                <div class=\"col-md-8\">\r\n                    <h4>{{campaign.name}}</h4>\r\n                    <button (click)=\"viewDetails(campaign._id)\" class=\"btn btn-success\">Вижте повече</button>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </li>\r\n</ul>\r\n<div *ngIf=\"!campaigns.length\">\r\n    Все още няма добвени капмании!\r\n</div>"
+module.exports = "<form #campaignsForm=\"ngForm\" (ngSubmit)=\"createCampaign(); campaignsForm.reset()\">\r\n    <div class=\"row\">\r\n        <div class=\"col-xs-offset-1 col-xs-7\">\r\n            <div class=\"form-group\">\r\n                <input class=\"form-control\" type=\"text\" name=\"name\" [(ngModel)]=\"campaign.name\" #name=\"ngModel\" minlength=\"6\" required placeholder=\"Въведете име на кампанията\"\r\n                />\r\n                <div class=\"text-danger small\" *ngIf=\"name.touched && name.errors?.minlength\">\r\n                    Най-малко 6 символа\r\n                </div>\r\n            </div>\r\n            <div class=\"form-group\">\r\n                <input class=\"form-control\" type=\"text\" name=\"description\" [(ngModel)]=\"campaign.description\" #description=\"ngModel\" minlength=\"20\"\r\n                    placeholder=\"Въведете описание на кампанията\" required />\r\n                <div class=\"text-danger small\" *ngIf=\"description.touched && description.errors?.minlength\">\r\n                    Най-малко 20 символа\r\n                </div>\r\n            </div>\r\n            <div class=\"form-group\">\r\n                <input class=\"form-control\" type=\"text\" name=\"ownerName\" [(ngModel)]=\"campaign.ownerName\" placeholder=\"Въведете име на собственика\">\r\n            </div>\r\n            <div class=\"form-group\">\r\n                <input class=\"form-control\" type=\"text\" name=\"ownerContact\" [(ngModel)]=\"campaign.ownerContact\" #ownerContact=\"ngModel\" minlength=\"6\" placeholder=\"Въведете контакти на собственика\"\r\n                    required />\r\n                <div class=\"text-danger small\" *ngIf=\"ownerContact.touched && ownerContact.errors?.minlength\">\r\n                    Най-малко 6 символа\r\n                </div>\r\n            </div>\r\n            <div class=\"form-group\">\r\n                <input class=\"form-control\" type=\"text\" name=\"neededAmount\" [(ngModel)]=\"campaign.neededAmount\" placeholder=\"Въведете нужната сума за кампанията\">\r\n            </div>\r\n            <div class=\"form-group\">\r\n                <input class=\"form-control\" type=\"text\" name=\"iban\" [(ngModel)]=\"campaign.iban\" placeholder=\"Въведете номер на сметка за дарения\">\r\n            </div>\r\n            <div class=\"form-group\">\r\n                <input class=\"form-control\" type=\"url\" name=\"image\" [(ngModel)]=\"campaign.image\" placeholder=\"Въведете линк със снимка на любимеца\">\r\n            </div>\r\n            <div class=\"form-group\">\r\n                <button class=\"btn btn-success\">Създаване</button>\r\n                <button (click)=\"return()\" class=\"btn btn-danger\">Назад</button>\r\n            </div>\r\n        </div>\r\n        <div class=\"col-xs-3\">\r\n            <img [src]=\"campaign.image\" class=\"campaign-image\" [hidden]=\"!campaign.image\">\r\n        </div>\r\n    </div>\r\n</form>"
 
 /***/ },
 
 /***/ 797:
 /***/ function(module, exports) {
 
-module.exports = "<div *ngIf=\"!showEditButton && !showEdit\">\r\n    <ul *ngIf=\"campaign\">\r\n        <div class=\"sub-nav-home card text-center\">\r\n            <div class=\"row\">\r\n                <div class=\"col-md-5\">\r\n                    <img class=\"img-responsive img-thumbnail\" [src]=\"campaign.image\">\r\n                </div>\r\n                <div class=\"col-md-7\">\r\n                    <h1>{{campaign.name}}</h1>\r\n                    <h6>Описание: {{campaign.description}}</h6>\r\n                    <h6>Име на собственика: {{campaign.ownerName}}</h6>\r\n                    <h6 *ngIf=\"!campaign.ownerName.length\">\r\n                        няма информация\r\n                    </h6>\r\n                    <h6>Контакти на собственика: {{campaign.ownerContact}}</h6>\r\n                    <h6>Необходима сума: {{campaign.neededAmount}}</h6>\r\n                    <h6 *ngIf=\"!campaign.neededAmount\">\r\n                        няма информация\r\n                    </h6>\r\n                    <h6>Сметка за дарения: {{campaign.iban}}</h6>\r\n                    <h6 *ngIf=\"!campaign.iban\">\r\n                        няма информация\r\n                    </h6>\r\n                    <h6>Добавено от: {{campaign.addedBy}}</h6>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </ul>\r\n    <button (click)=\"showEditCampaign()\" class=\"btn btn-warning\">Редактиране</button>\r\n    <button (click)=\"return()\" class=\"btn btn-danger\">Назад</button>\r\n</div>\r\n<div *ngIf=\"showEdit\">\r\n    <form #editCampaignForm=\"ngForm\" (ngSubmit)=\"editCampaign(); editCampaignForm.reset()\">\r\n        <input class=\"form-control\" type=\"text\" name=\"name\" [(ngModel)]=\"campaign.name\" #name=\"ngModel\" minlength=\"6\" placeholder=\"Въведете име на кампанията\"\r\n            required />\r\n        <div class=\"text-danger small\" *ngIf=\"name.touched && name.errors?.minlength\">\r\n            Най-малко 6 символа\r\n        </div>\r\n        <input class=\"form-control\" type=\"text\" name=\"description\" [(ngModel)]=\"campaign.description\" #description=\"ngModel\" minlength=\"20\"\r\n            placeholder=\"Въведете описание\" required />\r\n        <div class=\"text-danger small\" *ngIf=\"description.touched && description.errors?.minlength\">\r\n            Най-малко 20 символа\r\n        </div>\r\n        <input class=\"form-control\" type=\"text\" name=\"ownerName\" [(ngModel)]=\"campaign.ownerName\" #ownerName=\"ngModel\" placeholder=\"Въведете име на собственика\">\r\n        <input class=\"form-control\" type=\"text\" name=\"ownerContact\" [(ngModel)]=\"campaign.ownerContact\" #ownerContact=\"ngModel\" minlength=\"6\"\r\n            placeholder=\"Въведете контакти на собственика\">\r\n        <div class=\"text-danger small\" *ngIf=\"ownerContact.touched && ownerContact.errors?.minlength\">\r\n            Най-малко 6 символа\r\n        </div>\r\n        <input class=\"form-control\" type=\"text\" name=\"neededAmount\" [(ngModel)]=\"campaign.neededAmount\" #neededAmount=\"ngModel\" placeholder=\"Въведете необходимата сума\"\r\n            required />\r\n        <input class=\"form-control\" type=\"text\" name=\"iban\" [(ngModel)]=\"campaign.iban\" #iban=\"ngModel\" placeholder=\"Въведете номер на сметката\">\r\n        <input class=\"form-control\" type=\"text\" name=\"image\" [(ngModel)]=\"campaign.image\" #image=\"ngModel\" placeholder=\"Въведете линк към снимка\">\r\n        <hr>\r\n        <button type=\"submit\" class=\"btn btn-block orange\">Потвърди</button>\r\n    </form>\r\n</div>"
+module.exports = "<div *ngIf=\"isUserAdmin\">\r\n    <button (click)=\"addCampaign()\" class=\"btn btn-success\">Добавяне на кампания за любимец</button>\r\n</div>\r\n<ul *ngIf=\"campaigns\" class=\"list\">\r\n    <li *ngFor=\"let campaign of campaigns\">\r\n        <div class=\"sub-nav-home card text-center\">\r\n            <div class=\"row\">\r\n                <div class=\"col-md-4\">\r\n                    <img class=\"img-responsive img-thumbnail\" [src]=\"campaign.image\">\r\n                </div>\r\n                <div class=\"col-md-8\">\r\n                    <h4>{{campaign.name}}</h4>\r\n                    <button (click)=\"viewDetails(campaign._id)\" class=\"btn btn-success\">Вижте повече</button>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </li>\r\n</ul>\r\n<div *ngIf=\"!campaigns.length\">\r\n    Все още няма добвени капмании!\r\n</div>"
 
 /***/ },
 
 /***/ 798:
 /***/ function(module, exports) {
 
-module.exports = "<div class=\"container\">\r\n    <router-outlet></router-outlet>\r\n</div>"
+module.exports = "<div *ngIf=\"!showEditButton && !showEdit\">\r\n    <ul *ngIf=\"campaign\">\r\n        <div class=\"sub-nav-home card text-center\">\r\n            <div class=\"row\">\r\n                <div class=\"col-md-5\">\r\n                    <img class=\"img-responsive img-thumbnail\" [src]=\"campaign.image\">\r\n                </div>\r\n                <div class=\"col-md-7\">\r\n                    <h1>{{campaign.name}}</h1>\r\n                    <h6>Описание: {{campaign.description}}</h6>\r\n                    <h6>Име на собственика: {{campaign.ownerName}}</h6>\r\n                    <h6 *ngIf=\"!campaign.ownerName.length\">\r\n                        няма информация\r\n                    </h6>\r\n                    <h6>Контакти на собственика: {{campaign.ownerContact}}</h6>\r\n                    <h6>Необходима сума: {{campaign.neededAmount}}</h6>\r\n                    <h6 *ngIf=\"!campaign.neededAmount\">\r\n                        няма информация\r\n                    </h6>\r\n                    <h6>Сметка за дарения: {{campaign.iban}}</h6>\r\n                    <h6 *ngIf=\"!campaign.iban\">\r\n                        няма информация\r\n                    </h6>\r\n                    <h6>Добавено от: {{campaign.addedBy}}</h6>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </ul>\r\n    <button (click)=\"showEditCampaign()\" class=\"btn btn-warning\">Редактиране</button>\r\n    <button (click)=\"return()\" class=\"btn btn-danger\">Назад</button>\r\n</div>\r\n<div *ngIf=\"showEdit\">\r\n    <form #editCampaignForm=\"ngForm\" (ngSubmit)=\"editCampaign(); editCampaignForm.reset()\">\r\n        <input class=\"form-control\" type=\"text\" name=\"name\" [(ngModel)]=\"campaign.name\" #name=\"ngModel\" minlength=\"6\" placeholder=\"Въведете име на кампанията\"\r\n            required />\r\n        <div class=\"text-danger small\" *ngIf=\"name.touched && name.errors?.minlength\">\r\n            Най-малко 6 символа\r\n        </div>\r\n        <input class=\"form-control\" type=\"text\" name=\"description\" [(ngModel)]=\"campaign.description\" #description=\"ngModel\" minlength=\"20\"\r\n            placeholder=\"Въведете описание\" required />\r\n        <div class=\"text-danger small\" *ngIf=\"description.touched && description.errors?.minlength\">\r\n            Най-малко 20 символа\r\n        </div>\r\n        <input class=\"form-control\" type=\"text\" name=\"ownerName\" [(ngModel)]=\"campaign.ownerName\" #ownerName=\"ngModel\" placeholder=\"Въведете име на собственика\">\r\n        <input class=\"form-control\" type=\"text\" name=\"ownerContact\" [(ngModel)]=\"campaign.ownerContact\" #ownerContact=\"ngModel\" minlength=\"6\"\r\n            placeholder=\"Въведете контакти на собственика\">\r\n        <div class=\"text-danger small\" *ngIf=\"ownerContact.touched && ownerContact.errors?.minlength\">\r\n            Най-малко 6 символа\r\n        </div>\r\n        <input class=\"form-control\" type=\"text\" name=\"neededAmount\" [(ngModel)]=\"campaign.neededAmount\" #neededAmount=\"ngModel\" placeholder=\"Въведете необходимата сума\"\r\n            required />\r\n        <input class=\"form-control\" type=\"text\" name=\"iban\" [(ngModel)]=\"campaign.iban\" #iban=\"ngModel\" placeholder=\"Въведете номер на сметката\">\r\n        <input class=\"form-control\" type=\"text\" name=\"image\" [(ngModel)]=\"campaign.image\" #image=\"ngModel\" placeholder=\"Въведете линк към снимка\">\r\n        <hr>\r\n        <button type=\"submit\" class=\"btn btn-block orange\">Потвърди</button>\r\n    </form>\r\n</div>"
 
 /***/ },
 
 /***/ 799:
 /***/ function(module, exports) {
 
-module.exports = "<div class=\"container\">\r\n    <form #factsForm=\"ngForm\" (ngSubmit)=\"createFact(); factsForm.reset()\">\r\n        <div class=\"row\">\r\n            <div class=\"col-xs-offset-1 col-xs-7\">\r\n                <div class=\"form-group\">\r\n                    <input class=\"form-control\" type=\"text\" name=\"title\" [(ngModel)]=\"fact.title\" #title=\"ngModel\" minlength=\"5\" required placeholder=\"Въведете заглавие на факта\"\r\n                    />\r\n                    <div class=\"text-danger small\" *ngIf=\"title.touched && title.errors?.minlength\">\r\n                        Най-малко 5 символа\r\n                    </div>\r\n                </div>\r\n                <div class=\"form-group\">\r\n                    <input class=\"form-control\" type=\"text\" name=\"description\" [(ngModel)]=\"fact.description\" #description=\"ngModel\" minlength=\"20\"\r\n                        placeholder=\"Въведете описание на факта\" required />\r\n                    <div class=\"text-danger small\" *ngIf=\"description.touched && description.errors?.minlength\">\r\n                        Най-малко 20 символа\r\n                    </div>\r\n                </div>\r\n                <div class=\"form-group\">\r\n                    <input class=\"form-control\" type=\"url\" name=\"img\" [(ngModel)]=\"fact.img\" placeholder=\"Въведете снимка за факта\">\r\n                </div>\r\n                <div class=\"form-group\">\r\n                    <button class=\"btn btn-success\">Създаване</button>\r\n                    <button (click)=\"return()\" class=\"btn btn-danger\">Назад</button>\r\n                </div>\r\n            </div>\r\n            <div class=\"col-xs-3\">\r\n                <img [src]=\"fact.img\" class=\"fact-image\" [hidden]=\"!fact.img\">\r\n            </div>\r\n        </div>\r\n    </form>\r\n</div>"
+module.exports = "<div class=\"container\">\r\n    <router-outlet></router-outlet>\r\n</div>"
 
 /***/ },
 
 /***/ 800:
 /***/ function(module, exports) {
 
-module.exports = "<div class=\"container\">\r\n    <div *ngIf=\"isUserAdmin\">\r\n        <button (click)=\"addFact()\" class=\"btn btn-success\">Добавяне на любопитен факт</button>\r\n    </div>\r\n    <ul *ngIf=\"facts\" class=\"list\">\r\n        <li *ngFor=\"let fact of facts\">\r\n            <div class=\"sub-nav-home card text-center\">\r\n                <div class=\"row\">\r\n                    <div class=\"col-md-4\">\r\n                        <img class=\"img-responsive img-thumbnail\" [src]=\"fact.img\">\r\n                    </div>\r\n                    <div class=\"col-md-8\">\r\n                        <h4>{{fact.title}}</h4>\r\n                        <div class=\"thumbnail-content\">{{fact.description}}</div>\r\n                        <div class=\"thumbnail-content\">Добавено от: {{fact.addedBy}}</div>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </li>\r\n    </ul>\r\n    <div *ngIf=\"!facts.length\">\r\n        Все още няма добвени факти!\r\n    </div>\r\n</div>"
+module.exports = "<div class=\"container\">\r\n    <form #factsForm=\"ngForm\" (ngSubmit)=\"createFact(); factsForm.reset()\">\r\n        <div class=\"row\">\r\n            <div class=\"col-xs-offset-1 col-xs-7\">\r\n                <div class=\"form-group\">\r\n                    <input class=\"form-control\" type=\"text\" name=\"title\" [(ngModel)]=\"fact.title\" #title=\"ngModel\" minlength=\"5\" required placeholder=\"Въведете заглавие на факта\"\r\n                    />\r\n                    <div class=\"text-danger small\" *ngIf=\"title.touched && title.errors?.minlength\">\r\n                        Най-малко 5 символа\r\n                    </div>\r\n                </div>\r\n                <div class=\"form-group\">\r\n                    <input class=\"form-control\" type=\"text\" name=\"description\" [(ngModel)]=\"fact.description\" #description=\"ngModel\" minlength=\"20\"\r\n                        placeholder=\"Въведете описание на факта\" required />\r\n                    <div class=\"text-danger small\" *ngIf=\"description.touched && description.errors?.minlength\">\r\n                        Най-малко 20 символа\r\n                    </div>\r\n                </div>\r\n                <div class=\"form-group\">\r\n                    <input class=\"form-control\" type=\"url\" name=\"img\" [(ngModel)]=\"fact.img\" placeholder=\"Въведете снимка за факта\">\r\n                </div>\r\n                <div class=\"form-group\">\r\n                    <button class=\"btn btn-success\">Създаване</button>\r\n                    <button (click)=\"return()\" class=\"btn btn-danger\">Назад</button>\r\n                </div>\r\n            </div>\r\n            <div class=\"col-xs-3\">\r\n                <img [src]=\"fact.img\" class=\"fact-image\" [hidden]=\"!fact.img\">\r\n            </div>\r\n        </div>\r\n    </form>\r\n</div>"
 
 /***/ },
 
 /***/ 801:
 /***/ function(module, exports) {
 
-module.exports = "<div class=\"container-home row text-center\">\n  <img class=\"img-responsive\" src=\"./assets/images/cute-cat-and-dog-sleep-wallpaper-resized.jpg\" alt=\"cat-dog\">\n  <a pageScroll [pageScrollDuration]=\"500\" href=\"#home-scroll-down\"><img class=\"img-responsive arrow-home\" src=\"./assets/images/down-arrow-circle-hi.png\" alt=\"arrow\"></a>\n</div>\n<div class=\"container-content\">\n  <div id=\"home-scroll-down\" class=\"row text-center\">\n    <h2 class=\"home-title\">Вземи ме вкъщи!</h2>\n  </div>\n  <div class=\"container\">\n    <div class=\"row\">\n      <div class=\"col-md-4\">\n        <div routerLink=\"/pets/page/1\" class=\"sub-nav-home card text-center\">\n          <img class=\"img-responsive img-thumbnail\" src=\"./assets/images/oldest-cat-living-guinness-world-records-corduroy-52.jpg\"\n            alt=\"cat\">\n          <h4>Осинови</h4>\n          <div class=\"thumbnail-content\">Приюти някое от прекрасните малки животинчета, които искат в замяна само любов!</div>\n        </div>\n      </div>\n      <div class=\"col-md-4\">\n        <div routerLink=\"/campaign/list\" class=\"sub-nav-home card text-center\">\n          <img class=\"img-responsive img-thumbnail\" src=\"./assets/images/woman-feeding-dog-snack.jpg\" alt=\"dog\">\n          <h4 class=\"\">Кампании</h4>\n          <div class=\"thumbnail-content\">Помогни ни, като се включиш в някоя от нашите кампании в помощ на малките ни приятели!</div>\n        </div>\n      </div>\n      <div class=\"col-md-4\">\n        <div routerLink=\"/facts\" class=\"sub-nav-home card text-center\">\n          <img class=\"img-responsive img-thumbnail\" src=\"./assets/images/hd-cats-and-dog-images-wallpaper.jpg\" alt=\"cat-dog\">\n          <h4>Любопитно</h4>\n          <div class=\"thumbnail-content\">Прочети или сподели с нас интересни и забавни факти, свързани с домашните ни любимци!</div>\n        </div>\n      </div>\n    </div>\n    <div class=\"row text-left\">\n      <div class=\"row\">\n        <h4 class=\"news-main-title\">Последни новини</h4>\n        <app-news-entry *ngFor=\"let newsEntry of newsData\" [data]=\"newsEntry\" (click)=\"goToDetails(newsEntry)\"></app-news-entry>\n      </div>\n      <div class=\"row\">\n          <div class=\"col-md-2 col-md-offset-10\">\n            <button class=\"btn btn-block btn-success\" routerLink=\"/news/page/1\" type=\"button\">Виж още...</button>\n          </div>\n      </div>\n    </div>\n  </div>\n</div>"
+module.exports = "<div class=\"container\">\r\n    <div *ngIf=\"isUserAdmin\">\r\n        <button (click)=\"addFact()\" class=\"btn btn-success\">Добавяне на любопитен факт</button>\r\n    </div>\r\n    <ul *ngIf=\"facts\" class=\"list\">\r\n        <li *ngFor=\"let fact of facts\">\r\n            <div class=\"sub-nav-home card text-center\">\r\n                <div class=\"row\">\r\n                    <div class=\"col-md-4\">\r\n                        <img class=\"img-responsive img-thumbnail\" [src]=\"fact.img\">\r\n                    </div>\r\n                    <div class=\"col-md-8\">\r\n                        <h4>{{fact.title}}</h4>\r\n                        <div class=\"thumbnail-content\">{{fact.description}}</div>\r\n                        <div class=\"thumbnail-content\">Добавено от: {{fact.addedBy}}</div>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </li>\r\n    </ul>\r\n    <div *ngIf=\"!facts.length\">\r\n        Все още няма добвени факти!\r\n    </div>\r\n</div>"
 
 /***/ },
 
 /***/ 802:
 /***/ function(module, exports) {
 
-module.exports = "<footer class=\"page-footer green text-center\">\n  <div class=\"footer-copyright\">\n    © 2017 Copyright: Team Directive 20\n  </div>\n</footer>"
+module.exports = "<div class=\"container-home row text-center\">\r\n  <img class=\"img-responsive\" src=\"./assets/images/cute-cat-and-dog-sleep-wallpaper-resized.jpg\" alt=\"cat-dog\">\r\n  <a pageScroll [pageScrollDuration]=\"500\" href=\"#home-scroll-down\"><img class=\"img-responsive arrow-home\" src=\"./assets/images/down-arrow-circle-hi.png\" alt=\"arrow\"></a>\r\n</div>\r\n<div class=\"container-content\">\r\n  <div id=\"home-scroll-down\" class=\"row text-center\">\r\n    <h2 class=\"home-title\">Вземи ме вкъщи!</h2>\r\n  </div>\r\n  <div class=\"container\">\r\n    <div class=\"row\">\r\n      <div class=\"col-md-4\">\r\n        <div routerLink=\"/pets/page/1\" class=\"sub-nav-home card text-center\">\r\n          <img class=\"img-responsive img-thumbnail\" src=\"./assets/images/oldest-cat-living-guinness-world-records-corduroy-52.jpg\"\r\n            alt=\"cat\">\r\n          <h4>Осинови</h4>\r\n          <div class=\"thumbnail-content\">Приюти някое от прекрасните малки животинчета, които искат в замяна само любов!</div>\r\n        </div>\r\n      </div>\r\n      <div class=\"col-md-4\">\r\n        <div routerLink=\"/campaign/list\" class=\"sub-nav-home card text-center\">\r\n          <img class=\"img-responsive img-thumbnail\" src=\"./assets/images/woman-feeding-dog-snack.jpg\" alt=\"dog\">\r\n          <h4 class=\"\">Кампании</h4>\r\n          <div class=\"thumbnail-content\">Помогни ни, като се включиш в някоя от нашите кампании в помощ на малките ни приятели!</div>\r\n        </div>\r\n      </div>\r\n      <div class=\"col-md-4\">\r\n        <div routerLink=\"/facts\" class=\"sub-nav-home card text-center\">\r\n          <img class=\"img-responsive img-thumbnail\" src=\"./assets/images/hd-cats-and-dog-images-wallpaper.jpg\" alt=\"cat-dog\">\r\n          <h4>Любопитно</h4>\r\n          <div class=\"thumbnail-content\">Прочети или сподели с нас интересни и забавни факти, свързани с домашните ни любимци!</div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n    <div class=\"row text-left\">\r\n      <div class=\"row\">\r\n        <h4 class=\"news-main-title\">Последни новини</h4>\r\n        <app-news-entry *ngFor=\"let newsEntry of newsData\" [data]=\"newsEntry\" (click)=\"goToDetails(newsEntry)\"></app-news-entry>\r\n      </div>\r\n      <div class=\"row\">\r\n          <div class=\"col-md-2 col-md-offset-10\">\r\n            <button class=\"btn btn-block btn-success\" routerLink=\"/news/page/1\" type=\"button\">Виж още...</button>\r\n          </div>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</div>"
 
 /***/ },
 
 /***/ 803:
 /***/ function(module, exports) {
 
-module.exports = "<nav id=\"main-navigation\" class=\"navbar navbar-default navbar-static-top green darken-3\">\r\n  <div class=\"container\">\r\n    <div class=\"navbar-header\">\r\n      <a routerLink=\"/home\" id=\"brand\" class=\"navbar-brand nav-link waves-effect waves-light orange\">Adopt a Pet</a>\r\n      <button class=\"navbar-toggle\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbar-main\">\r\n            <span class=\"icon-bar\"></span>\r\n            <span class=\"icon-bar\"></span>\r\n            <span class=\"icon-bar\"></span>\r\n          </button>\r\n    </div>\r\n    <div class=\"navbar-collapse collapse\" id=\"navbar-main\">\r\n      <ul class=\"nav navbar-nav\">\r\n        <li routerLinkActive=\"active\">\r\n          <a routerLink=\"/news/page/1\" class=\"nav-link waves-effect waves-light\">Новини</a>\r\n        </li>\r\n        <li routerLinkActive=\"active\">\r\n          <a routerLink=\"/campaign/list\" class=\"nav-link waves-effect waves-light\">Кампании</a>\r\n        </li>\r\n        <li routerLinkActive=\"active\">\r\n          <a routerLink=\"/facts\" class=\"nav-link waves-effect waves-light\">Любопитни факти</a>\r\n        </li >\r\n        <li routerLinkActive=\"active\">\r\n          <a routerLink=\"/pets/page/1\" class=\"nav-link waves-effect waves-light\">Осинови</a>\r\n        </li>        \r\n      </ul>\r\n\r\n      <ul class=\"nav navbar-nav navbar-right\">\r\n        <li *ngIf=\"isUserAdmin\"><a routerLink=\"/admin\" class=\"nav-link waves-effect waves-light orange\">Админ</a></li>\r\n        <li *ngIf=\"isLoggedIn\"><a routerLink=\"/my-profile\" class=\"nav-link waves-effect waves-light orange\">Профил</a></li>\r\n        <li *ngIf=\"isLoggedIn\"><a routerLink=\"/logout\" (click)=\"logout()\" class=\"nav-link waves-effect waves-light orange\">Изход</a></li>\r\n        <li *ngIf=\"!isLoggedIn\"><a routerLink=\"/login\" class=\"nav-link waves-effect waves-ligh orange\">Вход</a></li>\r\n        <li *ngIf=\"!isLoggedIn\"><a routerLink=\"/register\" class=\"nav-link waves-effect waves-light orange\">Регистрация</a></li>        \r\n      </ul>\r\n\r\n    </div>\r\n  </div>\r\n</nav>\r\n\r\n<simple-notifications [options]=\"notificationOptions\"></simple-notifications>"
+module.exports = "<footer class=\"page-footer green text-center\">\r\n  <div class=\"footer-copyright\">\r\n    © 2017 Copyright: Team Directive 20\r\n  </div>\r\n</footer>"
 
 /***/ },
 
 /***/ 804:
 /***/ function(module, exports) {
 
-module.exports = "<div class=\"container\">\n  <div class=\"row text-right title-h4\">\n    <h4>Добави статия</h4>\n  </div>\n  <div class=\"row\">\n    <div class=\"col-md-8 col-md-offset-2\">\n      <div class=\"card article-form\">\n         <form [formGroup]=\"form\" (ngSubmit)=\"addArticle(form.value)\">            \n            <input class=\"form-control\" [formControl]=\"form.controls['title']\" type=\"text\" name=\"title\" placeholder=\"Заглавие\">\n           \n            <input class=\"form-control\" [formControl]=\"form.controls['imgUrl']\" type=\"url\" name=\"iamgeUrl\" placeholder=\"Снимка (url)\">\n            \n            <textarea id=\"textarea-content\" class=\"form-control\" [formControl]=\"form.controls['content']\" rows=\"15\" cols=\"50\" name=\"content\" placeholder=\"Съдържание...\"></textarea>\n            <hr>\n            <button type=\"submit\" [disabled]=\"isDisabled\" class=\"btn btn-block green\">Добави статия</button>\n          </form>\n      </div>\n    </div>\n  </div>\n</div>\n\n<simple-notifications [options]=\"notificationOptions\"></simple-notifications>"
+module.exports = "<nav id=\"main-navigation\" class=\"navbar navbar-default navbar-static-top green darken-3\">\r\n  <div class=\"container\">\r\n    <div class=\"navbar-header\">\r\n      <a routerLink=\"/home\" id=\"brand\" class=\"navbar-brand nav-link waves-effect waves-light orange\">Adopt a Pet</a>\r\n      <button class=\"navbar-toggle\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbar-main\">\r\n            <span class=\"icon-bar\"></span>\r\n            <span class=\"icon-bar\"></span>\r\n            <span class=\"icon-bar\"></span>\r\n          </button>\r\n    </div>\r\n    <div class=\"navbar-collapse collapse\" id=\"navbar-main\">\r\n      <ul class=\"nav navbar-nav\">\r\n        <li routerLinkActive=\"active\">\r\n          <a routerLink=\"/news/page/1\" class=\"nav-link waves-effect waves-light\">Новини</a>\r\n        </li>\r\n        <li routerLinkActive=\"active\">\r\n          <a routerLink=\"/campaign/list\" class=\"nav-link waves-effect waves-light\">Кампании</a>\r\n        </li>\r\n        <li routerLinkActive=\"active\">\r\n          <a routerLink=\"/facts\" class=\"nav-link waves-effect waves-light\">Любопитни факти</a>\r\n        </li >\r\n        <li routerLinkActive=\"active\">\r\n          <a routerLink=\"/pets/page/1\" class=\"nav-link waves-effect waves-light\">Осинови</a>\r\n        </li>        \r\n      </ul>\r\n\r\n      <ul class=\"nav navbar-nav navbar-right\">\r\n        <li *ngIf=\"isUserAdmin\"><a routerLink=\"/admin\" class=\"nav-link waves-effect waves-light orange\">Админ</a></li>\r\n        <li *ngIf=\"isLoggedIn\"><a routerLink=\"/my-profile\" class=\"nav-link waves-effect waves-light orange\">Профил</a></li>\r\n        <li *ngIf=\"isLoggedIn\"><a routerLink=\"/logout\" (click)=\"logout()\" class=\"nav-link waves-effect waves-light orange\">Изход</a></li>\r\n        <li *ngIf=\"!isLoggedIn\"><a routerLink=\"/login\" class=\"nav-link waves-effect waves-ligh orange\">Вход</a></li>\r\n        <li *ngIf=\"!isLoggedIn\"><a routerLink=\"/register\" class=\"nav-link waves-effect waves-light orange\">Регистрация</a></li>        \r\n      </ul>\r\n\r\n    </div>\r\n  </div>\r\n</nav>\r\n\r\n<simple-notifications [options]=\"notificationOptions\"></simple-notifications>"
 
 /***/ },
 
 /***/ 805:
 /***/ function(module, exports) {
 
-module.exports = "<div class=\"container\">\n  <div class=\"row text-right title-h4\">\n    <h4>{{article.title}}</h4>\n  </div>\n  <div class=\"row news-content\">\n    <div class=\"col-md-3 text-center\">\n      <img class=\"news-pic img-thumbnail img-responsive\" data-toggle=\"modal\" [attr.data-target]=\"'#' + article._id\" [src]=\"article.imgUrl\"\n        [alt]=\"article.title\">\n      <p>\n        Автор: <a (click)=\"goToProfile(article.author)\">{{article.author}}</a>\n      </p>\n      <p class=\"small\">Създадена на: {{article.createdOn | date:\"medium\"}}</p>\n      <div>\n        <button *ngIf=\"isLoggedIn\" (click)=\"focusInput()\" pageScroll [pageScrollDuration]=\"500\" href=\"#comment-box\" class=\"btn btn-success btn-xs\"\n          type=\"button\">Коментрай</button>\n        <button [hidden]=\"isLiked || !isLoggedIn\" (click)=\"toggleLike()\" class=\"btn btn-success btn-xs\" type=\"button\">Like! ({{article.likes.length}})</button>\n        <button [hidden]=\"!isLiked || !isLoggedIn\" (click)=\"toggleLike()\" class=\"btn btn-success btn-xs\" type=\"button\">Liked! ({{article.likes.length}})</button>\n        <button *ngIf=\"!isLoggedIn\" class=\"btn btn-success btn-xs\" type=\"button\">Likes ({{article.likes.length}})</button>\n      </div>\n    </div>\n    <div class=\"col-md-9\">\n      <p class=\"news-content\" style=\"font-size: 1rem;\">{{article.content}}\n\n</p>\n<div *ngIf=\"canDelete\" class=\"text-right\">\n  <button class=\"btn btn-danger btn-xs\" (click)=\"deleteArticle(article._id)\" type=\"button\">Изтрий</button>\n</div>\n<div class=\"row\">\n  <div>\n    <div class=\"title-h4 text-center\">\n      <p class=\"bold\">Коментари</p>\n    </div>\n    <div [hidden]=\"article.comments.length\" class=\"text-center no-comments\">\n      Все още няма коментари!\n    </div>\n    <div *ngFor=\"let comment of article.comments\" class=\"comment card\">\n      <div class=\"card-content text-center\">\n        {{comment.content}}\n      </div>\n      <div class=\"card-content small text-right\">\n        <div>Автор:\n          <a (click)=\"goToProfile(comment.author)\" class=\"comment-profile-link\" style=\"color:cornflowerblue\">{{comment.author}}</a>\n</div>\n<div>Написан на: {{comment.createdOn | date:\"medium\"}}</div>\n</div>\n</div>\n<div id=\"comment-box\" *ngIf=\"isLoggedIn\">\n  <div class=\"card comment\">\n    <div class=\"card-content\">\n      <form [formGroup]=\"form\" (ngSubmit)=\"submit(form.value)\">\n        <textarea #commentInput id=\"commentInput\" class=\"form-control\" rows=\"4\" cols=\"40\" [formControl]=\"form.controls['content']\"\n          name=\"content\" placeholder=\"Въведете вашия коментар тук...\"></textarea>\n        <div class=\"col-md-4 col-md-offset-8\">\n          <button type=\"submit\" id=\"btn-comment\" class=\"btn btn-block btn-success\">Добави коментар</button>\n        </div>\n      </form>\n    </div>\n  </div>\n</div>\n</div>\n</div>\n</div>\n</div>\n</div>\n\n<simple-notifications [options]=\"notificationOptions\"></simple-notifications>\n<app-picture-modal [picture]=\"article\"></app-picture-modal>"
+module.exports = "<div class=\"container\">\r\n  <div class=\"row text-right title-h4\">\r\n    <h4>Добави статия</h4>\r\n  </div>\r\n  <div class=\"row\">\r\n    <div class=\"col-md-8 col-md-offset-2\">\r\n      <div class=\"card article-form\">\r\n         <form [formGroup]=\"form\" (ngSubmit)=\"addArticle(form.value)\">            \r\n            <input class=\"form-control\" [formControl]=\"form.controls['title']\" type=\"text\" name=\"title\" placeholder=\"Заглавие\">\r\n           \r\n            <input class=\"form-control\" [formControl]=\"form.controls['imgUrl']\" type=\"url\" name=\"iamgeUrl\" placeholder=\"Снимка (url)\">\r\n            \r\n            <textarea id=\"textarea-content\" class=\"form-control\" [formControl]=\"form.controls['content']\" rows=\"15\" cols=\"50\" name=\"content\" placeholder=\"Съдържание...\"></textarea>\r\n            <hr>\r\n            <button type=\"submit\" [disabled]=\"isDisabled\" class=\"btn btn-block green\">Добави статия</button>\r\n          </form>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</div>\r\n\r\n<simple-notifications [options]=\"notificationOptions\"></simple-notifications>"
 
 /***/ },
 
 /***/ 806:
 /***/ function(module, exports) {
 
-module.exports = "<div class=\"news-entry row card\">\n  <div class=\"news-image col-md-2\">\n    <img class=\"img-thumbnail img-responsive\" [src]=\"data.imgUrl\" [alt]=\"data.title\">\n  </div>\n  <div class=\"col-md-10\">\n    <p class=\"news-entry-title\">{{data.title}}</p>\n    <div class=\"news-date small\">{{data.createdOn | date:\"medium\"}}</div>\n    <p class=\"news-content small\">{{data.content}}</p>\n  </div>\n</div>"
+module.exports = "<div class=\"container\">\r\n  <div class=\"row text-right title-h4\">\r\n    <h4>{{article.title}}</h4>\r\n  </div>\r\n  <div class=\"row news-content\">\r\n    <div class=\"col-md-3 text-center\">\r\n      <img class=\"news-pic img-thumbnail img-responsive\" data-toggle=\"modal\" [attr.data-target]=\"'#' + article._id\" [src]=\"article.imgUrl\"\r\n        [alt]=\"article.title\">\r\n      <p>\r\n        Автор: <a (click)=\"goToProfile(article.author)\">{{article.author}}</a>\r\n      </p>\r\n      <p class=\"small\">Създадена на: {{article.createdOn | date:\"medium\"}}</p>\r\n      <div>\r\n        <button *ngIf=\"isLoggedIn\" (click)=\"focusInput()\" pageScroll [pageScrollDuration]=\"500\" href=\"#comment-box\" class=\"btn btn-success btn-xs\"\r\n          type=\"button\">Коментрай</button>\r\n        <button [hidden]=\"isLiked || !isLoggedIn\" (click)=\"toggleLike()\" class=\"btn btn-success btn-xs\" type=\"button\">Like! ({{article.likes.length}})</button>\r\n        <button [hidden]=\"!isLiked || !isLoggedIn\" (click)=\"toggleLike()\" class=\"btn btn-success btn-xs\" type=\"button\">Liked! ({{article.likes.length}})</button>\r\n        <button *ngIf=\"!isLoggedIn\" class=\"btn btn-success btn-xs\" type=\"button\">Likes ({{article.likes.length}})</button>\r\n      </div>\r\n    </div>\r\n    <div class=\"col-md-9\">\r\n      <p class=\"news-content\" style=\"font-size: 1rem;\">{{article.content}}\r\n\r\n</p>\r\n<div *ngIf=\"canDelete\" class=\"text-right\">\r\n  <button class=\"btn btn-danger btn-xs\" (click)=\"deleteArticle(article._id)\" type=\"button\">Изтрий</button>\r\n</div>\r\n<div class=\"row\">\r\n  <div>\r\n    <div class=\"title-h4 text-center\">\r\n      <p class=\"bold\">Коментари</p>\r\n    </div>\r\n    <div [hidden]=\"article.comments.length\" class=\"text-center no-comments\">\r\n      Все още няма коментари!\r\n    </div>\r\n    <div *ngFor=\"let comment of article.comments\" class=\"comment card\">\r\n      <div class=\"card-content text-center\">\r\n        {{comment.content}}\r\n      </div>\r\n      <div class=\"card-content small text-right\">\r\n        <div>Автор:\r\n          <a (click)=\"goToProfile(comment.author)\" class=\"comment-profile-link\" style=\"color:cornflowerblue\">{{comment.author}}</a>\r\n</div>\r\n<div>Написан на: {{comment.createdOn | date:\"medium\"}}</div>\r\n</div>\r\n</div>\r\n<div id=\"comment-box\" *ngIf=\"isLoggedIn\">\r\n  <div class=\"card comment\">\r\n    <div class=\"card-content\">\r\n      <form [formGroup]=\"form\" (ngSubmit)=\"submit(form.value)\">\r\n        <textarea #commentInput id=\"commentInput\" class=\"form-control\" rows=\"4\" cols=\"40\" [formControl]=\"form.controls['content']\"\r\n          name=\"content\" placeholder=\"Въведете вашия коментар тук...\"></textarea>\r\n        <div class=\"col-md-4 col-md-offset-8\">\r\n          <button type=\"submit\" id=\"btn-comment\" class=\"btn btn-block btn-success\">Добави коментар</button>\r\n        </div>\r\n      </form>\r\n    </div>\r\n  </div>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n\r\n<simple-notifications [options]=\"notificationOptions\"></simple-notifications>\r\n<app-picture-modal [picture]=\"article\"></app-picture-modal>"
 
 /***/ },
 
 /***/ 807:
 /***/ function(module, exports) {
 
-module.exports = "<div class=\"container\">\n  <div class=\"row title-h4\">\n    <div class=\"col-md-10\">\n      <h4>Последни новини</h4>\n    </div>\n    <div *ngIf=\"isUserAdmin\" class=\"col-md-2\">\n      <button routerLink=\"/news/add-article\" class=\"btn btn-block green\" type=\"button\">Добави статия</button>\n    </div>\n  </div>\n  <app-news-entry *ngFor=\"let newsEntry of newsList\" [data]=\"newsEntry\" (click)=\"goToDetails(newsEntry)\"></app-news-entry>\n  <div class=\"row text-center\">\n\n    <nav>\n      <ul class=\"pagination\">\n        <li class=\"page-item\">\n          <a class=\"page-link\" (click)=\"goToPrev()\" aria-label=\"Previous\">\n            <span aria-hidden=\"true\">&laquo;</span>\n            <span class=\"sr-only\">Previous</span>\n          </a>\n        </li>\n        <li *ngFor=\"let item of generateRange(pagesCount); let i = index\" class=\"page-item\"><a (click)=\"goToPage(i + 1)\" class=\"page-link\">{{i + 1}}</a></li>\n        <li class=\"page-item\">\n          <a class=\"page-link\" (click)=\"goToNext()\" aria-label=\"Next\">\n            <span aria-hidden=\"true\">&raquo;</span>\n            <span class=\"sr-only\">Next</span>\n          </a>\n        </li>\n      </ul>\n    </nav>\n\n  </div>\n</div>"
+module.exports = "<div class=\"news-entry row card\">\r\n  <div class=\"news-image col-md-2\">\r\n    <img class=\"img-thumbnail img-responsive\" [src]=\"data.imgUrl\" [alt]=\"data.title\">\r\n  </div>\r\n  <div class=\"col-md-10\">\r\n    <p class=\"news-entry-title\">{{data.title}}</p>\r\n    <div class=\"news-date small\">{{data.createdOn | date:\"medium\"}}</div>\r\n    <p class=\"news-content small\">{{data.content}}</p>\r\n  </div>\r\n</div>"
 
 /***/ },
 
 /***/ 808:
 /***/ function(module, exports) {
 
-module.exports = "<div class=\"container\">\n  <div class=\"row text-right title-h4\">\n    <h4>Добави обява</h4>\n  </div>\n  <div class=\"row\">\n    <div class=\"col-md-8 col-md-offset-2\">\n      <div class=\"card pet-form\">\n        <form [formGroup]=\"form\" (ngSubmit)=\"addPet(form.value)\">\n          <input class=\"form-control\" [formControl]=\"form.controls['name']\" type=\"text\" name=\"name\" placeholder=\"Име\">\n\n          <input class=\"form-control\" [formControl]=\"form.controls['age']\" type=\"number\" min=\"0\" max=\"25\" name=\"age\" placeholder=\"Възраст\">\n\n          <input class=\"form-control\" [formControl]=\"form.controls['breed']\" type=\"text\" name=\"breed\" placeholder=\"Порода\">\n\n          <input class=\"form-control\" [formControl]=\"form.controls['pictures']\" type=\"url\" name=\"pictures\" placeholder=\"Снимка (url)\">\n\n          <select id=\"gender-select\" class=\"form-control\" [formControl]=\"form.controls['gender']\" name=\"gender\">\n            <option class=\"form-control\" value=\"male\">Мъжки</option>\n            <option class=\"form-control\" value=\"female\">Женски</option>\n          </select>\n\n          <textarea id=\"textarea-content\" class=\"form-control\" [formControl]=\"form.controls['about']\" rows=\"15\" cols=\"50\" name=\"about\"\n            placeholder=\"Описание...\"></textarea>\n          <hr>\n          <button type=\"submit\" [disabled]=\"isDisabled\" class=\"btn btn-block green\">Добави обява</button>\n        </form>\n      </div>\n    </div>\n  </div>\n</div>\n\n<simple-notifications [options]=\"notificationOptions\"></simple-notifications>"
+module.exports = "<div class=\"container\">\r\n  <div class=\"row title-h4\">\r\n    <div class=\"col-md-10\">\r\n      <h4>Последни новини</h4>\r\n    </div>\r\n    <div *ngIf=\"isUserAdmin\" class=\"col-md-2\">\r\n      <button routerLink=\"/news/add-article\" class=\"btn btn-block green\" type=\"button\">Добави статия</button>\r\n    </div>\r\n  </div>\r\n  <app-news-entry *ngFor=\"let newsEntry of newsList\" [data]=\"newsEntry\" (click)=\"goToDetails(newsEntry)\"></app-news-entry>\r\n  <div class=\"row text-center\">\r\n\r\n    <nav>\r\n      <ul class=\"pagination\">\r\n        <li class=\"page-item\">\r\n          <a class=\"page-link\" (click)=\"goToPrev()\" aria-label=\"Previous\">\r\n            <span aria-hidden=\"true\">&laquo;</span>\r\n            <span class=\"sr-only\">Previous</span>\r\n          </a>\r\n        </li>\r\n        <li *ngFor=\"let item of generateRange(pagesCount); let i = index\" class=\"page-item\"><a (click)=\"goToPage(i + 1)\" class=\"page-link\">{{i + 1}}</a></li>\r\n        <li class=\"page-item\">\r\n          <a class=\"page-link\" (click)=\"goToNext()\" aria-label=\"Next\">\r\n            <span aria-hidden=\"true\">&raquo;</span>\r\n            <span class=\"sr-only\">Next</span>\r\n          </a>\r\n        </li>\r\n      </ul>\r\n    </nav>\r\n\r\n  </div>\r\n</div>"
 
 /***/ },
 
 /***/ 809:
 /***/ function(module, exports) {
 
-module.exports = "<div class=\"container\">\n  <div class=\"row text-right title-h4\">\n    <h4 class=\"main-title\">\n      {{pet.name}}\n    </h4>\n  </div>\n  <div class=\"row\">\n    <div class=\"col-md-3 text-center\">\n      <div class=\"card-panel\">\n        <div class=\"text-center\">\n          <img id=\"profile-picture\" data-toggle=\"modal\" [attr.data-target]=\"'#' + image._id\" class=\"img-circle img-responsive\" [src]=\"image.imgUrl\"\n            [alt]=\"pet.name\">\n        </div>\n        <hr>\n        <div class=\"card-content text-center\">\n          <p class=\"bold\">{{pet.name}}</p>\n          <p>Пол: {{pet.gender}}</p>\n          <p>Възраст: {{pet.age}}</p>\n          <p class=\"less-imp\">Добавил: <a (click)=\"goToProfile(pet.addedBy)\">{{pet.addedBy}}</a></p>\n          <p>Добавен на: {{pet.addedOn | date:\"medium\"}}</p>\n        </div>\n        <div>\n          <button *ngIf=\"isLoggedIn\" [disabled]=\"isRequested\" data-toggle=\"modal\" data-target=\"#adoptPet\" class=\"btn btn-block green\" type=\"button\">Осинови!</button>\n          <button *ngIf=\"canEdit\" data-toggle=\"modal\" data-target=\"#addPhotos\" class=\"btn btn-block green\" type=\"button\">Добави снимки</button>\n        </div>\n      </div>\n    </div>\n    <div class=\"col-md-9\">\n      <div class=\"tabs\" data-example-id=\"togglable-tabs\">\n        <ul class=\"nav nav-tabs\" id=\"myTabs\" role=\"tablist\">\n          <li role=\"presentation\" class=\"active\"><a href=\"#about\" id=\"about-tab\" role=\"tab\" data-toggle=\"tab\" aria-controls=\"about\" aria-expanded=\"true\">За мен</a></li>\n          <li role=\"presentation\" class=\"\"><a href=\"#pictures\" role=\"tab\" id=\"pictures-tab\" data-toggle=\"tab\" aria-controls=\"pictures\" aria-expanded=\"false\">Снимки</a></li>\n        </ul>\n        <div class=\"tab-content\" id=\"myTabContent\">\n          <div class=\"tab-pane fade active in\" role=\"tabpanel\" id=\"about\" aria-labelledby=\"about-tab\">\n            <p class=\"text-justify\">{{pet.about}}</p>\n          </div>\n          <div class=\"tab-pane fade\" role=\"tabpanel\" id=\"pictures\" aria-labelledby=\"profile-tab\">\n            <div *ngFor=\"let picture of pet.pictures; let i = index\" class=\"col-md-4 img-container\">\n              <img class=\"img-responsive img-thumbnail\" data-toggle=\"modal\" [attr.data-target]=\"'#' + i + pet._id\" [src]=\"picture\" alt=\"pic\">\n              <app-picture-modal [picture]=\"{imgUrl: picture, title: pet._id + i, _id: i + pet._id}\"></app-picture-modal>\n            </div>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n<simple-notifications [options]=\"notificationOptions\"></simple-notifications>\n<app-picture-modal [picture]=\"image\"></app-picture-modal>\n<div class=\"modal fade\" id=\"addPhotos\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"addPhotosLabel\" aria-hidden=\"true\">\n  <div class=\"modal-dialog\" role=\"document\">\n    <div class=\"modal-content\">\n      <div class=\"modal-header\">\n        <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\">\n          <span aria-hidden=\"true\">&times;</span>\n        </button>\n        <div class=\"text-center\">\n          <h4 class=\"modal-title\" id=\"addPhotosLabel\">Добави снимка</h4>\n        </div>\n      </div>\n      <div class=\"modal-body text-center\">\n        <input #addPhotoInput type=\"text\" class=\"form-control\" name=\"photo\" placeholder=\"Снимка (url)\">\n        <button type=\"button\" (click)=\"addPhoto()\" data-dismiss=\"modal\" class=\"btn btn-success\">Потвърди</button>\n      </div>\n    </div>\n  </div>\n</div>\n<div class=\"modal fade\" id=\"adoptPet\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"adoptPetLabel\" aria-hidden=\"true\">\n  <div class=\"modal-dialog\" role=\"document\">\n    <div class=\"modal-content\">\n      <div class=\"modal-header\">\n        <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\">\n          <span aria-hidden=\"true\">&times;</span>\n        </button>\n        <div class=\"text-center\">\n          <h4 class=\"modal-title\" id=\"adoptPetLabel\">Осиновяване на {{pet.name}}</h4>\n        </div>\n      </div>\n      <div class=\"modal-body text-center\">\n       <p>\n         Заявката Ви ще бъде изпратена до администратор.\n       </p>\n        <button type=\"button\" (click)=\"adoptPet(pet)\" data-dismiss=\"modal\" class=\"btn btn-success\">Потвърди</button>\n        <button type=\"button\" data-dismiss=\"modal\" class=\"btn btn-danger\">Откажи</button>\n      </div>\n    </div>\n  </div>\n</div>"
+module.exports = "<div class=\"container\">\r\n  <div class=\"row text-right title-h4\">\r\n    <h4>Добави обява</h4>\r\n  </div>\r\n  <div class=\"row\">\r\n    <div class=\"col-md-8 col-md-offset-2\">\r\n      <div class=\"card pet-form\">\r\n        <form [formGroup]=\"form\" (ngSubmit)=\"addPet(form.value)\">\r\n          <input class=\"form-control\" [formControl]=\"form.controls['name']\" type=\"text\" name=\"name\" placeholder=\"Име\">\r\n\r\n          <input class=\"form-control\" [formControl]=\"form.controls['age']\" type=\"number\" min=\"0\" max=\"25\" name=\"age\" placeholder=\"Възраст\">\r\n\r\n          <input class=\"form-control\" [formControl]=\"form.controls['breed']\" type=\"text\" name=\"breed\" placeholder=\"Порода\">\r\n\r\n          <input class=\"form-control\" [formControl]=\"form.controls['pictures']\" type=\"url\" name=\"pictures\" placeholder=\"Снимка (url)\">\r\n\r\n          <select id=\"gender-select\" class=\"form-control\" [formControl]=\"form.controls['gender']\" name=\"gender\">\r\n            <option class=\"form-control\" value=\"male\">Мъжки</option>\r\n            <option class=\"form-control\" value=\"female\">Женски</option>\r\n          </select>\r\n\r\n          <textarea id=\"textarea-content\" class=\"form-control\" [formControl]=\"form.controls['about']\" rows=\"15\" cols=\"50\" name=\"about\"\r\n            placeholder=\"Описание...\"></textarea>\r\n          <hr>\r\n          <button type=\"submit\" [disabled]=\"isDisabled\" class=\"btn btn-block green\">Добави обява</button>\r\n        </form>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</div>\r\n\r\n<simple-notifications [options]=\"notificationOptions\"></simple-notifications>"
 
 /***/ },
 
 /***/ 810:
 /***/ function(module, exports) {
 
-module.exports = "<div class=\"container\">\n  <div class=\"row title-h4 text-left\">\n    <div class=\"col-md-10\">\n      <h4>Осинови!</h4>\n    </div>\n    <div class=\"col-md-2\">\n      <button *ngIf=\"isLoggedIn\" routerLink=\"/pets/add\" type=\"button\" class=\"btn btn-block green\">Добави обява</button>\n    </div>\n  </div>\n  <div class=\"row\">\n\n    <div *ngFor=\"let pet of pets\" class=\"col-md-4\">\n      <div class=\"card-panel\">\n        <div class=\"image-container text-center\">\n          <img style=\"margin: auto;\" id=\"profile-picture\" data-toggle=\"modal\" [attr.data-target]=\"'#' + pet._id\" class=\"img-circle img-responsive\" [src]=\"pet.pictures[0]\"\n[alt]=\"pet.name\">\n</div>\n<hr>\n<app-picture-modal [picture]=\"{title: pet.name, imgUrl: pet.pictures[0], _id: pet._id}\"></app-picture-modal>\n<div class=\"card-content text-center\">\n  <p>{{pet.name}}</p>\n  <p class=\"less-imp\">Порода: {{pet.breed}}</p>\n  <p class=\"less-imp\">Възраст: {{pet.age}} г.</p>\n  <p class=\"less-imp\">Пол: {{pet.gender}}</p>\n  <p class=\"less-imp\">Добавил: <a (click)=\"goToProfile(pet.addedBy)\">{{pet.addedBy}}</a></p>\n  <button type=\"button\" (click)=\"goToDetails(pet._id)\" class=\"btn btn-success\">Научи повече...</button>\n</div>\n</div>\n</div>\n\n</div>\n\n<div class=\"row text-center\">\n  <nav>\n    <ul class=\"pagination\">\n      <li class=\"page-item\">\n        <a class=\"page-link\" (click)=\"goToPrev()\" aria-label=\"Previous\">\n          <span aria-hidden=\"true\">&laquo;</span>\n          <span class=\"sr-only\">Previous</span>\n        </a>\n      </li>\n      <li *ngFor=\"let item of generateRange(pagesCount); let i = index\" class=\"page-item\"><a (click)=\"goToPage(i + 1)\" class=\"page-link\">{{i + 1}}</a></li>\n      <li class=\"page-item\">\n        <a class=\"page-link\" (click)=\"goToNext()\" aria-label=\"Next\">\n          <span aria-hidden=\"true\">&raquo;</span>\n          <span class=\"sr-only\">Next</span>\n        </a>\n      </li>\n    </ul>\n  </nav>\n</div>\n\n</div>"
+module.exports = "<div class=\"container\">\r\n  <div class=\"row text-right title-h4\">\r\n    <h4 class=\"main-title\">\r\n      {{pet.name}}\r\n    </h4>\r\n  </div>\r\n  <div class=\"row\">\r\n    <div class=\"col-md-3 text-center\">\r\n      <div class=\"card-panel\">\r\n        <div class=\"text-center\">\r\n          <img id=\"profile-picture\" data-toggle=\"modal\" [attr.data-target]=\"'#' + image._id\" class=\"img-circle img-responsive\" [src]=\"image.imgUrl\"\r\n            [alt]=\"pet.name\">\r\n        </div>\r\n        <hr>\r\n        <div class=\"card-content text-center\">\r\n          <p class=\"bold\">{{pet.name}}</p>\r\n          <p>Пол: {{pet.gender}}</p>\r\n          <p>Възраст: {{pet.age}}</p>\r\n          <p class=\"less-imp\">Добавил: <a (click)=\"goToProfile(pet.addedBy)\">{{pet.addedBy}}</a></p>\r\n          <p>Добавен на: {{pet.addedOn | date:\"medium\"}}</p>\r\n        </div>\r\n        <div>\r\n          <button *ngIf=\"isLoggedIn\" [disabled]=\"isRequested\" data-toggle=\"modal\" data-target=\"#adoptPet\" class=\"btn btn-block green\" type=\"button\">Осинови!</button>\r\n          <button *ngIf=\"canEdit\" data-toggle=\"modal\" data-target=\"#addPhotos\" class=\"btn btn-block green\" type=\"button\">Добави снимки</button>\r\n        </div>\r\n      </div>\r\n    </div>\r\n    <div class=\"col-md-9\">\r\n      <div class=\"tabs\" data-example-id=\"togglable-tabs\">\r\n        <ul class=\"nav nav-tabs\" id=\"myTabs\" role=\"tablist\">\r\n          <li role=\"presentation\" class=\"active\"><a href=\"#about\" id=\"about-tab\" role=\"tab\" data-toggle=\"tab\" aria-controls=\"about\" aria-expanded=\"true\">За мен</a></li>\r\n          <li role=\"presentation\" class=\"\"><a href=\"#pictures\" role=\"tab\" id=\"pictures-tab\" data-toggle=\"tab\" aria-controls=\"pictures\" aria-expanded=\"false\">Снимки</a></li>\r\n        </ul>\r\n        <div class=\"tab-content\" id=\"myTabContent\">\r\n          <div class=\"tab-pane fade active in\" role=\"tabpanel\" id=\"about\" aria-labelledby=\"about-tab\">\r\n            <p class=\"text-justify\">{{pet.about}}</p>\r\n          </div>\r\n          <div class=\"tab-pane fade\" role=\"tabpanel\" id=\"pictures\" aria-labelledby=\"profile-tab\">\r\n            <div *ngFor=\"let picture of pet.pictures; let i = index\" class=\"col-md-4 img-container\">\r\n              <img class=\"img-responsive img-thumbnail\" data-toggle=\"modal\" [attr.data-target]=\"'#' + i + pet._id\" [src]=\"picture\" alt=\"pic\">\r\n              <app-picture-modal [picture]=\"{imgUrl: picture, title: pet._id + i, _id: i + pet._id}\"></app-picture-modal>\r\n            </div>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</div>\r\n<simple-notifications [options]=\"notificationOptions\"></simple-notifications>\r\n<app-picture-modal [picture]=\"image\"></app-picture-modal>\r\n<div class=\"modal fade\" id=\"addPhotos\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"addPhotosLabel\" aria-hidden=\"true\">\r\n  <div class=\"modal-dialog\" role=\"document\">\r\n    <div class=\"modal-content\">\r\n      <div class=\"modal-header\">\r\n        <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\">\r\n          <span aria-hidden=\"true\">&times;</span>\r\n        </button>\r\n        <div class=\"text-center\">\r\n          <h4 class=\"modal-title\" id=\"addPhotosLabel\">Добави снимка</h4>\r\n        </div>\r\n      </div>\r\n      <div class=\"modal-body text-center\">\r\n        <input #addPhotoInput type=\"text\" class=\"form-control\" name=\"photo\" placeholder=\"Снимка (url)\">\r\n        <button type=\"button\" (click)=\"addPhoto()\" data-dismiss=\"modal\" class=\"btn btn-success\">Потвърди</button>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</div>\r\n<div class=\"modal fade\" id=\"adoptPet\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"adoptPetLabel\" aria-hidden=\"true\">\r\n  <div class=\"modal-dialog\" role=\"document\">\r\n    <div class=\"modal-content\">\r\n      <div class=\"modal-header\">\r\n        <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\">\r\n          <span aria-hidden=\"true\">&times;</span>\r\n        </button>\r\n        <div class=\"text-center\">\r\n          <h4 class=\"modal-title\" id=\"adoptPetLabel\">Осиновяване на {{pet.name}}</h4>\r\n        </div>\r\n      </div>\r\n      <div class=\"modal-body text-center\">\r\n       <p>\r\n         Заявката Ви ще бъде изпратена до администратор.\r\n       </p>\r\n        <button type=\"button\" (click)=\"adoptPet(pet)\" data-dismiss=\"modal\" class=\"btn btn-success\">Потвърди</button>\r\n        <button type=\"button\" data-dismiss=\"modal\" class=\"btn btn-danger\">Откажи</button>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</div>"
 
 /***/ },
 
 /***/ 811:
 /***/ function(module, exports) {
 
-module.exports = "<!--Button trigger modal - required attributes:\n[' data-toggle']=\"modal\" ['data-target']=\"#picture._id\"-->\n\n<div class=\"modal fade\" [id]=\"picture._id\" tabindex=\"-1\" role=\"dialog\" [attr.aria-labelledby]=\"picture.title\">\n  <div class=\"modal-dialog\" role=\"document\">\n    <div class=\"modal-content\">\n      <div class=\"modal-body\">\n        <img [src]=\"picture.imgUrl\" alt=\"picture.title\">\n      </div>\n    </div>\n  </div>\n</div>"
+module.exports = "<div class=\"container\">\r\n  <div class=\"row title-h4 text-left\">\r\n    <div class=\"col-md-10\">\r\n      <h4>Осинови!</h4>\r\n    </div>\r\n    <div class=\"col-md-2\">\r\n      <button *ngIf=\"isLoggedIn\" routerLink=\"/pets/add\" type=\"button\" class=\"btn btn-block green\">Добави обява</button>\r\n    </div>\r\n  </div>\r\n  <div class=\"row\">\r\n\r\n    <div *ngFor=\"let pet of pets\" class=\"col-md-4\">\r\n      <div class=\"card-panel\">\r\n        <div class=\"image-container text-center\">\r\n          <img style=\"margin: auto;\" id=\"profile-picture\" data-toggle=\"modal\" [attr.data-target]=\"'#' + pet._id\" class=\"img-circle img-responsive\" [src]=\"pet.pictures[0]\"\r\n[alt]=\"pet.name\">\r\n</div>\r\n<hr>\r\n<app-picture-modal [picture]=\"{title: pet.name, imgUrl: pet.pictures[0], _id: pet._id}\"></app-picture-modal>\r\n<div class=\"card-content text-center\">\r\n  <p>{{pet.name}}</p>\r\n  <p class=\"less-imp\">Порода: {{pet.breed}}</p>\r\n  <p class=\"less-imp\">Възраст: {{pet.age}} г.</p>\r\n  <p class=\"less-imp\">Пол: {{pet.gender}}</p>\r\n  <p class=\"less-imp\">Добавил: <a (click)=\"goToProfile(pet.addedBy)\">{{pet.addedBy}}</a></p>\r\n  <button type=\"button\" (click)=\"goToDetails(pet._id)\" class=\"btn btn-success\">Научи повече...</button>\r\n</div>\r\n</div>\r\n</div>\r\n\r\n</div>\r\n\r\n<div class=\"row text-center\">\r\n  <nav>\r\n    <ul class=\"pagination\">\r\n      <li class=\"page-item\">\r\n        <a class=\"page-link\" (click)=\"goToPrev()\" aria-label=\"Previous\">\r\n          <span aria-hidden=\"true\">&laquo;</span>\r\n          <span class=\"sr-only\">Previous</span>\r\n        </a>\r\n      </li>\r\n      <li *ngFor=\"let item of generateRange(pagesCount); let i = index\" class=\"page-item\"><a (click)=\"goToPage(i + 1)\" class=\"page-link\">{{i + 1}}</a></li>\r\n      <li class=\"page-item\">\r\n        <a class=\"page-link\" (click)=\"goToNext()\" aria-label=\"Next\">\r\n          <span aria-hidden=\"true\">&raquo;</span>\r\n          <span class=\"sr-only\">Next</span>\r\n        </a>\r\n      </li>\r\n    </ul>\r\n  </nav>\r\n</div>\r\n\r\n</div>"
 
 /***/ },
 
 /***/ 812:
 /***/ function(module, exports) {
 
-module.exports = "<div class=\"row details-container\">\n  <div class=\"card\">\n    <div class=\"link-title card-content text-center panel-heading\" data-toggle=\"collapse\" [attr.data-target]=\"'#' + options.id\">\n      <p>{{options.title}}</p>\n    </div>\n    <div id=\"{{options.id}}\" class=\"card-content collapse\">\n      <div *ngIf=\"!options.list.length\" class=\"text-center\">\n        {{options.nothingAddedMessage}}\n      </div>\n      <table *ngIf=\"options.list.length\" class=\"table table-hover table-responsive table-striped\">\n        <thead class=\"table-header\">\n          <th class=\"text-center col-md-2\"><span class=\"glyphicon glyphicon-heart\"></span></th>\n          <th class=\"text-center col-md-5\">{{options.trHeadTitle}}</th>\n          <th class=\"text-center col-md-5\">{{options.trHeadDate}}</th>\n        </thead>\n        <tbody>\n          <tr *ngFor=\"let item of options.list\">\n            <td><img class=\"img-circle img-responsive\" [src]=\"item.imgUrl\"\n                [alt]=\"item.name\"></td>\n            <td class=\"text-center\"><a [routerLink]=\"options.rootLink + item.id\">{{item.name}}</a></td>\n            <td class=\"text-center\">{{item.addedOn}}</td>\n          </tr>          \n        </tbody>\n      </table>\n    </div>\n  </div>\n</div>"
+module.exports = "<!--Button trigger modal - required attributes:\r\n[' data-toggle']=\"modal\" ['data-target']=\"#picture._id\"-->\r\n\r\n<div class=\"modal fade\" [id]=\"picture._id\" tabindex=\"-1\" role=\"dialog\" [attr.aria-labelledby]=\"picture.title\">\r\n  <div class=\"modal-dialog\" role=\"document\">\r\n    <div class=\"modal-content\">\r\n      <div class=\"modal-body\">\r\n        <img [src]=\"picture.imgUrl\" alt=\"picture.title\">\r\n      </div>\r\n    </div>\r\n  </div>\r\n</div>"
 
 /***/ },
 
 /***/ 813:
 /***/ function(module, exports) {
 
-module.exports = "<div class=\"container\">\n  <div class=\"row text-right\">\n    <h4 class=\"admin-page-title\">Admin settings</h4>\n  </div>\n  <div *ngIf=\"!showEditUser\" class=\"navigation\">\n    <ul class=\"nav nav-tabs\">\n      <li class=\"active\"><a href=\"#users\" data-toggle=\"tab\" aria-expanded=\"true\">Потребители</a></li>\n    </ul>\n    <div id=\"myTabContent\" class=\"tab-content\">\n      <div class=\"tab-pane fade active in\" id=\"users\">\n        <table class=\"table table-hover table-striped\">\n          <thead class=\"text-center table-header\">\n            <th class=\"text-center\">#</th>\n            <th class=\"text-center\">Потребителско име:</th>\n            <th class=\"text-center\">Регистриран на:</th>\n            <th class=\"text-center\">Опции</th>\n          </thead>\n          <tbody>\n            <tr *ngFor=\"let user of (users | sortByDate:'registeredOn':'desc'); let i = index\">\n              <td class=\"col-md-1 text-center\">{{i + 1}}</td>\n              <td class=\"col-md-3 text-center\"><a (click)=\"goToDetails(user)\">{{user.username}}</a></td>\n              <td class=\"col-md-3 text-center\">{{user.registeredOn | date:\"medium\"}}</td>\n              <td class=\"col-md-5 text-center\">\n                <button class=\"btn btn-success\" (click)=\"showEdit(user)\" type=\"button\">Редактирай</button>\n                <button [hidden]=\"user.isDeleted\" (click)=\"toggleBanUser(user)\" class=\"btn btn-danger\" type=\"button\">Деактивирай акаунт</button>\n                <button [hidden]=\"!user.isDeleted\" (click)=\"toggleBanUser(user)\" class=\"btn btn-success\" type=\"button\">Активирай акаунт</button>\n              </td>\n            </tr>\n          </tbody>\n        </table>\n      </div>\n      <!--<div class=\"tab-pane fade\" id=\"......\">-->\n    </div>\n  </div>\n  <div *ngIf=\"showEditUser\" class=\"row\">\n    <div class=\"col-md-2\">\n      <span (click)=\"showAddedDetails()\" class=\"back-icon glyphicon glyphicon-circle-arrow-left\"></span>\n    </div>\n    <div class=\"col-md-6 col-md-offset-1\">\n      <div>\n        <div class=\"row text-center\">\n          <p>Редактиране на профила на {{editedUser.username}}</p>\n          <hr>\n        </div>\n        <form [formGroup]=\"form\" (ngSubmit)=\"editProfileInfo(form.value)\">\n          <input class=\"form-control\" type=\"email\" name=\"email\" [formControl]=\"form.controls['email']\" placeholder=\"E-Mail\">\n\n          <input class=\"form-control\" type=\"text\" name=\"profilePicture\" [formControl]=\"form.controls['profilePicture']\" placeholder=\"Профилна снимка (url)\">\n\n          <input class=\"form-control\" type=\"text\" name=\"firstName\" [formControl]=\"form.controls['firstName']\" placeholder=\"Име\">\n\n          <input class=\"form-control\" type=\"text\" name=\"lastName\" [formControl]=\"form.controls['lastName']\" placeholder=\"Фамилия\">\n\n          <input class=\"form-control\" min=\"6\" max=\"100\" type=\"number\" name=\"age\" [formControl]=\"form.controls['age']\" placeholder=\"Възраст\">\n\n          <label id=\"gender-label\" for=\"gender\">Пол:</label>\n          <select id=\"gender-select\" class=\"form-control\" [formControl]=\"form.controls['gender']\">\n                <option value=\"male\">Мъж</option>\n                <option value=\"female\">Жена</option>\n                <option value=\"unspecified\">Друг</option>    \n              </select>\n          <hr>\n          <button type=\"button\" [disabled]=\"isEditedUserAdmin\" (click)=\"makeAdmin()\" class=\"btn btn-block green\">Направи админ</button>\n          <hr>\n          <button type=\"submit\" [disabled]=\"isSubmitButtonDisabled\" class=\"btn btn-block orange\">Потвърди промените</button>\n        </form>\n      </div>\n    </div>\n  </div>\n</div>\n\n<simple-notifications [options]=\"notificationOptions\"></simple-notifications>"
+module.exports = "<div class=\"row details-container\">\r\n  <div class=\"card\">\r\n    <div class=\"link-title card-content text-center panel-heading\" data-toggle=\"collapse\" [attr.data-target]=\"'#' + options.id\">\r\n      <p>{{options.title}}</p>\r\n    </div>\r\n    <div id=\"{{options.id}}\" class=\"card-content collapse\">\r\n      <div *ngIf=\"!options.list.length\" class=\"text-center\">\r\n        {{options.nothingAddedMessage}}\r\n      </div>\r\n      <table *ngIf=\"options.list.length\" class=\"table table-hover table-responsive table-striped\">\r\n        <thead class=\"table-header\">\r\n          <th class=\"text-center col-md-2\"><span class=\"glyphicon glyphicon-heart\"></span></th>\r\n          <th class=\"text-center col-md-5\">{{options.trHeadTitle}}</th>\r\n          <th class=\"text-center col-md-5\">{{options.trHeadDate}}</th>\r\n        </thead>\r\n        <tbody>\r\n          <tr *ngFor=\"let item of options.list\">\r\n            <td><img class=\"img-circle img-responsive\" [src]=\"item.imgUrl\"\r\n                [alt]=\"item.name\"></td>\r\n            <td class=\"text-center\"><a [routerLink]=\"options.rootLink + item.id\">{{item.name}}</a></td>\r\n            <td class=\"text-center\">{{item.addedOn}}</td>\r\n          </tr>          \r\n        </tbody>\r\n      </table>\r\n    </div>\r\n  </div>\r\n</div>"
 
 /***/ },
 
 /***/ 814:
 /***/ function(module, exports) {
 
-module.exports = "<div class=\"container\">\n  <div class=\"row text-right\">\n    <h4 class=\"main-title\">\n      {{user.username}}\n    </h4>\n  </div>\n  <div class=\"row\">\n    <div class=\"col-md-3 text-center\">\n      <div class=\"card-panel\">\n        <div class=\"text-center\">\n          <img id=\"profile-picture\" data-toggle=\"modal\" [attr.data-target]=\"'#' + image._id\" class=\"img-circle img-responsive\" [src]=\"user.profilePicture\" [alt]=\"user.username\">\n        </div>\n        <hr>\n        <div class=\"card-content text-center\">\n          <p class=\"bold\">{{user.firstName}} {{user.lastName}}</p>\n          <p>E-Mail: {{user.email}}</p>\n          <p>Възраст: {{user.age}}</p>\n          <p>Пол: {{user.gender | textTransform }}</p>\n        </div>\n        <div *ngIf=\"showEditButton\">\n          <button class=\"btn btn-block orange\" (click)=\"showEditProfile()\">Редактирай</button>\n        </div>\n      </div>\n    </div>\n    <div [hidden]=\"showEdit\" class=\"col-md-9\">\n      <app-added-content *ngIf=\"user.admin\" [options]=\"addedArticles\"></app-added-content>\n      <app-added-content [options]=\"adoptedPets\"></app-added-content>\n      <app-added-content [options]=\"addedAnimals\"></app-added-content>\n      <app-added-content [options]=\"addedCampaigns\"></app-added-content>\n      <app-added-content [options]=\"addedFacts\"></app-added-content>\n      <app-added-content [options]=\"addedGalleryImages\"></app-added-content>\n    </div>\n    <div [hidden]=\"!showEdit\" class=\"col-md-9\">\n      <div class=\"row\">\n        <div class=\"row\">\n          <div class=\"col-md-2\">\n            <span (click)=\"showAddedDetails()\" class=\"back-icon glyphicon glyphicon-circle-arrow-left\"></span>\n          </div>\n          <div class=\"col-md-8 text-center\">\n            <h4>Редактиране на профила</h4>\n          </div>\n        </div>\n        <hr>\n        <div class=\"row\">\n          <div class=\"col-md-8 col-md-offset-2\">\n            <div>\n              <div class=\"row text-center\">\n                <span class=\"small text-success\">Попълването на всички полета е условно.</span>\n                <hr>\n              </div>\n              <form [formGroup]=\"form\" (ngSubmit)=\"editProfileInfo(form.value);\">\n                <span class=\"text-danger small\" *ngIf=\"!form.controls['email'].valid && form.controls['email'].touched\">Въведеният E-Mail не е валиден.</span>\n                <input class=\"form-control\" type=\"email\" name=\"email\" [formControl]=\"form.controls['email']\" placeholder=\"E-Mail\" [class.input-error]=\"!form.controls['email'].valid && form.controls['email'].touched\">\n\n                <input class=\"form-control\" type=\"text\" name=\"profilePicture\" [formControl]=\"form.controls['profilePicture']\" placeholder=\"Профилна снимка (url)\"\n                  [class.input-error]=\"!form.controls['profilePicture'].valid && form.controls['profilePicture'].touched\">\n\n                <span class=\"text-danger small\" *ngIf=\"!form.controls['firstName'].valid && form.controls['firstName'].touched\">Името трябва да е между 3 и 20 символа.</span>\n                <input class=\"form-control\" type=\"text\" name=\"firstName\" [formControl]=\"form.controls['firstName']\" placeholder=\"Име\" [class.input-error]=\"!form.controls['firstName'].valid && form.controls['firstName'].touched\">\n\n                <span class=\"text-danger small\" *ngIf=\"!form.controls['lastName'].valid && form.controls['lastName'].touched\">Фамилията трябва да е между 3 и 20 символа.</span>\n                <input class=\"form-control\" type=\"text\" name=\"lastName\" [formControl]=\"form.controls['lastName']\" placeholder=\"Фамилия\" [class.input-error]=\"!form.controls['lastName'].valid && form.controls['lastName'].touched\">\n\n                <span class=\"text-danger small\" *ngIf=\"!form.controls['age'].valid && form.controls['age'].touched && form.controls['age'].value\">Въведете възраст между 6 и 100 години.<br></span>\n                <input class=\"form-control\" min=\"6\" max=\"100\" type=\"number\" name=\"age\" [formControl]=\"form.controls['age']\" placeholder=\"Възраст\"\n                  [class.input-error]=\"!form.controls['age'].valid && form.controls['age'].touched && form.controls['age'].value\">\n\n                <label id=\"gender-label\" for=\"gender\">Пол:</label>\n                <select id=\"gender-select\" class=\"form-control\" [formControl]=\"form.controls['gender']\" name=\"gender\" [class.input-error]=\"!form.controls['gender'].valid && form.controls['gender'].touched\">\n                <option value=\"male\">Мъж</option>\n                <option value=\"female\">Жена</option>\n                <option value=\"unspecified\">Друг</option>    \n              </select>\n                <hr>\n                <button type=\"submit\" [disabled]=\"isBtnDisabled\" class=\"btn btn-block orange\">Потвърди</button>\n              </form>\n            </div>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n\n<simple-notifications [options]=\"notificationOptions\"></simple-notifications>\n<app-picture-modal [picture]=\"image\"></app-picture-modal>"
+module.exports = "<div class=\"container\">\r\n  <div class=\"row text-right\">\r\n    <h4 class=\"admin-page-title\">Admin settings</h4>\r\n  </div>\r\n  <div *ngIf=\"!showEditUser\" class=\"navigation\">\r\n    <ul class=\"nav nav-tabs\">\r\n      <li class=\"active\"><a href=\"#users\" data-toggle=\"tab\" aria-expanded=\"true\">Потребители</a></li>\r\n    </ul>\r\n    <div id=\"myTabContent\" class=\"tab-content\">\r\n      <div class=\"tab-pane fade active in\" id=\"users\">\r\n        <table class=\"table table-hover table-striped\">\r\n          <thead class=\"text-center table-header\">\r\n            <th class=\"text-center\">#</th>\r\n            <th class=\"text-center\">Потребителско име:</th>\r\n            <th class=\"text-center\">Регистриран на:</th>\r\n            <th class=\"text-center\">Опции</th>\r\n          </thead>\r\n          <tbody>\r\n            <tr *ngFor=\"let user of (users | sortByDate:'registeredOn':'desc'); let i = index\">\r\n              <td class=\"col-md-1 text-center\">{{i + 1}}</td>\r\n              <td class=\"col-md-3 text-center\"><a (click)=\"goToDetails(user)\">{{user.username}}</a></td>\r\n              <td class=\"col-md-3 text-center\">{{user.registeredOn | date:\"medium\"}}</td>\r\n              <td class=\"col-md-5 text-center\">\r\n                <button class=\"btn btn-success\" (click)=\"showEdit(user)\" type=\"button\">Редактирай</button>\r\n                <button [hidden]=\"user.isDeleted\" (click)=\"toggleBanUser(user)\" class=\"btn btn-danger\" type=\"button\">Деактивирай акаунт</button>\r\n                <button [hidden]=\"!user.isDeleted\" (click)=\"toggleBanUser(user)\" class=\"btn btn-success\" type=\"button\">Активирай акаунт</button>\r\n              </td>\r\n            </tr>\r\n          </tbody>\r\n        </table>\r\n      </div>\r\n      <!--<div class=\"tab-pane fade\" id=\"......\">-->\r\n    </div>\r\n  </div>\r\n  <div *ngIf=\"showEditUser\" class=\"row\">\r\n    <div class=\"col-md-2\">\r\n      <span (click)=\"showAddedDetails()\" class=\"back-icon glyphicon glyphicon-circle-arrow-left\"></span>\r\n    </div>\r\n    <div class=\"col-md-6 col-md-offset-1\">\r\n      <div>\r\n        <div class=\"row text-center\">\r\n          <p>Редактиране на профила на {{editedUser.username}}</p>\r\n          <hr>\r\n        </div>\r\n        <form [formGroup]=\"form\" (ngSubmit)=\"editProfileInfo(form.value)\">\r\n          <input class=\"form-control\" type=\"email\" name=\"email\" [formControl]=\"form.controls['email']\" placeholder=\"E-Mail\">\r\n\r\n          <input class=\"form-control\" type=\"text\" name=\"profilePicture\" [formControl]=\"form.controls['profilePicture']\" placeholder=\"Профилна снимка (url)\">\r\n\r\n          <input class=\"form-control\" type=\"text\" name=\"firstName\" [formControl]=\"form.controls['firstName']\" placeholder=\"Име\">\r\n\r\n          <input class=\"form-control\" type=\"text\" name=\"lastName\" [formControl]=\"form.controls['lastName']\" placeholder=\"Фамилия\">\r\n\r\n          <input class=\"form-control\" min=\"6\" max=\"100\" type=\"number\" name=\"age\" [formControl]=\"form.controls['age']\" placeholder=\"Възраст\">\r\n\r\n          <label id=\"gender-label\" for=\"gender\">Пол:</label>\r\n          <select id=\"gender-select\" class=\"form-control\" [formControl]=\"form.controls['gender']\">\r\n                <option value=\"male\">Мъж</option>\r\n                <option value=\"female\">Жена</option>\r\n                <option value=\"unspecified\">Друг</option>    \r\n              </select>\r\n          <hr>\r\n          <button type=\"button\" [disabled]=\"isEditedUserAdmin\" (click)=\"makeAdmin()\" class=\"btn btn-block green\">Направи админ</button>\r\n          <hr>\r\n          <button type=\"submit\" [disabled]=\"isSubmitButtonDisabled\" class=\"btn btn-block orange\">Потвърди промените</button>\r\n        </form>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</div>\r\n\r\n<simple-notifications [options]=\"notificationOptions\"></simple-notifications>"
 
 /***/ },
 
-/***/ 97:
+/***/ 815:
+/***/ function(module, exports) {
+
+module.exports = "<div class=\"container\">\r\n  <div class=\"row text-right\">\r\n    <h4 class=\"main-title\">\r\n      {{user.username}}\r\n    </h4>\r\n  </div>\r\n  <div class=\"row\">\r\n    <div class=\"col-md-3 text-center\">\r\n      <div class=\"card-panel\">\r\n        <div class=\"text-center\">\r\n          <img id=\"profile-picture\" data-toggle=\"modal\" [attr.data-target]=\"'#' + image._id\" class=\"img-circle img-responsive\" [src]=\"user.profilePicture\" [alt]=\"user.username\">\r\n        </div>\r\n        <hr>\r\n        <div class=\"card-content text-center\">\r\n          <p class=\"bold\">{{user.firstName}} {{user.lastName}}</p>\r\n          <p>E-Mail: {{user.email}}</p>\r\n          <p>Възраст: {{user.age}}</p>\r\n          <p>Пол: {{user.gender | textTransform }}</p>\r\n        </div>\r\n        <div *ngIf=\"showEditButton\">\r\n          <button class=\"btn btn-block orange\" (click)=\"showEditProfile()\">Редактирай</button>\r\n        </div>\r\n      </div>\r\n    </div>\r\n    <div [hidden]=\"showEdit\" class=\"col-md-9\">\r\n      <app-added-content *ngIf=\"user.admin\" [options]=\"addedArticles\"></app-added-content>\r\n      <app-added-content [options]=\"adoptedPets\"></app-added-content>\r\n      <app-added-content [options]=\"addedAnimals\"></app-added-content>\r\n      <app-added-content [options]=\"addedCampaigns\"></app-added-content>\r\n      <app-added-content [options]=\"addedFacts\"></app-added-content>\r\n      <app-added-content [options]=\"addedGalleryImages\"></app-added-content>\r\n    </div>\r\n    <div [hidden]=\"!showEdit\" class=\"col-md-9\">\r\n      <div class=\"row\">\r\n        <div class=\"row\">\r\n          <div class=\"col-md-2\">\r\n            <span (click)=\"showAddedDetails()\" class=\"back-icon glyphicon glyphicon-circle-arrow-left\"></span>\r\n          </div>\r\n          <div class=\"col-md-8 text-center\">\r\n            <h4>Редактиране на профила</h4>\r\n          </div>\r\n        </div>\r\n        <hr>\r\n        <div class=\"row\">\r\n          <div class=\"col-md-8 col-md-offset-2\">\r\n            <div>\r\n              <div class=\"row text-center\">\r\n                <span class=\"small text-success\">Попълването на всички полета е условно.</span>\r\n                <hr>\r\n              </div>\r\n              <form [formGroup]=\"form\" (ngSubmit)=\"editProfileInfo(form.value);\">\r\n                <span class=\"text-danger small\" *ngIf=\"!form.controls['email'].valid && form.controls['email'].touched\">Въведеният E-Mail не е валиден.</span>\r\n                <input class=\"form-control\" type=\"email\" name=\"email\" [formControl]=\"form.controls['email']\" placeholder=\"E-Mail\" [class.input-error]=\"!form.controls['email'].valid && form.controls['email'].touched\">\r\n\r\n                <input class=\"form-control\" type=\"text\" name=\"profilePicture\" [formControl]=\"form.controls['profilePicture']\" placeholder=\"Профилна снимка (url)\"\r\n                  [class.input-error]=\"!form.controls['profilePicture'].valid && form.controls['profilePicture'].touched\">\r\n\r\n                <span class=\"text-danger small\" *ngIf=\"!form.controls['firstName'].valid && form.controls['firstName'].touched\">Името трябва да е между 3 и 20 символа.</span>\r\n                <input class=\"form-control\" type=\"text\" name=\"firstName\" [formControl]=\"form.controls['firstName']\" placeholder=\"Име\" [class.input-error]=\"!form.controls['firstName'].valid && form.controls['firstName'].touched\">\r\n\r\n                <span class=\"text-danger small\" *ngIf=\"!form.controls['lastName'].valid && form.controls['lastName'].touched\">Фамилията трябва да е между 3 и 20 символа.</span>\r\n                <input class=\"form-control\" type=\"text\" name=\"lastName\" [formControl]=\"form.controls['lastName']\" placeholder=\"Фамилия\" [class.input-error]=\"!form.controls['lastName'].valid && form.controls['lastName'].touched\">\r\n\r\n                <span class=\"text-danger small\" *ngIf=\"!form.controls['age'].valid && form.controls['age'].touched && form.controls['age'].value\">Въведете възраст между 6 и 100 години.<br></span>\r\n                <input class=\"form-control\" min=\"6\" max=\"100\" type=\"number\" name=\"age\" [formControl]=\"form.controls['age']\" placeholder=\"Възраст\"\r\n                  [class.input-error]=\"!form.controls['age'].valid && form.controls['age'].touched && form.controls['age'].value\">\r\n\r\n                <label id=\"gender-label\" for=\"gender\">Пол:</label>\r\n                <select id=\"gender-select\" class=\"form-control\" [formControl]=\"form.controls['gender']\" name=\"gender\" [class.input-error]=\"!form.controls['gender'].valid && form.controls['gender'].touched\">\r\n                <option value=\"male\">Мъж</option>\r\n                <option value=\"female\">Жена</option>\r\n                <option value=\"unspecified\">Друг</option>    \r\n              </select>\r\n                <hr>\r\n                <button type=\"submit\" [disabled]=\"isBtnDisabled\" class=\"btn btn-block orange\">Потвърди</button>\r\n              </form>\r\n            </div>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</div>\r\n\r\n<simple-notifications [options]=\"notificationOptions\"></simple-notifications>\r\n<app-picture-modal [picture]=\"image\"></app-picture-modal>"
+
+/***/ },
+
+/***/ 98:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3386,9 +3381,9 @@ var AuthService = (function () {
     return AuthService;
     var _a, _b;
 }());
-//# sourceMappingURL=C:/Users/Dimitar Pechev/Desktop/TeamDirective20/src/auth.service.js.map
+//# sourceMappingURL=C:/Users/Dimitar Pechev/Documents/GitHub/TeamDirective20/src/auth.service.js.map
 
 /***/ }
 
-},[1098]);
+},[1099]);
 //# sourceMappingURL=main.bundle.map
