@@ -10,5 +10,5 @@ let connectionString = {
 
 module.exports = {
     port: process.env.PORT || 3000,
-    connectionString: connectionString['development']
+    connectionString: connectionString['production']
 };
